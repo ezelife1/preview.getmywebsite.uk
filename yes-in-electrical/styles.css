@@ -84,3 +84,65 @@ body{background:#090b0e}
   .cta{padding:52px 0 58px}
   .cta-card:before{left:0;right:0;top:0;bottom:auto;width:auto;height:6px}
 }
+
+
+/* CTA action refinement */
+.cta-actions{width:min(100%,380px)}
+.button-call{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);white-space:nowrap}
+.button-call:hover{border-color:var(--yellow);color:var(--yellow)}
+.cta-phone{display:none}
+
+/* Smaller mobile WhatsApp shortcut to reduce content overlap */
+@media(max-width:620px){
+  .whatsapp-float{width:44px;height:44px;right:8px;bottom:max(8px,env(safe-area-inset-bottom));box-shadow:0 8px 22px rgba(0,0,0,.28)}
+  .whatsapp-float svg{width:21px;height:21px}
+  .cta-actions{width:100%;gap:12px}
+  .button-call{width:100%}
+}
+
+/* Full mobile refinement pass */
+.site-header,.nav-wrap,.brand-mark,.brand-name strong,.brand-name small,.menu-toggle{transition:height .25s ease,width .25s ease,font-size .25s ease,padding .25s ease,transform .25s ease}
+.site-header.is-compact .nav-wrap{height:62px}
+.site-header.is-compact .brand-mark{width:34px;height:34px;font-size:16px}
+.site-header.is-compact .brand-name strong{font-size:16px}
+.site-header.is-compact .brand-name small{font-size:8px;margin-top:4px}
+.site-header.is-compact .menu-toggle{padding:7px 13px}
+
+@media(max-width:620px){
+  html{scroll-padding-top:64px}
+  .hero{padding:22px 0 28px}
+  .hero-shell{gap:20px}
+  .hero-media,.hero-media img{min-height:310px}
+  .hero-copy-block{padding:0}
+  .hero-copy-block .eyebrow{margin-bottom:10px}
+  .hero h1{font-size:40px;line-height:1.01}
+  .hero-copy{font-size:14px;line-height:1.62;margin:14px 0 18px}
+  .hero-actions{gap:10px}
+  .hero-proof{margin-top:18px;gap:7px 12px}
+
+  .services.section{padding:62px 0}
+  .services .section-heading{margin-bottom:24px}
+  .service-grid{gap:10px}
+  .service-card{grid-template-columns:40px 1fr;gap:13px;padding:18px 17px;border-radius:18px}
+  .service-icon{width:40px;height:40px;font-size:17px}
+  .service-card h3{font-size:18px;margin:1px 0 6px}
+  .service-card p{font-size:13px;line-height:1.55}
+  .service-card:after{width:120px;height:120px;right:-42px;bottom:-54px}
+
+  .process-band{padding:34px 0}
+  .process-grid{gap:0}
+  .process-grid div{padding:0 0 20px;margin-bottom:20px}
+  .process-grid div:last-child{margin-bottom:0}
+  .process-grid span{margin-bottom:12px}
+  .process-grid strong{font-size:18px}
+  .process-grid p{font-size:13px;line-height:1.5}
+
+  .cta{padding:42px 0 48px}
+  .cta-card{padding:31px 22px 28px;gap:24px}
+  .cta h2{font-size:38px;line-height:1.01;max-width:9ch}
+  .cta-card>div>p:last-child{margin-top:13px;line-height:1.6}
+  .cta-actions .button{min-height:50px;font-size:15px}
+
+  .site-header.is-compact .site-nav{top:62px}
+  .whatsapp-float.is-hidden{opacity:0;pointer-events:none;transform:translateY(10px)}
+}
