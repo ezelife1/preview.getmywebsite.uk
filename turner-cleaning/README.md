@@ -9,3 +9,6 @@ Mobile section fix:
 
 
 Contact image is embedded directly in CSS to prevent GitHub Pages asset-path failures.
+
+
+Final mobile compact fix: smaller contact CTAs, tighter footer, slimmer persistent Call/WhatsApp bar.

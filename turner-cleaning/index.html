@@ -9,6 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+<style id="final-mobile-contact-bar-fix">
+@media (max-width: 900px) {
+  .mobile-contact-bar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    position: fixed !important;
+    width: 270px !important;
+    max-width: calc(100vw - 28px) !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: calc(8px + env(safe-area-inset-bottom)) !important;
+    transform: translateX(-50%) !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    z-index: 9999 !important;
+    box-shadow: 0 5px 18px rgba(8,25,46,.22) !important;
+  }
+  .mobile-contact-bar a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+  }
+  body { padding-bottom: calc(52px + env(safe-area-inset-bottom)) !important; }
+}
+</style>
 </head>
 <body class="turner-site">
 <header class="site-header" id="top">
