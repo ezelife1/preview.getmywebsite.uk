@@ -584,3 +584,65 @@
     max-height: 100px !important;
   }
 }
+
+
+/* Definitive header and embedded-logo fix */
+.site-header {
+  height: 92px !important;
+  min-height: 92px !important;
+  padding: 0 5vw !important;
+  align-items: center !important;
+}
+.logo-brand {
+  width: 220px !important;
+  height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+.logo-brand img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+.footer-logo img {
+  width: 260px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+@media (max-width: 760px) {
+  .site-header,
+  .site-header.open {
+    height: 88px !important;
+    min-height: 88px !important;
+    padding: 0 24px !important;
+    align-items: center !important;
+  }
+  .logo-brand {
+    width: 190px !important;
+    height: 66px !important;
+    flex: 0 0 190px !important;
+  }
+  .menu-toggle {
+    margin-left: auto !important;
+    flex: 0 0 44px !important;
+  }
+  .footer-logo img {
+    width: 220px !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 390px) {
+  .site-header,
+  .site-header.open {
+    height: 82px !important;
+    min-height: 82px !important;
+    padding: 0 18px !important;
+  }
+  .logo-brand {
+    width: 168px !important;
+    height: 58px !important;
+    flex-basis: 168px !important;
+  }
+}
