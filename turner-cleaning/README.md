@@ -6,3 +6,6 @@ Mobile section fix:
 - Kept the fixed Call / WhatsApp bar clear of the page content.
 - Replaced the inconsistent logo asset with a transparent, tightly cropped PNG.
 - Stabilised mobile before/after image heights.
+
+
+Contact image is embedded directly in CSS to prevent GitHub Pages asset-path failures.
