@@ -1,7 +1,8 @@
 # Turner Exterior Cleaning
-Static responsive website based on Cleaner v1 and tailored for exterior cleaning.
 
-Phone / WhatsApp: 07828 698372
-Coverage: South Yorkshire and surrounding areas
-
-Upload the contents of this folder into the relevant GitHub Pages subfolder so index.html sits at the folder root.
+Mobile section fix:
+- Replaced the black-bar contact image with a clean project photograph.
+- Rebuilt the mobile contact section image crop and spacing.
+- Kept the fixed Call / WhatsApp bar clear of the page content.
+- Replaced the inconsistent logo asset with a transparent, tightly cropped PNG.
+- Stabilised mobile before/after image heights.

@@ -271,3 +271,316 @@
   .turner-site .quote-strip div { width: 100%; }
   .turner-site .quote-strip a { width: 100%; justify-content: center; }
 }
+
+/* Turner mobile layout repair — image, hero spacing and fixed contact bar. */
+@media (max-width: 900px) {
+  html { scroll-padding-top: 104px; }
+  body { padding-bottom: 70px; }
+
+  .site-header {
+    min-height: 96px;
+    height: 96px;
+    padding: 0 6vw;
+  }
+  .logo-brand {
+    width: 225px;
+    height: 78px;
+  }
+  .logo-brand img {
+    background: transparent !important;
+  }
+  .menu-toggle {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .turner-hero {
+    min-height: calc(100svh - 96px);
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    isolation: isolate;
+    background: #0b2d56;
+  }
+  .turner-hero .hero-image {
+    inset: 0;
+    transform: none;
+    background-image: url('assets/images/696669487_122169239774843355_5730669671686209244_n.jpg') !important;
+    background-size: cover !important;
+    background-position: 52% center !important;
+    background-repeat: no-repeat !important;
+  }
+  .turner-hero .hero-overlay {
+    display: block !important;
+    background:
+      linear-gradient(180deg, rgba(5,25,47,.12) 0%, rgba(5,25,47,.3) 38%, rgba(5,25,47,.9) 100%) !important;
+  }
+  .turner-hero .hero-content {
+    width: 100%;
+    max-width: none;
+    margin: 0 !important;
+    padding: 120px 7vw 118px;
+  }
+  .turner-hero .eyebrow {
+    font-size: 12px;
+    line-height: 1.55;
+    letter-spacing: .18em;
+    margin-bottom: 18px;
+  }
+  .turner-hero h1 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .94;
+    margin: 0 0 26px;
+    max-width: 690px;
+  }
+  .turner-hero .hero-copy {
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 600px;
+  }
+  .turner-hero .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  .turner-hero .hero-actions .btn {
+    width: 100%;
+    min-height: 58px;
+    padding-inline: 18px;
+    font-size: 16px;
+  }
+  .turner-hero .rating-card { display: none !important; }
+
+  .mobile-contact-bar {
+    min-height: 68px;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #fff;
+  }
+  .mobile-contact-bar a {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+  }
+
+  .contact-panel {
+    padding-bottom: 130px !important;
+  }
+  #contact { scroll-margin-top: 96px; }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    min-height: 88px;
+    height: 88px;
+    padding: 0 5vw;
+  }
+  .logo-brand {
+    width: 205px;
+    height: 70px;
+  }
+  .turner-hero {
+    min-height: calc(100svh - 88px);
+  }
+  .turner-hero .hero-content {
+    padding: 104px 7vw 105px;
+  }
+  .turner-hero h1 {
+    font-size: clamp(46px, 13.6vw, 59px);
+  }
+  .turner-hero .hero-copy {
+    font-size: 16px;
+  }
+}
+
+/* Mobile repair: contact/transformation section, not the hero. */
+.logo-brand img,
+.footer-logo img {
+  background: transparent !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  /* Prevent project/contact images with odd source ratios creating empty or black bands. */
+  .contact {
+    display: block !important;
+    min-height: 0 !important;
+    background: #0b2d56;
+  }
+  .contact-image {
+    width: 100%;
+    min-height: 0 !important;
+    height: clamp(300px, 72vw, 470px) !important;
+    overflow: hidden;
+    background: #dce7ed;
+  }
+  .contact-image img {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    object-fit: cover !important;
+    object-position: center 58% !important;
+  }
+  .contact-panel {
+    min-height: 0 !important;
+    padding: 72px 7vw 132px !important;
+    background: linear-gradient(145deg, #0b3769 0%, #082b56 100%) !important;
+  }
+  .contact-panel .eyebrow {
+    margin: 0 0 24px;
+    color: #ffffff !important;
+  }
+  .contact-panel h2 {
+    margin: 0 0 24px;
+    font-size: clamp(46px, 13vw, 66px) !important;
+    line-height: .98;
+    color: #ffffff !important;
+  }
+  .contact-panel > p:not(.eyebrow),
+  .contact-panel address {
+    color: rgba(255,255,255,.82) !important;
+  }
+  .contact-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .contact-buttons .btn {
+    width: 100%;
+    min-height: 58px;
+  }
+
+  /* Before/after cards stay compact and never inherit tall screenshot dimensions. */
+  .before-after-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+  .comparison-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 230px !important;
+    overflow: hidden;
+  }
+  .comparison-images figure {
+    min-width: 0;
+    height: 230px !important;
+    overflow: hidden;
+  }
+  .comparison-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo-brand {
+    width: 220px !important;
+    height: 74px !important;
+  }
+  .logo-brand img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .contact-image {
+    height: 330px !important;
+  }
+  .comparison-images,
+  .comparison-images figure {
+    height: 190px !important;
+  }
+}
+
+/* Definitive contact section fix — versioned image, no <img>, no letterboxing. */
+.turner-site .contact.contact-v2 {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr) !important;
+  min-height: 680px !important;
+  background: #0b2d56 !important;
+  overflow: hidden !important;
+}
+.turner-site .contact-v2 .contact-image-v2 {
+  min-height: 680px !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('assets/images/contact-driveway-clean.jpg?v=2') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #d7e2e8 !important;
+}
+.turner-site .contact-v2 .contact-panel {
+  min-height: 680px !important;
+  background: linear-gradient(145deg,#0b3769 0%,#082b56 100%) !important;
+  color: #fff !important;
+}
+.turner-site .contact-v2 .contact-panel,
+.turner-site .contact-v2 .contact-panel * { color:#fff; }
+.turner-site .contact-v2 .contact-panel > p:not(.eyebrow),
+.turner-site .contact-v2 .contact-panel address { color:rgba(255,255,255,.82) !important; }
+.turner-site .contact-v2 .btn-light { color:#0b2d56 !important; }
+.turner-site .contact-v2 .btn-whatsapp { color:#082f16 !important; }
+
+@media (max-width:900px) {
+  .turner-site .contact.contact-v2 {
+    display:block !important;
+    min-height:0 !important;
+  }
+  .turner-site .contact-v2 .contact-image-v2 {
+    min-height:0 !important;
+    height:clamp(300px,72vw,470px) !important;
+    background-position:center 55% !important;
+  }
+  .turner-site .contact-v2 .contact-panel {
+    min-height:0 !important;
+    padding:72px 7vw 132px !important;
+  }
+}
+@media (max-width:560px) {
+  .turner-site .contact-v2 .contact-image-v2 {
+    height:330px !important;
+  }
+}
+
+/* Footer refinement: lighter blue background and balanced desktop logo. */
+.site-footer {
+  background: #2b4260 !important;
+  padding: 64px 7vw 88px !important;
+  align-items: center;
+}
+.footer-logo {
+  width: 280px !important;
+  max-width: 100% !important;
+  align-self: center;
+}
+.footer-logo img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 118px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+.site-footer > p {
+  color: rgba(255,255,255,.78) !important;
+}
+.site-footer > small {
+  color: rgba(255,255,255,.62) !important;
+  border-top-color: rgba(255,255,255,.2) !important;
+}
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 58px 7vw 125px !important;
+  }
+  .footer-logo {
+    width: 235px !important;
+  }
+  .footer-logo img {
+    max-height: 100px !important;
+  }
+}
