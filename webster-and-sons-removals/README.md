@@ -1,7 +1,11 @@
-# Webster & Son's Removals
-Static responsive website package.
+# Webster & Son's Removals — mobile polished build
 
-Upload the contents of this folder to the chosen GitHub Pages subfolder. Keep index.html, styles.css and script.js at the folder root, with assets/images unchanged.
+Upload the contents of this folder to the existing GitHub Pages folder.
 
-Phone/WhatsApp: 07564 436907
-Email: kb@webstersons.co.uk
+Updates:
+- header fixed permanently at top
+- darker hero retained
+- compact floating Call / WhatsApp pill
+- smaller mobile service cards
+- promotional and price images constrained on mobile
+- footer spacing corrected so floating buttons do not cover content
