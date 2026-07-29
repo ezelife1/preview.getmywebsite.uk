@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Willow Lane Gardens & Landscapes Ltd — professional landscaping, patios, paving, turfing, fencing and garden transformations across Cambridge and surrounding areas.">
+  <title>Willow Lane Gardens & Landscapes Ltd | Cambridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#142018;--forest:#263d2b;--leaf:#749343;--lime:#a9c83f;--cream:#f5f3eb;--white:#fff;--muted:#667067;--line:#dfe5dc;--shadow:0 24px 70px rgba(20,32,24,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;line-height:1.6}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,calc(100% - 40px));margin:auto}.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--leaf)}h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.08;margin:0}h1{font-size:clamp(3rem,7vw,6.7rem);max-width:900px}h2{font-size:clamp(2.2rem,4.8vw,4.3rem)}p{margin:0;color:var(--muted)}
+    .topbar{background:var(--ink);color:#fff;font-size:.9rem}.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:10px 0}.topbar a{color:#fff}.topbar strong{color:#d9ed8b}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,32,24,.08)}nav{display:flex;align-items:center;justify-content:space-between;min-height:82px;gap:24px}.brand{display:flex;align-items:center;gap:14px;font-weight:700}.brand img{width:74px;height:58px;object-fit:contain}.brand-copy{line-height:1.05}.brand-copy span{display:block;font-family:'Playfair Display',serif;font-size:1.15rem}.brand-copy small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.navlinks{display:flex;align-items:center;gap:28px;font-weight:600;font-size:.94rem}.nav-cta{background:var(--forest);color:#fff;padding:13px 20px;border-radius:999px}
+    .hero{min-height:83vh;display:grid;align-items:end;position:relative;overflow:hidden;background:#172019}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,19,12,.88) 0%,rgba(10,19,12,.6) 42%,rgba(10,19,12,.12) 100%),linear-gradient(0deg,rgba(10,19,12,.52),transparent 45%),url('assets/719650622_1615544433905145_6107778619885310082_n.jpg') center/cover no-repeat}.hero .container{position:relative;z-index:1;padding:110px 0 80px}.hero .eyebrow{color:#d8ec87}.hero h1{color:#fff;margin:14px 0 22px}.hero p{color:#e8eee8;font-size:1.15rem;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border-radius:999px;font-weight:700;transition:.25s}.btn-primary{background:var(--lime);color:#172019}.btn-dark{background:#fff;color:var(--ink)}.btn-outline{border:1px solid rgba(255,255,255,.55);color:#fff}.btn:hover{transform:translateY(-2px)}.trust-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:46px}.trust-row span{padding:9px 13px;border:1px solid rgba(255,255,255,.25);border-radius:999px;color:#fff;background:rgba(255,255,255,.08);font-size:.88rem}
+    section{padding:100px 0}.intro{background:var(--cream)}.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}.intro-card{background:#fff;padding:44px;border-radius:28px;box-shadow:var(--shadow)}.intro-card img{width:100%;max-height:420px;object-fit:contain}.intro-copy h2{margin:12px 0 22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.stat{border-top:1px solid #cfd8cc;padding-top:16px}.stat strong{font-family:'Playfair Display',serif;font-size:2rem;display:block;color:var(--forest)}.stat span{font-size:.86rem;color:var(--muted)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.section-head p{max-width:520px}.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{padding:30px;border:1px solid var(--line);border-radius:22px;min-height:230px;transition:.25s;background:#fff}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}.service-num{font-size:.8rem;color:var(--leaf);font-weight:700;letter-spacing:.14em}.service h3{font-size:1.55rem;margin:32px 0 10px}.service p{font-size:.94rem}
+    .feature{background:var(--ink);color:#fff}.feature-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.feature-main,.feature-side{position:relative;overflow:hidden;border-radius:26px;min-height:650px}.feature-main img,.feature-side img{width:100%;height:100%;object-fit:cover}.feature-side{display:grid;grid-template-rows:1fr 1fr;gap:24px}.feature-side figure{margin:0;overflow:hidden;border-radius:26px;position:relative}.label{position:absolute;left:20px;bottom:20px;background:rgba(20,32,24,.86);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:.85rem}.feature-copy{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:42px}.feature-copy p{color:#b9c4bc}
+    .gallery{background:var(--cream)}.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:250px;gap:16px}.gallery-grid figure{margin:0;border-radius:20px;overflow:hidden;position:relative}.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-grid figure:hover img{transform:scale(1.03)}.g1{grid-column:span 7;grid-row:span 2}.g2{grid-column:span 5}.g3{grid-column:span 5}.g4,.g5,.g6{grid-column:span 4}.g7{grid-column:span 8}.g8{grid-column:span 4}
+    .process{background:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}.step{padding:30px 26px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step strong{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--forest);color:#fff;margin-bottom:20px}.step h3{font-size:1.45rem;margin-bottom:10px}
+    .cta{padding:0 0 100px}.cta-box{background:linear-gradient(120deg,var(--forest),#17231a);border-radius:34px;padding:70px;color:#fff;display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(169,200,63,.13);right:-90px;top:-110px}.cta-box p{color:#d8e0da;margin-top:14px}.cta-box .actions{margin:0;position:relative;z-index:1}
+    footer{background:#0f1712;color:#fff;padding:60px 0 95px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px}.footer-logo img{width:160px;background:#fff;border-radius:14px;margin-bottom:20px}.footer-grid p,.footer-grid a{color:#aeb9b1}.footer-grid h3{font-family:'DM Sans';font-size:1rem;margin-bottom:16px}.footer-links{display:grid;gap:8px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:42px;padding-top:20px;color:#869188;font-size:.85rem}
+    .mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid #ddd;padding:9px 12px;grid-template-columns:1fr 1fr;gap:9px}.mobile-bar a{padding:13px;text-align:center;border-radius:12px;font-weight:800}.mobile-call{background:var(--ink);color:#fff}.mobile-whatsapp{background:#25D366;color:#072810}
+    @media(max-width:900px){.topbar{display:none}.navlinks a:not(.nav-cta){display:none}.brand-copy small{display:none}.intro-grid,.feature-copy,.feature-grid,.cta-box,.footer-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.feature-main{min-height:520px}.feature-side{grid-template-columns:1fr 1fr;grid-template-rows:none;min-height:330px}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:260px}.gallery-grid figure{grid-column:auto!important;grid-row:auto!important}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.cta-box{padding:48px}.cta-box .actions{margin-top:10px}}
+    @media(max-width:620px){.container{width:min(100% - 26px,1180px)}header nav{min-height:70px}.brand img{width:58px}.brand-copy span{font-size:.98rem}.nav-cta{padding:10px 14px;font-size:.84rem}.hero{min-height:78vh}.hero .container{padding:85px 0 54px}h1{font-size:3.1rem}.hero p{font-size:1rem}.actions .btn{width:100%}.trust-row{margin-top:28px}.trust-row span{font-size:.78rem}section{padding:72px 0}.intro-grid{gap:35px}.intro-card{padding:24px}.stats{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}.service-grid{grid-template-columns:1fr}.service{min-height:auto}.feature-main{min-height:430px}.feature-side{grid-template-columns:1fr;min-height:auto}.feature-side figure{height:310px}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:300px}.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)!important}.cta-box{padding:38px 24px}.mobile-bar{display:grid}footer{padding-bottom:110px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Professional landscaping team based in Cambridge</span><span><strong>20+ years’ experience</strong> &nbsp; • &nbsp; Free quotations</span></div></div>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#top"><img src="assets/375298153_806450274814569_5710872322737120088_n.jpg" alt="Willow Lane Gardens and Landscapes logo"><span class="brand-copy"><span>Willow Lane</span><small>Gardens & Landscapes Ltd</small></span></a>
+      <div class="navlinks"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cta" href="tel:01223755070">Call 01223 755070</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Cambridge landscaping specialists</span>
+        <h1>Beautiful gardens, built to be lived in.</h1>
+        <p>From premium patios and paving to turfing, fencing and complete garden transformations, Willow Lane creates outdoor spaces with lasting quality.</p>
+        <div class="actions"><a class="btn btn-primary" href="tel:01223755070">Call for a free quote</a><a class="btn btn-dark" href="https://wa.me/447888863255?text=Hi%20Willow%20Lane%2C%20I%27d%20like%20a%20free%20landscaping%20quote." target="_blank" rel="noopener">WhatsApp the team</a><a class="btn btn-outline" href="#projects">View recent work</a></div>
+        <div class="trust-row"><span>20+ years’ experience</span><span>Hard landscaping specialists</span><span>Cambridge & surrounding areas</span><span>Free quotations</span></div>
+      </div>
+    </section>
+
+    <section class="intro" id="about"><div class="container intro-grid">
+      <div class="intro-card"><img src="assets/375298153_806450274814569_5710872322737120088_n.jpg" alt="Willow Lane Gardens and Landscapes Ltd"></div>
+      <div class="intro-copy"><span class="eyebrow">Rooted in quality</span><h2>A trusted local team for complete garden transformations.</h2><p>Willow Lane Gardens & Landscapes Ltd delivers professional landscaping throughout Cambridge and the surrounding area. From the first design ideas to the final clean-down, every project is handled with care, practical experience and close attention to detail.</p><div class="stats"><div class="stat"><strong>20+</strong><span>Years of experience</span></div><div class="stat"><strong>1 team</strong><span>From design to completion</span></div><div class="stat"><strong>Free</strong><span>No-obligation quotations</span></div></div></div>
+    </div></section>
+
+    <section class="services" id="services"><div class="container">
+      <div class="section-head"><div><span class="eyebrow">What we do</span><h2>Landscaping without compromise.</h2></div><p>Complete hard and soft landscaping services for gardens of every size, delivered by an experienced Cambridge team.</p></div>
+      <div class="service-grid">
+        <article class="service"><span class="service-num">01</span><h3>Patios & Paving</h3><p>Natural stone, porcelain, block paving and carefully finished outdoor living areas.</p></article>
+        <article class="service"><span class="service-num">02</span><h3>Turfing & Seeding</h3><p>Fresh lawns, ground preparation and practical solutions for tired or uneven gardens.</p></article>
+        <article class="service"><span class="service-num">03</span><h3>Driveways</h3><p>Gravel, block paving and durable entranceways designed around your property.</p></article>
+        <article class="service"><span class="service-num">04</span><h3>Fencing & Screening</h3><p>Secure boundaries, decorative screening and timber features built to last.</p></article>
+        <article class="service"><span class="service-num">05</span><h3>Decking & Timberwork</h3><p>Decking, raised beds, pergolas and garden structures tailored to your space.</p></article>
+        <article class="service"><span class="service-num">06</span><h3>Planting & Garden Design</h3><p>Thoughtful layouts, planting schemes and low-maintenance garden planning.</p></article>
+        <article class="service"><span class="service-num">07</span><h3>Drainage & Groundworks</h3><p>Practical groundwork, channels and preparation for long-lasting installations.</p></article>
+        <article class="service"><span class="service-num">08</span><h3>Complete Transformations</h3><p>One experienced team managing the whole project from clearance to completion.</p></article>
+      </div>
+    </div></section>
+
+    <section class="feature" id="projects"><div class="container">
+      <div class="feature-copy"><div><span class="eyebrow">Featured project</span><h2>From weathered patio to a polished outdoor room.</h2></div><p>This Cambridge garden was refreshed with professional cleaning and finishing, restoring the natural stone and bringing the entertaining space back to life.</p></div>
+      <div class="feature-grid">
+        <figure class="feature-main"><img src="assets/670504022_18411581644133444_6484924538789698092_n.jpg" alt="Completed patio landscaping project"><span class="label">Finished result</span></figure>
+        <div class="feature-side"><figure><img src="assets/670986221_18411581626133444_8138519659335014928_n.jpg" alt="Patio before restoration"><span class="label">Before</span></figure><figure><img src="assets/671832818_18411581608133444_621149277237078016_n.jpg" alt="Patio after restoration"><span class="label">After</span></figure></div>
+      </div>
+    </div></section>
+
+    <section class="gallery"><div class="container">
+      <div class="section-head"><div><span class="eyebrow">Recent work</span><h2>Outdoor spaces made properly.</h2></div><p>Real projects completed by the team, including paving, turfing, raised gardens and low-maintenance transformations.</p></div>
+      <div class="gallery-grid">
+        <figure class="g1"><img src="assets/719650622_1615544433905145_6107778619885310082_n.jpg" alt="Modern porcelain patio and artificial lawn"></figure>
+        <figure class="g2"><img src="assets/719863824_1615542503905338_3001596694698309402_n.jpg" alt="Large landscaped patio and lawn"></figure>
+        <figure class="g3"><img src="assets/722431414_1615544487238473_1238573275080428523_n.jpg" alt="Curved patio and new lawn"></figure>
+        <figure class="g4"><img src="assets/723686519_1615541827238739_2172035568606075597_n.jpg" alt="Tiered modern garden transformation"></figure>
+        <figure class="g5"><img src="assets/670627265_18411581578133444_1544625650228366757_n.jpg" alt="Low maintenance gravel front garden"></figure>
+        <figure class="g6"><img src="assets/670787616_18411581569133444_4633258697907275200_n.jpg" alt="Natural stone paved entrance"></figure>
+        <figure class="g7"><img src="assets/671160644_18411581686133444_2519625064449274604_n.jpg" alt="Patio restoration project"></figure>
+        <figure class="g8"><img src="assets/670504022_18411581644133444_6484924538789698092_n.jpg" alt="Finished natural stone patio"></figure>
+      </div>
+    </div></section>
+
+    <section class="process"><div class="container">
+      <div class="section-head"><div><span class="eyebrow">Simple process</span><h2>From first idea to finished garden.</h2></div></div>
+      <div class="steps"><article class="step"><strong>1</strong><h3>Free consultation</h3><p>Tell us what you want to change and arrange a convenient site visit.</p></article><article class="step"><strong>2</strong><h3>Clear quotation</h3><p>Receive a straightforward quote covering the agreed work and materials.</p></article><article class="step"><strong>3</strong><h3>Professional build</h3><p>Our team completes the work carefully, keeping the project organised.</p></article><article class="step"><strong>4</strong><h3>Final handover</h3><p>We inspect the finished space with you and leave everything clean and ready.</p></article></div>
+    </div></section>
+
+    <section class="cta" id="contact"><div class="container"><div class="cta-box"><div><span class="eyebrow">Start your project</span><h2>Ready to transform your garden?</h2><p>Contact Willow Lane Gardens & Landscapes Ltd for a free quotation in Cambridge and surrounding areas.</p></div><div class="actions"><a class="btn btn-primary" href="tel:01223755070">Call 01223 755070</a><a class="btn btn-dark" href="https://wa.me/447888863255?text=Hi%20Willow%20Lane%2C%20I%27d%20like%20a%20free%20landscaping%20quote." target="_blank" rel="noopener">WhatsApp us</a></div></div></div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-grid"><div class="footer-logo"><img src="assets/375298153_806450274814569_5710872322737120088_n.jpg" alt="Willow Lane logo"><p>Professional landscaping, paving and garden transformations across Cambridge and the surrounding area.</p></div><div><h3>Contact</h3><div class="footer-links"><a href="tel:01223755070">01223 755070</a><a href="tel:07888863255">07888 863255</a><a href="tel:07727849908">07727 849908</a><a href="mailto:wlg1@btinternet.com">wlg1@btinternet.com</a></div></div><div><h3>Services</h3><div class="footer-links"><a href="#services">Patios & paving</a><a href="#services">Turfing & lawns</a><a href="#services">Fencing & decking</a><a href="#services">Complete landscaping</a></div></div></div><div class="copyright">© <span id="year"></span> Willow Lane Gardens & Landscapes Ltd. All rights reserved.</div></div></footer>
+
+  <div class="mobile-bar"><a class="mobile-call" href="tel:01223755070">Call now</a><a class="mobile-whatsapp" href="https://wa.me/447888863255?text=Hi%20Willow%20Lane%2C%20I%27d%20like%20a%20free%20landscaping%20quote." target="_blank" rel="noopener">WhatsApp</a></div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
