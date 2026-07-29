@@ -29,9 +29,9 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
 .project-head{display:grid;grid-template-columns:1fr .9fr;gap:28px;align-items:end;padding:34px 36px;border-bottom:1px solid var(--line)}
 .project-head h3{font-size:clamp(2rem,4.5vw,4.4rem);line-height:.92;letter-spacing:-.05em;text-transform:uppercase;margin:10px 0 0}
 .project-head p{color:var(--muted);margin:0;font-size:1rem}
-.before-after{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
-.ba-card{position:relative;background:#050605;min-height:520px;overflow:hidden}
-.ba-card img{width:100%;height:100%;object-fit:cover}
+.before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:18px;background:#0a0d08}
+.ba-card{position:relative;background:#050605;aspect-ratio:4/3;min-height:0;overflow:hidden;border-radius:18px;border:1px solid rgba(184,225,55,.18)}
+.ba-card img{width:100%;height:100%;object-fit:cover;object-position:center}
 .ba-badge{position:absolute;left:18px;top:18px;z-index:2;background:#071005;color:var(--white);padding:9px 15px;border-radius:999px;font-size:.72rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(255,255,255,.18)}
 .ba-card.after .ba-badge{background:var(--lime);color:#071005;border-color:transparent}
 .project-details{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;padding:34px 36px}
@@ -49,14 +49,31 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
 .maintenance-list{display:grid;gap:10px;margin:25px 0 30px}
 .maintenance-list span{padding:13px 15px;background:rgba(255,255,255,.035);border-left:3px solid var(--lime);font-weight:800}
 .real-gallery{background:linear-gradient(180deg,#10150d,#070907)}
-.gallery-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-auto-rows:260px;gap:14px;margin-top:44px}
-.gallery-item{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#090b08}
-.gallery-item:first-child{grid-row:span 2}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.35s ease}
-.gallery-item:hover img{transform:scale(1.035)}
+.portfolio-shell{margin-top:44px;display:grid;gap:24px}
+.portfolio-feature{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#10150d,#080a07);box-shadow:var(--shadow)}
+.portfolio-heading{padding:30px 32px 0;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.portfolio-heading h3{font-size:clamp(2rem,4vw,3.6rem);line-height:.95;letter-spacing:-.045em;text-transform:uppercase;margin:8px 0 0}
+.portfolio-heading p{max-width:430px;color:var(--muted);margin:0}
+.portfolio-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:28px 32px 32px}
+.portfolio-photo{position:relative;min-height:520px;border-radius:20px;overflow:hidden;background:#090b08}
+.portfolio-photo img{width:100%;height:100%;object-fit:cover;transition:.35s ease}
+.portfolio-photo:hover img{transform:scale(1.025)}
+.portfolio-badge{position:absolute;left:18px;bottom:18px;padding:10px 15px;border-radius:10px;background:rgba(5,6,5,.88);backdrop-filter:blur(10px);font-size:.76rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(255,255,255,.16)}
+.portfolio-badge.after{background:var(--lime);color:#071005;border-color:transparent}
+.portfolio-support{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.support-card{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#0b0d09;padding:12px}
+.support-card img{width:100%;height:auto;border-radius:16px;display:block}
+.support-meta{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 10px 8px}
+.support-meta strong{font-size:1.05rem;text-transform:uppercase;letter-spacing:.02em}
+.support-meta span{color:var(--lime);font-size:.7rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.support-card.waste-card{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;padding:18px}
+.support-card.waste-card img{height:100%;max-height:520px;object-fit:contain;background:#050605}
+.waste-copy{padding:28px}
+.waste-copy h4{font-size:clamp(2rem,4vw,3.5rem);line-height:.95;text-transform:uppercase;letter-spacing:-.04em;margin:10px 0 18px}
+.waste-copy p{color:var(--muted);margin:0 0 24px}
 .gallery-label{position:absolute;left:14px;bottom:14px;background:rgba(5,6,5,.84);backdrop-filter:blur(8px);padding:8px 11px;border-radius:9px;font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:760px){
- .project-head,.project-details,.maintenance-grid{grid-template-columns:1fr}.project-head,.project-details{padding:26px 20px}.before-after{grid-template-columns:1fr}.ba-card{min-height:410px}.project-checks{grid-template-columns:1fr}.maintenance-photo{min-height:460px}.maintenance-copy{padding:30px 22px}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.gallery-item:first-child{grid-row:span 2;grid-column:span 2}.gallery-item:nth-child(4){grid-column:span 2}.future{display:none}.reason-grid .reason:last-child{display:none}.reason-grid{grid-template-columns:1fr}
+ .project-head,.project-details,.maintenance-grid{grid-template-columns:1fr}.project-head,.project-details{padding:26px 20px}.before-after{grid-template-columns:1fr;gap:14px;padding:14px}.ba-card{aspect-ratio:3/4;min-height:0;border-radius:15px}.ba-card img{object-position:center}.project-checks{grid-template-columns:1fr}.maintenance-photo{min-height:460px}.maintenance-copy{padding:30px 22px}.portfolio-heading{display:block;padding:24px 20px 0}.portfolio-heading p{margin-top:16px}.portfolio-compare{grid-template-columns:1fr;padding:20px}.portfolio-photo{min-height:390px}.portfolio-support{grid-template-columns:1fr}.support-card.waste-card{grid-template-columns:1fr}.support-card.waste-card img{max-height:none;height:auto}.waste-copy{padding:22px 10px 10px}.future{display:none}.reason-grid .reason:last-child{display:none}.reason-grid{grid-template-columns:1fr}
 }
 
 </style>
@@ -123,12 +140,19 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
   <div class="project-details"><p>The garden was heavily overgrown and difficult to manage. The team cut everything back, restored the lawn, cleared the waste and left the property looking tidy and usable again.</p><div class="project-checks"><span>Full cut-back</span><span>Lawn restored</span><span>Waste removed</span><span>Large gardens welcome</span></div></div>
 </div></div></section>
 <section class="section maintenance-feature"><div class="container"><div class="maintenance-grid"><div class="maintenance-photo"><img src="assets/images/723768072_122107227981353159_6013329613325586498_n.jpg" alt="Freshly cut lawn maintained by JD Garden Renovations"></div><div class="maintenance-copy"><div class="kicker">Regular garden care</div><h3>Keep it looking this good.</h3><p>From one-off tidy-ups to regular visits, JD Garden Renovations keeps lawns, hedges and outdoor spaces under control throughout the year.</p><div class="maintenance-list"><span>Lawn mowing and edging</span><span>Overgrown garden recovery</span><span>Hedge and shrub maintenance</span><span>Green waste taken away</span></div><a class="btn btn-green" href="https://wa.me/447300509016?text=Hi%20JD%20Garden%20Renovations%2C%20I%27d%20like%20a%20garden%20maintenance%20quote">Get a garden quote</a></div></div></div></section>
-<section class="section real-gallery"><div class="container"><div class="kicker">Real garden work</div><h2 class="title">Genuine projects.<br>Visible results.</h2><p class="lead">Real photographs from JD Garden Renovations jobs—not stock imagery.</p><div class="gallery-grid">
- <figure class="gallery-item"><img src="assets/images/729991422_122115938529353159_4049005822449416953_n.jpg" alt="Completed sloping garden maintenance"><figcaption class="gallery-label">Large garden restoration</figcaption></figure>
- <figure class="gallery-item"><img src="assets/images/720342258_122107227021353159_6615878717640092834_n.jpg" alt="Overgrown lawn before maintenance"><figcaption class="gallery-label">Before</figcaption></figure>
- <figure class="gallery-item"><img src="assets/images/723768072_122107227981353159_6013329613325586498_n.jpg" alt="Lawn after maintenance"><figcaption class="gallery-label">After</figcaption></figure>
- <figure class="gallery-item"><img src="assets/images/727313371_122114924535353159_6874879582355259101_n.jpg" alt="JD Garden Renovations transformation artwork"><figcaption class="gallery-label">Transformation project</figcaption></figure>
- <figure class="gallery-item" id="waste-work"><img src="assets/images/758167600_122126921337353159_4458654940811786143_n-2.jpg" alt="JD Waste and Transport service"><figcaption class="gallery-label">Waste & transport</figcaption></figure>
+<section class="section real-gallery"><div class="container"><div class="kicker">Recent work</div><h2 class="title">Real transformations.<br>Proper results.</h2><p class="lead">A cleaner project showcase using genuine JD Garden Renovations work, with the branded artwork kept as supporting proof.</p>
+<div class="portfolio-shell">
+  <article class="portfolio-feature">
+    <div class="portfolio-heading"><div><div class="kicker">Featured transformation</div><h3>Overgrown to garden-ready.</h3></div><p>A neglected lawn brought back under control with a full cut, tidy finish and all green waste removed.</p></div>
+    <div class="portfolio-compare">
+      <figure class="portfolio-photo"><img src="assets/images/720342258_122107227021353159_6615878717640092834_n.jpg" alt="Overgrown garden before JD Garden Renovations work"><figcaption class="portfolio-badge">Before</figcaption></figure>
+      <figure class="portfolio-photo"><img src="assets/images/723768072_122107227981353159_6013329613325586498_n.jpg" alt="Garden after JD Garden Renovations maintenance"><figcaption class="portfolio-badge after">After</figcaption></figure>
+    </div>
+  </article>
+  <div class="portfolio-support">
+    <article class="support-card"><img src="assets/images/727313371_122114924535353159_6874879582355259101_n.jpg" alt="JD Garden Renovations transformation project artwork"><div class="support-meta"><strong>Transformation project</strong><span>Garden division</span></div></article>
+    <article class="support-card waste-card" id="waste-work"><img src="assets/images/758167600_122126921337353159_4458654940811786143_n-2.jpg" alt="JD Waste and Transport service"><div class="waste-copy"><div class="kicker">Waste & transport</div><h4>Same-day collections available.</h4><p>Waste removals, rubbish clearances, transporting items and man-and-van services across North Somerset.</p><a class="btn btn-green" href="https://wa.me/447300509016?text=Hi%20JD%20Waste%20%26%20Transport%2C%20I%27d%20like%20a%20quote">Get a waste quote</a></div></article>
+  </div>
 </div></div></section>
 <section id="about" class="section why"><div class="container why-grid"><div class="why-logo"><img src="assets/images/757533239_1523766622384345_3930389617052460213_n.jpg" alt="JD Group logo"></div><div><div class="kicker">Why JD Group</div><h2 class="title">Built for the bigger picture.</h2><p class="lead">JD Group creates one recognisable home for two specialist services. Customers get a clear, professional experience while each division keeps the identity and expertise that makes it distinct.</p><div class="reason-grid"><div class="reason"><strong>One trusted contact</strong><span>One number connects customers to the correct team.</span></div><div class="reason"><strong>Specialist divisions</strong><span>Dedicated services without confusing the brand.</span></div><div class="reason"><strong>Consistent standards</strong><span>Reliable communication and professional delivery.</span></div><div class="reason"><strong>Two clear divisions</strong><span>Garden and waste services are easy to understand and contact.</span></div></div></div></div></section>
 <section class="section review"><div class="container review-grid"><div class="quote">“Prompt, punctual, professional—and they did a fantastic job.”<small>Recent JD Garden Renovations customer</small></div><div class="review-card"><img src="assets/images/726564818_122114171133353159_4092393645628650651_n.jpg" alt="JD customer testimonial"></div></div></section>
