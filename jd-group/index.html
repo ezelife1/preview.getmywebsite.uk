@@ -30,8 +30,8 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
 .project-head h3{font-size:clamp(2rem,4.5vw,4.4rem);line-height:.92;letter-spacing:-.05em;text-transform:uppercase;margin:10px 0 0}
 .project-head p{color:var(--muted);margin:0;font-size:1rem}
 .before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:18px;background:#0a0d08}
-.ba-card{position:relative;background:#050605;aspect-ratio:4/3;min-height:0;overflow:hidden;border-radius:18px;border:1px solid rgba(184,225,55,.18)}
-.ba-card img{width:100%;height:100%;object-fit:cover;object-position:center}
+.ba-card{position:relative;margin:0;background:#050605;min-width:0;overflow:hidden;border-radius:18px;border:1px solid rgba(184,225,55,.18)}
+.ba-card img{display:block;width:100%;height:auto;object-fit:contain}
 .ba-badge{position:absolute;left:18px;top:18px;z-index:2;background:#071005;color:var(--white);padding:9px 15px;border-radius:999px;font-size:.72rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(255,255,255,.18)}
 .ba-card.after .ba-badge{background:var(--lime);color:#071005;border-color:transparent}
 .project-details{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;padding:34px 36px}
@@ -55,8 +55,8 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
 .portfolio-heading h3{font-size:clamp(2rem,4vw,3.6rem);line-height:.95;letter-spacing:-.045em;text-transform:uppercase;margin:8px 0 0}
 .portfolio-heading p{max-width:430px;color:var(--muted);margin:0}
 .portfolio-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:28px 32px 32px}
-.portfolio-photo{position:relative;min-height:520px;border-radius:20px;overflow:hidden;background:#090b08}
-.portfolio-photo img{width:100%;height:100%;object-fit:cover;transition:.35s ease}
+.portfolio-photo{position:relative;margin:0;aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:#090b08}
+.portfolio-photo img{width:100%;height:100%;object-fit:cover;object-position:center;transition:.35s ease}
 .portfolio-photo:hover img{transform:scale(1.025)}
 .portfolio-badge{position:absolute;left:18px;bottom:18px;padding:10px 15px;border-radius:10px;background:rgba(5,6,5,.88);backdrop-filter:blur(10px);font-size:.76rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(255,255,255,.16)}
 .portfolio-badge.after{background:var(--lime);color:#071005;border-color:transparent}
@@ -73,7 +73,7 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
 .waste-copy p{color:var(--muted);margin:0 0 24px}
 .gallery-label{position:absolute;left:14px;bottom:14px;background:rgba(5,6,5,.84);backdrop-filter:blur(8px);padding:8px 11px;border-radius:9px;font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:760px){
- .project-head,.project-details,.maintenance-grid{grid-template-columns:1fr}.project-head,.project-details{padding:26px 20px}.before-after{grid-template-columns:1fr;gap:14px;padding:14px}.ba-card{aspect-ratio:3/4;min-height:0;border-radius:15px}.ba-card img{object-position:center}.project-checks{grid-template-columns:1fr}.maintenance-photo{min-height:460px}.maintenance-copy{padding:30px 22px}.portfolio-heading{display:block;padding:24px 20px 0}.portfolio-heading p{margin-top:16px}.portfolio-compare{grid-template-columns:1fr;padding:20px}.portfolio-photo{min-height:390px}.portfolio-support{grid-template-columns:1fr}.support-card.waste-card{grid-template-columns:1fr}.support-card.waste-card img{max-height:none;height:auto}.waste-copy{padding:22px 10px 10px}.future{display:none}.reason-grid .reason:last-child{display:none}.reason-grid{grid-template-columns:1fr}
+ .project-head,.project-details,.maintenance-grid{grid-template-columns:1fr}.project-head,.project-details{padding:26px 20px}.before-after{grid-template-columns:1fr;gap:24px;padding:12px 0;background:transparent}.ba-card{width:100%;margin:0;border-radius:22px}.ba-card img{width:100%;height:auto}.project-shell{border-left:0;border-right:0;border-radius:0}.ba-badge{left:18px;top:18px}.project-checks{grid-template-columns:1fr}.maintenance-photo{min-height:460px}.maintenance-copy{padding:30px 22px}.portfolio-heading{display:block;padding:24px 20px 0}.portfolio-heading p{margin-top:16px}.portfolio-compare{grid-template-columns:1fr;padding:20px}.portfolio-photo{width:100%;aspect-ratio:4/3;min-height:0;margin:0;border-radius:20px}.portfolio-photo img{width:100%;height:100%;object-fit:cover;object-position:center}.portfolio-support{grid-template-columns:1fr}.support-card.waste-card{grid-template-columns:1fr}.support-card.waste-card img{max-height:none;height:auto}.waste-copy{padding:22px 10px 10px}.future{display:none}.reason-grid .reason:last-child{display:none}.reason-grid{grid-template-columns:1fr}
 }
 
 </style>
@@ -145,8 +145,8 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
   <article class="portfolio-feature">
     <div class="portfolio-heading"><div><div class="kicker">Featured transformation</div><h3>Overgrown to garden-ready.</h3></div><p>A neglected lawn brought back under control with a full cut, tidy finish and all green waste removed.</p></div>
     <div class="portfolio-compare">
-      <figure class="portfolio-photo"><img src="assets/images/720342258_122107227021353159_6615878717640092834_n.jpg" alt="Overgrown garden before JD Garden Renovations work"><figcaption class="portfolio-badge">Before</figcaption></figure>
-      <figure class="portfolio-photo"><img src="assets/images/723768072_122107227981353159_6013329613325586498_n.jpg" alt="Garden after JD Garden Renovations maintenance"><figcaption class="portfolio-badge after">After</figcaption></figure>
+      <figure class="portfolio-photo"><img src="assets/images/731350366_122115938391353159_6835300863128259710_n.jpg" alt="Overgrown garden before JD Garden Renovations work"><figcaption class="portfolio-badge">Before</figcaption></figure>
+      <figure class="portfolio-photo"><img src="assets/images/729991422_122115938529353159_4049005822449416953_n.jpg" alt="Sloping garden after professional clearance and lawn cut"><figcaption class="portfolio-badge after">After</figcaption></figure>
     </div>
   </article>
   <div class="portfolio-support">
