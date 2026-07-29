@@ -106,6 +106,34 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
  .project-card-copy p{font-size:.94rem}
 }
 
+
+/* Proper Waste & Transport service feature */
+.waste-service-feature{grid-column:span 2;display:grid;grid-template-columns:1.08fr .92fr;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(140deg,#10160d,#070907);box-shadow:var(--shadow)}
+.waste-service-copy{padding:48px;display:flex;flex-direction:column;justify-content:center}
+.waste-service-copy .eyebrow{color:var(--lime);font-size:.72rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
+.waste-service-copy h3{font-size:clamp(2.6rem,5vw,5rem);line-height:.88;letter-spacing:-.055em;text-transform:uppercase;margin:14px 0 20px}
+.waste-service-copy>p{color:var(--muted);max-width:620px;margin:0 0 28px}
+.waste-service-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 28px}
+.waste-service-item{padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.035)}
+.waste-service-item strong{display:block;font-size:.94rem;text-transform:uppercase;margin-bottom:4px}
+.waste-service-item span{display:block;color:var(--muted);font-size:.78rem}
+.waste-actions{display:flex;flex-wrap:wrap;gap:10px}
+.waste-service-media{position:relative;min-height:620px;background:radial-gradient(circle at 50% 25%,rgba(184,225,55,.18),transparent 36%),#050605;display:grid;place-items:center;padding:28px}
+.waste-service-media img{width:100%;height:100%;max-height:570px;object-fit:contain;border-radius:18px;box-shadow:0 25px 60px rgba(0,0,0,.45)}
+.same-day-chip{position:absolute;top:24px;right:24px;background:var(--lime);color:#071005;padding:11px 15px;border-radius:999px;font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.contact-card .btn-dark{background:#071005;color:#fff;border-color:#071005;box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.contact-card .btn-dark:hover{background:#11170d}
+@media(max-width:760px){
+ .waste-service-feature{grid-column:auto;grid-template-columns:1fr}
+ .waste-service-copy{padding:30px 22px}
+ .waste-service-grid{grid-template-columns:1fr}
+ .waste-service-media{min-height:0;padding:18px}
+ .waste-service-media img{height:auto;max-height:none}
+ .same-day-chip{top:28px;right:28px}
+ .waste-actions{display:grid;grid-template-columns:1fr}
+ .waste-actions .btn{width:100%}
+}
+
 </style>
 </head>
 <body>
@@ -219,17 +247,25 @@ footer{padding:55px 0 105px;background:#030403}.footer-grid{display:grid;grid-te
         </div>
       </article>
 
-      <article class="project-card project-card-wide waste-project" id="waste-work">
-        <div class="project-image project-image-contain">
-          <img src="assets/images/758167600_122126921337353159_4458654940811786143_n-2.jpg" alt="JD Waste and Transport collection service">
-          <span class="project-tag">Waste & transport</span>
-        </div>
-        <div class="project-card-copy">
-          <div>
-            <span class="project-index">04 · WASTE</span>
-            <h3>Same-day collection service</h3>
+      <article class="waste-service-feature" id="waste-work">
+        <div class="waste-service-copy">
+          <span class="eyebrow">JD Waste & Transport division</span>
+          <h3>Clear it.<br>Move it.<br>Done.</h3>
+          <p>Fast, responsible waste removal and transport support across North Somerset. Send a photo on WhatsApp for a quick, no-obligation quote.</p>
+          <div class="waste-service-grid">
+            <div class="waste-service-item"><strong>Waste removals</strong><span>Household, garden and general unwanted waste.</span></div>
+            <div class="waste-service-item"><strong>Rubbish clearances</strong><span>Homes, garages, gardens and business premises.</span></div>
+            <div class="waste-service-item"><strong>Man & van</strong><span>Bulky items, furniture and local collections.</span></div>
+            <div class="waste-service-item"><strong>Transport solutions</strong><span>Flexible collection and delivery support.</span></div>
           </div>
-          <p>Waste removal, rubbish clearances, bulky-item transport and man-and-van support across North Somerset.</p>
+          <div class="waste-actions">
+            <a class="btn btn-green" href="https://wa.me/447300509016?text=Hi%20JD%20Waste%20%26%20Transport%2C%20I%27d%20like%20a%20quote">Send photos on WhatsApp</a>
+            <a class="btn btn-dark" href="tel:07300509016">Call 07300 509016</a>
+          </div>
+        </div>
+        <div class="waste-service-media">
+          <span class="same-day-chip">Same-day collections</span>
+          <img src="assets/images/758167600_122126921337353159_4458654940811786143_n-2.jpg" alt="JD Waste and Transport services">
         </div>
       </article>
     </div>
