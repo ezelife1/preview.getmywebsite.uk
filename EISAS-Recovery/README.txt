@@ -1,0 +1,1 @@
+Upload all files and the assets folder to your GitHub Pages client folder.
