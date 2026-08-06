@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+<title id="title">Primebaj Eastbourne Cleaning Services Ltd</title>
+<desc id="desc">A premium navy and gold cleaning company logo</desc>
+<defs>
+  <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#f7d76b"/><stop offset="1" stop-color="#c99a21"/></linearGradient>
+</defs>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M70 48h145l-44 38H114z" fill="#081f5c"/>
+  <path d="M90 85h105v86c0 29-23 52-52 52s-53-23-53-52z" fill="#fff" stroke="#081f5c" stroke-width="10"/>
+  <path d="M128 111v72" stroke="url(#gold)" stroke-width="15"/>
+  <path d="M158 111v72" stroke="#081f5c" stroke-width="15"/>
+  <path d="M117 137h53" stroke="#081f5c" stroke-width="12"/>
+  <path d="M74 62 39 201" stroke="#081f5c" stroke-width="16"/>
+  <path d="M40 201c26 10 50 7 72-8" stroke="url(#gold)" stroke-width="16"/>
+</g>
+<text x="245" y="115" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800" letter-spacing="2" fill="#081f5c">PRIMEBAJ</text>
+<text x="247" y="168" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" letter-spacing="8" fill="#c99a21">EASTBOURNE</text>
+<rect x="247" y="188" width="585" height="44" rx="22" fill="#081f5c"/>
+<text x="540" y="219" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="#fff">CLEANING SERVICES LTD</text>
+</svg>
