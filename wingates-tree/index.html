@@ -26,7 +26,7 @@
   <style>
     html{scroll-behavior:smooth}
     body{overflow-x:hidden}
-    .hero-bg{background-image:linear-gradient(90deg,rgba(8,35,25,.94),rgba(8,35,25,.68),rgba(8,35,25,.18)),url('assets/fleet.jpg');background-size:cover;background-position:center}
+    .hero-bg{background-image:linear-gradient(90deg,rgba(8,35,25,.94),rgba(8,35,25,.68),rgba(8,35,25,.18)),url('assets/fleet1.jpg');background-size:cover;background-position:center}
     .reveal{opacity:0;transform:translateY(20px);transition:.7s ease}
     .reveal.visible{opacity:1;transform:none}
   </style>
@@ -35,11 +35,11 @@
 
 <header class="sticky top-0 z-50 border-b border-emerald-900/10 bg-white/95 backdrop-blur">
   <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6">
-    <a href="#home" class="flex items-center gap-3">
-      <div class="grid h-12 w-12 place-items-center rounded-xl bg-orange text-xl font-black text-white">W</div>
-      <div>
-        <strong class="block text-base leading-tight text-forest sm:text-lg">Wingate's Tree & Gardening</strong>
-        <span class="text-xs font-semibold uppercase tracking-[.18em] text-orange">Tree care • Gardens • Hedges</span>
+    <a href="#home" class="flex min-w-0 items-center gap-3">
+      <img src="assets/logo-new.jpg" alt="Wingate's Tree Service" class="h-14 w-14 shrink-0 rounded-xl object-cover sm:h-16 sm:w-16">
+      <div class="min-w-0">
+        <strong class="block truncate text-base leading-tight text-forest sm:text-lg">Wingate's Tree & Gardening</strong>
+        <span class="block text-[10px] font-semibold uppercase tracking-[.13em] text-orange sm:text-xs sm:tracking-[.18em]">Tree care • Gardens • Hedges</span>
       </div>
     </a>
     <button id="menuBtn" class="rounded-lg border border-forest/20 p-2 lg:hidden" aria-label="Open menu">
@@ -73,7 +73,7 @@
         <span class="mt-1 block text-sm text-white/85">Free quotes and expert advice given without obligation.</span>
       </div>
       <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-        <a href="tel:07709776030" class="rounded-xl bg-orange px-6 py-4 text-center font-black text-white shadow-lg">Call Lenny: 07709 776030</a>
+        <a href="tel:07709776030" class="rounded-xl bg-orange px-6 py-4 text-center font-black text-white shadow-lg">Call Lenny: 07709 776030 / Freephone 0800 170 384</a>
         <a href="https://wa.me/447709776030" target="_blank" rel="noopener" class="rounded-xl bg-[#25D366] px-6 py-4 text-center font-black text-white shadow-lg">Chat on WhatsApp</a>
       </div>
       <div class="mt-8 grid gap-3 text-sm font-bold sm:grid-cols-3">
@@ -137,7 +137,7 @@
       <figure class="overflow-hidden rounded-2xl"><img src="assets/hedge-after.jpg" class="h-full w-full object-cover" alt="Neatly trimmed hedge after work"></figure>
       <figure class="overflow-hidden rounded-2xl"><img src="assets/tree-before.jpg" class="h-full w-full object-cover" alt="Tree before pruning"></figure>
       <figure class="overflow-hidden rounded-2xl"><img src="assets/tree-after.jpg" class="h-full w-full object-cover" alt="Tree after pruning"></figure>
-      <figure class="overflow-hidden rounded-2xl lg:col-span-2"><img src="assets/fleet.jpg" class="h-full w-full object-cover" alt="Wingate's Tree Service vehicles and equipment"></figure>
+      <figure class="overflow-hidden rounded-2xl"><img src="assets/fleet1.jpg" class="h-full w-full object-cover"></figure><figure class="overflow-hidden rounded-2xl"><img src="assets/fleet2.jpg" class="h-full w-full object-cover"></figure>
     </div>
   </div>
 </section>
@@ -149,7 +149,7 @@
       <h2 class="mt-3 text-4xl font-black sm:text-6xl">First-class work for homes, businesses and local authorities.</h2>
       <p class="mt-6 leading-8 text-white/80">For many years we have been providing specialist tree care and gardening services to the local area. With this experience, we have developed our skills so you are guaranteed a first-class job. From tree felling and removal to garden tidying, hedge trimming and crown reduction, our services are available to homeowners, businesses and local authorities.</p>
     </div>
-    <img src="assets/shaped-trees.jpg" class="h-[520px] rounded-3xl object-cover shadow-2xl reveal" alt="Professionally shaped trees">
+    <div class="reveal overflow-hidden rounded-3xl bg-white shadow-2xl"><img src="assets/shaped-trees.jpg" class="aspect-[4/3] h-full w-full object-cover object-center lg:aspect-[16/11]" alt="Professionally shaped trees"></div>
   </div>
 </section>
 
@@ -187,7 +187,7 @@
 <section class="bg-orange px-5 py-14 text-white lg:px-6">
   <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
     <div><p class="font-black uppercase tracking-[.18em]">Limited offer</p><h2 class="mt-2 text-3xl font-black sm:text-5xl">Call within 24 hours for 20% OFF.</h2><p class="mt-2 text-white/90">Free quotes and expert advice given without obligation.</p></div>
-    <a href="tel:07709776030" class="rounded-xl bg-white px-7 py-4 font-black text-orange">Call Lenny: 07709 776030</a>
+    <a href="tel:07709776030" class="rounded-xl bg-white px-7 py-4 font-black text-orange">Call Lenny: 07709 776030 / Freephone 0800 170 384</a>
   </div>
 </section>
 
@@ -198,7 +198,8 @@
       <h2 class="mt-3 text-4xl font-black sm:text-6xl">Tell us what you need.</h2>
       <p class="mt-5 leading-8 text-white/70">For tree work, hedge cutting, garden clearance or ongoing maintenance, contact Lenny directly.</p>
       <div class="mt-8 space-y-3 font-bold">
-        <a href="tel:07709776030" class="block">Phone: 07709 776030</a>
+        <a href="tel:07709776030" class="block">Mobile: 07709 776030</a>
+        <a href="tel:0800170384" class="block">Freephone: 0800 170 384</a>
         <a href="mailto:lennyboylowther19@icloud.com" class="block">Email: lennyboylowther19@icloud.com</a>
         <a href="https://wa.me/447709776030" target="_blank" class="block text-[#6BEA8C]">WhatsApp Lenny</a>
       </div>
@@ -225,7 +226,7 @@
     <div><h3 class="text-xl font-black">Wingate's Tree & Gardening Services</h3><p class="mt-3 text-sm leading-6 text-white/60">Tree surgery, gardening, hedge care and site clearance.</p></div>
     <div><h4 class="font-black text-orange">Tree Services</h4><p class="mt-3 text-sm leading-7 text-white/60">Felling<br>Pruning<br>Pollarding<br>Stump removal</p></div>
     <div><h4 class="font-black text-orange">Garden Services</h4><p class="mt-3 text-sm leading-7 text-white/60">Hedges<br>Shrubs<br>Maintenance<br>Clearance</p></div>
-    <div><h4 class="font-black text-orange">Contact</h4><p class="mt-3 text-sm leading-7 text-white/60">07709 776030<br>lennyboylowther19@icloud.com</p></div>
+    <div><h4 class="font-black text-orange">Contact</h4><p class="mt-3 text-sm leading-7 text-white/60">07709 776030 / Freephone 0800 170 384<br>lennyboylowther19@icloud.com</p></div>
   </div>
   <p class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-xs text-white/45">A 14-day cooling-off period applies to all work undertaken.</p>
 </footer>
