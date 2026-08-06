@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Wingate's Tree & Gardening Services provides trusted tree surgery, hedge cutting, garden maintenance, clearance and landscaping across Selby, Scunthorpe, Grimsby, Immingham, York and Driffield." />
+  <title>Wingate's Tree & Gardening Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#1B4332',
+            orange: '#F26522',
+            cream: '#F8F9FA',
+            slatex: '#1E293B'
+          },
+          boxShadow: {
+            premium: '0 20px 50px rgba(27,67,50,.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+    body{overflow-x:hidden}
+    .hero-bg{background-image:linear-gradient(90deg,rgba(8,35,25,.94),rgba(8,35,25,.68),rgba(8,35,25,.18)),url('assets/fleet.jpg');background-size:cover;background-position:center}
+    .reveal{opacity:0;transform:translateY(20px);transition:.7s ease}
+    .reveal.visible{opacity:1;transform:none}
+  </style>
+</head>
+<body class="bg-white text-slatex font-sans">
+
+<header class="sticky top-0 z-50 border-b border-emerald-900/10 bg-white/95 backdrop-blur">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="grid h-12 w-12 place-items-center rounded-xl bg-orange text-xl font-black text-white">W</div>
+      <div>
+        <strong class="block text-base leading-tight text-forest sm:text-lg">Wingate's Tree & Gardening</strong>
+        <span class="text-xs font-semibold uppercase tracking-[.18em] text-orange">Tree care • Gardens • Hedges</span>
+      </div>
+    </a>
+    <button id="menuBtn" class="rounded-lg border border-forest/20 p-2 lg:hidden" aria-label="Open menu">
+      <span class="block h-0.5 w-7 bg-forest"></span><span class="my-1.5 block h-0.5 w-7 bg-forest"></span><span class="block h-0.5 w-7 bg-forest"></span>
+    </button>
+    <nav id="menu" class="hidden items-center gap-6 text-sm font-bold lg:flex">
+      <a href="#services" class="hover:text-orange">Services</a>
+      <a href="#work" class="hover:text-orange">Our Work</a>
+      <a href="#areas" class="hover:text-orange">Areas</a>
+      <a href="#trust" class="hover:text-orange">Why Us</a>
+      <a href="#contact" class="hover:text-orange">Contact</a>
+      <a href="tel:07709776030" class="rounded-lg bg-orange px-4 py-3 text-white">Call Lenny</a>
+    </nav>
+  </div>
+  <nav id="mobileMenu" class="hidden border-t border-emerald-900/10 bg-white px-4 py-4 lg:hidden">
+    <div class="grid gap-3 font-bold text-forest">
+      <a href="#services">Services</a><a href="#work">Our Work</a><a href="#areas">Areas</a><a href="#trust">Why Us</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero-bg min-h-[720px] text-white">
+  <div class="mx-auto grid min-h-[720px] max-w-7xl items-center px-5 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-6">
+    <div class="reveal max-w-3xl">
+      <p class="mb-5 inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[.18em]">Local, friendly & experienced</p>
+      <h1 class="text-5xl font-black leading-[.95] sm:text-6xl lg:text-8xl">Local & Reliable <span class="text-orange">Tree & Gardening</span> Services</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-white/85">Professional tree surgery, hedge care, garden maintenance and outdoor clearance for homeowners, businesses and local authorities.</p>
+      <div class="mt-7 rounded-2xl border border-orange/40 bg-black/30 p-4">
+        <strong class="block text-xl text-orange">20% OFF when you call within 24 hours</strong>
+        <span class="mt-1 block text-sm text-white/85">Free quotes and expert advice given without obligation.</span>
+      </div>
+      <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+        <a href="tel:07709776030" class="rounded-xl bg-orange px-6 py-4 text-center font-black text-white shadow-lg">Call Lenny: 07709 776030</a>
+        <a href="https://wa.me/447709776030" target="_blank" rel="noopener" class="rounded-xl bg-[#25D366] px-6 py-4 text-center font-black text-white shadow-lg">Chat on WhatsApp</a>
+      </div>
+      <div class="mt-8 grid gap-3 text-sm font-bold sm:grid-cols-3">
+        <span>✓ Free Quotes</span><span>✓ Fully Insured</span><span>✓ 14-Day Cooling-off Period</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-forest py-5 text-white">
+  <div class="mx-auto grid max-w-7xl gap-3 px-5 text-center text-sm font-bold sm:grid-cols-3 lg:px-6">
+    <span>Tree Surgery & Emergency Care</span><span>Gardening, Hedges & Clearance</span><span>Domestic, Commercial & Local Authority Work</span>
+  </div>
+</section>
+
+<section id="services" class="bg-cream px-5 py-20 lg:px-6">
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-3xl text-center reveal">
+      <p class="text-sm font-black uppercase tracking-[.2em] text-orange">Complete outdoor services</p>
+      <h2 class="mt-3 text-4xl font-black text-forest sm:text-6xl">Tree care and gardening, handled by one trusted team.</h2>
+      <p class="mt-5 leading-8 text-slate-600">Wingate's provides specialist tree work alongside complete gardening, hedge and site-care services.</p>
+    </div>
+    <div class="mt-12 grid gap-8 lg:grid-cols-2">
+      <div class="rounded-3xl bg-forest p-7 text-white shadow-premium reveal">
+        <div class="mb-7 flex items-center gap-4">
+          <div class="grid h-14 w-14 place-items-center rounded-2xl bg-orange text-2xl">🌳</div>
+          <div><p class="text-xs font-black uppercase tracking-[.2em] text-orange">Tree services</p><h3 class="text-3xl font-black">Professional Tree Surgery</h3></div>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="rounded-2xl bg-white/10 p-5"><h4 class="font-black">Pruning, Lopping & Felling</h4><p class="mt-2 text-sm leading-6 text-white/75">Safe, controlled work for overgrown, damaged or unwanted trees.</p></article>
+          <article class="rounded-2xl bg-white/10 p-5"><h4 class="font-black">Topping & Pollarding</h4><p class="mt-2 text-sm leading-6 text-white/75">Professional height and canopy management.</p></article>
+          <article class="rounded-2xl bg-white/10 p-5"><h4 class="font-black">Stump Removal & Grinding</h4><p class="mt-2 text-sm leading-6 text-white/75">Clear unwanted stumps and reclaim usable space.</p></article>
+          <article class="rounded-2xl bg-white/10 p-5"><h4 class="font-black">Crown Reduction & Emergency Care</h4><p class="mt-2 text-sm leading-6 text-white/75">Expert reduction work and urgent help for unsafe trees.</p></article>
+        </div>
+      </div>
+      <div class="rounded-3xl bg-white p-7 shadow-premium reveal">
+        <div class="mb-7 flex items-center gap-4">
+          <div class="grid h-14 w-14 place-items-center rounded-2xl bg-orange text-2xl">🌿</div>
+          <div><p class="text-xs font-black uppercase tracking-[.2em] text-orange">Garden services</p><h3 class="text-3xl font-black text-forest">Complete Garden Care</h3></div>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="rounded-2xl bg-cream p-5"><h4 class="font-black text-forest">Hedges & Shrubs</h4><p class="mt-2 text-sm leading-6 text-slate-600">Trimmed, lowered, tidied, shaped or removed.</p></article>
+          <article class="rounded-2xl bg-cream p-5"><h4 class="font-black text-forest">Garden Maintenance & Clearance</h4><p class="mt-2 text-sm leading-6 text-slate-600">General upkeep, seasonal maintenance and overgrowth removal.</p></article>
+          <article class="rounded-2xl bg-cream p-5"><h4 class="font-black text-forest">Shrub Pruning & Shaping</h4><p class="mt-2 text-sm leading-6 text-slate-600">Neat, healthy and controlled shrubs and borders.</p></article>
+          <article class="rounded-2xl bg-cream p-5"><h4 class="font-black text-forest">Site & Garden Tidying</h4><p class="mt-2 text-sm leading-6 text-slate-600">Clear, presentable outdoor spaces for homes and businesses.</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="px-5 py-20 lg:px-6">
+  <div class="mx-auto max-w-7xl">
+    <div class="flex flex-col justify-between gap-5 lg:flex-row lg:items-end reveal">
+      <div class="max-w-3xl"><p class="text-sm font-black uppercase tracking-[.2em] text-orange">Recent work</p><h2 class="mt-3 text-4xl font-black text-forest sm:text-6xl">Real transformations from local jobs.</h2></div>
+      <a href="https://wa.me/447709776030" target="_blank" class="rounded-xl bg-forest px-6 py-4 text-center font-black text-white">Get a Free Quote</a>
+    </div>
+    <div class="mt-10 grid auto-rows-[260px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <figure class="overflow-hidden rounded-2xl lg:col-span-2 lg:row-span-2"><img src="assets/hedge-before-after.jpg" class="h-full w-full object-cover" alt="Before and after hedge trimming"></figure>
+      <figure class="overflow-hidden rounded-2xl"><img src="assets/hedge-before.jpg" class="h-full w-full object-cover" alt="Overgrown hedge before work"></figure>
+      <figure class="overflow-hidden rounded-2xl"><img src="assets/hedge-after.jpg" class="h-full w-full object-cover" alt="Neatly trimmed hedge after work"></figure>
+      <figure class="overflow-hidden rounded-2xl"><img src="assets/tree-before.jpg" class="h-full w-full object-cover" alt="Tree before pruning"></figure>
+      <figure class="overflow-hidden rounded-2xl"><img src="assets/tree-after.jpg" class="h-full w-full object-cover" alt="Tree after pruning"></figure>
+      <figure class="overflow-hidden rounded-2xl lg:col-span-2"><img src="assets/fleet.jpg" class="h-full w-full object-cover" alt="Wingate's Tree Service vehicles and equipment"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="bg-forest px-5 py-20 text-white lg:px-6">
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+    <div class="reveal">
+      <p class="text-sm font-black uppercase tracking-[.2em] text-orange">Experience you can trust</p>
+      <h2 class="mt-3 text-4xl font-black sm:text-6xl">First-class work for homes, businesses and local authorities.</h2>
+      <p class="mt-6 leading-8 text-white/80">For many years we have been providing specialist tree care and gardening services to the local area. With this experience, we have developed our skills so you are guaranteed a first-class job. From tree felling and removal to garden tidying, hedge trimming and crown reduction, our services are available to homeowners, businesses and local authorities.</p>
+    </div>
+    <img src="assets/shaped-trees.jpg" class="h-[520px] rounded-3xl object-cover shadow-2xl reveal" alt="Professionally shaped trees">
+  </div>
+</section>
+
+<section id="trust" class="bg-cream px-5 py-20 lg:px-6">
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-3xl text-center reveal">
+      <p class="text-sm font-black uppercase tracking-[.2em] text-orange">Why choose us</p>
+      <h2 class="mt-3 text-4xl font-black text-forest sm:text-6xl">Friendly advice. Honest quotes. Professional results.</h2>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="rounded-2xl bg-white p-6 shadow-premium"><div class="text-3xl">🤝</div><h3 class="mt-4 text-xl font-black text-forest">Local & Friendly Team</h3><p class="mt-3 text-sm leading-6 text-slate-600">Approachable service and clear communication from first call to completion.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-premium"><div class="text-3xl">🏡</div><h3 class="mt-4 text-xl font-black text-forest">All Customer Types</h3><p class="mt-3 text-sm leading-6 text-slate-600">Serving homeowners, businesses and local authorities.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-premium"><div class="text-3xl">💬</div><h3 class="mt-4 text-xl font-black text-forest">No-Obligation Advice</h3><p class="mt-3 text-sm leading-6 text-slate-600">Expert advice and free quotations without pressure.</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-premium"><div class="text-3xl">✓</div><h3 class="mt-4 text-xl font-black text-forest">14-Day Cooling-off</h3><p class="mt-3 text-sm leading-6 text-slate-600">A 14-day cooling-off period applies to all work undertaken.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="areas" class="px-5 py-20 lg:px-6">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+      <div class="reveal"><p class="text-sm font-black uppercase tracking-[.2em] text-orange">Areas covered</p><h2 class="mt-3 text-4xl font-black text-forest sm:text-6xl">Covering a wide local area.</h2><p class="mt-5 leading-8 text-slate-600">Call to check availability in your town or surrounding village.</p></div>
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 reveal">
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">Selby</span>
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">Scunthorpe</span>
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">Grimsby</span>
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">Immingham</span>
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">York</span>
+        <span class="rounded-2xl border border-forest/10 bg-cream p-5 text-center font-black text-forest">Driffield</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-orange px-5 py-14 text-white lg:px-6">
+  <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
+    <div><p class="font-black uppercase tracking-[.18em]">Limited offer</p><h2 class="mt-2 text-3xl font-black sm:text-5xl">Call within 24 hours for 20% OFF.</h2><p class="mt-2 text-white/90">Free quotes and expert advice given without obligation.</p></div>
+    <a href="tel:07709776030" class="rounded-xl bg-white px-7 py-4 font-black text-orange">Call Lenny: 07709 776030</a>
+  </div>
+</section>
+
+<section id="contact" class="bg-slatex px-5 py-20 text-white lg:px-6">
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
+    <div class="reveal">
+      <p class="text-sm font-black uppercase tracking-[.2em] text-orange">Get your free quote</p>
+      <h2 class="mt-3 text-4xl font-black sm:text-6xl">Tell us what you need.</h2>
+      <p class="mt-5 leading-8 text-white/70">For tree work, hedge cutting, garden clearance or ongoing maintenance, contact Lenny directly.</p>
+      <div class="mt-8 space-y-3 font-bold">
+        <a href="tel:07709776030" class="block">Phone: 07709 776030</a>
+        <a href="mailto:lennyboylowther19@icloud.com" class="block">Email: lennyboylowther19@icloud.com</a>
+        <a href="https://wa.me/447709776030" target="_blank" class="block text-[#6BEA8C]">WhatsApp Lenny</a>
+      </div>
+    </div>
+    <form onsubmit="sendQuote(event)" class="rounded-3xl bg-white p-6 text-slatex shadow-2xl reveal">
+      <div class="grid gap-4 sm:grid-cols-2">
+        <label class="text-sm font-bold">Name<input id="name" required class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:border-orange" /></label>
+        <label class="text-sm font-bold">Phone<input id="phone" required class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:border-orange" /></label>
+      </div>
+      <label class="mt-4 block text-sm font-bold">Service Required
+        <select id="service" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:border-orange">
+          <option>Tree Surgery</option><option>Hedge Trimming</option><option>Stump Removal</option><option>Garden Maintenance</option><option>Garden Clearance</option><option>Other</option>
+        </select>
+      </label>
+      <label class="mt-4 block text-sm font-bold">Message<textarea id="message" rows="5" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:border-orange"></textarea></label>
+      <button class="mt-5 w-full rounded-xl bg-orange px-6 py-4 font-black text-white">Send Quote Request on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#11251d] px-5 py-10 text-white lg:px-6">
+  <div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div><h3 class="text-xl font-black">Wingate's Tree & Gardening Services</h3><p class="mt-3 text-sm leading-6 text-white/60">Tree surgery, gardening, hedge care and site clearance.</p></div>
+    <div><h4 class="font-black text-orange">Tree Services</h4><p class="mt-3 text-sm leading-7 text-white/60">Felling<br>Pruning<br>Pollarding<br>Stump removal</p></div>
+    <div><h4 class="font-black text-orange">Garden Services</h4><p class="mt-3 text-sm leading-7 text-white/60">Hedges<br>Shrubs<br>Maintenance<br>Clearance</p></div>
+    <div><h4 class="font-black text-orange">Contact</h4><p class="mt-3 text-sm leading-7 text-white/60">07709 776030<br>lennyboylowther19@icloud.com</p></div>
+  </div>
+  <p class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-xs text-white/45">A 14-day cooling-off period applies to all work undertaken.</p>
+</footer>
+
+<div class="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 border-t border-white/10 lg:hidden">
+  <a href="tel:07709776030" class="bg-orange px-4 py-4 text-center text-sm font-black text-white">Call Lenny</a>
+  <a href="https://wa.me/447709776030" class="bg-[#25D366] px-4 py-4 text-center text-sm font-black text-white">WhatsApp</a>
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function sendQuote(event){
+    event.preventDefault();
+    const name = encodeURIComponent(document.getElementById('name').value);
+    const phone = encodeURIComponent(document.getElementById('phone').value);
+    const service = encodeURIComponent(document.getElementById('service').value);
+    const message = encodeURIComponent(document.getElementById('message').value);
+    const text = `Hi Lenny, I'd like a free quote.%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
+    window.open(`https://wa.me/447709776030?text=${text}`, '_blank');
+  }
+</script>
+</body>
+</html>
