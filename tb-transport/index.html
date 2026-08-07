@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TB Transport — Man with a Van | Weston-super-Mare</title>
+  <meta name="description" content="Reliable man with a van in Weston-super-Mare. House moves, furniture delivery, tip runs and long distance. Fully insured. Call 07534 978350 for a free quote. Guaranteed to beat any quote.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #2563eb;
+      --blue-bright: #3b82f6;
+      --blue-glow: rgba(37, 99, 235, 0.35);
+      --black: #050505;
+      --dark: #0c0c0e;
+      --card: #121216;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --border: rgba(255,255,255,0.07);
+      --green: #22c55e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--black);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(5,5,5,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between; height: 68px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em;
+    }
+    .logo img {
+      width: 46px; height: 46px; border-radius: 50%;
+      box-shadow: 0 0 0 2px rgba(37,99,235,0.4);
+    }
+    .logo span { color: var(--blue-bright); }
+    .header-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff; font-weight: 700; font-size: 0.9rem;
+      padding: 11px 18px; border-radius: 999px;
+      box-shadow: 0 4px 20px var(--blue-glow);
+    }
+
+    .hero {
+      position: relative; min-height: 520px;
+      display: flex; align-items: center; overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(105deg, rgba(5,5,5,0.98) 0%, rgba(5,5,5,0.92) 38%, rgba(5,5,5,0.25) 70%, rgba(5,5,5,0.5) 100%),
+        url('images/hero-cinematic.jpg') right center / cover no-repeat;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 20% 50%, rgba(37,99,235,0.12), transparent);
+    }
+    .hero-inner { position: relative; z-index: 2; padding: 64px 0 72px; max-width: 580px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(37,99,235,0.15);
+      border: 1px solid rgba(59,130,246,0.4);
+      color: #93c5fd; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 7px 14px; border-radius: 999px; margin-bottom: 20px;
+    }
+    .badge::before {
+      content: ''; width: 7px; height: 7px; background: var(--green);
+      border-radius: 50%; box-shadow: 0 0 8px var(--green);
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+      font-weight: 900; line-height: 1.08; letter-spacing: -0.035em; margin-bottom: 16px;
+    }
+    .hero h1 .line2 {
+      display: block;
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub { font-size: 1.08rem; color: #d4d4d8; margin-bottom: 28px; max-width: 460px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+    .btn-call {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff; font-weight: 700; font-size: 1rem;
+      padding: 15px 26px; border-radius: 12px;
+      box-shadow: 0 8px 28px var(--blue-glow);
+    }
+    .btn-wa {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--green); color: #fff; font-weight: 700; font-size: 1rem;
+      padding: 15px 26px; border-radius: 12px;
+      box-shadow: 0 8px 28px rgba(34,197,94,0.3);
+    }
+    .trust-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .trust-pills span {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+      font-size: 0.82rem; color: #d4d4d8; padding: 7px 12px; border-radius: 999px;
+    }
+    .trust-pills svg { width: 14px; height: 14px; color: var(--green); flex-shrink: 0; }
+    .hero-stamp {
+      position: absolute;
+      right: 5%;
+      bottom: 14%;
+      width: 140px;
+      height: 140px;
+      z-index: 3;
+      filter: drop-shadow(0 6px 20px rgba(0,0,0,0.55));
+      pointer-events: none;
+      object-fit: contain;
+    }
+    @media (max-width: 900px) {
+      .hero-stamp { display: none; }
+    }
+
+    .stats {
+      background: var(--dark); border-bottom: 1px solid var(--border); padding: 28px 0;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;
+    }
+    .stat strong { display: block; font-size: 1.2rem; font-weight: 800; color: var(--blue-bright); margin-bottom: 2px; }
+    .stat span { font-size: 0.82rem; color: var(--muted); }
+    @media (max-width: 700px) { .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+
+    section { padding: 72px 0; }
+    .section-label {
+      display: block; color: var(--blue-bright); font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(1.7rem, 4vw, 2.35rem); font-weight: 800;
+      letter-spacing: -0.025em; margin-bottom: 12px;
+    }
+    .section-sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 40px; max-width: 520px; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin-left: auto; margin-right: auto; }
+
+    .services { background: var(--dark); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    @media (max-width: 850px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card {
+      position: relative;
+      background: linear-gradient(160deg, #16161c 0%, #101014 100%);
+      border: 1px solid var(--border); border-radius: 16px; padding: 28px 22px;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .service-card:hover {
+      border-color: rgba(37,99,235,0.45); transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+    }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: rgba(37,99,235,0.12); border: 1px solid rgba(37,99,235,0.25);
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.5rem;
+    }
+    .service-card h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 8px; }
+    .service-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    @media (max-width: 800px) { .split { grid-template-columns: 1fr; gap: 28px; } }
+    .split-visual {
+      position: relative; border-radius: 18px; overflow: hidden;
+      border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    }
+    .split-visual img { width: 100%; height: auto; }
+    .split-visual .stamp {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 14px rgba(0,0,0,0.5));
+    }
+    .feature-list { list-style: none; margin: 24px 0 28px; }
+    .feature-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.98rem;
+    }
+    .feature-list li:last-child { border-bottom: none; }
+    .feature-list .check {
+      flex-shrink: 0; width: 22px; height: 22px;
+      background: rgba(34,197,94,0.15); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--green); margin-top: 1px;
+    }
+    .feature-list .check svg { width: 12px; height: 12px; }
+
+    .why { background: var(--dark); }
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    @media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px; display: flex; gap: 16px; align-items: flex-start;
+    }
+    .why-card .icon-box {
+      flex-shrink: 0; width: 48px; height: 48px;
+      background: linear-gradient(135deg, rgba(37,99,235,0.2), rgba(37,99,235,0.05));
+      border: 1px solid rgba(37,99,235,0.3); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
+    }
+    .why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+    .why-card p { font-size: 0.9rem; color: var(--muted); }
+
+    .review-card {
+      max-width: 680px; margin: 0 auto;
+      background: linear-gradient(160deg, #16161c, #0e0e12);
+      border: 1px solid var(--border); border-radius: 20px; padding: 36px 32px; position: relative;
+    }
+    .review-card::before {
+      content: '"'; position: absolute; top: 12px; left: 24px;
+      font-size: 5rem; font-weight: 900; color: rgba(37,99,235,0.15); line-height: 1;
+    }
+    .stars { color: #fbbf24; font-size: 1.15rem; letter-spacing: 3px; margin-bottom: 16px; }
+    .review-card blockquote {
+      font-size: 1.12rem; line-height: 1.65; color: #e4e4e7; margin-bottom: 20px; position: relative;
+    }
+    .review-card .author { font-weight: 700; font-size: 0.95rem; }
+    .review-card .role { font-size: 0.85rem; color: var(--muted); }
+
+    .area-box {
+      background:
+        linear-gradient(135deg, rgba(30,58,138,0.92), rgba(23,37,84,0.95)),
+        url('images/hero-cinematic.jpg') center/cover;
+      border-radius: 20px; padding: 48px 36px; text-align: center;
+      border: 1px solid rgba(59,130,246,0.25);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .area-box h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; margin-bottom: 10px; }
+    .area-box p { color: #bfdbfe; margin-bottom: 26px; font-size: 1.05rem; }
+
+    .cta-band {
+      background: var(--dark); border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border); padding: 64px 0; text-align: center;
+    }
+    .cta-band h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .cta-band p { color: var(--muted); margin-bottom: 12px; }
+    .phone-big {
+      font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 800; color: var(--blue-bright);
+      margin-bottom: 24px; display: inline-block; letter-spacing: -0.02em;
+    }
+
+    footer { padding: 36px 0; text-align: center; font-size: 0.85rem; color: var(--muted); }
+    footer a { color: #93c5fd; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin-bottom: 14px; }
+
+    .wa-float {
+      position: fixed; bottom: 22px; right: 22px; width: 58px; height: 58px;
+      background: var(--green); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(34,197,94,0.45); z-index: 99;
+    }
+    .wa-float svg { width: 30px; height: 30px; fill: #fff; }
+
+    @media (max-width: 768px) {
+      .hero { min-height: auto; }
+      .hero-bg {
+        background:
+          linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.92) 70%, rgba(5,5,5,0.98) 100%),
+          url('images/hero-cinematic.jpg') 70% center/cover no-repeat;
+      }
+      .hero-inner { padding: 36px 0 44px; max-width: 100%; }
+      .hero h1 { font-size: 1.9rem; }
+      .hero-sub { font-size: 0.98rem; margin-bottom: 22px; }
+      .cta-row { flex-direction: column; gap: 10px; margin-bottom: 20px; }
+      .btn-call, .btn-wa {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.98rem;
+      }
+      .trust-pills { gap: 8px; }
+      .trust-pills span { font-size: 0.75rem; padding: 6px 10px; }
+      section { padding: 44px 0; }
+      .section-title { font-size: 1.55rem; }
+      .section-sub { font-size: 0.95rem; margin-bottom: 28px; }
+      .header-inner { height: 58px; }
+      .logo { font-size: 1.05rem; gap: 8px; }
+      .logo img { width: 38px; height: 38px; }
+      .header-cta { padding: 9px 14px; font-size: 0.82rem; }
+      .header-cta .hide-m { display: none; }
+      .stats { padding: 20px 0; }
+      .stat strong { font-size: 1rem; }
+      .service-card { padding: 22px 18px; }
+      .split-visual .stamp { width: 80px; height: 80px; }
+      .review-card { padding: 24px 18px; }
+      .review-card blockquote { font-size: 1rem; }
+      .area-box { padding: 32px 18px; }
+      .phone-big { font-size: 1.4rem; }
+      .wa-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+      .wa-float svg { width: 26px; height: 26px; }
+      .container { padding: 0 16px; }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 { font-size: 1.7rem; }
+      .trust-pills span:last-child { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="TB Transport" width="46" height="46">
+        TB <span>Transport</span>
+      </a>
+      <a href="tel:07534978350" class="header-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        <span class="hide-m">07534 978350</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <img src="images/stamp.png" alt="Guaranteed to beat any quote" class="hero-stamp">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="badge">Weston-super-Mare · Local & Nationwide</div>
+        <h1>Man with a Van.<span class="line2">Reliable. Affordable. Professional.</span></h1>
+        <p class="hero-sub">House moves, furniture deliveries, tip runs and long distance jobs. Fully insured. Guaranteed to beat any quote.</p>
+        <div class="cta-row">
+          <a href="tel:07534978350" class="btn-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+            Call 07534 978350
+          </a>
+          <a href="https://wa.me/447534978350?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20move" class="btn-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Quote
+          </a>
+        </div>
+        <div class="trust-pills">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Fully insured</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Free quotes</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Fast response</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat"><strong>Fully insured</strong><span>Goods in transit cover</span></div>
+        <div class="stat"><strong>Beat any quote</strong><span>Price match guaranteed</span></div>
+        <div class="stat"><strong>Local & long distance</strong><span>Nationwide coverage</span></div>
+        <div class="stat"><strong>Same-day response</strong><span>Fast, clear quotes</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">What we do</span>
+        <h2 class="section-title">Everything you need moved</h2>
+        <p class="section-sub">From a single item to a full house move — local or long distance.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🏠</div><h3>House & Flat Moves</h3><p>Full house or flat moves handled carefully from start to finish.</p></div>
+        <div class="service-card"><div class="service-icon">🛋️</div><h3>Furniture Collection & Delivery</h3><p>Sofas, beds, tables — collected and delivered safe and sound.</p></div>
+        <div class="service-card"><div class="service-icon">📦</div><h3>Single Items or Full Loads</h3><p>One piece or a full van — same reliable service either way.</p></div>
+        <div class="service-card"><div class="service-icon">♻️</div><h3>Tip Runs & Waste Removal</h3><p>Clear outs, tip runs and waste removal done properly.</p></div>
+        <div class="service-card"><div class="service-icon">📍</div><h3>Local & Long Distance</h3><p>Weston-super-Mare and surrounding areas — plus nationwide jobs.</p></div>
+        <div class="service-card"><div class="service-icon">🛒</div><h3>Marketplace & IKEA Pickups</h3><p>Facebook Marketplace, IKEA and other seller collections sorted.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="split">
+        <div class="split-visual">
+          <img src="images/flyer-card.jpg" alt="TB Transport man with a van">
+          <img src="images/stamp.png" alt="Beat any quote" class="stamp">
+        </div>
+        <div>
+          <span class="section-label">Why choose us</span>
+          <h2 class="section-title">Care taken with every load</h2>
+          <p class="section-sub" style="margin-bottom:0;">On time, respectful of your belongings, competitively priced.</p>
+          <ul class="feature-list">
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Fully insured</strong> — goods in transit covered</span></li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Guaranteed to beat any quote</strong></span></li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>On time, every time</strong></span></li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Fast response</strong> — clear price, no obligation</span></li>
+          </ul>
+          <div class="cta-row">
+            <a href="tel:07534978350" class="btn-call">Get a free quote</a>
+            <a href="https://wa.me/447534978350?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20move" class="btn-wa" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">The TB difference</span>
+        <h2 class="section-title">Built around reliability</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="icon-box">🛡️</div><div><h3>Fully insured goods in transit</h3><p>Your belongings are covered while they’re with us.</p></div></div>
+        <div class="why-card"><div class="icon-box">💰</div><div><h3>Guaranteed to beat any quote</h3><p>Found it cheaper elsewhere? We’ll beat it.</p></div></div>
+        <div class="why-card"><div class="icon-box">⚡</div><div><h3>Fast response</h3><p>Message or call — quick reply with a clear price.</p></div></div>
+        <div class="why-card"><div class="icon-box">👍</div><div><h3>Care & respect for your items</h3><p>We treat every load like it’s our own.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What customers say</h2>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>This young man is amazing. He was on time. Polite. Helpful and did an amazing job of helping me move. I would highly recommend his service to anyone who needs a reliable service.</blockquote>
+        <div class="author">Happy customer</div>
+        <div class="role">5 star review</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <div class="area-box">
+        <h2>Based in Weston-super-Mare</h2>
+        <p>Covering local jobs across Somerset and surrounding areas — plus long distance moves nationwide.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a href="tel:07534978350" class="btn-call">Call for a free quote</a>
+          <a href="https://wa.me/447534978350?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20move" class="btn-wa" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Need a man with a van?</h2>
+      <p>Free, no-obligation quotes. Message or call today.</p>
+      <a href="tel:07534978350" class="phone-big">07534 978350</a>
+      <div class="cta-row" style="justify-content:center;">
+        <a href="tel:07534978350" class="btn-call">Call now</a>
+        <a href="https://wa.me/447534978350?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20move" class="btn-wa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="tel:07534978350">07534 978350</a>
+        <a href="mailto:tbtransportuk@gmail.com">tbtransportuk@gmail.com</a>
+        <a href="https://www.facebook.com/TBTransportuk" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <p>© 2026 TB Transport · Man with a Van · Weston-super-Mare</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/447534978350?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20move" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</body>
+</html>
