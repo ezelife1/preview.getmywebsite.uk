@@ -63,3 +63,57 @@
   .service-card,.service-card.wide,.service-card.roof-card{min-height:500px}
   .project,.project-a,.project-b,.project-c,.project-d{height:540px}
 }
+
+/* Brand mark fix — stable on iOS/Messenger/Safari */
+.brand{
+  flex:0 0 auto;
+  min-width:280px;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  white-space:nowrap;
+}
+.brand-leaf{
+  flex:0 0 30px;
+  width:30px;
+  height:44px;
+  display:block;
+  background:var(--green2);
+  color:transparent;
+  font-size:0;
+  line-height:0;
+  transform:none;
+  clip-path:polygon(0 0,100% 50%,0 100%,18% 50%);
+}
+.brand>span:last-child{display:block;min-width:0}
+.brand strong{
+  display:block;
+  font:800 27px/1 'Manrope',Arial,sans-serif;
+  letter-spacing:-1.2px;
+  color:#fff;
+}
+.brand small{
+  display:block;
+  margin-top:5px;
+  font:800 7.5px/1.15 'DM Sans',Arial,sans-serif;
+  letter-spacing:1.45px;
+  color:var(--green2);
+}
+.footer-brand strong{color:#fff}
+
+@media(max-width:700px){
+  .site-header{height:78px;padding:0 18px}
+  .brand{min-width:0;max-width:235px;gap:10px}
+  .brand-leaf{flex-basis:26px;width:26px;height:38px}
+  .brand strong{font-size:23px;letter-spacing:-.9px}
+  .brand small{font-size:6.2px;letter-spacing:1px;margin-top:4px}
+  .footer-brand{display:inline-flex;max-width:260px;gap:10px}
+  .footer-brand .brand-leaf{flex-basis:24px;width:24px;height:36px}
+  .footer-brand strong{font-size:22px}
+  .footer-brand small{font-size:6px}
+}
+@media(max-width:390px){
+  .brand{max-width:210px}
+  .brand strong{font-size:21px}
+  .brand small{font-size:5.7px;letter-spacing:.8px}
+}
