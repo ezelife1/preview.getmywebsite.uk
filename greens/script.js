@@ -23,3 +23,12 @@
   window.addEventListener('resize', () => { const r=compare.getBoundingClientRect(); const img=before.querySelector('img'); if(img) img.style.width=r.width+'px'; });
   const r=compare.getBoundingClientRect(); const img=before.querySelector('img'); if(img) img.style.width=r.width+'px';
 })();
+
+// Keep the header visible without turning the top of the hero into a solid block.
+(() => {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+  const syncHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 28);
+  syncHeader();
+  window.addEventListener('scroll', syncHeader, { passive: true });
+})();
