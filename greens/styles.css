@@ -164,10 +164,10 @@
   .mobile-contact b{font-size:10.8px}
 }
 
-/* Mobile hero: use a driveway-led image so the phone view isn't dominated by house windows */
+/* Mobile hero: finished garden project */
 @media (max-width:700px){
   .hero-photo{
-    background-image:url('assets/resin-drive.webp');
+    background-image:url('assets/garden-after.webp');
     background-position:center center;
     background-size:cover;
   }
