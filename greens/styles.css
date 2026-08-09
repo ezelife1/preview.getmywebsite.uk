@@ -144,7 +144,6 @@
   .brand-leaf{flex-basis:24px;width:24px;height:35px}
   .brand strong{font-size:22px}
   .brand small{font-size:5.9px;letter-spacing:.9px;margin-top:3px}
-  .hero{padding-top:104px}
   .mobile-contact{
     height:58px;
     min-height:58px;
@@ -160,8 +159,16 @@
   .brand-leaf{flex-basis:22px;width:22px;height:32px}
   .brand strong{font-size:20px}
   .brand small{font-size:5.4px;letter-spacing:.72px}
-  .hero{padding-top:98px}
   .mobile-contact{height:56px;min-height:56px}
   .mobile-contact a{min-height:56px}
   .mobile-contact b{font-size:10.8px}
+}
+
+/* Mobile hero: use a driveway-led image so the phone view isn't dominated by house windows */
+@media (max-width:700px){
+  .hero-photo{
+    background-image:url('assets/resin-drive.webp');
+    background-position:center center;
+    background-size:cover;
+  }
 }
