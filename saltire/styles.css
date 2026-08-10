@@ -30,3 +30,31 @@ footer{background:#04142f;color:#fff;padding:45px 6% 95px;display:grid;grid-temp
   background-repeat:no-repeat;
 }
 .service-overlay{background:linear-gradient(180deg,rgba(5,18,44,.03),rgba(4,22,53,.78))}
+
+/* FIX: Driveway card — remove erroneous nested website screenshot */
+.service-card:nth-child(5){
+  --bg:
+    radial-gradient(circle at 20% 25%, rgba(255,255,255,.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,.10) 0 2px, transparent 3px),
+    linear-gradient(135deg,#48596e 0%,#243c59 42%,#102947 100%);
+  background-image:
+    linear-gradient(180deg,rgba(5,18,44,.04),rgba(4,22,53,.88)),
+    var(--bg) !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+
+/* Keep service cards properly proportioned on phones */
+@media (max-width: 760px){
+  .service-card{
+    min-height: 300px !important;
+    aspect-ratio: auto !important;
+  }
+  .service-card .service-content{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:28px 26px !important;
+  }
+}
