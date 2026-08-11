@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" role="img" aria-labelledby="t d">
+<title id="t">Nathan Curnow Painting &amp; Decorating</title>
+<desc id="d">Dark branded wordmark inspired by the business van sign.</desc>
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#ff8a18"/>
+    <stop offset=".52" stop-color="#ffd067"/>
+    <stop offset="1" stop-color="#ff7a00"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g transform="translate(18 20)">
+  <path d="M3 101C46 65 71 56 112 60c34 3 54 20 80 24 25 4 54-5 93-30 35-23 74-25 111-10" fill="none" stroke="#f26f21" stroke-width="5" stroke-linecap="round" opacity=".8" filter="url(#glow)"/>
+  <path d="M14 128C82 106 144 116 196 132c65 20 139 15 197-11" fill="none" stroke="#ff9a31" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+  <text x="0" y="78" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900" letter-spacing="2" fill="#f5f7fb">NATHAN <tspan fill="url(#g)">CURNOW</tspan></text>
+  <text x="10" y="140" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="800" letter-spacing="1.5" fill="#f5f7fb">Painting &amp; Decorating</text>
+  <circle cx="490" cy="76" r="7" fill="#ff8a18"/><circle cx="514" cy="61" r="4" fill="#ff8a18"/><circle cx="527" cy="88" r="3" fill="#ff8a18"/>
+</g>
+</svg>
