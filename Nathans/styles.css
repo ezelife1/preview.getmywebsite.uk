@@ -50,7 +50,7 @@
 .hero-bg{
   position:absolute;
   inset:0;
-  background-image:url("assets/hero-real-final.jpg");
+  background-image:url("assets/green-room-new.jpg");
   background-size:cover;
   background-position:66% 42%;
   z-index:0;
@@ -714,3 +714,206 @@ footer img{
     font-size:43px !important;
   }
 }
+
+
+/* ===== CONTACT DETAILS ===== */
+.contact-details{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:18px;
+}
+.contact-details a{
+  color:#061b42;
+  font-weight:800;
+  word-break:break-word;
+}
+.contact-details .contact-wa{
+  color:#128c4a;
+}
+
+/* ===== FLOATING CALL + WHATSAPP ===== */
+.floating-contact{
+  position:fixed;
+  right:18px;
+  bottom:22px;
+  z-index:1450;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.floating-contact a{
+  min-width:118px;
+  height:48px;
+  padding:0 14px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-weight:900;
+  box-shadow:0 10px 28px rgba(0,0,0,.22);
+}
+.float-call{
+  background:#061b42;
+  color:#fff;
+}
+.float-wa{
+  background:#25D366;
+  color:#061b42;
+}
+.floating-contact span{
+  font-size:17px;
+}
+.floating-contact b{
+  font-size:13px;
+}
+
+/* Mobile: compact floating icons sit above the persistent bottom bar */
+@media(max-width:700px){
+  .floating-contact{
+    right:12px;
+    bottom:78px;
+    gap:8px;
+  }
+  .floating-contact a{
+    min-width:48px;
+    width:48px;
+    height:48px;
+    padding:0;
+    border-radius:50%;
+  }
+  .floating-contact b{
+    display:none;
+  }
+}
+
+
+/* ===== NEW REAL PROJECT GALLERY ===== */
+.project-gallery{
+  max-width:1420px;
+  margin:42px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.project-card,
+.compare-new{
+  position:relative;
+  margin:0;
+  min-width:0;
+  height:370px;
+  overflow:hidden;
+  border-radius:16px;
+  background:#071b43;
+}
+.project-card.project-wide,
+.compare-new.project-wide{
+  grid-column:span 2;
+}
+.project-card > img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.project-card figcaption,
+.compare-new figcaption{
+  position:absolute;
+  left:14px;
+  bottom:14px;
+  z-index:5;
+  margin:0;
+  padding:11px 15px;
+  border-radius:8px;
+  background:rgba(6,27,66,.92);
+  color:#fff;
+  font-weight:800;
+  line-height:1.2;
+}
+.compare-new{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3px;
+}
+.compare-new-panel{
+  position:relative;
+  min-width:0;
+  overflow:hidden;
+  background:#fff;
+}
+.compare-new-panel img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.compare-new-panel span{
+  position:absolute;
+  top:12px;
+  left:12px;
+  padding:7px 10px;
+  border-radius:6px;
+  background:rgba(12,20,35,.88);
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.06em;
+}
+.compare-new-panel span.after{
+  left:auto;
+  right:12px;
+  background:#ffb813;
+  color:#061b42;
+}
+
+@media(max-width:1050px){
+  .project-gallery{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .project-card.project-wide,
+  .compare-new.project-wide{
+    grid-column:span 2;
+  }
+}
+@media(max-width:700px){
+  .project-gallery{
+    grid-template-columns:1fr;
+    gap:13px;
+    margin-top:28px;
+  }
+  .project-card,
+  .compare-new{
+    height:300px;
+    border-radius:12px;
+  }
+  .project-card.project-wide,
+  .compare-new.project-wide{
+    grid-column:auto;
+  }
+  .compare-new{
+    height:270px;
+  }
+  .compare-new-panel span{
+    top:9px;
+    left:9px;
+    font-size:10px;
+    padding:6px 8px;
+  }
+  .compare-new-panel span.after{
+    right:9px;
+  }
+  .project-card figcaption,
+  .compare-new figcaption{
+    left:10px;
+    bottom:10px;
+    padding:9px 12px;
+    font-size:14px;
+  }
+}
+
+/* Hero corrected: use new green-room project photo */
+.hero-bg{background-image:url("assets/kitchen-wide-new.jpg") !important;background-position:50% 52% !important;}
+@media(max-width:700px){.hero-bg{background-position:50% 50% !important;}}
