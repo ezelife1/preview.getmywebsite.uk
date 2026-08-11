@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220">
+<rect width="760" height="220" fill="none"/>
+<g transform="translate(8 14)">
+  <circle cx="92" cy="92" r="76" fill="#d9b99b"/>
+  <path d="M43 86 92 42l49 44v58H43z" fill="#273247"/>
+  <path d="M56 78h72v66H56z" fill="#273247"/>
+  <rect x="72" y="102" width="28" height="42" rx="2" fill="#d9b99b"/>
+  <path d="M121 112h33c9 0 16 7 16 16v5h-10v-5c0-3-3-6-6-6h-33z" fill="#273247"/>
+  <rect x="145" y="122" width="35" height="10" rx="5" fill="#273247"/>
+  <rect x="168" y="128" width="8" height="31" rx="4" fill="#273247"/>
+</g>
+<text x="205" y="93" font-family="Georgia,serif" font-size="66" fill="#273247" font-weight="700">Nathan Dean</text>
+<text x="209" y="145" font-family="Arial,sans-serif" font-size="28" fill="#5b6374" letter-spacing="7" font-weight="700">PAINTING &amp; DECORATING</text>
+</svg>
