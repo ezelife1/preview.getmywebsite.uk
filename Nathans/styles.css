@@ -647,3 +647,70 @@ footer img{
     max-height:64px !important;
   }
 }
+
+
+/* ===== MOBILE HERO — tightened, no huge dead gap ===== */
+@media(max-width:700px){
+  .hero{
+    min-height:640px !important;
+    height:auto !important;
+    align-items:flex-end !important;
+  }
+
+  .hero-bg{
+    background-position:57% 24% !important;
+  }
+
+  .hero-copy{
+    width:100% !important;
+    padding:185px 20px 96px !important;
+    margin:0 !important;
+  }
+
+  .hero .eyebrow{
+    margin-bottom:10px !important;
+    font-size:11px !important;
+    line-height:1.35 !important;
+  }
+
+  .hero .accent-line{
+    margin-bottom:17px !important;
+  }
+
+  .hero h1{
+    font-size:47px !important;
+    line-height:.94 !important;
+    margin-bottom:17px !important;
+  }
+
+  .hero-text{
+    font-size:15px !important;
+    line-height:1.5 !important;
+    margin-bottom:0 !important;
+  }
+
+  .hero-actions{
+    margin-top:20px !important;
+  }
+
+  /* fixed bottom CTA already provides the action buttons on mobile */
+  .hero-actions{
+    display:none !important;
+  }
+
+  .trust-row{
+    display:none !important;
+  }
+}
+
+@media(max-width:390px){
+  .hero{
+    min-height:610px !important;
+  }
+  .hero-copy{
+    padding:165px 18px 92px !important;
+  }
+  .hero h1{
+    font-size:43px !important;
+  }
+}
