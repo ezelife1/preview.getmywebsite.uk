@@ -1,0 +1,2 @@
+document.querySelectorAll('.compare').forEach((c)=>{const input=c.querySelector('input'),before=c.querySelector('.before-wrap'),divider=c.querySelector('.divider');const update=()=>{const v=input.value;before.style.width=v+'%';divider.style.left=v+'%'};input.addEventListener('input',update);update();});
+const fc=document.getElementById('floatingContact'),hero=document.querySelector('.hero');const io=new IntersectionObserver(([entry])=>{fc.classList.toggle('show',!entry.isIntersecting)},{threshold:.08});io.observe(hero);
