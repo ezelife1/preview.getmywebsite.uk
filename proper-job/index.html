@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proper Job Property Maintenance | Plymouth, Devon & Cornwall</title>
+<meta name="description" content="Proper Job Property Maintenance provides general repairs, painting, decorating, landscaping, groundworks and property upkeep across Plymouth, Devon and Cornwall. Free quotes.">
+<meta name="theme-color" content="#071b38">
+<style>
+:root{
+  --navy:#071b38; --navy2:#0b2d59; --gold:#ffc928; --cream:#f8f6f0;
+  --ink:#132238; --muted:#667085; --white:#fff; --green:#25D366;
+  --shadow:0 14px 34px rgba(4,20,42,.14);
+}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,calc(100% - 32px));margin:auto}
+.header{position:sticky;top:0;z-index:50;background:rgba(7,27,56,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,201,40,.32)}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{width:78px;height:68px;object-fit:contain}
+.brand-copy{color:#fff;font-weight:800;line-height:1.08;font-size:18px}
+.brand-copy small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.5px;margin-top:5px}
+.nav{display:flex;align-items:center;gap:22px;color:#fff;font-size:14px;font-weight:700}
+.nav a:hover{color:var(--gold)}
+.top-actions{display:flex;gap:9px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:14px 18px;font-weight:800;border:2px solid transparent;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-outline{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-wa{background:var(--green);color:#fff}
+.hero{position:relative;min-height:680px;background:linear-gradient(90deg,rgba(7,27,56,.96) 0%,rgba(7,27,56,.88) 45%,rgba(7,27,56,.23) 72%,rgba(7,27,56,.05) 100%),url("assets/job-4.jpg") center/cover no-repeat;color:#fff;display:flex;align-items:center}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:6px;background:linear-gradient(90deg,var(--gold),#fff3a5,var(--gold))}
+.hero-content{position:relative;z-index:2;max-width:650px;padding:72px 0 78px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,201,40,.12);border:1px solid rgba(255,201,40,.55);color:#ffe27a;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:.5px}
+.hero h1{font-size:clamp(42px,6vw,76px);line-height:.97;margin:18px 0 18px;letter-spacing:-2px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:20px;line-height:1.55;max-width:600px;color:#edf3fa;margin:0 0 26px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.trust{display:flex;flex-wrap:wrap;gap:10px}
+.trust span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.17);padding:10px 12px;border-radius:10px;font-weight:700;font-size:13px}
+.section{padding:82px 0}
+.section.alt{background:var(--cream)}
+.section.dark{background:var(--navy);color:#fff}
+.head{text-align:center;max-width:760px;margin:0 auto 40px}
+.head .kicker{color:#c49400;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;font-size:13px}
+.head h2{font-size:clamp(31px,4vw,48px);margin:8px 0 12px;color:var(--navy);letter-spacing:-1px}
+.dark .head h2{color:#fff}
+.head p{color:var(--muted);font-size:17px;line-height:1.6;margin:0}
+.dark .head p{color:#c8d2df}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e5e9ef;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(4,20,42,.06);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:var(--gold)}
+.icon{width:52px;height:52px;border-radius:14px;background:#fff5c7;color:var(--navy);display:grid;place-items:center;font-size:26px;margin-bottom:16px}
+.card h3{margin:0 0 9px;font-size:19px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
+.showcase{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.showcase-media{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.showcase-media img{width:100%;height:330px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}
+.showcase-copy h2{font-size:42px;line-height:1.06;color:var(--navy);margin:0 0 18px}
+.showcase-copy p{color:var(--muted);line-height:1.7;font-size:17px}
+.ticks{display:grid;gap:11px;margin:22px 0}
+.tick{display:flex;gap:10px;align-items:flex-start;font-weight:700}
+.tick b{color:#b08100}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:225px;gap:12px}
+.gallery figure{margin:0;overflow:hidden;border-radius:16px;position:relative;background:#ddd}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.gallery figure:hover img{transform:scale(1.035)}
+.gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.gallery figure:nth-child(2){grid-column:span 5}
+.gallery figure:nth-child(3){grid-column:span 5}
+.gallery figure:nth-child(4),.gallery figure:nth-child(5),.gallery figure:nth-child(6){grid-column:span 4}
+.flyer-wrap{background:#06162d;padding:20px;border-radius:20px;box-shadow:var(--shadow);max-width:950px;margin:auto}
+.flyer-wrap img{width:100%;border-radius:12px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.why .item{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);border-radius:16px;padding:22px}
+.why h3{margin:10px 0 8px;color:var(--gold)}
+.why p{margin:0;color:#c8d2df;line-height:1.5}
+.area{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.area span{background:#fff;border:1px solid #e1e7ef;border-radius:999px;padding:11px 16px;font-weight:800;color:var(--navy)}
+.quote{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:stretch}
+.quote-copy{background:var(--navy);color:#fff;border-radius:20px;padding:36px}
+.quote-copy h2{font-size:38px;margin:0 0 14px}
+.quote-copy p{color:#cad3df;line-height:1.6}
+.form{background:#fff;border:1px solid #e5e9ef;border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px}
+input,select,textarea{width:100%;border:1px solid #cfd7e2;border-radius:10px;padding:13px 14px;font:inherit;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.full{grid-column:1/-1}
+.form button{width:100%;border:0;cursor:pointer;margin-top:8px}
+.footer{background:#041326;color:#dce5ef;padding:46px 0 96px}
+.footer-inner{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.footer-logo{display:flex;gap:14px;align-items:center}
+.footer-logo img{width:96px}
+.footer strong{color:#fff}
+.footer a{color:#fff}
+.footer p{line-height:1.6;color:#aebbd0}
+.mobile-float{display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;gap:8px;transform:translateY(120%);transition:.25s}
+.mobile-float.show{transform:translateY(0)}
+.mobile-float a{flex:1;padding:12px 10px;border-radius:12px;text-align:center;font-weight:900;box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.mobile-float .call{background:var(--gold);color:var(--navy)}
+.mobile-float .wa{background:var(--green);color:#fff}
+@media(max-width:920px){
+  .nav{display:none}.services{grid-template-columns:1fr 1fr}.showcase{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}.quote{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .container{width:min(100% - 24px,1160px)}
+  .header-inner{height:72px}.brand img{width:62px;height:56px}.brand-copy{font-size:14px}.brand-copy small{font-size:9px}
+  .top-actions .btn{padding:10px 11px;font-size:12px}.top-actions .btn-outline{display:none}
+  .hero{min-height:650px;background:linear-gradient(180deg,rgba(7,27,56,.60) 0%,rgba(7,27,56,.86) 55%,rgba(7,27,56,.98) 100%),url("assets/job-4.jpg") 58% center/cover no-repeat;align-items:flex-end}
+  .hero-content{padding:120px 0 54px}.hero h1{font-size:44px;letter-spacing:-1px}.hero p{font-size:17px}.hero-actions .btn{flex:1;min-width:145px}
+  .trust{display:grid;grid-template-columns:1fr 1fr;width:100%}.trust span{text-align:center}
+  .section{padding:58px 0}.services{grid-template-columns:1fr}.showcase-media{grid-template-columns:1fr 1fr}.showcase-media img{height:225px}
+  .showcase-copy h2{font-size:34px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+  .gallery figure,.gallery figure:nth-child(n){grid-column:span 1;grid-row:span 1}.gallery figure:nth-child(1){grid-column:1/-1}
+  .why{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.full{grid-column:auto}.footer-inner{grid-template-columns:1fr}
+  .mobile-float{display:flex}
+  .footer{padding-bottom:88px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <img src="assets/proper-job-logo.png" alt="Proper Job Property Maintenance logo">
+      <div class="brand-copy">Proper Job<br>Property Maintenance<small>YOUR PROPERTY, OUR PRIORITY</small></div>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a><a href="#work">Our Work</a><a href="#areas">Areas</a><a href="#quote">Free Quote</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-outline" href="tel:07342651499">Call</a>
+      <a class="btn btn-gold" href="https://wa.me/447342651499?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">PLYMOUTH • DEVON • CORNWALL</div>
+      <h1>Proper work.<br><span>Proper Job.</span></h1>
+      <p>Reliable property maintenance, painting, decorating, landscaping and groundworks for homeowners, landlords and letting agents.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="tel:07342651499">☎ Call 07342 651499</a>
+        <a class="btn btn-wa" href="https://wa.me/447342651499?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp for a Quote</a>
+      </div>
+      <div class="trust">
+        <span>✓ Free Quotes</span><span>✓ No Job Too Small</span><span>✓ Friendly Advice</span><span>✓ Flexible Service</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="head"><div class="kicker">What We Do</div><h2>One reliable contact for your property</h2><p>From everyday repairs to exterior improvements and garden groundworks, Proper Job keeps homes and rental properties tidy, functional and well maintained.</p></div>
+    <div class="services">
+      <div class="card"><div class="icon">🔧</div><h3>General Repairs & Odd Jobs</h3><p>Practical property repairs, upkeep and smaller maintenance jobs around the home.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Painting & Decorating</h3><p>Interior decorating and exterior house painting with careful preparation and a tidy finish.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Landscaping</h3><p>Garden improvements, tidy-ups and practical outdoor upgrades that make spaces easier to use.</p></div>
+      <div class="card"><div class="icon">🏗️</div><h3>Groundworks</h3><p>Ground preparation, concrete and foundations, small groundwork projects and durable outdoor work.</p></div>
+      <div class="card"><div class="icon">🧱</div><h3>Brickwork & Edging</h3><p>Low walls, borders, edging and repairs as part of garden and property improvement projects.</p></div>
+      <div class="card"><div class="icon">🚿</div><h3>Minor Plumbing & Upkeep</h3><p>Small plumbing maintenance and general property upkeep jobs where appropriate.</p></div>
+      <div class="card"><div class="icon">🏠</div><h3>Landlord Maintenance</h3><p>Ongoing and one-off jobs for landlords and letting agents who need a dependable local contact.</p></div>
+      <div class="card"><div class="icon">📋</div><h3>One-Off & Ongoing Work</h3><p>Flexible help for homeowners, rental properties and regular maintenance requirements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container showcase">
+    <div class="showcase-media">
+      <div style="position:relative">
+        <span style="position:absolute;left:12px;top:12px;z-index:2;background:#071b38;color:#fff;padding:7px 11px;border-radius:8px;font-weight:900;font-size:12px;letter-spacing:.7px">BEFORE</span>
+        <img src="assets/job-5.jpg" alt="Before - groundwork excavation in progress">
+      </div>
+      <div style="position:relative">
+        <span style="position:absolute;left:12px;top:12px;z-index:2;background:#ffc928;color:#071b38;padding:7px 11px;border-radius:8px;font-weight:900;font-size:12px;letter-spacing:.7px">AFTER</span>
+        <img src="assets/job-1.jpg" alt="After - completed brick retaining wall and finished gravel area">
+      </div>
+    </div>
+    <div class="showcase-copy">
+      <div class="kicker" style="color:#b08100;font-weight:900;text-transform:uppercase">Before &amp; After</div>
+      <h2>From excavation to finished brickwork</h2>
+      <p>Proper Job handles the practical work needed to improve and maintain outdoor areas, from preparation and foundations through to brick edging, gravel, lawn and finishing touches.</p>
+      <div class="ticks">
+        <div class="tick"><b>✓</b><span>Ground preparation and small groundworks</span></div>
+        <div class="tick"><b>✓</b><span>Landscaping improvements and garden tidy-ups</span></div>
+        <div class="tick"><b>✓</b><span>Brick edging, small walls and hard landscaping</span></div>
+        <div class="tick"><b>✓</b><span>Clear, no-obligation quotations</span></div>
+      </div>
+      <a class="btn btn-gold" href="#quote">Get a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="container">
+    <div class="head"><div class="kicker">Recent Work</div><h2>Real jobs. Real property improvements.</h2><p>A selection of work supplied by Proper Job Property Maintenance.</p></div>
+    <div class="gallery">
+      <figure><img src="assets/job-3.jpg" alt="Property maintenance completed work"></figure>
+      <figure><img src="assets/job-1.jpg" alt="Brickwork and gravel landscaping"></figure>
+      <figure><img src="assets/job-2.jpg" alt="Completed outdoor property work"></figure>
+      <figure><img src="assets/job-4.jpg" alt="Property exterior and driveway"></figure>
+      <figure><img src="assets/job-6.jpg" alt="Garden and grounds improvement"></figure>
+      <figure><img src="assets/job-7.jpg" alt="Groundworks machinery on site"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="head"><div class="kicker" style="color:#ffd648">Why Proper Job?</div><h2>Friendly, flexible property maintenance</h2><p>No overcomplication — just practical help, clear communication and work suited to the job.</p></div>
+    <div class="why">
+      <div class="item"><div class="icon">✓</div><h3>No Obligation</h3><p>Ask for a quote without pressure or obligation.</p></div>
+      <div class="item"><div class="icon">📞</div><h3>Fast Response</h3><p>Call or WhatsApp directly to discuss the job.</p></div>
+      <div class="item"><div class="icon">🏡</div><h3>Homeowners & Landlords</h3><p>One-off jobs and ongoing property upkeep.</p></div>
+      <div class="item"><div class="icon">🛠️</div><h3>No Job Too Small</h3><p>Small maintenance jobs are welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="areas">
+  <div class="container">
+    <div class="head"><div class="kicker">Local Service</div><h2>Covering Plymouth, Devon & Cornwall</h2><p>Based in Plymouth and available for property maintenance and outdoor improvement work across the surrounding area.</p></div>
+    <div class="area"><span>Plymouth</span><span>Devon</span><span>Cornwall</span><span>PL2 Area</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="head"><div class="kicker">Full Service Overview</div><h2>Everything at a glance</h2><p>The original Proper Job service information, presented exactly as supplied.</p></div>
+    <div class="flyer-wrap"><img src="assets/services-flyer.jpg" alt="Proper Job Property Maintenance service flyer"></div>
+  </div>
+</section>
+
+<section class="section alt" id="quote">
+  <div class="container quote">
+    <div class="quote-copy">
+      <div class="eyebrow">FREE QUOTES</div>
+      <h2>Tell us what needs doing</h2>
+      <p>Fill in the job details and press the button. Your message will open directly in WhatsApp ready to send to Proper Job.</p>
+      <p><strong>Call:</strong> 07342 651499<br><strong>Email:</strong> properjobpm@gmail.com</p>
+    </div>
+    <form class="form" id="quoteForm">
+      <div class="grid2">
+        <div><label for="name">Your name</label><input id="name" required placeholder="Your name"></div>
+        <div><label for="postcode">Postcode / area</label><input id="postcode" placeholder="e.g. PL2"></div>
+        <div><label for="service">Type of work</label>
+          <select id="service"><option>General repairs / odd jobs</option><option>Painting & decorating</option><option>Exterior painting</option><option>Landscaping</option><option>Groundworks</option><option>Brickwork / outdoor work</option><option>Property maintenance</option><option>Other</option></select>
+        </div>
+        <div><label for="when">When do you need it?</label><input id="when" placeholder="e.g. This week / flexible"></div>
+        <div class="full"><label for="details">Job details</label><textarea id="details" required placeholder="Tell us what needs doing..."></textarea></div>
+      </div>
+      <button class="btn btn-wa" type="submit">Send Job Details by WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-logo"><img src="assets/proper-job-logo.png" alt="Proper Job logo"><div><strong>Proper Job Property Maintenance</strong><p>Your Property, Our Priority.</p></div></div>
+    </div>
+    <div>
+      <strong>Contact</strong>
+      <p><a href="tel:07342651499">07342 651499</a><br><a href="mailto:properjobpm@gmail.com">properjobpm@gmail.com</a><br>Plymouth, Devon & Cornwall</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-float" id="mobileFloat">
+  <a class="call" href="tel:07342651499">☎ Call</a>
+  <a class="wa" href="https://wa.me/447342651499?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+</div>
+
+<script>
+const hero = document.getElementById('hero');
+const floatBar = document.getElementById('mobileFloat');
+const obs = new IntersectionObserver(([entry]) => {
+  floatBar.classList.toggle('show', !entry.isIntersecting);
+}, {threshold:0.05});
+obs.observe(hero);
+
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const postcode = document.getElementById('postcode').value.trim();
+  const service = document.getElementById('service').value;
+  const when = document.getElementById('when').value.trim();
+  const details = document.getElementById('details').value.trim();
+  const msg = `Hi Proper Job, I'd like a free quote.%0A%0AName: ${encodeURIComponent(name)}%0AArea/Postcode: ${encodeURIComponent(postcode)}%0AType of work: ${encodeURIComponent(service)}%0AWhen needed: ${encodeURIComponent(when)}%0AJob details: ${encodeURIComponent(details)}`;
+  window.open('https://wa.me/447342651499?text=' + msg, '_blank');
+});
+</script>
+</body>
+</html>
