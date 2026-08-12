@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CM Property Maintenance | Exterior Cleaning & Property Care</title>
+<meta name="description" content="CM Property Maintenance provides exterior cleaning, driveway and patio cleaning, garden maintenance and general property care.">
+<meta name="theme-color" content="#073060">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="CM Property Maintenance">
+<meta property="og:description" content="Exterior cleaning, driveway & patio cleaning, garden maintenance and reliable property care.">
+<meta property="og:image" content="assets/social-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CM Property Maintenance">
+<meta name="twitter:description" content="Quality work. Trusted service. Local care.">
+<meta name="twitter:image" content="assets/social-share.jpg">
+
+<style>
+:root{
+  --navy:#073060;
+  --navy2:#031d39;
+  --blue:#0f65b8;
+  --gold:#dab460;
+  --light:#f5f7fa;
+  --white:#fff;
+  --ink:#17212b;
+  --muted:#65717d;
+  --green:#25d366;
+  --shadow:0 18px 48px rgba(5,25,45,.14);
+}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 32px));margin:auto}
+
+header{
+  position:sticky;top:0;z-index:70;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #e7ebef;
+  box-shadow:0 4px 16px rgba(5,25,45,.05);
+}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;min-width:0}
+.logo img{width:310px;max-height:64px;object-fit:contain;object-position:left center}
+nav{display:flex;gap:22px;font-weight:800;font-size:14px;color:var(--navy)}
+nav a:hover{color:var(--gold)}
+.header-actions{display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;padding:14px 18px;font-weight:900;border:2px solid transparent;transition:.2s}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-gold{background:var(--gold);color:var(--navy2)}
+.btn-wa{background:var(--green);color:#fff}
+.btn-outline{border-color:#fff;color:#fff;background:transparent}
+
+.hero{
+  min-height:700px;display:flex;align-items:center;position:relative;color:#fff;
+  background:
+  linear-gradient(90deg,rgba(3,29,57,.97) 0%,rgba(3,29,57,.88) 42%,rgba(3,29,57,.38) 70%,rgba(3,29,57,.08) 100%),
+  url('assets/patio1.jpg') 64% center/cover no-repeat;
+}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--gold),#fff2c2,var(--gold))}
+.hero-content{position:relative;z-index:2;max-width:650px;padding:90px 0}
+.eyebrow{display:inline-flex;padding:8px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);border-radius:999px;color:#f4d99a;font-weight:900;font-size:13px;letter-spacing:1px}
+.hero h1{font-size:clamp(46px,6vw,78px);line-height:.98;letter-spacing:-2px;margin:18px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:20px;line-height:1.55;color:#ecf2f7;max-width:590px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}
+.trust{display:flex;gap:10px;flex-wrap:wrap}
+.trust span{padding:10px 12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;font-size:13px;font-weight:800}
+
+.strip{position:relative;z-index:5;margin-top:-38px}
+.strip-grid{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.mini{padding:24px 14px;text-align:center;border-right:1px solid #e9edf0}
+.mini:last-child{border:0}
+.mini .icon{font-size:28px;margin-bottom:10px}
+.mini h3{font-size:14px;margin:0 0 6px;color:var(--navy)}
+.mini p{font-size:12px;color:var(--muted);margin:0;line-height:1.4}
+
+section{padding:82px 0}
+.alt{background:var(--light)}
+.dark{background:var(--navy2);color:#fff}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head small{color:var(--gold);text-transform:uppercase;font-weight:900;letter-spacing:1.3px}
+.section-head h2{font-size:clamp(31px,4vw,48px);margin:8px 0 12px;color:var(--navy)}
+.dark .section-head h2{color:#fff}
+.section-head p{color:var(--muted);font-size:17px;line-height:1.6;margin:0}
+.dark .section-head p{color:#cad3dc}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e6ebef;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(5,25,45,.06);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--gold)}
+.card .icon{font-size:30px}
+.card h3{color:var(--navy);margin:12px 0 8px}
+.card p{color:var(--muted);line-height:1.55;margin:0}
+
+.ba-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.ba-card img{width:100%;height:auto}
+.ba-copy{padding:22px 24px}
+.ba-copy h3{margin:0 0 8px;color:var(--navy);font-size:26px}
+.ba-copy p{margin:0;color:var(--muted);line-height:1.6}
+
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:14px}
+.project{position:relative;overflow:hidden;border-radius:17px;background:#ddd;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.project img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.project:hover img{transform:scale(1.025)}
+.project .caption{position:absolute;left:12px;bottom:12px;background:rgba(3,29,57,.9);color:#fff;padding:8px 10px;border-radius:8px;font-size:12px;font-weight:900}
+.project:nth-child(1){grid-column:span 7;grid-row:span 2}
+.project:nth-child(2){grid-column:span 5}
+.project:nth-child(3){grid-column:span 5}
+.project:nth-child(4),.project:nth-child(5){grid-column:span 6}
+
+.why{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.why-copy{background:#fff;border-radius:20px;padding:38px;box-shadow:var(--shadow)}
+.why-copy h2{font-size:42px;margin:8px 0 16px;color:var(--navy)}
+.why-copy p{color:var(--muted);line-height:1.7;font-size:17px}
+.ticks{display:grid;gap:12px;margin:24px 0}
+.tick{display:flex;gap:10px;font-weight:800}
+.tick b{color:var(--gold)}
+.why-img{border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.why-img img{width:100%;height:100%;min-height:500px;object-fit:cover}
+
+.quote{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px}
+.quote-copy{background:var(--navy);color:#fff;border-radius:20px;padding:38px}
+.quote-copy h2{font-size:40px;margin:0 0 14px}
+.quote-copy p{color:#d8e0e8;line-height:1.6}
+.form{background:#fff;border:1px solid #e5e9ed;border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.full{grid-column:1/-1}
+label{display:block;color:var(--navy);font-size:13px;font-weight:900;margin-bottom:6px}
+input,select,textarea{width:100%;border:1px solid #cdd5dd;border-radius:10px;padding:13px 14px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+.form button{width:100%;border:0;cursor:pointer;margin-top:10px}
+
+.footer{background:#031d39;color:#d8e0e8;padding:44px 0 92px}
+.footer-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.footer img{width:300px;background:#fff;border-radius:10px;padding:8px}
+.footer p{color:#aeb9c4;line-height:1.6}
+
+.mobile-float{display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:80;gap:8px;transform:translateY(130%);transition:.25s}
+.mobile-float.show{transform:translateY(0)}
+.mobile-float a{flex:1;text-align:center;padding:12px;border-radius:11px;font-weight:900;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+
+@media(max-width:980px){
+  nav{display:none}
+  .strip-grid{grid-template-columns:repeat(3,1fr)}
+  .services{grid-template-columns:1fr 1fr}
+  .why,.quote{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .container{width:min(100% - 24px,1180px)}
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.98);
+    border-bottom:1px solid rgba(0,0,0,.08);
+    box-shadow:0 6px 20px rgba(5,25,45,.10);
+    padding-top:env(safe-area-inset-top);
+  }
+  .header-inner{width:100%;max-width:none;height:64px;padding:0 10px;gap:8px}
+  .logo{flex:1;min-width:0;overflow:hidden}
+  .logo img{width:185px;max-width:100%;max-height:48px;object-fit:contain;object-position:left center}
+  .header-actions{gap:6px;flex-shrink:0}
+  .header-actions .btn-navy{display:none}
+  .header-actions .btn{padding:9px 10px;font-size:11px;white-space:nowrap}
+  body{padding-top:calc(64px + env(safe-area-inset-top))}
+  .hero{min-height:650px;align-items:flex-end;background:
+    linear-gradient(180deg,rgba(3,29,57,.40),rgba(3,29,57,.90) 58%,rgba(3,29,57,.99)),
+    url('assets/patio1.jpg') 60% center/cover no-repeat}
+  .hero-content{padding:120px 0 58px}
+  .hero h1{font-size:45px;letter-spacing:-1px}
+  .hero p{font-size:17px}
+  .hero-actions .btn{flex:1}
+  .strip{margin-top:0}
+  .strip-grid{grid-template-columns:1fr 1fr;border-radius:0}
+  .mini{border-bottom:1px solid #e9edf0}
+  section{padding:58px 0}
+  .services{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+  .project,.project:nth-child(n){grid-column:span 1;grid-row:span 1}
+  .project:nth-child(1){grid-column:1/-1}
+  .why-copy{padding:28px}.why-copy h2{font-size:34px}
+  .grid2{grid-template-columns:1fr}.full{grid-column:auto}
+  .footer-inner{grid-template-columns:1fr}
+  .mobile-float{display:flex}
+}
+@media(max-width:390px){
+  .logo img{width:160px}
+  .header-actions .btn{padding:8px 9px;font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="#top"><img src="assets/website-logo.png" alt="CM Property Maintenance"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#work">Our Work</a>
+      <a href="#quote">Free Quote</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-navy" href="tel:07885397034">Call</a>
+      <a class="btn btn-gold" href="https://wa.me/447885397034?text=Hi%20CM%20Property%20Maintenance%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">QUALITY WORK • TRUSTED SERVICE • LOCAL CARE</div>
+      <h1>Bring Your Property<br><span>Back To Life.</span></h1>
+      <p>Professional exterior cleaning and dependable property maintenance for homes and businesses.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="tel:07885397034">☎ Call 07885 397034</a>
+        <a class="btn btn-wa" href="https://wa.me/447885397034?text=Hi%20CM%20Property%20Maintenance%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp for a Quote</a>
+      </div>
+      <div class="trust">
+        <span>✓ Exterior Cleaning</span>
+        <span>✓ Driveways & Patios</span>
+        <span>✓ Garden Maintenance</span>
+        <span>✓ Property Care</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" id="services">
+  <div class="container strip-grid">
+    <div class="mini"><div class="icon">💦</div><h3>Exterior Cleaning</h3><p>Walls, render & exteriors</p></div>
+    <div class="mini"><div class="icon">🧼</div><h3>Driveways</h3><p>Pressure washing</p></div>
+    <div class="mini"><div class="icon">🧱</div><h3>Patios</h3><p>Cleaning & restoration</p></div>
+    <div class="mini"><div class="icon">🌿</div><h3>Garden Care</h3><p>Routine maintenance</p></div>
+    <div class="mini"><div class="icon">🔧</div><h3>Property Maintenance</h3><p>General upkeep</p></div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <small>What We Do</small>
+      <h2>Exterior cleaning & reliable property care</h2>
+      <p>From tired exterior surfaces to gardens that need regular attention, CM Property Maintenance helps keep properties looking clean, tidy and cared for.</p>
+    </div>
+    <div class="services">
+      <div class="card"><div class="icon">💦</div><h3>Exterior Cleaning</h3><p>High-pressure and soft-wash cleaning for suitable external surfaces, helping remove dirt, algae, mould and staining.</p></div>
+      <div class="card"><div class="icon">🧼</div><h3>Driveway Cleaning</h3><p>Deep cleaning for driveways to remove built-up grime and restore a fresher, cleaner appearance.</p></div>
+      <div class="card"><div class="icon">🧱</div><h3>Patio Cleaning</h3><p>Professional cleaning for patios, paving and outdoor hard surfaces.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Garden Maintenance</h3><p>Ongoing garden care to help keep lawns, beds and outdoor areas neat and presentable.</p></div>
+      <div class="card"><div class="icon">🏠</div><h3>General Property Care</h3><p>Practical maintenance and upkeep to help keep homes and business premises looking their best.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>Kerb Appeal Improvements</h3><p>Cleaning and maintenance work that can make the whole property feel brighter, cleaner and better maintained.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="results">
+  <div class="container">
+    <div class="section-head">
+      <small>Before & After</small>
+      <h2>Cleaning results you can see</h2>
+      <p>This supplied project sheet shows genuine before-and-after exterior and driveway cleaning results from CM Property Maintenance.</p>
+    </div>
+    <div class="ba-card">
+      <img src="assets/flyer.jpg" alt="CM Property Maintenance before and after exterior cleaning results">
+      <div class="ba-copy">
+        <h3>Exterior & driveway cleaning transformations</h3>
+        <p>Visible improvement across walls, exterior surfaces and driveways using pressure and soft-wash cleaning methods.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head">
+      <small>Recent Work</small>
+      <h2>Clean, tidy outdoor spaces</h2>
+      <p>Real supplied work photos from patio, garden and property maintenance projects.</p>
+    </div>
+    <div class="gallery">
+      <div class="project"><img src="assets/patio1.jpg" alt="Clean patio and garden area"><span class="caption">Patio & Garden Care</span></div>
+      <div class="project"><img src="assets/garden.jpg" alt="Maintained garden lawn"><span class="caption">Garden Maintenance</span></div>
+      <div class="project"><img src="assets/patio2.jpg" alt="Clean patio area"><span class="caption">Patio Cleaning</span></div>
+      <div class="project"><img src="assets/patio3.jpg" alt="Clean paved garden area"><span class="caption">Outdoor Surface Care</span></div>
+      <div class="project"><img src="assets/frontgarden.jpg" alt="Front garden maintenance"><span class="caption">Property & Garden Upkeep</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container why">
+    <div class="why-copy">
+      <small style="color:var(--gold);font-weight:900;letter-spacing:1px">WHY CM PROPERTY MAINTENANCE?</small>
+      <h2>One reliable contact for exterior property care</h2>
+      <p>CM Property Maintenance combines cleaning and practical upkeep so customers can keep exterior spaces looking cared for without dealing with multiple contractors.</p>
+      <div class="ticks">
+        <div class="tick"><b>✓</b><span>Professional exterior cleaning</span></div>
+        <div class="tick"><b>✓</b><span>Driveways, patios, walls and more</span></div>
+        <div class="tick"><b>✓</b><span>Garden and outdoor maintenance</span></div>
+        <div class="tick"><b>✓</b><span>Direct Call & WhatsApp contact</span></div>
+      </div>
+      <a class="btn btn-navy" href="#quote">Get a Free Quote</a>
+    </div>
+    <div class="why-img"><img src="assets/garden.jpg" alt="Well maintained garden"></div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="container quote">
+    <div class="quote-copy">
+      <div class="eyebrow">FREE QUOTE</div>
+      <h2>Tell us what needs doing</h2>
+      <p>Enter the job details and the message opens directly in WhatsApp ready to send.</p>
+      <p><strong>Call:</strong> 07885 397034<br><strong>Email:</strong> cmpropertymaintenance7@gmail.com</p>
+    </div>
+    <form class="form" id="quoteForm">
+      <div class="grid2">
+        <div><label for="name">Your name</label><input id="name" required placeholder="Your name"></div>
+        <div><label for="area">Area / postcode</label><input id="area" placeholder="Your area"></div>
+        <div><label for="service">Type of work</label>
+          <select id="service">
+            <option>Exterior cleaning</option>
+            <option>Driveway cleaning</option>
+            <option>Patio cleaning</option>
+            <option>Garden maintenance</option>
+            <option>General property maintenance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div><label for="when">When needed?</label><input id="when" placeholder="e.g. This week / flexible"></div>
+        <div class="full"><label for="details">Job details</label><textarea id="details" required placeholder="Tell us what needs cleaning or maintaining..."></textarea></div>
+      </div>
+      <button class="btn btn-wa" type="submit">Send Job Details by WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <img src="assets/website-logo.png" alt="CM Property Maintenance logo">
+      <p>Maintaining properties. Enhancing spaces. Adding value.</p>
+    </div>
+    <div>
+      <strong>Contact</strong>
+      <p><a href="tel:07885397034">07885 397034</a><br>
+      <a href="mailto:cmpropertymaintenance7@gmail.com">cmpropertymaintenance7@gmail.com</a><br>
+      <a href="https://wa.me/447885397034" target="_blank">WhatsApp</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-float" id="floatBar">
+  <a class="btn-gold" href="tel:07885397034">☎ Call</a>
+  <a class="btn-wa" href="https://wa.me/447885397034?text=Hi%20CM%20Property%20Maintenance%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+</div>
+
+<script>
+const hero=document.getElementById('hero'),bar=document.getElementById('floatBar');
+new IntersectionObserver(([entry])=>bar.classList.toggle('show',!entry.isIntersecting),{threshold:.05}).observe(hero);
+
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg=`Hi CM Property Maintenance, I'd like a free quote.%0A%0AName: ${encodeURIComponent(v('name'))}%0AArea/Postcode: ${encodeURIComponent(v('area'))}%0AType of work: ${encodeURIComponent(v('service'))}%0AWhen needed: ${encodeURIComponent(v('when'))}%0AJob details: ${encodeURIComponent(v('details'))}`;
+  window.open('https://wa.me/447885397034?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
