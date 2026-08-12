@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proper Job Maintenance & Property Services</title>
+<meta name="description" content="Reliable property maintenance, fencing, decking, building work, garden improvements and general repairs.">
+<meta name="theme-color" content="#24272b">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Proper Job Maintenance & Property Services">
+<meta property="og:description" content="Property maintenance done properly — repairs, fencing, decking, building work and outdoor improvements.">
+<meta property="og:image" content="assets/social-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Proper Job Maintenance & Property Services">
+<meta name="twitter:description" content="Reliable property maintenance and improvements.">
+<meta name="twitter:image" content="assets/social-share.jpg">
+
+<style>
+:root{
+  --charcoal:#24272b; --charcoal2:#17191c; --orange:#f58a2b; --orange2:#ff9c49;
+  --grey:#a9abad; --light:#f6f6f4; --white:#fff; --ink:#202327; --muted:#697078;
+  --green:#25d366; --shadow:0 18px 45px rgba(18,22,26,.14);
+}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 32px));margin:auto}
+
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e8e8e6;box-shadow:0 4px 18px rgba(18,22,26,.06)}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;min-width:0}
+.logo img{width:285px;max-height:66px;object-fit:contain}
+nav{display:flex;gap:22px;font-weight:800;font-size:14px}
+nav a:hover{color:var(--orange)}
+.header-actions{display:flex;gap:9px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;padding:14px 18px;font-weight:900;border:2px solid transparent;transition:.2s}
+.btn-orange{background:var(--orange);color:#fff}
+.btn-dark{background:var(--charcoal);color:#fff}
+.btn-wa{background:var(--green);color:#fff}
+.btn-outline{border-color:var(--charcoal);color:var(--charcoal);background:#fff}
+
+.hero{min-height:700px;display:flex;align-items:center;position:relative;color:#fff;background:
+linear-gradient(90deg,rgba(25,28,31,.96) 0%,rgba(25,28,31,.88) 43%,rgba(25,28,31,.32) 72%,rgba(25,28,31,.07) 100%),
+url('assets/clad_after.jpg') 60% center/cover no-repeat}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--orange),#ffd1a8,var(--orange))}
+.hero-content{position:relative;z-index:2;max-width:660px;padding:82px 0}
+.eyebrow{display:inline-flex;padding:8px 12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);border-radius:999px;color:#ffc28c;font-weight:900;font-size:13px;letter-spacing:1px}
+.hero h1{font-size:clamp(44px,6vw,77px);line-height:.98;letter-spacing:-2px;margin:18px 0}
+.hero h1 span{color:var(--orange)}
+.hero p{max-width:590px;font-size:20px;line-height:1.55;color:#eceff1}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 24px}
+.trust{display:flex;gap:10px;flex-wrap:wrap}
+.trust span{padding:10px 12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;font-size:13px;font-weight:800}
+
+.service-strip{position:relative;z-index:5;margin-top:-40px}
+.service-grid{display:grid;grid-template-columns:repeat(6,1fr);background:#fff;border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.service-mini{padding:24px 14px;text-align:center;border-right:1px solid #ececeb}
+.service-mini:last-child{border:0}
+.service-mini .icon{font-size:28px;margin-bottom:10px}
+.service-mini h3{font-size:14px;margin:0 0 6px;color:var(--charcoal)}
+.service-mini p{font-size:12px;color:var(--muted);margin:0;line-height:1.4}
+
+section{padding:82px 0}
+.alt{background:var(--light)}
+.dark{background:var(--charcoal);color:#fff}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head small{color:var(--orange);text-transform:uppercase;font-weight:900;letter-spacing:1.3px}
+.section-head h2{font-size:clamp(31px,4vw,48px);margin:8px 0 12px;color:var(--charcoal)}
+.dark .section-head h2{color:#fff}
+.section-head p{color:var(--muted);font-size:17px;line-height:1.6;margin:0}
+.dark .section-head p{color:#c7ccd0}
+
+.projects{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:235px;gap:14px}
+.project{position:relative;overflow:hidden;border-radius:17px;background:#ddd;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.project img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.project:hover img{transform:scale(1.025)}
+.project .caption{position:absolute;left:12px;bottom:12px;background:rgba(25,28,31,.88);color:#fff;padding:8px 10px;border-radius:8px;font-weight:900;font-size:12px}
+.project:nth-child(1){grid-column:span 7;grid-row:span 2}
+.project:nth-child(2){grid-column:span 5}
+.project:nth-child(3){grid-column:span 5}
+.project:nth-child(4),.project:nth-child(5),.project:nth-child(6){grid-column:span 4}
+
+.ba-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ba-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.ba-card img{width:100%;height:420px;object-fit:cover}
+.ba-card h3{margin:0;padding:18px 20px;color:var(--charcoal)}
+.ba-side{display:grid;grid-template-columns:1fr 1fr}
+.ba-side div{position:relative}
+.ba-side img{height:380px}
+.tag{position:absolute;left:12px;bottom:12px;background:var(--charcoal);color:#fff;padding:7px 11px;border-radius:7px;font-size:12px;font-weight:900}
+.tag.after{background:var(--orange)}
+
+.about{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.about-copy{padding:42px;background:#fff}
+.about-copy small{color:var(--orange);font-weight:900;letter-spacing:1px}
+.about-copy h2{font-size:42px;color:var(--charcoal);margin:10px 0 16px}
+.about-copy p{color:var(--muted);line-height:1.7;font-size:17px}
+.ticks{display:grid;gap:12px;margin:24px 0}
+.tick{display:flex;gap:10px;align-items:flex-start;font-weight:800}
+.tick b{color:var(--orange)}
+.about-photo img{width:100%;height:100%;object-fit:cover;min-height:500px}
+
+.services-full{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e7e6e4;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(20,22,24,.06);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:var(--orange)}
+.card .icon{font-size:30px}
+.card h3{color:var(--charcoal);margin:12px 0 8px}
+.card p{color:var(--muted);line-height:1.55;margin:0}
+
+.quote{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px}
+.quote-copy{background:var(--charcoal);color:#fff;border-radius:20px;padding:38px}
+.quote-copy h2{font-size:40px;margin:0 0 14px}
+.quote-copy p{color:#c8ccd0;line-height:1.6}
+.form{background:#fff;border:1px solid #e5e5e3;border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.full{grid-column:1/-1}
+label{display:block;color:var(--charcoal);font-size:13px;font-weight:900;margin-bottom:6px}
+input,select,textarea{width:100%;border:1px solid #ccd0d3;border-radius:10px;padding:13px 14px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+.form button{width:100%;border:0;cursor:pointer;margin-top:10px}
+
+.footer{background:#17191c;color:#d9dcde;padding:44px 0 92px}
+.footer-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.footer img{width:290px;background:#fff;border-radius:10px;padding:8px}
+.footer p{color:#aeb4b8;line-height:1.6}
+
+.mobile-float{display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:70;gap:8px;transform:translateY(130%);transition:.25s}
+.mobile-float.show{transform:translateY(0)}
+.mobile-float a{flex:1;text-align:center;padding:12px;border-radius:11px;font-weight:900;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+
+@media(max-width:980px){
+  nav{display:none}.service-grid{grid-template-columns:repeat(3,1fr)}
+  .services-full{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1fr}
+  .quote{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .container{width:min(100% - 24px,1180px)}
+  header{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:100;
+    background:rgba(255,255,255,.98);
+    border-bottom:1px solid rgba(0,0,0,.08);
+    box-shadow:0 6px 20px rgba(18,22,26,.10);
+    padding-top:env(safe-area-inset-top);
+  }
+  .header-inner{
+    width:100%;
+    max-width:none;
+    height:64px;
+    padding:0 10px;
+    gap:8px;
+  }
+  .logo{flex:1;min-width:0;overflow:hidden}
+  .logo img{width:178px;max-width:100%;max-height:48px;object-fit:contain;object-position:left center}
+  .header-actions{gap:6px;flex-shrink:0}
+  .header-actions .btn-dark{display:none}
+  .header-actions .btn{
+    padding:9px 10px;
+    font-size:11px;
+    border-radius:10px;
+    white-space:nowrap;
+  }
+  body{padding-top:calc(64px + env(safe-area-inset-top))}
+  .hero{min-height:650px;align-items:flex-end;background:linear-gradient(180deg,rgba(25,28,31,.42),rgba(25,28,31,.90) 58%,rgba(25,28,31,.99)),url('assets/clad_after.jpg') 56% center/cover no-repeat}
+  .hero-content{padding:120px 0 58px}.hero h1{font-size:45px;letter-spacing:-1px}.hero p{font-size:17px}.hero-actions .btn{flex:1}
+  .service-strip{margin-top:0}.service-grid{grid-template-columns:1fr 1fr;border-radius:0}.service-mini{border-bottom:1px solid #ececeb}
+  section{padding:58px 0}.services-full{grid-template-columns:1fr}
+  .projects{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+  .project,.project:nth-child(n){grid-column:span 1;grid-row:span 1}.project:nth-child(1){grid-column:1/-1}
+  .ba-wrap{grid-template-columns:1fr}.ba-card img{height:300px}.ba-side img{height:240px}
+  .about-copy{padding:28px}.about-copy h2{font-size:34px}
+  .grid2{grid-template-columns:1fr}.full{grid-column:auto}.footer-inner{grid-template-columns:1fr}.mobile-float{display:flex}
+}
+
+@media(max-width:390px){
+  .logo img{width:155px}
+  .header-actions .btn{padding:8px 9px;font-size:10px}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="#top"><img src="assets/website-logo.png" alt="Proper Job Maintenance & Property Services logo"></a>
+    <nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#beforeafter">Before & After</a><a href="#quote">Free Quote</a></nav>
+    <div class="header-actions">
+      <a class="btn btn-dark" href="tel:07871530060">Call</a>
+      <a class="btn btn-orange" href="https://wa.me/447871530060?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">RELIABLE • PROFESSIONAL • LOCAL</div>
+      <h1>Property Maintenance<br><span>Done Properly.</span></h1>
+      <p>From small repairs to full property improvements, Proper Job delivers practical, high-quality workmanship inside and out.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="tel:07871530060">☎ Call 07871 530060</a>
+        <a class="btn btn-wa" href="https://wa.me/447871530060?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp for a Quote</a>
+      </div>
+      <div class="trust"><span>✓ Property Maintenance</span><span>✓ Fencing & Decking</span><span>✓ Building Work</span><span>✓ Garden Improvements</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="service-strip" id="services">
+  <div class="container service-grid">
+    <div class="service-mini"><div class="icon">🪵</div><h3>Fencing</h3><p>Repairs & new fencing</p></div>
+    <div class="service-mini"><div class="icon">🎨</div><h3>Painting</h3><p>Interior & exterior</p></div>
+    <div class="service-mini"><div class="icon">🔧</div><h3>General Repairs</h3><p>Odd jobs & maintenance</p></div>
+    <div class="service-mini"><div class="icon">🧱</div><h3>Building Work</h3><p>Walls & alterations</p></div>
+    <div class="service-mini"><div class="icon">🪚</div><h3>Decking</h3><p>Builds & repairs</p></div>
+    <div class="service-mini"><div class="icon">🌿</div><h3>Outdoor Work</h3><p>Gardens & landscaping</p></div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head"><small>Our Work</small><h2>Real projects, presented properly</h2><p>The supplied photos include several project collages, so this layout keeps the full images visible rather than chopping them into awkward crops.</p></div>
+    <div class="projects">
+      <div class="project"><img src="assets/garden.jpg" alt="Garden and gravel improvement project"><span class="caption">Garden Transformation</span></div>
+      <div class="project"><img src="assets/outbuilding.jpg" alt="Outbuilding renovation project"><span class="caption">Outbuilding Work</span></div>
+      <div class="project"><img src="assets/fence_project.jpg" alt="Fencing project"><span class="caption">Fencing</span></div>
+      <div class="project"><img src="assets/wall.jpg" alt="Wall and exterior building work"><span class="caption">Building Work</span></div>
+      <div class="project"><img src="assets/extension.jpg" alt="Property extension and exterior work"><span class="caption">Property Improvements</span></div>
+      <div class="project"><img src="assets/decking.jpg" alt="Decking project"><span class="caption">Decking</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="beforeafter">
+  <div class="container">
+    <div class="section-head"><small>Before & After</small><h2>Genuine transformation</h2><p>The cladding project below is shown using the matching before and after photos supplied for the same building.</p></div>
+    <div class="ba-wrap">
+      <div class="ba-card">
+        <div class="ba-side">
+          <div><img src="assets/clad_before.jpg" alt="Before exterior cladding project"><span class="tag">BEFORE</span></div>
+          <div><img src="assets/clad_after.jpg" alt="After exterior cladding project"><span class="tag after">AFTER</span></div>
+        </div>
+        <h3>Exterior cladding transformation</h3>
+      </div>
+      <div class="ba-card">
+        <img src="assets/fencing_collage.jpg" alt="Fencing project showing stages of construction">
+        <h3>Fencing project — progress and finished work</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container about">
+    <div class="about-copy">
+      <small>WHY CHOOSE PROPER JOB?</small>
+      <h2>One reliable contact for property improvements</h2>
+      <p>From maintenance and repairs to fencing, decking and larger exterior projects, the focus is on practical workmanship and a clean finished result.</p>
+      <div class="ticks">
+        <div class="tick"><b>✓</b><span>Property maintenance and general repairs</span></div>
+        <div class="tick"><b>✓</b><span>Fencing, decking and outdoor timber work</span></div>
+        <div class="tick"><b>✓</b><span>Building and exterior improvement projects</span></div>
+        <div class="tick"><b>✓</b><span>Painting, finishing and property refresh work</span></div>
+      </div>
+      <a class="btn btn-orange" href="#quote">Get a Free Quote</a>
+    </div>
+    <div class="about-photo"><img src="assets/decking.jpg" alt="Completed decking project"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head"><small>Services</small><h2>Property maintenance & much more</h2></div>
+    <div class="services-full">
+      <div class="card"><div class="icon">🪵</div><h3>Fencing & Gates</h3><p>New fencing, replacement panels, posts, repairs and boundary improvements.</p></div>
+      <div class="card"><div class="icon">🪚</div><h3>Decking & Timber Work</h3><p>Deck construction, repairs, steps, rails and outdoor timber improvements.</p></div>
+      <div class="card"><div class="icon">🧱</div><h3>Building Work</h3><p>Blockwork, walls, openings, alterations and practical exterior construction work.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Painting & Finishing</h3><p>Interior and exterior painting, decorating and finishing work.</p></div>
+      <div class="card"><div class="icon">🔧</div><h3>General Maintenance</h3><p>Property repairs, upkeep, odd jobs and smaller maintenance requirements.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Garden & Outdoor Improvements</h3><p>Outdoor clearances, gravel areas, garden improvements and practical landscaping.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="container quote">
+    <div class="quote-copy">
+      <div class="eyebrow">FREE QUOTE</div>
+      <h2>Tell us what needs doing</h2>
+      <p>Enter the job details and the message opens directly in WhatsApp ready to send.</p>
+      <p><strong>Call / WhatsApp:</strong><br>07871 530060</p>
+    </div>
+    <form class="form" id="quoteForm">
+      <div class="grid2">
+        <div><label for="name">Your name</label><input id="name" required placeholder="Your name"></div>
+        <div><label for="area">Area / postcode</label><input id="area" placeholder="Your area"></div>
+        <div><label for="service">Type of work</label><select id="service"><option>General maintenance</option><option>Fencing</option><option>Decking</option><option>Building work</option><option>Painting & decorating</option><option>Garden / outdoor work</option><option>Other</option></select></div>
+        <div><label for="when">When needed?</label><input id="when" placeholder="e.g. This week / flexible"></div>
+        <div class="full"><label for="details">Job details</label><textarea id="details" required placeholder="Tell us what needs doing..."></textarea></div>
+      </div>
+      <button class="btn btn-wa" type="submit">Send Job Details by WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><img src="assets/website-logo.png" alt="Proper Job logo"><p>Maintenance & Property Services — property maintenance done properly.</p></div>
+    <div><strong>Contact</strong><p><a href="tel:07871530060">07871 530060</a><br><a href="https://wa.me/447871530060" target="_blank">WhatsApp</a></p></div>
+  </div>
+</footer>
+
+<div class="mobile-float" id="floatBar">
+  <a class="btn-orange" href="tel:07871530060">☎ Call</a>
+  <a class="btn-wa" href="https://wa.me/447871530060?text=Hi%20Proper%20Job%2C%20I%27d%20like%20a%20free%20quote." target="_blank">WhatsApp</a>
+</div>
+
+<script>
+const hero=document.getElementById('hero'),bar=document.getElementById('floatBar');
+new IntersectionObserver(([entry])=>bar.classList.toggle('show',!entry.isIntersecting),{threshold:.05}).observe(hero);
+
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg=`Hi Proper Job, I'd like a free quote.%0A%0AName: ${encodeURIComponent(v('name'))}%0AArea/Postcode: ${encodeURIComponent(v('area'))}%0AType of work: ${encodeURIComponent(v('service'))}%0AWhen needed: ${encodeURIComponent(v('when'))}%0AJob details: ${encodeURIComponent(v('details'))}`;
+  window.open('https://wa.me/447871530060?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
