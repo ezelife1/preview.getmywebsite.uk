@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" role="img" aria-labelledby="t d">
+<title id="t">Lawn Monster</title><desc id="d">Lawn Monster lawn, garden and exterior care logo</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#b8ff21"/><stop offset="1" stop-color="#46e100"/></linearGradient></defs>
+<rect width="780" height="180" rx="28" fill="#080b0a"/>
+<g transform="translate(22 18)">
+  <circle cx="72" cy="72" r="66" fill="#111814" stroke="#76f20a" stroke-width="6"/>
+  <path d="M31 99c21-39 48-60 82-64-10 12-15 25-16 40 12-11 25-17 40-18-22 17-37 37-44 61-18-9-39-15-62-19z" fill="url(#g)"/>
+  <path d="M40 110c20 7 40 11 59 12 16 1 27-5 32-17-5 31-23 46-52 46-22 0-39-14-39-41z" fill="#fff" opacity=".95"/>
+  <path d="M52 87c16-9 30-14 43-15 9-1 16 3 21 11-14 1-24 7-30 18-10-5-21-10-34-14z" fill="#070a08"/>
+  <circle cx="93" cy="85" r="8" fill="#76f20a"/>
+</g>
+<text x="176" y="90" font-family="Arial Black, Arial, sans-serif" font-size="68" font-weight="900" letter-spacing="-3" fill="#fff">LAWN</text>
+<text x="376" y="90" font-family="Arial Black, Arial, sans-serif" font-size="68" font-weight="900" letter-spacing="-3" fill="url(#g)">MONSTER</text>
+<text x="179" y="128" font-family="Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="5" fill="#cbd4cd">LAWN • GARDEN • EXTERIOR CARE</text>
+</svg>
