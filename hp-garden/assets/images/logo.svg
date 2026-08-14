@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 210" role="img" aria-label="HP Garden Services logo">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M77 48c12-28 38-42 70-39-4 34-24 58-58 65 7-14 18-27 34-40-20 8-35 20-46 38-10-10-17-22-20-36 18 2 33 9 45 21-8-19-15-29-25-38z" fill="#8FBF3F"/>
+    <path d="M99 77c8-18 18-30 31-39" stroke="#315B2E" stroke-width="8" stroke-linecap="round"/>
+    <text x="6" y="160" font-family="Georgia, 'Times New Roman', serif" font-size="122" font-weight="700" letter-spacing="-7" fill="#19351E">HP</text>
+    <line x1="181" y1="42" x2="181" y2="174" stroke="#B9C59B" stroke-width="2"/>
+    <text x="205" y="89" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="800" letter-spacing="4" fill="#19351E">GARDEN</text>
+    <text x="205" y="130" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="800" letter-spacing="4" fill="#19351E">SERVICES</text>
+    <text x="206" y="165" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2.5" fill="#71805A">GARDEN &amp; GRAVE MAINTENANCE</text>
+  </g>
+</svg>
