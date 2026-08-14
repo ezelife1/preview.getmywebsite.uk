@@ -7,7 +7,7 @@
 <meta name="description" content="OSVO Building Services Ltd — building, roofing, bathrooms, tiling, rendering, paving and property improvement work across Boston and Lincolnshire." />
 <style>
 :root{--ink:#111318;--soft:#e8e7e2;--paper:#f4f2ed;--orange:#ff6b21;--muted:#777b82;--line:rgba(17,19,24,.14);--max:1500px}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif} img{display:block;width:100%;height:100%;object-fit:cover} a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 42px),var(--max));margin:auto}
+*{box-sizing:border-box} html{scroll-behavior:smooth;overflow-x:hidden;width:100%} body{margin:0;overflow-x:hidden;width:100%;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif} img{display:block;width:100%;height:100%;object-fit:cover} a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 42px),var(--max));margin:auto}
 .header{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(17,19,24,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)} .headin{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand img{width:275px;height:auto}.nav{display:flex;gap:28px;color:#fff;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.actions{display:flex;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:999px;font-weight:900;font-size:14px}.btn.call{background:#fff}.btn.wa{background:var(--orange);color:#111}.menu{display:none;color:#fff;font-size:28px;border:0;background:none}
 .hero{min-height:100svh;background:var(--ink);color:white;padding-top:84px;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(380px,.88fr)}.hero-media{position:relative;overflow:hidden}.hero-media img{position:absolute;inset:0}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,19,24,.1),rgba(17,19,24,.18) 60%,rgba(17,19,24,.72))}.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:70px clamp(38px,6vw,105px) 62px clamp(38px,5vw,85px);position:relative}.eyebrow{color:var(--orange);text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.24em}.hero h1{font-size:clamp(52px,6vw,104px);line-height:.91;letter-spacing:-.055em;margin:18px 0 26px;max-width:760px}.hero p{font-size:clamp(18px,1.5vw,24px);line-height:1.5;color:#c9ccd2;max-width:650px}.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-cta .btn{min-height:56px;padding:0 26px}.statbar{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.13);margin-top:44px;padding-top:24px;gap:18px}.stat b{display:block;font-size:15px}.stat span{font-size:12px;color:#9da1aa;letter-spacing:.08em;text-transform:uppercase}.vertical{position:absolute;right:22px;bottom:24px;writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;letter-spacing:.28em;color:#6f747c;text-transform:uppercase}
 .intro{padding:96px 0 84px}.intro-shell{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);min-height:650px;background:#fff;border:1px solid var(--line);overflow:hidden}.intro-image{position:relative;min-height:650px;overflow:hidden}.intro-image img{position:absolute;inset:0;object-position:center}.intro-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,19,24,.02),rgba(17,19,24,.12))}.intro-image-note{position:absolute;left:24px;bottom:24px;z-index:2;background:rgba(17,19,24,.92);color:#fff;padding:13px 16px;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.intro-content{padding:64px clamp(34px,5vw,78px);display:flex;flex-direction:column;justify-content:center}.intro-content .eyebrow{margin-bottom:20px}.intro h2{font-size:clamp(50px,6vw,92px);line-height:.9;letter-spacing:-.06em;margin:0 0 28px;max-width:760px}.intro-copy{font-size:21px;line-height:1.55;color:#4c5057;max-width:720px;margin:0}.intro-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:34px}.intro-point{border-top:1px solid var(--line);padding-top:16px}.intro-point b{display:block;font-size:15px;margin-bottom:5px}.intro-point span{display:block;color:#7a7e84;font-size:13px;line-height:1.45}.rule{height:1px;background:var(--line);margin-top:70px}
@@ -18,6 +18,34 @@
 .contact{background:var(--orange);padding:90px 0}.contact-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end}.contact h2{font-size:clamp(54px,8vw,120px);line-height:.87;letter-spacing:-.06em;margin:0}.contact p{font-size:18px;line-height:1.55}.contact .links{display:grid;gap:12px}.contact .links a{background:#111;color:#fff;padding:20px 22px;font-size:18px;font-weight:900}.footer{background:#0b0c0f;color:#8e929a;padding:28px 0;font-size:12px}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.mobilebar{display:none}
 @media(max-width:980px){.nav,.actions{display:none}.menu{display:block}.brand img{width:220px}.hero{grid-template-columns:1fr;min-height:0}.hero-media{height:52vh;min-height:430px}.hero-copy{padding:48px 24px 64px}.hero h1{font-size:58px}.statbar{grid-template-columns:1fr}.vertical{display:none}.intro{padding:68px 0 48px}.intro-shell{grid-template-columns:1fr;min-height:0}.intro-image{min-height:420px}.intro-content{padding:48px 34px}.ba-head{grid-template-columns:1fr;gap:20px}.transform-grid{grid-template-columns:1fr}.project-row{grid-template-columns:42px 1fr}.project-image{grid-column:1/-1;height:360px;clip-path:none!important}.services{padding:75px 0}.services-head{display:block}.services-head p{margin-top:26px}.service{grid-template-columns:44px 1fr}.service span:last-child{display:none}.ba-pair{gap:8px}.ba{height:390px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:320px 260px 260px}.gallery-grid figure:first-child{grid-column:1/-1;grid-row:auto}.gallery-grid figure:nth-child(4){grid-column:auto}.contact{padding:70px 0 120px}.mobilebar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px max(10px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));background:rgba(17,19,24,.96)}.mobilebar a{min-height:52px;display:flex;align-items:center;justify-content:center;font-weight:900}.mobilebar a:first-child{background:white}.mobilebar a:last-child{background:var(--orange)}}
 @media(max-width:620px){.wrap{width:min(calc(100% - 28px),var(--max))}.headin{height:72px}.hero{padding-top:72px}.brand img{width:190px}.hero-media{height:45vh;min-height:330px}.hero-copy{padding:38px 18px 48px}.hero h1{font-size:48px}.hero p{font-size:17px}.hero-cta{display:grid}.hero-cta .btn{width:100%}.intro h2,.services h2,.ba-copy h2,.contact h2{font-size:52px}.intro-copy{font-size:18px}.intro-image{min-height:320px}.intro-content{padding:34px 22px}.intro-points{grid-template-columns:1fr;gap:8px;margin-top:26px}.project-row{display:block;padding:34px 0}.num{margin-bottom:12px}.project-row h3{font-size:38px}.project-image{height:270px;margin-top:20px}.services-head{margin-bottom:30px}.service{grid-template-columns:34px 1fr;padding:22px 0}.service h3{font-size:30px}.ba-pair{grid-template-columns:1fr 1fr}.ba{height:300px}.transform-card h3{font-size:24px}.gallery-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.gallery-grid figure,.gallery-grid figure:first-child,.gallery-grid figure:nth-child(4){height:280px;grid-column:auto}.contact .links a{font-size:16px}.footer{padding-bottom:95px}}
+
+@media(max-width:980px){
+  html,body{max-width:100%;overflow-x:hidden}
+  main,section,.wrap,.hero,.hero-copy,.hero-media,.intro-grid,.project-row,.services-head,.ba-head,.transform-grid,.gallery-grid,.contact-grid{min-width:0;max-width:100%}
+  img{max-width:100%}
+  .mobilebar{
+    left:12px!important;right:12px!important;bottom:12px!important;
+    width:auto!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:10px!important;
+    padding:7px!important;
+    border-radius:24px!important;
+    background:rgba(17,19,24,.88)!important;
+    backdrop-filter:blur(14px);
+    box-shadow:0 10px 34px rgba(0,0,0,.22);
+  }
+  .mobilebar a{
+    min-height:48px!important;
+    border-radius:18px!important;
+    padding:0 14px!important;
+    font-size:14px!important;
+  }
+}
+@media(max-width:420px){
+  .mobilebar{left:9px!important;right:9px!important;bottom:9px!important}
+  .mobilebar a{min-width:0;font-size:13px!important}
+}
+
 </style>
 </head>
 <body>
