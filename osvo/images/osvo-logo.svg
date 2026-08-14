@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+<title id="title">OSVO Building Services Ltd</title><desc id="desc">OSVO Building Services logo</desc>
+<rect width="720" height="180" rx="18" fill="#111318"/>
+<g transform="translate(28,22)">
+  <path d="M10 74 67 20l57 54" fill="none" stroke="#ff6b21" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M28 68v51h78V68" fill="none" stroke="#f4f2ed" stroke-width="7"/>
+  <text x="145" y="83" font-family="Arial,Helvetica,sans-serif" font-size="78" font-weight="900" letter-spacing="5" fill="#f4f2ed">OSVO</text>
+  <rect x="147" y="96" width="490" height="4" fill="#ff6b21"/>
+  <text x="147" y="128" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing="5" fill="#b9bec7">BUILDING SERVICES LTD</text>
+</g>
+</svg>
