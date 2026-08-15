@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img" aria-label="GID Exterior Cleaning Services">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1ea7ff"/>
+      <stop offset="1" stop-color="#0b5ee9"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 72 L80 26 L137 72" stroke="url(#g)" stroke-width="12"/>
+    <path d="M38 75 V119 H124 V75" stroke="#fff" stroke-width="9"/>
+    <path d="M17 126 C58 109 97 113 137 126" stroke="#1ea7ff" stroke-width="7"/>
+    <path d="M18 136 C58 120 97 124 137 136" stroke="#0b5ee9" stroke-width="5"/>
+  </g>
+  <text x="160" y="77" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="900" font-style="italic" fill="#fff">GID</text>
+  <text x="164" y="108" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" letter-spacing="2.2" fill="#fff">EXTERIOR CLEANING SERVICES</text>
+  <text x="164" y="134" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="6" fill="#68c7ff">CLEANER • BRIGHTER • BETTER</text>
+</svg>
