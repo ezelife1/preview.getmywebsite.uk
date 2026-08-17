@@ -21,3 +21,16 @@ if('IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>{if(isIntersecting){target.play().catch(()=>{})}else{target.pause()}}),{rootMargin:'150px'});
   vids.forEach(v=>io.observe(v));
 }
+
+// Keep floating Call / WhatsApp controls hidden until the hero has been passed.
+const hero=document.querySelector('.hero');
+const floatingBar=document.querySelector('.mobile-contact-bar');
+if(hero&&floatingBar){
+  const updateFloatingBar=()=>{
+    const heroBottom=hero.getBoundingClientRect().bottom;
+    floatingBar.classList.toggle('is-visible', heroBottom <= 0);
+  };
+  updateFloatingBar();
+  window.addEventListener('scroll',updateFloatingBar,{passive:true});
+  window.addEventListener('resize',updateFloatingBar,{passive:true});
+}
