@@ -26,13 +26,16 @@ footer{padding:60px 0 120px;background:#050505}.foot{display:grid;grid-template-
 .mobilebar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:120;gap:8px;opacity:0;pointer-events:none;transform:translateY(20px);transition:.25s}.mobilebar.show{opacity:1;pointer-events:auto;transform:none}.mobilebar .btn{flex:1;box-shadow:0 10px 30px rgba(0,0,0,.45)}
 @media(max-width:850px){
  .nav{height:72px}.brand{width:190px}.brand img{height:54px}.navlinks,.navcta{display:none}
- .hero{min-height:760px;padding:70px 0 55px}.hero:before{background:linear-gradient(0deg,#090909 6%,rgba(9,9,9,.82) 54%,rgba(9,9,9,.12) 100%),url('assets/tarmac_after1.webp') 55% center/cover no-repeat}.hero h1{font-size:56px}.hero p{font-size:17px}.actions .btn{width:100%}
+ .hero{min-height:700px;padding:62px 0 48px}.hero:before{background:linear-gradient(0deg,#090909 5%,rgba(9,9,9,.88) 50%,rgba(9,9,9,.18) 100%),url('assets/tarmac_after1.webp') 50% center/cover no-repeat}.hero .wrap{width:min(92vw,680px)}.hero h1{font-size:clamp(40px,11.8vw,50px);line-height:.9;letter-spacing:-.045em;max-width:100%;margin:14px 0 22px;overflow-wrap:normal;word-break:normal}.hero p{font-size:17px;line-height:1.55;max-width:100%}.actions .btn{width:100%}
  .statsgrid{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid #252525}
- section{padding:68px 0}.head{grid-template-columns:1fr;gap:20px}.svcgrid{display:block}.svc{min-height:430px;margin-bottom:16px}.case{grid-template-columns:1fr}.case .photo{min-height:auto}.case .photo img{height:auto;aspect-ratio:auto;object-fit:contain;background:#111}.casecopy{display:block}.casecopy p{margin-top:8px}
+ section{padding:68px 0}.head{grid-template-columns:1fr;gap:20px}.svcgrid{display:block}.svc{min-height:430px;margin-bottom:16px}
+ .case{grid-template-columns:1fr 1fr;border-radius:22px;margin-bottom:18px}.case .photo{min-height:320px;overflow:hidden}.case .photo img{width:100%;height:100%;object-fit:cover;background:#111}.casecopy{grid-column:1/-1;display:block;padding:18px}.casecopy h3{font-size:20px}.casecopy p{margin-top:7px;font-size:14px;line-height:1.45}.badge{top:12px;left:12px;padding:8px 11px;font-size:10px}
  .roadgrid{grid-template-columns:1fr}.roadphoto img{height:auto;max-height:620px;object-fit:cover}.roadlist{grid-template-columns:1fr}.reviewgrid{grid-template-columns:1fr}.ctagrid{display:block}.foot{grid-template-columns:1fr}
  .mobilebar{display:flex}
+ body,main,.hero,.transform,.case,.wrap{max-width:100%;overflow-x:hidden}
 }
-</style>
+
+.slider-case{display:block}.compare-slider{--pos:50%;position:relative;width:100%;height:620px;overflow:hidden;background:#111;touch-action:pan-y}.compare-before,.compare-after-wrap,.compare-after{position:absolute;inset:0;width:100%;height:100%}.compare-before,.compare-after{object-fit:cover}.compare-after-wrap{width:var(--pos);overflow:hidden;z-index:2}.compare-after{width:var(--slider-width,100%);max-width:none}.compare-divider{position:absolute;z-index:5;left:var(--pos);top:0;bottom:0;width:3px;background:#fff;transform:translateX(-50%)}.compare-divider span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#ff8a00;color:#111;border:3px solid #fff;font-size:21px;font-weight:900;box-shadow:0 8px 24px #0008}.compare-range{position:absolute;z-index:8;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}.compare-label{position:absolute;z-index:6;top:18px;padding:9px 14px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.before-label{left:18px;background:#171717;color:#fff}.after-label{right:18px;background:#ff8a00;color:#111}@media(max-width:760px){.slider-case{display:block!important}.compare-slider{height:min(105vw,500px)}.compare-divider span{width:46px;height:46px;font-size:18px}.compare-label{top:14px;padding:8px 11px;font-size:10px}.before-label{left:14px}.after-label{right:14px}}</style>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -69,23 +72,32 @@ footer{padding:60px 0 120px;background:#050505}.foot{display:grid;grid-template-
 <section class="transform" id="work"><div class="wrap">
 <div class="head"><div><div class="kicker">Real project transformations</div><h2>Before. After.<br>No guesswork.</h2></div><p>The work speaks best when you can see the starting point and the finished surface side by side.</p></div>
 
-<div class="case">
-<div class="photo before"><img src="assets/tarmac_before.webp" alt="Driveway before tarmac"><span class="badge">Before</span></div>
-<div class="photo after"><img src="assets/tarmac_after1.webp" alt="Driveway after tarmac"><span class="badge">After</span></div>
-<div class="casecopy"><h3>Large tarmac driveway transformation</h3><p>Existing tired surface replaced with a clean, uniform tarmac finish.</p></div>
-</div>
+<div class="case slider-case">
+<div class="compare-slider" style="--pos:50%">
+<img class="compare-before" src="assets/tarmac_before.webp" alt="Driveway before tarmac">
+<div class="compare-after-wrap"><img class="compare-after" src="assets/tarmac_after1.webp" alt="Driveway after tarmac"></div>
+<span class="compare-label before-label">Before</span><span class="compare-label after-label">After</span>
+<div class="compare-divider"><span>↔</span></div>
+<input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+</div><div class="casecopy"><h3>Large tarmac driveway transformation</h3><p>Existing tired surface replaced with a clean, uniform tarmac finish.</p></div></div>
 
-<div class="case">
-<div class="photo before"><img src="assets/resin_before.webp" alt="Side access before resin"><span class="badge">Before</span></div>
-<div class="photo after"><img src="assets/resin_after.webp" alt="Side access after resin"><span class="badge">After</span></div>
-<div class="casecopy"><h3>Resin-bound side access</h3><p>A narrow, untidy side area transformed into a clean low-maintenance resin surface with dark edging.</p></div>
-</div>
+<div class="case slider-case">
+<div class="compare-slider" style="--pos:50%">
+<img class="compare-before" src="assets/resin_before.webp" alt="Side access before resin">
+<div class="compare-after-wrap"><img class="compare-after" src="assets/resin_after.webp" alt="Side access after resin"></div>
+<span class="compare-label before-label">Before</span><span class="compare-label after-label">After</span>
+<div class="compare-divider"><span>↔</span></div>
+<input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+</div><div class="casecopy"><h3>Resin-bound side access</h3><p>A narrow, untidy side area transformed into a clean low-maintenance resin surface with dark edging.</p></div></div>
 
-<div class="case">
-<div class="photo before"><img src="assets/tarmac_driveway_before.webp" alt="Driveway during preparation before new tarmac"><span class="badge">Before</span></div>
-<div class="photo after"><img src="assets/tarmac_driveway_after.webp" alt="Finished tarmac driveway"><span class="badge">After</span></div>
-<div class="casecopy"><h3>Full tarmac driveway replacement</h3><p>Old surface excavated and prepared before being finished with a clean, hard-wearing new tarmac driveway.</p></div>
-</div>
+<div class="case slider-case">
+<div class="compare-slider" style="--pos:50%">
+<img class="compare-before" src="assets/tarmac_driveway_before.webp" alt="Driveway during preparation before new tarmac">
+<div class="compare-after-wrap"><img class="compare-after" src="assets/tarmac_driveway_after.webp" alt="Finished tarmac driveway"></div>
+<span class="compare-label before-label">Before</span><span class="compare-label after-label">After</span>
+<div class="compare-divider"><span>↔</span></div>
+<input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+</div><div class="casecopy"><h3>Full tarmac driveway replacement</h3><p>Old surface excavated and prepared before being finished with a clean, hard-wearing new tarmac driveway.</p></div></div>
 </div></section>
 
 <section class="road" id="marking"><div class="wrap roadgrid">
@@ -129,4 +141,4 @@ footer{padding:60px 0 120px;background:#050505}.foot{display:grid;grid-template-
 const hero=document.querySelector('.hero'),bar=document.getElementById('mobileBar');
 new IntersectionObserver(([e])=>bar.classList.toggle('show',!e.isIntersecting),{threshold:.05}).observe(hero);
 </script>
-</body></html>
+<script>document.querySelectorAll('.compare-slider').forEach(function(s){const r=s.querySelector('.compare-range');function sync(){s.style.setProperty('--pos',r.value+'%');s.style.setProperty('--slider-width',s.clientWidth+'px')}r.addEventListener('input',sync);window.addEventListener('resize',sync);sync()});</script></body></html>
