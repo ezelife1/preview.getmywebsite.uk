@@ -12,3 +12,16 @@ if (menuBtn && nav) {
     menuBtn.textContent = '☰';
   }));
 }
+
+// Only show the floating Call / WhatsApp bar once the visitor has passed the hero.
+const hero = document.querySelector('.hero');
+const mobileContactBar = document.querySelector('.mobile-contact-bar');
+if (hero && mobileContactBar) {
+  const updateFloatingContact = () => {
+    const heroBottom = hero.getBoundingClientRect().bottom;
+    mobileContactBar.classList.toggle('is-visible', heroBottom <= 0);
+  };
+  updateFloatingContact();
+  window.addEventListener('scroll', updateFloatingContact, { passive: true });
+  window.addEventListener('resize', updateFloatingContact);
+}
