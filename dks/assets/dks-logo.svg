@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-label="DKS Ground Works">
+  <g>
+    <g transform="translate(8,24)">
+      <rect x="0" y="76" width="128" height="34" rx="9" fill="#ff9b00"/>
+      <path d="M15 74h98l-17-36H35z" fill="#ff9b00"/>
+      <circle cx="26" cy="116" r="15" fill="#151515"/><circle cx="101" cy="116" r="15" fill="#151515"/>
+      <circle cx="26" cy="116" r="7" fill="#f4f4f4"/><circle cx="101" cy="116" r="7" fill="#f4f4f4"/>
+      <rect x="30" y="44" width="68" height="31" rx="3" fill="#222"/>
+      <rect x="41" y="51" width="20" height="15" rx="2" fill="#ececec"/><rect x="66" y="51" width="20" height="15" rx="2" fill="#ececec"/>
+      <circle cx="31" cy="94" r="8" fill="#fff"/><circle cx="97" cy="94" r="8" fill="#fff"/>
+    </g>
+    <text x="155" y="102" font-family="Arial Black, Arial, sans-serif" font-size="104" font-style="italic" font-weight="900" fill="#ffffff">DKS</text>
+    <path d="M160 118h520" stroke="#ff8500" stroke-width="5"/>
+    <text x="166" y="151" font-family="Arial, sans-serif" font-size="35" font-style="italic" font-weight="800" fill="#d8d8d8">GROUND WORKS</text>
+    <text x="167" y="180" font-family="Arial, sans-serif" font-size="18" letter-spacing="8" fill="#ff9b00">TARMAC • PAVING • RESIN</text>
+  </g>
+</svg>
