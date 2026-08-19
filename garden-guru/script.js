@@ -1,0 +1,6 @@
+document.addEventListener('DOMContentLoaded',()=>{
+ const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
+ if(menu&&nav){menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
+ const hero=document.querySelector('#hero'),floating=document.querySelector('.floating-contact');
+ if(hero&&floating){new IntersectionObserver(([e])=>floating.classList.toggle('visible',!e.isIntersecting),{threshold:.03}).observe(hero)}
+ document.querySelectorAll('.ba-slider').forEach(slider=>{const wrap=slider.querySelector('.ba-before-wrap'),line=slider.querySelector('.ba-line');let down=false;const move=x=>{const r=slider.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(0,Math.min(100,p));wrap.style.width=p+'%';line.style.left=p+'%'};slider.addEventListener('pointerdown',e=>{down=true;slider.setPointerCapture(e.pointerId);move(e.clientX)});slider.addEventListener('pointermove',e=>{if(down)move(e.clientX)});slider.addEventListener('pointerup',()=>down=false);slider.addEventListener('pointercancel',()=>down=false)})});
