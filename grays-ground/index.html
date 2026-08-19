@@ -42,9 +42,7 @@
 
 <main id="top">
 <section class="hero" id="hero">
-  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-estate.webp" aria-label="Gray’s Ground Maintenance at work">
-    <source src="assets/hero-video.mp4" type="video/mp4">
-  </video>
+  <img class="hero-image" src="assets/hero-estate.webp" alt="Large professionally maintained garden and lawn">
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
@@ -77,7 +75,6 @@
     <article class="service-card">
       <img src="assets/garden-maintenance.webp" alt="Professionally maintained garden">
       <div class="service-body">
-        <span class="service-num">01</span>
         <h3>Garden Maintenance</h3>
         <p>Grass cutting, border care, pruning, seasonal tidy-ups and ongoing private garden maintenance.</p>
       </div>
@@ -85,7 +82,6 @@
     <article class="service-card">
       <img src="assets/hedge-after.webp" alt="Neatly trimmed tall hedge">
       <div class="service-body">
-        <span class="service-num">02</span>
         <h3>Hedge & Tree Work</h3>
         <p>Hedge trimming, reductions and regular maintenance for everything from domestic hedges to large boundaries.</p>
       </div>
@@ -93,7 +89,6 @@
     <article class="service-card">
       <img src="assets/garden-finish.webp" alt="Freshly maintained lawn and garden">
       <div class="service-body">
-        <span class="service-num">03</span>
         <h3>Grounds Maintenance</h3>
         <p>Reliable maintenance for commercial sites, developments, managed properties and larger outdoor spaces.</p>
       </div>
@@ -101,7 +96,6 @@
     <article class="service-card">
       <img src="assets/industrial-mowing.webp" alt="Industrial mowing machine working in long grass">
       <div class="service-body">
-        <span class="service-num">04</span>
         <h3>Industrial Mowing</h3>
         <p>Heavy-duty mowing and vegetation control for larger plots, rough grass and commercial grounds.</p>
       </div>
@@ -109,7 +103,6 @@
     <article class="service-card">
       <img src="assets/overgrown-after.webp" alt="Cleared and cut back outdoor area">
       <div class="service-body">
-        <span class="service-num">05</span>
         <h3>Clearance & Overgrowth</h3>
         <p>Overgrown gardens brought back under control with cutting, clearance and tidy removal of green waste.</p>
       </div>
@@ -135,6 +128,21 @@
   </div>
 </section>
 
+
+<section class="video-showcase">
+  <div class="video-showcase-copy">
+    <p class="section-kicker green">SEE GRAY’S AT WORK</p>
+    <h2>Professional ground maintenance in action.</h2>
+    <p>A closer look at the kind of work Gray’s carries out across private gardens, larger grounds and commercial spaces.</p>
+    <a class="btn btn-primary" href="https://wa.me/447306363955?text=Hi%20Gray%27s%20Ground%20Maintenance%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener">Send photos for a quote</a>
+  </div>
+  <div class="video-showcase-frame">
+    <video controls playsinline preload="metadata" poster="assets/garden-large.webp">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
 <section class="results section-light" id="work">
   <div class="section-heading left">
     <p class="section-kicker">REAL RESULTS</p>
@@ -144,19 +152,29 @@
 
   <div class="before-after-grid">
     <article class="transform-card">
-      <div class="transform-images">
-        <div><img src="assets/hedge-before.webp" alt="Hedge before trimming"><span>Before</span></div>
-        <div><img src="assets/hedge-after.webp" alt="Hedge after trimming"><span>After</span></div>
+      <div class="ba-slider">
+        <img class="ba-after" src="assets/hedge-after.webp" alt="Hedge after trimming">
+        <div class="ba-before-wrap">
+          <img class="ba-before" src="assets/hedge-before.webp" alt="Hedge before trimming">
+        </div>
+        <div class="ba-divider"><span>↔</span></div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
       </div>
-      <div class="transform-copy"><h3>High hedge reduction</h3><p>Large hedging reshaped and brought back under control with a clean, even finish.</p></div>
+      <div class="transform-copy"><h3>High hedge reduction</h3><p>Drag the slider to see the large hedging reshaped and brought back under control.</p></div>
     </article>
 
     <article class="transform-card">
-      <div class="transform-images">
-        <div><img src="assets/overgrown-before.webp" alt="Overgrown grass and vegetation before clearance"><span>Before</span></div>
-        <div><img src="assets/overgrown-after.webp" alt="Cut and cleared grounds after maintenance"><span>After</span></div>
+      <div class="ba-slider">
+        <img class="ba-after" src="assets/overgrown-after.webp" alt="Cut and cleared grounds after maintenance">
+        <div class="ba-before-wrap">
+          <img class="ba-before" src="assets/overgrown-before.webp" alt="Overgrown grass and vegetation before clearance">
+        </div>
+        <div class="ba-divider"><span>↔</span></div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
       </div>
-      <div class="transform-copy"><h3>Overgrown ground clearance</h3><p>Dense vegetation cut back and cleared to leave the site usable, tidy and manageable again.</p></div>
+      <div class="transform-copy"><h3>Overgrown ground clearance</h3><p>Drag the slider to reveal the cleared and tidied result.</p></div>
     </article>
   </div>
 
