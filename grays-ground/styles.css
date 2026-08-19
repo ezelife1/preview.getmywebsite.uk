@@ -331,3 +331,43 @@ footer p:last-child{margin-left:auto}
   .ba-slider{height:340px}
   .ba-divider span{width:44px;height:44px;font-size:17px}
 }
+
+
+/* Desktop hero layout fix */
+.hero{
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.hero-content{
+  width:min(760px, calc(100vw - 120px));
+  max-width:760px;
+  margin-right:auto;
+  padding-right:20px;
+}
+.hero h1{
+  max-width:100%;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+@media(min-width:821px){
+  .hero{
+    padding-left:clamp(40px,5vw,90px);
+    padding-right:clamp(40px,5vw,90px);
+  }
+  .hero-content{
+    width:min(760px, 52vw);
+    max-width:760px;
+  }
+  .hero h1{
+    font-size:clamp(58px,5.2vw,90px);
+    line-height:.95;
+    letter-spacing:-4px;
+  }
+  .hero-copy{
+    max-width:620px;
+  }
+  .trust-strip{
+    max-width:760px;
+  }
+}
