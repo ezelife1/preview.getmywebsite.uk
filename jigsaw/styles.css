@@ -60,4 +60,4 @@ footer{background:#f7f7f3}.contact-strip{min-height:130px;display:grid;grid-temp
 @media(max-width:1000px){.hero .topbar{width:100%;border-radius:0;padding-inline:4vw}.hero-content{padding-top:150px}}
 @media(max-width:620px){.hero .topbar{height:82px;background:rgba(3,17,9,.74)}.hero-content{padding-top:145px}}
 
-.mobile-float{opacity:0;pointer-events:none;transform:translateY(18px);transition:opacity .22s ease,transform .22s ease}.mobile-float.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+

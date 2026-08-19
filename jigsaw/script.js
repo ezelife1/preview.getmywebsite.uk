@@ -7,15 +7,3 @@ menu?.addEventListener('click',()=>{
 });
 
 
-// Show mobile contact buttons only after the hero has been passed
-const floatBar=document.querySelector('.mobile-float');
-const hero=document.querySelector('.hero');
-if(floatBar && hero){
-  const updateFloat=()=>{
-    const pastHero=window.scrollY > (hero.offsetHeight - 90);
-    floatBar.classList.toggle('visible', pastHero);
-  };
-  updateFloat();
-  window.addEventListener('scroll', updateFloat, {passive:true});
-  window.addEventListener('resize', updateFloat);
-}
