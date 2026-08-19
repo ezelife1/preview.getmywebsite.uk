@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160">
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ee600"/>
+      <stop offset="1" stop-color="#32bf13"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 16)">
+    <text x="0" y="78" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="900"
+          letter-spacing="-5" fill="#ffffff">Gray’s</text>
+    <text x="154" y="116" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800"
+          letter-spacing="-1" fill="#55cbe9">GROUND MAINTENANCE</text>
+
+    <path d="M348 10 C405 15 452 44 469 91 C424 91 385 74 360 45 C350 33 346 21 348 10Z"
+          fill="url(#leaf)"/>
+    <path d="M459 50 C492 49 518 60 535 83 C510 93 486 89 469 76 C461 69 458 60 459 50Z"
+          fill="#29aa10"/>
+    <path d="M425 28 C425 62 416 86 392 107" fill="none" stroke="#0d4a18" stroke-width="4" stroke-linecap="round" opacity=".35"/>
+  </g>
+</svg>
