@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" role="img" aria-label="Jet-Away Exterior Cleaning Services">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 83h70l38-26h92" stroke="#48b9ec" stroke-width="18"/>
+    <path d="M28 58h70l28 22-28 31H28z" stroke="#48b9ec" stroke-width="15"/>
+    <path d="M49 74h42l13 8-13 14H49z" stroke="#17467e" stroke-width="8"/>
+    <path d="M236 57h35" stroke="#d9eef8" stroke-width="14"/>
+    <path d="M272 57h82" stroke="#48b9ec" stroke-width="16"/>
+    <path d="M357 57l48-15" stroke="#d9eef8" stroke-width="8"/>
+    <path d="M404 42l55-16M406 48l73-4M405 55l68 12" stroke="#a8dff6" stroke-width="4" opacity=".8"/>
+  </g>
+  <text x="166" y="100" fill="#ffffff" font-family="Arial Black,Arial,sans-serif" font-size="52" font-style="italic" font-weight="900" letter-spacing="2">JET-AWAY</text>
+  <rect x="164" y="113" width="500" height="37" rx="18" fill="#0c84c6"/>
+  <text x="184" y="139" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="4">EXTERIOR CLEANING SERVICES</text>
+</svg>
