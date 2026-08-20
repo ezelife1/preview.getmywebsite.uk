@@ -12,3 +12,22 @@
 .site-header.scrolled .brand img{height:92px}
 .footer img{width:auto;height:100px;max-width:190px;object-fit:contain}
 @media(max-width:900px){.brand{width:215px}.brand img{width:auto;height:88px;max-width:205px}.site-header.scrolled .brand img{height:76px}.footer img{width:auto;height:82px;max-width:155px}}
+
+/* v5 — full logo visible in header, no clipping */
+.site-header{height:132px;overflow:visible}
+.site-header.scrolled{height:104px}
+.brand{width:270px;height:120px;display:flex;align-items:center;overflow:visible;flex:0 0 270px}
+.brand img{display:block;width:250px;height:112px;max-width:none;object-fit:contain;object-position:center}
+.site-header.scrolled .brand{height:94px}
+.site-header.scrolled .brand img{height:88px;width:220px}
+.hero-content{padding-top:132px}
+@media(max-width:900px){
+  .site-header{height:92px}
+  .site-header.scrolled{height:82px}
+  .brand{width:180px;height:86px;flex-basis:180px}
+  .brand img{width:172px;height:80px;max-width:none}
+  .site-header.scrolled .brand{height:76px}
+  .site-header.scrolled .brand img{width:158px;height:72px}
+  .hero-content{padding-top:108px}
+  .mobile-menu{inset:92px 0 auto 0}
+}
