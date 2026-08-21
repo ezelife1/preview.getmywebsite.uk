@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 180" role="img" aria-labelledby="title desc">
+  <title id="title">Removals Transport Express</title>
+  <desc id="desc">Moving truck and house icon with Removals Transport Express wordmark</desc>
+  <g fill="none" stroke="#0b2d4f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 55h120v72H30z"/>
+    <path d="M47 56l43-34 43 34"/>
+    <path d="M67 84h47v43H67z"/>
+    <path d="M150 76h48l26 29v22h-74z"/>
+    <circle cx="72" cy="139" r="15" fill="#fff"/>
+    <circle cx="183" cy="139" r="15" fill="#fff"/>
+    <path d="M6 66h28M0 88h34M12 110h22"/>
+  </g>
+  <g fill="#0b2d4f" font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="255" y="92" font-size="80" letter-spacing="1">REMOVALS</text>
+    <text x="257" y="146" font-size="46" letter-spacing="2">TRANSPORT EXPRESS</text>
+  </g>
+</svg>
