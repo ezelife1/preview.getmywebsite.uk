@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-label="SM Garden Maintenance">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#79d84a"/>
+      <stop offset="1" stop-color="#2e8f2e"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,18)">
+    <path d="M54 12C25 20 8 44 10 76c27 2 52-13 62-39-9 31-27 53-54 67 27 6 58-4 74-28 11-17 12-37 5-58-14 22-29 34-43 37 8-17 8-31 0-43Z" fill="url(#g)"/>
+    <path d="M31 93c14-25 32-43 56-56" fill="none" stroke="#133d20" stroke-width="7" stroke-linecap="round"/>
+    <path d="M90 25 118 6l29 19v30h-15V34l-14-9-14 9v21H90Z" fill="#133d20"/>
+  </g>
+  <text x="164" y="73" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900" fill="#102418">SM</text>
+  <text x="164" y="111" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#102418">Garden <tspan fill="#4caf36">Maintenance</tspan></text>
+  <text x="166" y="135" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#617065">GARDENS • HEDGES • FENCING • LANDSCAPING</text>
+</svg>
