@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" role="img" aria-labelledby="t d">
+<title id="t">DP Plant Driveways &amp; Landscaping</title><desc id="d">Modern yellow and black DP monogram logo</desc>
+<rect width="860" height="220" rx="26" fill="#0b0b0b"/>
+<g transform="translate(28,18)">
+  <path d="M20 16h98c63 0 105 34 105 87 0 55-42 89-105 89H20V16zm58 46v84h34c34 0 53-15 53-42 0-27-19-42-53-42H78z" fill="#ffd51f"/>
+  <!-- Clear P: vertical stem with one upper bowl only -->
+  <path d="M128 70h54v140h-54z" fill="#ffd51f" stroke="#0b0b0b" stroke-width="8"/>
+  <path d="M174 70h52c45 0 75 25 75 64s-30 64-75 64h-52v-42h45c18 0 29-8 29-22s-11-22-29-22h-45z" fill="#ffd51f" stroke="#0b0b0b" stroke-width="8" stroke-linejoin="round"/>
+</g>
+<text x="338" y="92" fill="#fff" font-size="48" font-weight="800" font-family="Arial,Helvetica,sans-serif" letter-spacing="1">PLANT DRIVEWAYS</text>
+<text x="338" y="143" fill="#ffd51f" font-size="42" font-weight="800" font-family="Arial,Helvetica,sans-serif" letter-spacing="1">&amp; LANDSCAPING</text>
+<text x="338" y="184" fill="#d5d5d5" font-size="24" font-weight="700" font-family="Arial,Helvetica,sans-serif">DRIVEWAYS • RESIN • PAVING • LANDSCAPING</text>
+</svg>
