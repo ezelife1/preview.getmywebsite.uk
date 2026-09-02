@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 150" role="img" aria-label="Golf Smarter">
+  <!-- Clear GS monogram matching the Golf Smarter brand -->
+  <circle cx="108" cy="75" r="64" fill="none" stroke="#55d46a" stroke-width="7"/>
+  <text x="58" y="96" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#ffffff">G</text>
+  <text x="108" y="96" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#55d46a">S</text>
+  <text x="205" y="78" font-family="Arial, Helvetica, sans-serif" font-size="59" font-weight="800" letter-spacing="1" fill="#ffffff">GOLF SMARTER</text>
+  <text x="208" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#55d46a">PRACTICE SMARTER • PLAY BETTER</text>
+</svg>
