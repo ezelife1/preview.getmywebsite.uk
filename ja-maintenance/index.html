@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>JA Maintenance | Property, Garden & Exterior Maintenance</title>
+<meta name="description" content="JA Maintenance provides reliable property repairs, garden services, power washing, window cleaning, gutter cleaning, fencing, flooring, tiling, painting and decorating. Call for a free quote.">
+<style>
+:root{--red:#df3038;--red2:#b91f27;--black:#090909;--charcoal:#121212;--soft:#f4f2ef;--grey:#a8a8a8;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b0b0b;color:white;font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{text-decoration:none;color:inherit}img,video{display:block;width:100%}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+header{position:absolute;z-index:30;top:0;left:0;right:0;border-bottom:1px solid #ffffff22;background:linear-gradient(#000b,transparent)}.nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:28px}.logo{display:flex;align-items:center;gap:13px}.logo-mark{width:64px;height:52px;object-fit:cover;object-position:center 37%;border-radius:4px}.logo-text b{display:block;font-size:22px;letter-spacing:.05em}.logo-text span{font-size:9px;color:#d5d5d5;letter-spacing:.16em;text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:700}.nav-cta{background:var(--red);padding:13px 18px;border-radius:4px}
+.hero{height:760px;min-height:680px;position:relative;overflow:hidden}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000e 0%,#000b 38%,#0003 72%),linear-gradient(0deg,#000b,transparent 50%)}.hero-inner{position:relative;z-index:2;height:100%;display:flex;align-items:center;padding-top:60px}.hero-copy{max-width:690px}.kicker{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.kicker:before{content:"";width:38px;height:3px;background:var(--red)}h1{font-size:clamp(54px,6.6vw,88px);line-height:.93;letter-spacing:-.045em;margin:18px 0 22px;max-width:760px}.hero p{font-size:19px;color:#e0e0e0;max-width:600px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:4px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.btn-red{background:var(--red)}.btn-outline{border:1px solid #ffffff88;background:#0005}.trustbar{background:#fff;color:#111}.trustgrid{display:grid;grid-template-columns:repeat(4,1fr)}.trust{padding:22px;border-right:1px solid #ddd}.trust:last-child{border-right:0}.trust b{display:block;font-size:17px}.trust span{font-size:12px;color:#666}
+section{padding:92px 0}.eyebrow{color:var(--red);font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}.title{font-size:clamp(38px,4vw,58px);line-height:1;margin:0 0 18px;letter-spacing:-.03em}.lead{color:#b7b7b7;font-size:17px;max-width:690px}.introgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.intro-photo{height:530px;object-fit:cover;border-radius:8px}.intro-copy p{color:#b8b8b8}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.check{background:#141414;border:1px solid #242424;border-radius:6px;padding:15px 16px;font-size:13px;font-weight:700}.check:before{content:"✓";color:var(--red);margin-right:9px}
+.services{background:#f1f0ed;color:#111}.services .lead{color:#666}.servicegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.service{background:#fff;border-radius:7px;padding:26px;border-top:4px solid var(--red);box-shadow:0 8px 25px #0000000b}.service h3{margin:0 0 8px;font-size:20px}.service p{margin:0;color:#666;font-size:13px}
+.workhead{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:38px}.workhead p{max-width:480px;color:#aaa}.workgrid{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:330px 330px;gap:12px}.work{position:relative;overflow:hidden;border-radius:6px}.work img{width:100%;height:100%;object-fit:cover}.work:first-child{grid-row:span 2}.work:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000b,transparent 55%)}.work label{position:absolute;z-index:2;left:18px;bottom:16px;font-weight:800;font-size:13px}.work label span{display:block;color:#f2a0a4;font-size:9px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:3px}
+.feature{background:var(--red);padding:0}.featuregrid{display:grid;grid-template-columns:1fr 1fr;min-height:540px}.featureimg img{height:100%;object-fit:cover}.featurecopy{display:flex;align-items:center;padding:70px}.featurecopy .eyebrow{color:#ffd7d9}.featurecopy p{color:#ffe9ea}.featurecopy .btn{background:#111}
+.processgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#292929;border:1px solid #292929;margin-top:38px}.step{background:#101010;padding:30px}.step strong{font-size:36px;color:#5d5d5d}.step h3{font-size:20px;margin:16px 0 8px}.step p{font-size:13px;color:#999;margin:0}
+.gallery{background:#111}.gallerygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.gallerygrid img{height:245px;object-fit:cover;border-radius:5px}.gallerygrid img:first-child,.gallerygrid img:nth-child(6){grid-column:span 2}
+.cta{text-align:center;background:#f1f0ed;color:#111}.cta .title{max-width:760px;margin:0 auto 18px}.cta p{color:#666;max-width:620px;margin:0 auto 28px}.cta .btn-red{color:#fff}
+footer{padding:35px 0;background:#070707;border-top:1px solid #222}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;color:#777;font-size:11px}.foot b{color:#fff;font-size:16px}
+.floating{position:fixed;z-index:50;right:18px;bottom:18px;display:flex;gap:9px;opacity:0;pointer-events:none;transform:translateY(15px);transition:.25s}.floating.show{opacity:1;pointer-events:auto;transform:none}.floatbtn{height:50px;padding:0 17px;border-radius:25px;display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;box-shadow:0 10px 30px #0007}.float-call{background:var(--red);color:#fff}.float-quote{background:#fff;color:#111}
+@media(max-width:850px){.wrap{width:min(100% - 28px,1180px)}.nav{height:68px}.logo-mark{width:48px;height:40px}.logo-text b{font-size:17px}.logo-text span{font-size:7px}.navlinks a:not(.nav-cta){display:none}.nav-cta{padding:10px 12px;font-size:10px}.hero{height:650px;min-height:0}.hero:after{background:linear-gradient(0deg,#000e 0%,#0009 55%,#0002 100%)}.hero-inner{align-items:flex-end;padding:0 0 45px}.hero-copy{max-width:none}h1{font-size:48px}.hero p{font-size:15px}.actions .btn{flex:1;min-width:145px}.trustgrid{grid-template-columns:1fr 1fr}.trust:nth-child(2){border-right:0}.trust:nth-child(-n+2){border-bottom:1px solid #ddd}section{padding:62px 0}.introgrid,.featuregrid{grid-template-columns:1fr;gap:30px}.intro-photo{height:390px}.checks{grid-template-columns:1fr 1fr}.servicegrid{grid-template-columns:1fr 1fr}.workhead{display:block}.workgrid{grid-template-columns:1fr 1fr;grid-template-rows:300px 250px 250px}.work:first-child{grid-column:span 2;grid-row:auto}.featureimg{height:360px}.featurecopy{padding:45px 28px}.processgrid{grid-template-columns:1fr}.gallerygrid{grid-template-columns:1fr 1fr}.gallerygrid img{height:210px}.gallerygrid img:first-child,.gallerygrid img:nth-child(6){grid-column:span 1}.foot{display:block;text-align:center}.floating{left:12px;right:12px;bottom:12px}.floatbtn{flex:1;justify-content:center}}
+@media(max-width:480px){.wrap{width:min(100% - 22px,1180px)}.hero{height:590px}.hero-inner{padding-bottom:30px}h1{font-size:41px}.kicker{font-size:9px}.hero p{font-size:14px;margin-bottom:20px}.actions{gap:8px}.btn{min-height:47px;padding:0 14px;font-size:10px}.trust{padding:15px 12px}.trust b{font-size:14px}.trust span{font-size:10px}.title{font-size:36px}.intro-photo{height:320px}.checks,.servicegrid{grid-template-columns:1fr}.workgrid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.work,.work:first-child{grid-column:auto;height:260px}.featureimg{height:300px}.gallerygrid img{height:170px}.floating .floatbtn{height:46px;padding:0 12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="#" class="logo"><img class="logo-mark" src="assets/logo.jpg" alt="JA Maintenance logo"><span class="logo-text"><b>JA MAINTENANCE</b><span>Property · Garden · Exterior</span></span></a>
+<nav class="navlinks"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="tel:07576748010" class="nav-cta">Call 07576 748010</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="hero">
+<video autoplay muted loop playsinline preload="metadata"><source src="assets/hero.mp4" type="video/mp4"></video>
+<div class="wrap hero-inner"><div class="hero-copy">
+<div class="kicker">Local · Reliable · Professional</div>
+<h1>Property & garden jobs, properly sorted.</h1>
+<p>From power washing and garden maintenance to property repairs, decorating, flooring, gutters and windows — JA Maintenance takes care of those time-consuming jobs around the home and garden.</p>
+<div class="actions"><a class="btn btn-red" href="tel:07576748010">Call for a free quote</a><a class="btn btn-outline" href="#work">See our work</a></div>
+</div></div>
+</section>
+
+<div class="trustbar"><div class="wrap trustgrid">
+<div class="trust"><b>Free Quotes</b><span>Call to discuss your job</span></div>
+<div class="trust"><b>Home & Garden</b><span>One contact for multiple jobs</span></div>
+<div class="trust"><b>Real Project Photos</b><span>See completed work below</span></div>
+<div class="trust"><b>07576 748010</b><span>Speak directly to JA Maintenance</span></div>
+</div></div>
+
+<section id="about"><div class="wrap introgrid">
+<img class="intro-photo" src="assets/vans.jpg" alt="JA Maintenance vans">
+<div class="intro-copy"><div class="eyebrow">JA Maintenance</div><h2 class="title">A practical local service for your whole property.</h2>
+<p>JA Maintenance provides general property and exterior maintenance for the jobs that are easy to put off but make a real difference once they are done.</p>
+<p>Whether the garden needs bringing back under control, the driveway needs cleaning, a fence needs attention or there are repairs and decorating jobs inside the property, you can deal with one reliable local service.</p>
+<div class="checks"><div class="check">General property repairs</div><div class="check">Garden maintenance</div><div class="check">Power washing</div><div class="check">Window & gutter cleaning</div></div>
+</div></div></section>
+
+<section class="services" id="services"><div class="wrap">
+<div class="eyebrow">What we do</div><h2 class="title">Maintenance without the hassle.</h2><p class="lead">A broad range of home, garden and exterior services — ideal for individual jobs or getting several things sorted in one visit.</p>
+<div class="servicegrid">
+<div class="service"><h3>General Property Repairs</h3><p>Everyday repair and maintenance jobs around the home.</p></div>
+<div class="service"><h3>Garden Services</h3><p>Grass cutting, edging, hedge work, garden tidy-ups and ongoing maintenance.</p></div>
+<div class="service"><h3>Power Washing</h3><p>Driveways, patios and exterior hard surfaces cleaned and refreshed.</p></div>
+<div class="service"><h3>Fencing</h3><p>Fence repairs and replacement work to improve privacy and security.</p></div>
+<div class="service"><h3>Painting & Decorating</h3><p>Practical decorating work to freshen and maintain your property.</p></div>
+<div class="service"><h3>Laminate Flooring & Tiling</h3><p>Flooring and tiling for practical home improvements.</p></div>
+<div class="service"><h3>Windows & Gutters</h3><p>Window cleaning plus gutter cleaning and repair.</p></div>
+<div class="service"><h3>Blinds & Shelves</h3><p>Installation and those smaller jobs that still need doing properly.</p></div>
+<div class="service"><h3>Garden Transformations</h3><p>From neglected spaces to neat lawns, borders and usable gardens.</p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<div class="workhead"><div><div class="eyebrow">Recent work</div><h2 class="title">The difference is in the finish.</h2></div><p>We’ve used the strongest project photos supplied by JA Maintenance so customers can see the range and standard of the work.</p></div>
+<div class="workgrid">
+<div class="work"><img src="assets/jetwashing.jpg" alt="Driveway jet washing"><label><span>Exterior cleaning</span>Driveway jet washing</label></div>
+<div class="work"><img src="assets/lawn-care.jpg" alt="Lawn and garden maintenance"><label><span>Garden care</span>Lawn maintenance</label></div>
+<div class="work"><img src="assets/fencing.jpg" alt="Fence replacement"><label><span>Property maintenance</span>Fencing</label></div>
+<div class="work"><img src="assets/turfing.jpg" alt="Turf transformation"><label><span>Garden transformation</span>New lawn</label></div>
+<div class="work"><img src="assets/window-cleaning.jpg" alt="Window cleaning"><label><span>Exterior maintenance</span>Window cleaning</label></div>
+</div></div></section>
+
+<section class="feature"><div class="featuregrid">
+<div class="featureimg"><img src="assets/garden-before-after.jpg" alt="Garden maintenance before and after"></div>
+<div class="featurecopy"><div><div class="eyebrow">Garden maintenance</div><h2 class="title">From overgrown to under control.</h2><p>Garden jobs can quickly build up. JA Maintenance can cut, clear, tidy and maintain outdoor spaces so they look cared for again without you losing a weekend to it.</p><a class="btn" href="tel:07576748010">Get a free quote</a></div></div>
+</div></section>
+
+<section><div class="wrap"><div class="eyebrow">Simple process</div><h2 class="title">Getting the job sorted is easy.</h2>
+<div class="processgrid"><div class="step"><strong>01</strong><h3>Give us a call</h3><p>Tell us what needs doing and the type of property or outdoor job involved.</p></div><div class="step"><strong>02</strong><h3>Get a free quote</h3><p>We’ll discuss the work and provide a straightforward quote.</p></div><div class="step"><strong>03</strong><h3>We get it done</h3><p>Arrange a suitable time and let JA Maintenance take care of the job.</p></div></div>
+</div></section>
+
+<section class="gallery"><div class="wrap"><div class="eyebrow">More projects</div><h2 class="title">Home, garden & exterior work.</h2>
+<div class="gallerygrid">
+<img src="assets/garden-showcase.jpg" alt="Landscaped garden">
+<img src="assets/hedges.jpg" alt="Hedge maintenance">
+<img src="assets/jetwashing.jpg" alt="Jet washed driveway">
+<img src="assets/fencing.jpg" alt="New fencing">
+<img src="assets/window-cleaning.jpg" alt="Window cleaning">
+<img src="assets/lawn-care.jpg" alt="Freshly cut lawn">
+</div></div></section>
+
+<section class="cta"><div class="wrap"><div class="eyebrow">Free quote</div><h2 class="title">Got jobs around the home or garden that need sorting?</h2><p>Give JA Maintenance a call and tell us what you need doing.</p><a class="btn btn-red" href="tel:07576748010">Call 07576 748010</a></div></section>
+</main>
+
+<footer><div class="wrap foot"><b>JA MAINTENANCE</b><span>General property repairs · Garden services · Power washing · Windows · Gutters · Flooring · Tiling · Decorating</span><span>07576 748010</span></div></footer>
+
+<div class="floating" id="floating"><a class="floatbtn float-call" href="tel:07576748010">☎ Call Now</a><a class="floatbtn float-quote" href="tel:07576748010">Free Quote</a></div>
+<script>
+const hero=document.getElementById('hero'),floating=document.getElementById('floating');
+function toggleFloating(){floating.classList.toggle('show',hero.getBoundingClientRect().bottom<40)}
+addEventListener('scroll',toggleFloating,{passive:true});toggleFloating();
+</script>
+</body></html>
