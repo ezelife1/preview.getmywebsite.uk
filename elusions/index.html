@@ -10,7 +10,7 @@
 :root{--bg:#090806;--panel:#100e0c;--panel2:#15120f;--ivory:#f3ede4;--muted:#aaa39b;--gold:#c99a5f;--gold2:#8f653c;--line:rgba(255,255,255,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ivory);font-family:Arial,Helvetica,sans-serif;line-height:1.58}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}.wrap{width:min(1240px,calc(100% - 56px));margin:auto}
 header{position:absolute;top:0;left:0;right:0;z-index:30;border-bottom:1px solid rgba(255,255,255,.14)}.nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font:30px Georgia,serif;letter-spacing:.25em}.brand small{display:block;font:500 8px Arial;letter-spacing:.42em;color:var(--gold);margin-top:-2px}.menu{display:flex;align-items:center;gap:26px;font-size:10px;text-transform:uppercase;letter-spacing:.14em}.menu .enquire{border:1px solid rgba(255,255,255,.38);padding:12px 16px}
-.hero{min-height:820px;height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden}.heroMedia{position:absolute;inset:0;background:url('assets/hero.jpg') 71% center/cover no-repeat}.heroMedia:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.97) 0%,rgba(0,0,0,.82) 35%,rgba(0,0,0,.11) 74%),linear-gradient(0deg,rgba(0,0,0,.7),transparent 55%)}.heroContent{position:relative;z-index:2;padding-bottom:9vh;max-width:740px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.36em;color:var(--gold);margin-bottom:18px}.hero h1{font:400 clamp(68px,8.8vw,126px)/.82 Georgia,serif;letter-spacing:-.05em;margin:0}.hero h1 em{display:block;color:#d3aa74;font-style:normal}.hero p{max-width:585px;font-size:17px;color:#d5cfc7;margin:27px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 22px;border:1px solid rgba(255,255,255,.38);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.btn.primary{background:var(--ivory);border-color:var(--ivory);color:#0b0908}
+.hero{min-height:820px;height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden}.heroMedia{position:absolute;inset:0;background:#090806}.heroVideo{object-fit:contain}.heroVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}.heroMedia:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.97) 0%,rgba(0,0,0,.82) 35%,rgba(0,0,0,.11) 74%),linear-gradient(0deg,rgba(0,0,0,.7),transparent 55%)}.heroContent{position:relative;z-index:2;padding-bottom:9vh;max-width:740px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.36em;color:var(--gold);margin-bottom:18px}.hero h1{font:400 clamp(68px,8.8vw,126px)/.82 Georgia,serif;letter-spacing:-.05em;margin:0}.hero h1 em{display:block;color:#d3aa74;font-style:normal}.hero p{max-width:585px;font-size:17px;color:#d5cfc7;margin:27px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 22px;border:1px solid rgba(255,255,255,.38);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.btn.primary{background:var(--ivory);border-color:var(--ivory);color:#0b0908}
 .quick{border-block:1px solid var(--line);background:#0c0b09}.quickGrid{display:grid;grid-template-columns:repeat(4,1fr)}.quickItem{padding:22px 24px;border-right:1px solid var(--line)}.quickItem:last-child{border-right:0}.quickItem small{display:block;color:var(--gold);font-size:9px;text-transform:uppercase;letter-spacing:.2em;margin-bottom:6px}.quickItem b{font:21px Georgia,serif;font-weight:400}
 .section{padding:110px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.photoTall{height:620px;overflow:hidden}.photoTall img{object-position:center 18%}.copy h2,.heading h2,.privacy h2,.faq h2,.contact h2{font:400 clamp(46px,5vw,72px)/.98 Georgia,serif;margin:0}.copy p{font-size:17px;color:#c4bdb5}.copy .lead{font-size:20px;color:#ded7cf}.details{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.detail{border-top:1px solid #4b3929;padding-top:14px}.detail b{display:block;font:22px Georgia,serif;margin-bottom:5px}.detail span{font-size:12px;color:#969089}
 .dark{background:#0e0d0b}.heading{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:52px}.heading p{max-width:470px;color:var(--muted)}
@@ -23,6 +23,7 @@ header{position:absolute;top:0;left:0;right:0;z-index:30;border-bottom:1px solid
 footer{padding:32px 0;border-top:1px solid var(--line);font-size:10px;color:#766f69}.foot{display:flex;justify-content:space-between;gap:20px}.fab{position:fixed;right:22px;bottom:22px;z-index:50;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--ivory);color:#111;opacity:0;pointer-events:none;transform:translateY(14px);transition:.25s;box-shadow:0 10px 32px #0008}.fab.show{opacity:1;pointer-events:auto;transform:none}.fab svg{width:25px}
 
 @media(max-width:850px){
+  .heroVideo{object-fit:contain;object-position:center center}
   .wrap{width:min(100% - 24px,1240px)}
   .nav{height:64px}
   .brand{font-size:20px;letter-spacing:.2em}
@@ -31,7 +32,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:10px;color:#766
   .menu .enquire{font-size:8px;padding:8px 10px}
 
   .hero{height:auto;min-height:0;padding-top:64px}
-  .heroMedia{background-position:58% 22%}
+  .heroVideo{object-position:center center}
   .heroMedia:after{background:linear-gradient(0deg,#080706 3%,rgba(8,7,6,.82) 45%,rgba(8,7,6,.18) 74%,rgba(8,7,6,.05) 100%)}
   .heroContent{padding:220px 0 34px;max-width:none}
   .hero h1{font-size:48px;line-height:.88;letter-spacing:-.045em}
@@ -113,13 +114,106 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:10px;color:#766
   .brand{font-size:18px}
   .brand small{font-size:5px}
 }
+
+
+
+/* Desktop hero: use the portrait video properly instead of zooming it */
+@media (min-width:851px){
+  .hero{
+    min-height:720px;
+    height:90vh;
+    background:#090806;
+  }
+  .heroMedia{
+    left:auto;
+    right:0;
+    width:52%;
+    height:100%;
+    background:#090806;
+    overflow:hidden;
+  }
+  .heroMedia:after{
+    background:
+      linear-gradient(90deg,#090806 0%,rgba(9,8,6,.55) 16%,rgba(9,8,6,0) 42%),
+      linear-gradient(0deg,rgba(9,8,6,.28),rgba(9,8,6,0) 35%);
+  }
+  .heroMedia .heroVideo{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    transform:none !important;
+  }
+  .heroContent{
+    width:48%;
+    max-width:620px;
+    padding-bottom:10vh;
+  }
+  .hero h1{
+    font-size:clamp(58px,6.2vw,92px);
+  }
+  .hero p{
+    max-width:520px;
+  }
+}
+
+/* Mobile: video becomes the full hero background */
+@media (max-width:850px){
+  .heroMedia{
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+  }
+  .heroMedia .heroVideo{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center 30% !important;
+  }
+}
+
+
+@media (min-width:851px){
+  .hero > .wrap.heroContent{
+    width:min(1240px,calc(100% - 56px));
+    max-width:none;
+    margin-left:84px;
+    margin-right:auto;
+    padding-right:52%;
+  }
+}
+@media (min-width:1400px){
+  .hero > .wrap.heroContent{
+    margin-left:84px;
+  }
+}
+
+
+/* Desktop: soften the join between the dark copy area and portrait video */
+@media (min-width:851px){
+  .heroMedia{
+    width:58%;
+    margin-left:-6%;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.15) 6%,rgba(0,0,0,.65) 16%,#000 30%,#000 100%);
+    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.15) 6%,rgba(0,0,0,.65) 16%,#000 30%,#000 100%);
+  }
+  .heroMedia:after{
+    background:
+      linear-gradient(90deg,#090806 0%,rgba(9,8,6,.92) 8%,rgba(9,8,6,.58) 18%,rgba(9,8,6,.18) 30%,rgba(9,8,6,0) 42%),
+      linear-gradient(0deg,rgba(9,8,6,.28),rgba(9,8,6,0) 35%);
+  }
+}
+
 </style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#">ELUSIONS<small>MALE ESCORT SERVICE</small></a><nav class="menu"><a href="#about">About</a><a href="#services">Experiences</a><a href="#how">How It Works</a><a href="#privacy">Discretion</a><a href="#rates">Rates</a><a href="#faq">FAQ</a><a class="enquire" href="https://wa.me/447732165185">Private Enquiry</a></nav></div></header>
 
 <main>
-<section class="hero" id="hero"><div class="heroMedia"></div><div class="wrap heroContent"><div class="eyebrow">Discreet · Sophisticated · Personal</div><h1>Experiences<em>beyond ordinary.</em></h1><p>Elusions offers refined male companionship for private clients looking for more than just company — from dinner dates and special occasions to travel, weekends away and relaxed one-to-one time.</p><div class="buttons"><a class="btn primary" href="https://wa.me/447732165185">WhatsApp 07732 165185</a><a class="btn" href="#services">View Experiences</a></div></div></section>
+<section class="hero" id="hero"><div class="heroMedia"><video class="heroVideo" autoplay muted loop playsinline preload="metadata"><source src="assets/elusions-hero.mp4" type="video/mp4"></video></div><div class="wrap heroContent"><div class="eyebrow">Discreet · Sophisticated · Personal</div><h1>Experiences<em>beyond ordinary.</em></h1><p>Elusions offers refined male companionship for private clients looking for more than just company — from dinner dates and special occasions to travel, weekends away and relaxed one-to-one time.</p><div class="buttons"><a class="btn primary" href="https://wa.me/447732165185">WhatsApp 07732 165185</a><a class="btn" href="#services">View Experiences</a></div></div></section>
 
 <section class="quick"><div class="wrap quickGrid"><div class="quickItem"><small>Enquiries</small><b>Private & direct</b></div><div class="quickItem"><small>Arrangements</small><b>Tailored to you</b></div><div class="quickItem"><small>Availability</small><b>By prior booking</b></div><div class="quickItem"><small>Contact</small><b>WhatsApp preferred</b></div></div></section>
 
