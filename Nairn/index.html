@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nairn Coastal Cleaning & Laundry | Nairn & Moray Firth</title>
+<meta name="description" content="Professional cleaning and laundry services across Nairn, the Moray Firth Coast and surrounding Highland areas. Holiday lets, deep cleans, end of tenancy, oven and carpet cleaning, laundry and ironing.">
+<style>
+:root{--navy:#073a7b;--teal:#4ba9b5;--sea:#79cddd;--sand:#e8cbb0;--ink:#15345d;--cream:#fbfaf7;--soft:#eef8f8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #dcebed;backdrop-filter:blur(12px)}
+.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Brush Script MT','Segoe Script','Snell Roundhand','URW Chancery L',cursive;font-style:normal;font-size:42px;font-weight:400;color:var(--navy);line-height:.9}.brand-name{white-space:nowrap}.brand-gull{width:58px;height:38px;object-fit:contain;flex:0 0 auto}.brand-text{display:block}.brand small{display:block;font-family:Arial,sans-serif;font-style:normal;font-size:10px;letter-spacing:.25em;color:var(--teal);margin-top:9px;text-align:center}
+nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:700}.call{padding:13px 18px;border-radius:999px;background:var(--navy);color:#fff}
+.hero{min-height:680px;position:relative;display:flex;align-items:center;overflow:hidden;background:#073a7b}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,24,52,.98) 0%,rgba(4,27,58,.96) 34%,rgba(5,35,67,.78) 50%,rgba(5,38,70,.38) 68%,rgba(5,38,70,.08) 100%)}
+.hero .wrap{position:relative;z-index:1}.hero-copy{max-width:680px;color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.72)}.hero-copy h1,.hero-copy p,.hero-copy .eyebrow{filter:drop-shadow(0 3px 8px rgba(0,0,0,.55))}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;color:#9be3e3}
+h1{font-family:Georgia,serif;font-size:clamp(52px,7vw,88px);line-height:.94;margin:18px 0 22px;font-weight:500}.hero p{font-size:20px;line-height:1.55;color:#e7f2f4;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:16px 22px;border-radius:999px;font-weight:800}.primary{background:#fff;color:var(--navy)}.secondary{border:1px solid rgba(255,255,255,.6);color:#fff}
+.wave{height:24px;background:linear-gradient(165deg,#fff 48%,#bce7eb 49%,#fff 61%)}
+section{padding:86px 0}.section-head{max-width:760px;margin-bottom:38px}.kicker{color:var(--teal);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:800}
+h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,58px);font-weight:500;line-height:1.05;margin:12px 0 15px;color:var(--navy)}.section-head p{color:#5d7189;line-height:1.7;font-size:17px}
+.services{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:28px;border:1px solid #dbe9ea;border-radius:22px;background:#fff;min-height:210px}.service .icon{font-size:27px}.service h3{font-family:Georgia,serif;color:var(--navy);font-size:25px;margin:16px 0 9px}.service p{color:#687a8c;line-height:1.6;margin:0}
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}.feature img{width:100%;height:560px;object-fit:cover;border-radius:28px}.feature-copy p{font-size:18px;color:#60748b;line-height:1.75}.checks{display:grid;gap:12px;margin-top:24px}.checks div:before{content:"♡";color:var(--teal);font-weight:bold;margin-right:10px}
+.gallery{background:#f2f9f9}.gallery-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;grid-template-rows:260px 260px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:20px}.gallery-grid img:first-child{grid-row:1/3}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:22px}.result{background:#fff;border:1px solid #dbe9ea;border-radius:22px;overflow:hidden}.result img{width:100%;height:440px;object-fit:cover}.result div{padding:22px}.result h3{margin:0;color:var(--navy);font-family:Georgia,serif;font-size:26px}.result p{color:#687a8c;line-height:1.6}
+.prices{background:linear-gradient(180deg,#fff,#f5fbfb)}.price-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}.price-cards img{width:100%;border-radius:22px;border:1px solid #d7e8e9;box-shadow:0 18px 50px rgba(18,70,92,.08)}
+.area{background:var(--navy);color:#fff;text-align:center}.area h2{color:#fff}.area p{max-width:760px;margin:0 auto;color:#dceaf2;font-size:18px;line-height:1.7}.area .actions{justify-content:center}
+footer{background:#052d62;color:#d7e8f2;padding:38px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:center}.foot strong{font-family:Georgia,serif;font-size:25px;color:#fff}
+.floating{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;gap:10px;opacity:0;pointer-events:none;transform:translateY(15px);transition:.25s}.floating.show{opacity:1;pointer-events:auto;transform:none}.floating a{padding:14px 17px;border-radius:999px;color:#fff;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.2)}.floating .fcall{background:var(--navy)}.floating .fwa{background:#21a97a}
+@media(max-width:850px){nav a:not(.call){display:none}.nav{height:72px}.brand{font-size:31px}.brand-gull{width:45px;height:30px}.hero{min-height:650px;background-position:center}.hero:before{background:linear-gradient(90deg,rgba(4,24,52,.98),rgba(4,27,58,.94) 55%,rgba(4,30,62,.58) 100%)}section{padding:62px 0}.grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr;gap:30px}.feature img{height:440px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 220px 220px}.gallery-grid img:first-child{grid-column:1/3;grid-row:auto}.results,.price-cards{grid-template-columns:1fr}.foot{flex-direction:column;text-align:center}}
+@media(max-width:520px){.wrap{width:min(100% - 26px,1180px)}.brand{font-size:27px}.brand-gull{width:38px;height:26px}.brand small{font-size:8px}.call{padding:11px 13px;font-size:13px}.hero{min-height:610px}h1{font-size:52px}.hero p{font-size:17px}.grid{grid-template-columns:1fr}.service{min-height:0}.gallery-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.gallery-grid img,.gallery-grid img:first-child{grid-column:auto;height:260px}.result img{height:320px}.floating{left:12px;right:12px}.floating a{flex:1;text-align:center}}
+</style></head>
+<body>
+<header><div class="wrap nav"><a href="#" class="brand"><span class="brand-text"><span class="brand-name">Nairn Coastal</span><small>CLEANING &amp; LAUNDRY</small></span><img class="brand-gull" src="assets/seagull.png" alt=""></a><nav><a href="#services">Services</a><a href="#holiday">Holiday Lets</a><a href="#results">Our Work</a><a href="#prices">Prices</a><a class="call" href="tel:07351174716">Call 07351 174716</a></nav></div></header>
+<main>
+<section class="hero" id="top"><video class="hero-video" autoplay muted loop playsinline preload="metadata"><source src="assets/hero.mp4" type="video/mp4"></video><div class="wrap"><div class="hero-copy"><div class="eyebrow">Local • Reliable • Trusted</div><h1>Coastal care,<br>beautifully cleaned.</h1><p>Professional cleaning and laundry for homes, holiday lets and properties across Nairn, the Moray Firth Coast and surrounding Highland areas.</p><div class="actions"><a class="btn primary" href="tel:07351174716">Call For A Quote</a><a class="btn secondary" href="https://wa.me/447351174716">WhatsApp Us</a></div></div></div></section>
+<div class="wave"></div>
+
+<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="kicker">Cleaning & Laundry</div><h2>Everything your property needs.</h2><p>From detailed one-off cleans to beautifully presented holiday accommodation and fresh laundry ready for your next guests.</p></div>
+<div class="grid">
+<div class="service"><div class="icon">⌂</div><h3>Holiday Lets</h3><p>Reliable changeover cleaning and presentation for holiday homes, helping every guest arrive to a spotless stay.</p></div>
+<div class="service"><div class="icon">♡</div><h3>Deep Cleaning</h3><p>A thorough top-to-bottom clean for homes that need extra attention, seasonal refreshes or a complete reset.</p></div>
+<div class="service"><div class="icon">⌁</div><h3>End Of Tenancy</h3><p>Detailed move-out cleaning for landlords and tenants, including kitchens, bathrooms, appliances and finishing touches.</p></div>
+<div class="service"><div class="icon">▣</div><h3>Oven Cleaning</h3><p>Professional deep cleaning to bring ovens, hobs and selected appliances back to a beautifully clean finish.</p></div>
+<div class="service"><div class="icon">◌</div><h3>Carpet Cleaning</h3><p>Professional hot-water extraction for a deeper, longer-lasting clean across bedrooms, lounges, halls and stairs.</p></div>
+<div class="service"><div class="icon">≋</div><h3>Laundry & Ironing</h3><p>Washed, dried, ironed or folded with care — ideal for holiday lets, bedding, towels, table linen and everyday items.</p></div>
+</div></div></section>
+
+<section id="holiday"><div class="wrap feature"><img src="assets/img_3923.jpeg" alt="Freshly prepared holiday let bedroom in Nairn"><div class="feature-copy"><div class="kicker">Holiday Let Specialists</div><h2>Fresh stays. Happy guests.</h2><p>Based in Nairn, Nairn Coastal Cleaning & Laundry supports holiday homes along the Moray Firth and surrounding Highland areas with responsive, dependable property care.</p><div class="checks"><div>Spotless guest-ready presentation</div><div>Fresh bedding, towels and laundry support</div><div>Reliable local service for coastal properties</div><div>Cleaning tailored around your property</div></div><div class="actions"><a class="btn" style="background:var(--navy);color:white" href="tel:07351174716">Discuss Your Property</a></div></div></div></section>
+
+<section class="gallery"><div class="wrap"><div class="section-head"><div class="kicker">Properties We Care For</div><h2>Clean, calm and ready to welcome.</h2></div><div class="gallery-grid"><img src="assets/img_3920.jpeg" alt="Clean holiday property kitchen"><img src="assets/img_3922.jpeg" alt="Clean holiday property living room"><img src="assets/img_3921.jpeg" alt="Bright clean living space"><img src="assets/img_3919.jpeg" alt="Clean dining area"><img src="assets/img_3924.jpeg" alt="Coastal property"></div></div></section>
+
+<section id="results"><div class="wrap"><div class="section-head"><div class="kicker">Attention To Detail</div><h2>The difference is in the detail.</h2><p>Real cleaning results from the work supplied by Nairn Coastal Cleaning & Laundry.</p></div><div class="results">
+<div class="result"><img src="assets/img_3926.jpeg" alt="Before and after detailed appliance cleaning"><div><h3>Deep Cleaning Results</h3><p>Built-up grime and hidden areas carefully cleaned for a noticeably fresher finish.</p></div></div>
+<div class="result"><img src="assets/img_3925.jpeg" alt="Before and after tap cleaning"><div><h3>Finishing Touches</h3><p>Detailed attention to fixtures and fittings helps every room feel properly finished.</p></div></div>
+</div></div></section>
+
+<section class="prices" id="prices"><div class="wrap"><div class="section-head"><div class="kicker">Clear Pricing</div><h2>Cleaning and laundry prices.</h2><p>Prices shown are from the supplied Nairn Coastal price lists and may vary with property size and condition.</p></div><div class="price-cards"><img src="assets/img_3915.jpeg" alt="Nairn Coastal cleaning services price list"><img src="assets/img_3916.jpeg" alt="Nairn Coastal laundry and ironing price list"></div></div></section>
+
+<section class="area"><div class="wrap"><div class="kicker" style="color:#7bd9dc">Nairn & The Moray Firth Coast</div><h2>Local knowledge. Dependable service.</h2><p>Serving Nairn and the Moray Firth Coast, with support for holiday homes and properties throughout surrounding Highland areas.</p><div class="actions"><a class="btn primary" href="tel:07351174716">Call 07351 174716</a><a class="btn secondary" href="https://wa.me/447351174716">WhatsApp For A Quote</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>Nairn Coastal</strong><br>Cleaning & Laundry</div><div>Local • Reliable • Professional • Friendly</div><div><a href="tel:07351174716">07351 174716</a></div></div></footer>
+<div class="floating" id="floating"><a class="fcall" href="tel:07351174716">☎ Call</a><a class="fwa" href="https://wa.me/447351174716">WhatsApp</a></div>
+<script>
+const hero=document.querySelector('.hero'), floating=document.getElementById('floating');
+const obs=new IntersectionObserver(([e])=>floating.classList.toggle('show',!e.isIntersecting),{threshold:.05});
+obs.observe(hero);
+</script>
+</body></html>
+<style>
+/* Header brand alignment fix */
+.brand{overflow:visible;gap:16px}
+.brand-text{display:flex;flex-direction:column;align-items:center;min-width:0}
+.brand-name{display:block;white-space:nowrap;line-height:1}
+.brand-gull{display:block;margin-left:2px;object-fit:contain;object-position:center}
+@media(max-width:850px){
+  .brand{gap:10px}
+  .brand-name{line-height:1}
+}
+</style>
+
+<style>
+.brand{gap:12px}
+.brand-gull{width:54px;height:36px;margin-left:0}
+@media(max-width:850px){.brand-gull{width:43px;height:29px}}
+@media(max-width:520px){.brand-gull{width:36px;height:25px}}
+</style>
+
+<style>
+.brand-gull{width:48px;height:34px;object-fit:contain}
+@media(max-width:850px){.brand-gull{width:40px;height:28px}}
+@media(max-width:520px){.brand-gull{width:34px;height:24px}}
+</style>
+
+<style>
+.brand-gull{width:52px;height:auto;display:block;object-fit:contain}
+</style>
