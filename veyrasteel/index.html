@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEYRASTEEL | Steel RFQ & Margin Intelligence</title>
+  <meta name="description" content="VeyraSteel turns messy steel RFQs into structured, margin-aware quote drafts for stockholders, processors and service centres.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#03070d;
+      --panel:#09111c;
+      --panel2:#0d1724;
+      --steel:#93a4b8;
+      --amber:#f5b93f;
+      --amber2:#ffd978;
+      --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    html{background:var(--ink)}
+    body{margin:0;font-family:'Inter',sans-serif;background:
+      radial-gradient(circle at 10% 5%,rgba(245,185,63,.08),transparent 28%),
+      radial-gradient(circle at 95% 18%,rgba(70,100,130,.12),transparent 24%),
+      var(--ink);color:#eef3f8;overflow-x:hidden}
+    h1,h2,h3{font-family:'Space Grotesk',sans-serif}
+    .mono{font-family:'IBM Plex Mono',monospace}
+    .shell{max-width:1460px;margin:auto;padding-left:28px;padding-right:28px}
+    .hairline{border-color:var(--line)}
+    .metal{
+      background:
+        linear-gradient(115deg,rgba(255,255,255,.025),transparent 18%),
+        linear-gradient(145deg,rgba(17,31,47,.96),rgba(6,12,21,.98));
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:0 30px 90px rgba(0,0,0,.34), inset 0 1px rgba(255,255,255,.02)
+    }
+    .panel{
+      background:linear-gradient(180deg,rgba(13,23,36,.94),rgba(6,12,21,.96));
+      border:1px solid var(--line);
+      box-shadow:0 18px 70px rgba(0,0,0,.24)
+    }
+    .gridfx{
+      background-image:
+        linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);
+      background-size:42px 42px
+    }
+    .logo-group{display:flex;align-items:center;gap:12px}
+    .veyra-text{font-weight:300;font-size:27px;color:#8fa0b4;letter-spacing:-1px}
+    .steel-text{font-weight:800;font-size:27px;color:#f4f7fa;letter-spacing:-.6px}
+    .forge-spark{filter:drop-shadow(0 0 9px rgba(245,185,63,.8));animation:spark 2.2s ease-in-out infinite}
+    @keyframes spark{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.28)}}
+    .scanline{position:relative;overflow:hidden}
+    .scanline:after{
+      content:"";position:absolute;left:0;right:0;height:70px;top:-80px;
+      background:linear-gradient(180deg,transparent,rgba(245,185,63,.08),transparent);
+      animation:scan 5s linear infinite;pointer-events:none
+    }
+    @keyframes scan{to{transform:translateY(690px)}}
+    .hero-title{font-size:clamp(3.7rem,7.4vw,8rem);line-height:.89;letter-spacing:-.06em}
+    .section-title{font-size:clamp(2.6rem,4.2vw,5.3rem);line-height:.98;letter-spacing:-.045em}
+    .eyebrow{font-size:10px;font-weight:800;letter-spacing:.26em;text-transform:uppercase}
+    .ghost-num{
+      font-family:'Space Grotesk',sans-serif;font-size:clamp(8rem,18vw,18rem);font-weight:700;
+      line-height:.7;color:rgba(255,255,255,.018);position:absolute;right:-8px;top:-4px;pointer-events:none
+    }
+    .rail{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.35em}
+    .amber-btn{background:var(--amber);color:#080b10;box-shadow:0 10px 35px rgba(245,185,63,.14)}
+    .amber-btn:hover{background:var(--amber2);transform:translateY(-1px)}
+    .dot{width:7px;height:7px;border-radius:999px;background:var(--amber);box-shadow:0 0 10px rgba(245,185,63,.7)}
+    .flow-line{height:1px;background:linear-gradient(90deg,rgba(245,185,63,.5),rgba(255,255,255,.06))}
+    .metric{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.04em}
+    .quote-row{transition:.25s ease}
+    .quote-row:hover{transform:translateX(4px);border-color:rgba(245,185,63,.28)}
+    .feature-card{transition:.28s ease}
+    .feature-card:hover{transform:translateY(-5px);border-color:rgba(245,185,63,.25)}
+    .orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+    @media(max-width:900px){
+      .shell{padding-left:18px;padding-right:18px}
+      .rail{display:none}
+      .veyra-text,.steel-text{font-size:22px}
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-300 selection:text-black">
+
+  <nav class="sticky top-0 z-50 border-b hairline bg-[#03070d]/90 backdrop-blur-xl">
+    <div class="shell h-20 flex items-center justify-between">
+      <a href="#" class="logo-group" aria-label="VeyraSteel home">
+        <svg width="42" height="42" viewBox="0 0 100 100" fill="none">
+          <path d="M50 85L85 30L75 25L50 65L25 25L15 30L50 85Z" fill="#475569"/>
+          <path d="M50 35L54 46L65 50L54 54L50 65L46 54L35 50L46 46L50 35Z" fill="#f5b93f" class="forge-spark"/>
+        </svg>
+        <div><span class="veyra-text">veyra</span><span class="steel-text">STEEL</span></div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8 text-[10px] uppercase tracking-[.2em] font-bold text-slate-400">
+        <a href="#rfq" class="hover:text-white">RFQ Engine</a>
+        <a href="#margin" class="hover:text-white">Margin Guard</a>
+        <a href="#stock" class="hover:text-white">Stock Intelligence</a>
+        <a href="#pilot" class="hover:text-white">Pilot</a>
+      </div>
+
+      <a href="#pilot" class="amber-btn px-5 py-3 rounded-full text-[10px] uppercase tracking-[.18em] font-extrabold transition">Request Pilot</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="relative min-h-[860px] overflow-hidden gridfx">
+      <div class="orb w-[420px] h-[420px] bg-amber-300/10 -left-40 top-20"></div>
+      <div class="orb w-[500px] h-[500px] bg-sky-500/5 right-0 bottom-0"></div>
+
+      <div class="shell py-14 md:py-20">
+        <div class="grid xl:grid-cols-[70px_1.15fr_.85fr] gap-8 xl:gap-12 items-stretch">
+          <aside class="rail text-[9px] uppercase text-slate-600 font-bold py-3">
+            WEST MIDLANDS / STEEL SALES INTELLIGENCE / 2026
+          </aside>
+
+          <div class="flex flex-col justify-between min-h-[690px]">
+            <div>
+              <div class="flex items-center gap-3 mb-10">
+                <span class="dot"></span>
+                <span class="eyebrow text-amber-300">AI for steel stockholders & processors</span>
+              </div>
+
+              <h1 class="hero-title font-bold max-w-[920px]">
+                Every RFQ.<br>
+                <span class="text-slate-400 font-light">Understood.</span><br>
+                <span class="text-amber-300">Priced smarter.</span>
+              </h1>
+            </div>
+
+            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-end mt-12">
+              <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+                VeyraSteel turns messy customer emails and PDFs into structured, margin-aware quote drafts — while your sales team keeps final control.
+              </p>
+              <a href="#rfq" class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-white/10 hover:border-amber-300/40 hover:bg-white/5 transition text-amber-300 text-xl">↓</a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="metal scanline rounded-[28px] p-5 md:p-7 h-full min-h-[690px]">
+              <div class="flex justify-between items-center border-b hairline pb-5 mb-6">
+                <div class="flex gap-1.5"><span class="w-2 h-2 rounded-full bg-red-400/40"></span><span class="w-2 h-2 rounded-full bg-amber-300"></span><span class="w-2 h-2 rounded-full bg-emerald-400/40"></span></div>
+                <span class="mono text-[9px] text-slate-500 tracking-[.2em]">VEYRA_RFQ_ENGINE / LIVE</span>
+              </div>
+
+              <div class="mono text-[11px] md:text-xs space-y-4">
+                <p class="text-amber-300">&gt; Reading Birmingham_Project_RFQ.pdf</p>
+                <p class="text-slate-400">&gt; 3 material groups detected</p>
+                <p class="text-slate-400">&gt; 1 certification requirement</p>
+                <p class="text-slate-400">&gt; Delivery area: Birmingham</p>
+              </div>
+
+              <div class="mt-7 space-y-3">
+                <div class="quote-row bg-black/30 border hairline rounded-xl p-4">
+                  <p class="eyebrow text-slate-600 mb-2">LINE 01</p>
+                  <div class="flex justify-between gap-4">
+                    <div><p class="font-bold">304 Stainless Plate</p><p class="text-xs text-slate-500 mt-1">10 × 2000 × 4000</p></div>
+                    <span class="text-[10px] text-emerald-400 font-bold">STOCK MATCH</span>
+                  </div>
+                </div>
+                <div class="quote-row bg-black/30 border hairline rounded-xl p-4">
+                  <p class="eyebrow text-slate-600 mb-2">LINE 02</p>
+                  <div class="flex justify-between gap-4">
+                    <div><p class="font-bold">S235JR HRC Coil</p><p class="text-xs text-slate-500 mt-1">20 tonnes</p></div>
+                    <span class="text-[10px] text-red-400 font-bold">MARGIN ALERT</span>
+                  </div>
+                </div>
+                <div class="quote-row bg-black/30 border hairline rounded-xl p-4">
+                  <p class="eyebrow text-slate-600 mb-2">LINE 03</p>
+                  <div class="flex justify-between gap-4">
+                    <div><p class="font-bold">316L Custom Cut</p><p class="text-xs text-slate-500 mt-1">MTR required</p></div>
+                    <span class="text-[10px] text-amber-300 font-bold">CHECK SIZE</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-7 bg-amber-300 text-black rounded-2xl p-5">
+                <div class="flex justify-between items-start gap-4">
+                  <div><p class="eyebrow opacity-55 mb-1">QUOTE DRAFT</p><p class="text-2xl font-black">Ready for review</p></div>
+                  <span class="bg-black/10 px-2.5 py-1.5 rounded-md text-[8px] font-black tracking-wider">HUMAN APPROVAL</span>
+                </div>
+              </div>
+
+              <div class="mt-5 grid grid-cols-2 gap-3 text-center">
+                <div class="border hairline rounded-xl p-4"><p class="metric text-2xl">3</p><p class="eyebrow text-slate-600 mt-1">Quote lines</p></div>
+                <div class="border hairline rounded-xl p-4"><p class="metric text-2xl text-amber-300">1</p><p class="eyebrow text-slate-600 mt-1">Flagged</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM STRIP -->
+    <section class="border-y hairline bg-[#050a11]">
+      <div class="shell py-7 grid md:grid-cols-4 gap-6">
+        <div class="md:col-span-1"><p class="eyebrow text-slate-600">THE SALES DESK TODAY</p></div>
+        <div><p class="text-sm text-slate-300">Unstructured customer emails</p></div>
+        <div><p class="text-sm text-slate-300">Pricing knowledge held in people's heads</p></div>
+        <div><p class="text-sm text-slate-300">Legacy stock systems slowing every quote</p></div>
+      </div>
+    </section>
+
+    <!-- RFQ STORY -->
+    <section id="rfq" class="relative py-24 md:py-32">
+      <span class="ghost-num">01</span>
+      <div class="shell">
+        <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-20 items-start">
+          <div class="lg:sticky lg:top-28">
+            <p class="eyebrow text-amber-300 mb-5">VEYRA RFQ ENGINE</p>
+            <h2 class="section-title font-bold mb-7">The customer sends chaos.<br><span class="text-slate-500 font-light">Veyra sees structure.</span></h2>
+            <p class="text-slate-400 text-lg leading-relaxed max-w-xl">No new customer portal. No perfect forms. Veyra starts with what steel sales teams already receive — shorthand emails, PDFs, spreadsheets and attachments.</p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="metal rounded-[28px] p-6 md:p-8">
+              <div class="flex justify-between mb-6">
+                <span class="eyebrow text-red-400/80">RAW CUSTOMER RFQ</span>
+                <span class="mono text-[10px] text-slate-600">10:03:18</span>
+              </div>
+              <div class="bg-slate-100 text-slate-800 rounded-xl p-6 md:p-8">
+                <div class="flex justify-between border-b border-slate-300 pb-4 mb-5 text-xs">
+                  <strong>Subject: Birmingham project — price please</strong><span class="text-slate-400">Purchasing</span>
+                </div>
+                <p class="mb-5">Morning, can you price the following:</p>
+                <div class="space-y-3 border-l-2 border-slate-300 pl-4">
+                  <p>12 × 10mm 304 stainless plate 2m × 4m</p>
+                  <p>20t HRC S235JR</p>
+                  <p>5 × 316L custom cut — MTRs needed</p>
+                </div>
+                <p class="mt-6 text-sm text-slate-500">Need it into Birmingham. Quote today if possible.</p>
+              </div>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-6">
+              <div class="panel rounded-[24px] p-6 feature-card">
+                <div class="flex justify-between items-center mb-5"><p class="eyebrow text-amber-300">LINE 01 / EXTRACTED</p><span class="text-[9px] font-black text-emerald-400">COMPLETE</span></div>
+                <div class="space-y-4">
+                  <div><p class="text-[10px] text-slate-600 uppercase">Material</p><p class="font-bold mt-1">304 Stainless Plate</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Dimensions</p><p class="font-bold mt-1">10 × 2000 × 4000 mm</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Quantity</p><p class="font-bold mt-1">12 plates</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Delivery</p><p class="font-bold mt-1">Birmingham</p></div>
+                </div>
+              </div>
+              <div class="panel rounded-[24px] p-6 feature-card">
+                <div class="flex justify-between items-center mb-5"><p class="eyebrow text-amber-300">LINE 02 / EXTRACTED</p><span class="text-[9px] font-black text-emerald-400">COMPLETE</span></div>
+                <div class="space-y-4">
+                  <div><p class="text-[10px] text-slate-600 uppercase">Material</p><p class="font-bold mt-1">HRC / S235JR</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Quantity</p><p class="font-bold mt-1">20 tonnes</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Delivery</p><p class="font-bold mt-1">Birmingham</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Commercial check</p><p class="font-bold text-red-400 mt-1">Margin rule triggered</p></div>
+                </div>
+              </div>
+              <div class="panel rounded-[24px] p-6 feature-card border-amber-300/20">
+                <div class="flex justify-between items-center mb-5"><p class="eyebrow text-amber-300">LINE 03 / EXTRACTED</p><span class="text-[9px] font-black text-amber-300">CLARIFY</span></div>
+                <div class="space-y-4">
+                  <div><p class="text-[10px] text-slate-600 uppercase">Material</p><p class="font-bold mt-1">316L Custom Cut</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Quantity</p><p class="font-bold mt-1">5 pieces</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Certification</p><p class="font-bold mt-1">MTR required</p></div>
+                  <div><p class="text-[10px] text-slate-600 uppercase">Missing information</p><p class="font-bold text-amber-300 mt-1">Custom-cut dimensions</p></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-amber-300 text-black rounded-[24px] p-6 md:p-8">
+              <p class="eyebrow opacity-55 mb-3">THE RESULT</p>
+              <h3 class="text-2xl md:text-3xl font-black">Two lines ready to progress. One clarification identified before pricing.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARGIN -->
+    <section id="margin" class="relative py-24 md:py-32 border-y hairline bg-[#050a11] overflow-hidden">
+      <span class="ghost-num">02</span>
+      <div class="shell grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="metal rounded-[30px] p-6 md:p-8">
+            <div class="flex justify-between items-center mb-8">
+              <div><p class="eyebrow text-slate-600">QUOTE LINE / S235JR HRC</p><p class="text-xl font-bold mt-2">20 tonnes</p></div>
+              <span class="text-[9px] font-black uppercase tracking-wider px-3 py-2 rounded-full border border-red-400/20 bg-red-400/5 text-red-400">Margin warning</span>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-3">
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">STOCK COST</p><p class="metric text-3xl mt-2">£612/t</p></div>
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">REPLACEMENT</p><p class="metric text-3xl mt-2">£694/t</p></div>
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">PROPOSED SELL</p><p class="metric text-3xl mt-2">£720/t</p></div>
+            </div>
+
+            <div class="flow-line my-6"></div>
+
+            <div class="grid sm:grid-cols-2 gap-3 mb-4">
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">BOOK MARGIN</p><p class="metric text-4xl text-emerald-400 mt-2">15.0%</p></div>
+              <div class="rounded-xl p-5 border border-red-400/20 bg-red-400/5"><p class="eyebrow text-red-400/70">REPLACEMENT MARGIN</p><p class="metric text-4xl text-red-400 mt-2">3.6%</p><p class="text-[10px] text-red-300/60 mt-2">Below 10% target</p></div>
+            </div>
+
+            <div class="bg-amber-300 text-black rounded-xl p-5 flex justify-between gap-5 items-center">
+              <div><p class="eyebrow opacity-55">TARGET SELL / 10% GM</p><p class="metric text-3xl mt-1">£771/t</p><p class="text-[10px] font-bold mt-1 opacity-55">£51/t above current quote · £1,020 across 20t</p></div>
+              <button class="bg-black text-white px-5 py-3 rounded-lg text-xs font-bold">Review quote</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <p class="eyebrow text-amber-300 mb-5">VEYRA MARGIN GUARD</p>
+          <h2 class="section-title font-bold mb-7">Stop giving away margin <span class="text-slate-500 font-light">without realising it.</span></h2>
+          <p class="text-slate-400 text-lg leading-relaxed mb-7">Veyra doesn't dictate your selling price. It checks the quote against your company's commercial rules and shows the salesperson where the risk is before the quote is sent.</p>
+          <div class="space-y-4 text-sm text-slate-300">
+            <div class="flex gap-3"><span class="text-amber-300">01</span><p>Replacement-cost awareness</p></div>
+            <div class="flex gap-3"><span class="text-amber-300">02</span><p>Configured target-margin and customer pricing rules</p></div>
+            <div class="flex gap-3"><span class="text-amber-300">03</span><p>Human override and approval</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STOCK -->
+    <section id="stock" class="relative py-24 md:py-32 overflow-hidden">
+      <span class="ghost-num">03</span>
+      <div class="shell">
+        <div class="grid lg:grid-cols-[.85fr_1.15fr] gap-12 lg:gap-20 items-end mb-14">
+          <div>
+            <p class="eyebrow text-amber-300 mb-5">VEYRA STOCK INTELLIGENCE</p>
+            <h2 class="section-title font-bold">Find value <span class="text-slate-500 font-light">already sitting in the warehouse.</span></h2>
+          </div>
+          <p class="text-lg text-slate-400 leading-relaxed max-w-2xl lg:ml-auto">Before allocating new material or placing another purchase order, Veyra can surface suitable stock, remnants and slow-moving material against the incoming requirement.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-7 metal rounded-[30px] p-6 md:p-8">
+            <div class="flex items-center justify-between mb-7">
+              <div><p class="eyebrow text-slate-600">REQUESTED MATERIAL</p><h3 class="text-2xl font-bold mt-2">S355 plate / custom cut</h3></div>
+              <span class="mono text-[10px] text-slate-600">RFQ #1058</span>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-3">
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">PRIMARY STOCK</p><p class="font-bold mt-2">Available</p><p class="text-xs text-slate-500 mt-1">Standard plate</p></div>
+              <div class="rounded-xl p-5 border border-emerald-400/20 bg-emerald-400/5"><p class="eyebrow text-emerald-400/70">REMNANT MATCH</p><p class="font-bold text-emerald-300 mt-2">Potential match</p><p class="text-xs text-slate-500 mt-1">Check usable dimensions</p></div>
+              <div class="panel rounded-xl p-5"><p class="eyebrow text-slate-600">NEW PURCHASE</p><p class="font-bold mt-2">Not required</p><p class="text-xs text-slate-500 mt-1">If remnant approved</p></div>
+            </div>
+
+            <div class="mt-6 panel rounded-xl p-5">
+              <p class="eyebrow text-slate-600 mb-3">VEYRA RECOMMENDATION</p>
+              <p class="text-xl font-bold">Review existing warehouse material before allocating virgin stock.</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 grid gap-6">
+            <div class="panel rounded-[28px] p-7 feature-card">
+              <p class="eyebrow text-amber-300 mb-4">REMNANTS</p>
+              <h3 class="text-2xl font-bold">Turn awkward offcuts back into opportunity.</h3>
+            </div>
+            <div class="panel rounded-[28px] p-7 feature-card">
+              <p class="eyebrow text-amber-300 mb-4">SLOW STOCK</p>
+              <h3 class="text-2xl font-bold">Surface material that's tying up cash.</h3>
+            </div>
+            <div class="bg-amber-300 text-black rounded-[28px] p-7">
+              <p class="eyebrow opacity-55 mb-4">COMMERCIAL OUTCOME</p>
+              <h3 class="text-3xl font-black">Use what you own before buying more.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT FITS LEGACY -->
+    <section class="py-24 md:py-32 border-y hairline bg-[#050a11]">
+      <div class="shell">
+        <div class="max-w-3xl mb-14">
+          <p class="eyebrow text-amber-300 mb-5">NO RIP-AND-REPLACE PROJECT</p>
+          <h2 class="section-title font-bold">Built to sit <span class="text-slate-500 font-light">in front of legacy systems.</span></h2>
+          <p class="text-lg text-slate-400 leading-relaxed mt-7">Veyra can start with the tools the business already uses. Email in. Structured data out. Stock and pricing can initially come from exports before deeper integrations are ever needed.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-4">
+          <div class="panel rounded-[24px] p-6"><span class="eyebrow text-slate-600">01</span><h3 class="text-xl font-bold mt-5">Email & PDFs</h3><p class="text-sm text-slate-500 mt-3">Connect the sales inbox and process incoming RFQs.</p></div>
+          <div class="panel rounded-[24px] p-6"><span class="eyebrow text-slate-600">02</span><h3 class="text-xl font-bold mt-5">Excel / CSV</h3><p class="text-sm text-slate-500 mt-3">Use existing stock and price exports first.</p></div>
+          <div class="panel rounded-[24px] p-6"><span class="eyebrow text-slate-600">03</span><h3 class="text-xl font-bold mt-5">ERP Read Layer</h3><p class="text-sm text-slate-500 mt-3">Add secure read access where practical.</p></div>
+          <div class="panel rounded-[24px] p-6 border-amber-300/20"><span class="eyebrow text-amber-300">04</span><h3 class="text-xl font-bold mt-5">Deep Integration</h3><p class="text-sm text-slate-500 mt-3">Only when the value is already proven.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILOT -->
+    <section id="pilot" class="py-24 md:py-32">
+      <div class="shell">
+        <div class="relative overflow-hidden bg-amber-300 text-black rounded-[34px] p-8 md:p-14 lg:p-16">
+          <div class="absolute right-[-8%] top-[-35%] w-[500px] h-[500px] rounded-full border-[80px] border-black/5"></div>
+          <div class="absolute right-[20%] bottom-[-70%] w-[430px] h-[430px] rounded-full border-[60px] border-black/5"></div>
+          <div class="relative z-10 max-w-4xl">
+            <p class="eyebrow opacity-55 mb-5">WEST MIDLANDS PILOT</p>
+            <h2 class="section-title font-black mb-7">Don't buy software.<br>Give Veyra a real RFQ.</h2>
+            <p class="text-lg md:text-xl font-medium opacity-75 max-w-3xl leading-relaxed mb-9">Send a genuine historical enquiry. We'll show how Veyra would structure it, flag missing information, surface commercial checks and prepare it for quotation — using your current workflow as the benchmark.</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="mailto:hello@veyrasteel.co.uk?subject=VeyraSteel%20Pilot" class="inline-flex justify-center px-7 py-4 bg-black text-white rounded-xl font-extrabold">Request a pilot</a>
+              <a href="#rfq" class="inline-flex justify-center px-7 py-4 border border-black/20 rounded-xl font-extrabold">See the RFQ engine again</a>
+            </div>
+            <p class="text-xs mt-5 opacity-45">Pilot email is a placeholder until your final business email is confirmed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t hairline">
+    <div class="shell py-10 flex flex-col md:flex-row gap-6 justify-between items-center">
+      <div class="logo-group">
+        <svg width="32" height="32" viewBox="0 0 100 100" fill="none">
+          <path d="M50 85L85 30L75 25L50 65L25 25L15 30L50 85Z" fill="#475569"/>
+          <path d="M50 35L54 46L65 50L54 54L50 65L46 54L35 50L46 46L50 35Z" fill="#f5b93f"/>
+        </svg>
+        <div><span class="veyra-text" style="font-size:20px">veyra</span><span class="steel-text" style="font-size:20px">STEEL</span></div>
+      </div>
+      <p class="eyebrow text-slate-700 text-center md:text-right">Steel RFQ & Margin Intelligence / West Midlands</p>
+    </div>
+  </footer>
+
+</body>
+</html>
