@@ -413,6 +413,55 @@
   .clearance-tag{font-size:10px;right:4px}
 }
 
+
+/* ===== v7 MOBILE ONLY fixes ===== */
+@media(max-width:780px){
+  /* Full logo visible in mobile header */
+  .top .brand img,
+  header .brand img,
+  .brand img{
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    border-radius:0!important;
+    display:block!important;
+  }
+  .top .brand,
+  header .brand,
+  .brand{
+    overflow:visible!important;
+  }
+
+  /* Real Jobs photos: wide full-width landscape cards on mobile */
+  .jobs-grid,
+  .work-grid{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    grid-template-rows:none!important;
+    gap:14px!important;
+  }
+  .jobs-grid figure,
+  .work-grid figure,
+  .work-grid figure:first-child{
+    grid-column:1!important;
+    grid-row:auto!important;
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:16/10!important;
+    margin:0!important;
+  }
+  .jobs-grid img,
+  .work-grid img{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center!important;
+  }
+}
+
 </style></head><body>
 <header class="top"><div class="wrap nav"><a class="mark" href="#top"><img src="assets/logo.png" alt="Van Man Jays"><strong>VAN MAN <span>JAYS</span></strong></a><nav class="navlinks"><a href="#clear">What we clear</a><a href="#work">Real work</a><a href="#results">Results</a><a class="call" href="tel:07377535436"><span>CALL 07377 535436</span></a></nav></div></header>
 <main id="top"><section class="hero">
