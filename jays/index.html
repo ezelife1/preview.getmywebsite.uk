@@ -462,6 +462,71 @@
   }
 }
 
+
+/* ===== v8 MOBILE ONLY: full-width jobs + stop horizontal movement ===== */
+@media(max-width:780px){
+  html, body{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:hidden!important;
+    position:relative!important;
+  }
+  *, *::before, *::after{
+    box-sizing:border-box!important;
+  }
+
+  /* Prevent sections/rows from creating sideways page overflow */
+  main, section, header, footer,
+  .wrap, .container, .inner,
+  .jobs, .real-work, .work-section{
+    max-width:100%!important;
+    overflow-x:hidden!important;
+  }
+
+  /* Actual Jobs section uses almost the full phone width */
+  .jobs-grid,
+  .work-grid{
+    width:calc(100vw - 24px)!important;
+    max-width:none!important;
+    margin-left:calc(50% - 50vw + 12px)!important;
+    margin-right:0!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:16px!important;
+  }
+
+  .jobs-grid figure,
+  .work-grid figure,
+  .jobs-grid figure:first-child,
+  .work-grid figure:first-child{
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    height:auto!important;
+    aspect-ratio:4/3!important;
+    margin:0!important;
+    grid-column:1!important;
+    overflow:hidden!important;
+  }
+
+  .jobs-grid img,
+  .work-grid img{
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center!important;
+  }
+
+  /* Keep any ticker/marquee visual contained without moving the page */
+  .ticker, .marquee, .service-strip{
+    max-width:100vw!important;
+    overflow:hidden!important;
+  }
+}
+
 </style></head><body>
 <header class="top"><div class="wrap nav"><a class="mark" href="#top"><img src="assets/logo.png" alt="Van Man Jays"><strong>VAN MAN <span>JAYS</span></strong></a><nav class="navlinks"><a href="#clear">What we clear</a><a href="#work">Real work</a><a href="#results">Results</a><a class="call" href="tel:07377535436"><span>CALL 07377 535436</span></a></nav></div></header>
 <main id="top"><section class="hero">
