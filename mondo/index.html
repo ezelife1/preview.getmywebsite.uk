@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mondo's Maintenance | Cheshire</title>
+<style>
+:root{--blue:#073b70;--orange:#f47a19;--paper:#f2f0e9;--ink:#102a43;--white:#fff}
+*{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}body{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}
+.wrap{width:min(1240px,calc(100% - 48px));margin:auto}
+header{height:78px;position:absolute;top:0;left:0;right:0;z-index:10;color:#fff}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.28)}
+.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-weight:1000}.brand img{width:52px;height:52px;object-fit:contain;background:#fff;border-radius:50%}.brand span{line-height:.9}
+.navright{display:flex;align-items:center;gap:30px}.navright a{color:#fff;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.05em}.navright .phone{border:1px solid rgba(255,255,255,.65);padding:12px 15px}
+.hero{position:relative;min-height:820px;background:var(--blue);color:#fff;overflow:hidden}.hero-photo{position:absolute;right:0;top:0;width:58%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#062f5d 0%,#062f5d 38%,rgba(6,47,93,.78) 51%,rgba(6,47,93,.08) 76%)}
+.hero-inner{position:relative;z-index:2;min-height:820px;display:flex;align-items:center}.hero-copy{width:58%;padding-top:60px}.kicker{font-size:12px;font-weight:1000;letter-spacing:.18em;text-transform:uppercase;color:#ff9a47}
+h1{font-size:clamp(72px,8vw,122px);line-height:.78;letter-spacing:-.075em;text-transform:uppercase;margin:20px 0 28px;max-width:760px}h1 em{font-style:normal;color:var(--orange)}
+.hero p{max-width:590px;font-size:19px;line-height:1.55;color:#d8e4ec}.hero-actions{display:flex;gap:12px;margin-top:32px}.btn{display:inline-block;padding:16px 21px;text-decoration:none;font-weight:1000}.btn.o{background:var(--orange);color:#fff}.btn.w{background:#fff;color:var(--blue)}
+.hero-note{position:absolute;z-index:3;right:34px;bottom:35px;background:var(--orange);color:#fff;width:215px;padding:22px;font-size:22px;font-weight:1000;line-height:1}
+.marquee{background:var(--orange);color:#fff;font-weight:1000;font-size:15px;letter-spacing:.06em;padding:17px 0;white-space:nowrap;text-align:center}
+.intro{padding:110px 0 90px}.intro-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:90px}.num{font-size:13px;color:var(--orange);font-weight:1000}.intro h2,.project h2,.split h2,.end h2{font-size:clamp(55px,6.5vw,92px);line-height:.86;letter-spacing:-.065em;text-transform:uppercase;margin:15px 0}.intro-copy{font-size:22px;line-height:1.45;max-width:760px}.intro-copy strong{color:var(--orange)}
+.services{border-top:2px solid var(--ink)}.service{display:grid;grid-template-columns:90px 1fr 1fr;gap:25px;align-items:center;padding:24px 0;border-bottom:1px solid #aeb5b5}.service b{color:var(--orange);font-size:13px}.service h3{margin:0;text-transform:uppercase;font-size:25px}.service p{margin:0;color:#61717c;line-height:1.45}
+.project{background:#082f59;color:#fff;padding:110px 0}.project-top{display:grid;grid-template-columns:1fr .7fr;gap:50px;align-items:end}.project-top p{color:#c9d6df;line-height:1.6}.beforeafter{margin-top:45px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.frame{height:590px;position:relative;overflow:hidden}.frame img{width:100%;height:100%;object-fit:cover}.label{position:absolute;top:0;left:0;padding:13px 17px;background:#fff;color:var(--blue);font-weight:1000}.label.after{background:var(--orange);color:#fff}
+.jobs{padding:110px 0}.jobs-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:35px}.jobs-head h2{font-size:clamp(55px,6vw,85px);line-height:.86;letter-spacing:-.06em;text-transform:uppercase;margin:12px 0}.jobs-head p{max-width:420px;color:#65747d;line-height:1.6}
+.collage{display:grid;grid-template-columns:1.35fr .65fr;grid-template-rows:350px 350px;gap:10px}.tile{position:relative;overflow:hidden}.tile:first-child{grid-row:1/3}.tile img{width:100%;height:100%;object-fit:cover}.tile span{position:absolute;left:0;bottom:0;background:#082f59;color:#fff;padding:13px 17px;font-weight:1000}
+.split{padding:110px 0;background:#151d20;color:#fff}.split-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.split img{width:100%;height:auto;max-height:none;object-fit:contain;display:block}.split p{color:#cbd2d3;font-size:18px;line-height:1.6}.points{margin-top:28px;border-top:1px solid #465055}.points div{padding:15px 0;border-bottom:1px solid #465055;font-weight:900}.points div:before{content:"→";color:var(--orange);margin-right:12px}
+.end{padding:100px 0;background:var(--orange);color:#fff}.end-grid{display:grid;grid-template-columns:1fr .6fr;gap:50px;align-items:end}.end p{font-size:20px;line-height:1.5}.contact-big{font-size:32px;font-weight:1000;color:#fff;text-decoration:none;display:block;margin-top:10px}
+footer{background:#062a50;color:#bfcdd7;padding:32px 0 90px}.foot{display:flex;justify-content:space-between;gap:25px}.foot a{color:#fff}.mobilebar{display:none}
+@media(max-width:800px){
+ .wrap{width:calc(100% - 28px)}header{height:68px}.brand img{width:45px;height:45px}.brand span{font-size:13px}.navright a:not(.phone){display:none}.navright .phone{font-size:10px;padding:9px}
+ .hero,.hero-inner{min-height:710px}.hero-photo{width:100%;height:100%}.hero:after{background:linear-gradient(180deg,rgba(6,47,93,.75),rgba(6,47,93,.93) 66%,#062f5d)}.hero-copy{width:100%;padding-top:90px}h1{font-size:66px}.hero p{font-size:16px}.hero-actions{flex-direction:column}.hero-actions .btn{text-align:center}.hero-note{right:14px;bottom:18px;width:180px;font-size:18px}
+ .intro,.jobs,.project,.split{padding:72px 0}.intro-grid,.project-top,.split-grid,.end-grid{grid-template-columns:1fr;gap:25px}.intro h2,.project h2,.split h2,.end h2{font-size:54px}.intro-copy{font-size:18px}
+ .service{grid-template-columns:38px 1fr;padding:20px 0}.service p{grid-column:2;font-size:14px}.service h3{font-size:20px}
+ .beforeafter{grid-template-columns:1fr}.frame{height:430px}.jobs-head{display:block}.jobs-head h2{font-size:53px}.collage{grid-template-columns:1fr;grid-template-rows:none}.tile,.tile:first-child{height:330px;grid-row:auto}
+ .split img{height:auto;max-height:none;object-fit:contain}.end{padding:70px 0}.contact-big{font-size:25px}.foot{display:block;line-height:1.8}
+ .mobilebar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;padding:7px;gap:7px;transform:translateY(110%);transition:.25s}.mobilebar.show{transform:none}.mobilebar a{text-decoration:none;text-align:center;padding:15px 5px;font-weight:1000}.mc{background:#062f5d;color:#fff}.wa{background:#25d366;color:#073b1d}
+}
+</style></head><body>
+<header><div class="wrap nav"><a class="brand" href="#"><img src="assets/logo.jpg"><span>MONDO'S<br>MAINTENANCE</span></a><div class="navright"><a href="#services">SERVICES</a><a href="#work">REAL WORK</a><a class="phone" href="tel:07733445590">07733 445590</a></div></div></header>
+<main>
+<section class="hero" id="hero"><img class="hero-photo" src="assets/garden-after.jpg"><div class="wrap hero-inner"><div class="hero-copy"><div class="kicker">Cheshire • Maintenance • Handyman • Outdoors</div><h1>Jobs done.<br><em>Properly.</em></h1><p>One reliable local service for the house, garden and all those jobs that keep getting pushed to next weekend.</p><div class="hero-actions"><a class="btn o" href="https://wa.me/447733445590">SEND JAY A PHOTO →</a><a class="btn w" href="tel:07733445590">CALL 07733 445590</a></div></div></div><div class="hero-note">NO JOB<br>TOO BIG.<br>NO JOB<br>TOO SMALL.</div></section>
+<div class="marquee">GARDENS — FENCING — JET WASHING — GUTTERS — LANDSCAPING — FLAT PACK — GENERAL DIY — LOG SPLITTING</div>
+
+<section class="intro" id="services"><div class="wrap"><div class="intro-grid"><div><span class="num">01 / WHAT WE DO</span><h2>One call.<br>Loads sorted.</h2></div><div><p class="intro-copy">Mondo's is the local pair of hands for <strong>homes, gardens and businesses across Cheshire.</strong> Practical work, fair prices and no messing around.</p><div class="services">
+<div class="service"><b>01</b><h3>Garden maintenance</h3><p>Lawn care, weeding, pruning, planting and garden tidy-ups.</p></div>
+<div class="service"><b>02</b><h3>Fencing</h3><p>Repairs, replacements, supply and installation.</p></div>
+<div class="service"><b>03</b><h3>Driveway & patio jet washing</h3><p>Moss, dirt and grime removed for a cleaner finish.</p></div>
+<div class="service"><b>04</b><h3>Gutter & window cleaning</h3><p>Blocked gutters cleared and windows cleaned.</p></div>
+<div class="service"><b>05</b><h3>Landscaping</h3><p>Patios, turfing, pathways and full garden transformations.</p></div>
+<div class="service"><b>06</b><h3>Flat pack & general DIY</h3><p>Assembly, repairs, fitting, painting, mounting and odd jobs.</p></div>
+</div></div></div></div></section>
+
+<section class="project"><div class="wrap"><div class="project-top"><div><span class="num">02 / TRANSFORMATION</span><h2>Not stock.<br>Actual work.</h2></div><p>This is Mondo's own garden work. A simple before-and-after that says more than a page of sales copy ever could.</p></div><div class="beforeafter"><div class="frame"><img src="assets/garden-before.jpg"><span class="label">BEFORE</span></div><div class="frame"><img src="assets/garden-after.jpg"><span class="label after">AFTER</span></div></div></div></section>
+
+<section class="jobs" id="work"><div class="wrap"><div class="jobs-head"><div><span class="num">03 / RECENT JOBS</span><h2>Built around<br>real results.</h2></div><p>Gardens, patio work, fencing and gutters — all using the supplied Mondo's project photography.</p></div><div class="collage"><div class="tile"><img src="assets/lawn-after.jpg"><span>GARDEN + FENCING</span></div><div class="tile"><img src="assets/patio-after.jpg"><span>PATIO WORK</span></div><div class="tile"><img src="assets/gutter-after.jpg"><span>GUTTER CLEARING</span></div></div></div></section>
+
+<section class="split"><div class="wrap split-grid"><div><span class="num">04 / SEASONAL SERVICE</span><h2>Logs split.<br>Back saved.</h2><p>Mondo's also offers fast, efficient log splitting for firewood — from smaller domestic piles to larger quantities for farms and smallholdings.</p><div class="points"><div>Large or small quantities</div><div>Homes, farms & smallholdings</div><div>Friendly local service</div></div><a class="btn o" style="margin-top:28px" href="https://wa.me/447733445590">MESSAGE JAY →</a></div><img src="assets/log-splitting.jpg"></div></section>
+
+<section class="end"><div class="wrap end-grid"><div><span class="num" style="color:#fff">FREE QUOTES</span><h2>What needs<br>sorting?</h2></div><div><p>Send a couple of photos and a quick description. Jay can take it from there.</p><a class="contact-big" href="tel:07733445590">07733 445590</a><a class="contact-big" style="font-size:18px" href="mailto:Jay@mondosmaintenance.com">Jay@mondosmaintenance.com</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>MONDO'S MAINTENANCE</strong><br>Cheshire & surrounding areas</div><div>Experienced • Reliable • Fully insured • Free quotes</div></div></footer>
+<div class="mobilebar" id="bar"><a class="mc" href="tel:07733445590">CALL NOW</a><a class="wa" href="https://wa.me/447733445590">WHATSAPP</a></div>
+<script>const h=document.getElementById("hero"),b=document.getElementById("bar");new IntersectionObserver(([e])=>b.classList.toggle("show",!e.isIntersecting),{threshold:.05}).observe(h)</script>
+</body></html>
