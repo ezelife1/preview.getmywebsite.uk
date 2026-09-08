@@ -463,68 +463,108 @@
 }
 
 
-/* ===== v8 MOBILE ONLY: full-width jobs + stop horizontal movement ===== */
+/* ===== v9 - ACTUAL mobile selectors fixed ===== */
 @media(max-width:780px){
-  html, body{
+  html{
+    width:100%;
+    max-width:100%;
+    overflow-x:clip!important;
+    overscroll-behavior-x:none;
+  }
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:clip!important;
+    overscroll-behavior-x:none;
+    touch-action:pan-y;
+  }
+
+  /* stop decorative elements creating sideways travel */
+  .ticker{
     width:100%!important;
     max-width:100%!important;
-    overflow-x:hidden!important;
-    position:relative!important;
-  }
-  *, *::before, *::after{
-    box-sizing:border-box!important;
-  }
-
-  /* Prevent sections/rows from creating sideways page overflow */
-  main, section, header, footer,
-  .wrap, .container, .inner,
-  .jobs, .real-work, .work-section{
-    max-width:100%!important;
-    overflow-x:hidden!important;
-  }
-
-  /* Actual Jobs section uses almost the full phone width */
-  .jobs-grid,
-  .work-grid{
-    width:calc(100vw - 24px)!important;
-    max-width:none!important;
-    margin-left:calc(50% - 50vw + 12px)!important;
-    margin-right:0!important;
-    padding:0!important;
-    display:grid!important;
-    grid-template-columns:minmax(0,1fr)!important;
-    gap:16px!important;
-  }
-
-  .jobs-grid figure,
-  .work-grid figure,
-  .jobs-grid figure:first-child,
-  .work-grid figure:first-child{
-    width:100%!important;
-    max-width:none!important;
-    min-width:0!important;
-    height:auto!important;
-    aspect-ratio:4/3!important;
     margin:0!important;
-    grid-column:1!important;
+    transform:none!important;
     overflow:hidden!important;
   }
-
-  .jobs-grid img,
-  .work-grid img{
-    display:block!important;
-    width:100%!important;
+  .ticker-track{
     max-width:none!important;
+  }
+  .final:after{right:0!important}
+
+  /* ACTUAL JOBS section - these are the real class names */
+  .work{
+    width:100%!important;
+    overflow:hidden!important;
+    padding:64px 0 82px!important;
+  }
+  .work > .wrap{
+    width:calc(100% - 16px)!important;
+    max-width:none!important;
+    margin-left:8px!important;
+    margin-right:8px!important;
+  }
+  .work-head{
+    width:100%!important;
+    padding:0 4px!important;
+  }
+  .work-head p{
+    max-width:100%!important;
+  }
+
+  .mosaic{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    width:100%!important;
+    max-width:100%!important;
+    gap:14px!important;
+    margin:28px 0 0!important;
+    padding:0!important;
+  }
+  .mosaic .shot,
+  .mosaic .shot.tall{
+    display:block!important;
+    position:relative!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    min-height:0!important;
+    height:auto!important;
+    aspect-ratio:16/10!important;
+    grid-row:auto!important;
+    overflow:hidden!important;
+    margin:0!important;
+  }
+  .mosaic .shot img,
+  .mosaic .shot.tall img{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
     height:100%!important;
+    max-width:none!important;
     object-fit:cover!important;
     object-position:center!important;
   }
-
-  /* Keep any ticker/marquee visual contained without moving the page */
-  .ticker, .marquee, .service-strip{
-    max-width:100vw!important;
-    overflow:hidden!important;
+  .mosaic .shot .cap{
+    left:0!important;
+    right:auto!important;
+    bottom:0!important;
+    max-width:calc(100% - 12px)!important;
+    padding:13px 15px!important;
+    font-size:15px!important;
+    line-height:1.15!important;
   }
+
+  /* Full supplied logo visible in header */
+  .mark img{
+    width:52px!important;
+    height:52px!important;
+    flex:0 0 52px!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    overflow:visible!important;
+  }
+  .mark,.nav,.top{overflow:visible!important}
 }
 
 </style></head><body>
