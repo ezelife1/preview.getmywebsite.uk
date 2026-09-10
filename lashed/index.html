@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LashedByKayyP | Luxury Lash Artist East London</title>
+<meta name="description" content="Luxury lash appointments in Newham, East London. Book LashedByKayyP online.">
+<style>
+:root{--black:#080706;--cream:#f5f0e8;--champagne:#c8a76b;--taupe:#a4978b;--soft:#d8cec3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}img{display:block;width:100%}
+.wrap{width:min(1220px,calc(100% - 42px));margin:auto}
+header{height:76px;position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(8,7,6,.88);backdrop-filter:blur(14px);border-bottom:1px solid #2b2723}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{font:500 24px/1 Georgia,serif;letter-spacing:.2px}.brand i{font-style:normal;color:var(--champagne)}
+nav{display:flex;align-items:center;gap:26px;font-size:11px;letter-spacing:1.7px;text-transform:uppercase;font-weight:800}
+.book{border:1px solid var(--champagne);padding:12px 17px;color:#f7e7c7}
+
+/* proper luxury hero: one dominant premium image */
+.hero{padding-top:76px;min-height:900px;position:relative;overflow:hidden;background:#090807}
+.hero-bg{position:absolute;inset:76px 0 0 43%;overflow:hidden}
+.hero-bg img{height:100%;object-fit:cover;object-position:center}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080706 0%,rgba(8,7,6,.78) 18%,rgba(8,7,6,.1) 62%,rgba(8,7,6,.2))}
+.hero-copy{position:relative;z-index:2;padding:180px 0 110px;max-width:650px}
+.eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--champagne);font-weight:900}
+h1{font:400 clamp(62px,7vw,108px)/.88 Georgia,serif;letter-spacing:-4px;margin:22px 0 30px}
+h1 em{font-style:italic;color:var(--champagne)}
+.hero-copy p{max-width:520px;font-size:18px;line-height:1.7;color:#c7beb5}
+.actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.primary,.secondary{padding:16px 23px;font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+.primary{background:var(--cream);color:#111}.secondary{border:1px solid #62584e}
+.hero-note{margin-top:75px;display:flex;gap:36px;color:#948a80;font-size:12px}
+.hero-note b{display:block;color:var(--cream);font-size:13px;margin-bottom:5px}
+
+/* restrained luxury intro */
+.intro{background:var(--cream);color:#17130f;padding:100px 0}
+.intro-grid{display:grid;grid-template-columns:.6fr 1.4fr;gap:80px}
+.intro h2{font:400 clamp(46px,5vw,72px)/1.02 Georgia,serif;letter-spacing:-2px;margin:0}
+.intro h2 em{color:#8d7043;font-style:italic}
+.intro-right{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.intro-right p{margin:0;color:#655d55;line-height:1.8;font-size:16px}
+
+/* treatments as elegant ruled menu, no cards */
+.treatments{padding:110px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:50px}
+.section-head h2{font:400 clamp(48px,5vw,72px)/1 Georgia,serif;margin:12px 0 0;letter-spacing:-2px}
+.section-head p{max-width:430px;color:#8e857c;line-height:1.7}
+.menu{border-top:1px solid #3a342e}
+.row{display:grid;grid-template-columns:70px 1fr 1fr;gap:25px;padding:25px 0;border-bottom:1px solid #2b2723;align-items:center}
+.row .num{color:var(--champagne);font-family:Georgia,serif}
+.row strong{font:400 27px/1.1 Georgia,serif}
+.row span{color:#8e857c;font-size:14px}
+
+/* premium image story */
+.experience{display:grid;grid-template-columns:1.2fr .8fr;min-height:680px;background:#171411}
+.experience-img img{height:100%;object-fit:cover}
+.experience-copy{padding:75px;display:flex;flex-direction:column;justify-content:center}
+.experience-copy h2{font:400 clamp(48px,5vw,72px)/.98 Georgia,serif;letter-spacing:-2px;margin:16px 0 25px}
+.experience-copy p{color:#a89e94;line-height:1.8;font-size:16px}
+.rule{width:60px;height:1px;background:var(--champagne);margin:24px 0}
+
+/* real work only where it helps */
+.signature{padding:110px 0;background:#0b0a09}
+.signature-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+.signature-copy h2{font:400 clamp(48px,5vw,76px)/.96 Georgia,serif;letter-spacing:-2px;margin:15px 0 25px}
+.signature-copy p{color:#9c9288;line-height:1.8}
+.signature-images{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.signature-images figure{margin:0;overflow:hidden;background:#171411}
+.signature-images figure:first-child{height:580px}
+.signature-images figure:last-child{height:450px;margin-top:80px}
+.signature-images img{height:100%;object-fit:cover}
+.signature-images figure:first-child img{object-position:center 42%}
+.signature-images figure:last-child img{object-position:center 44%}
+
+/* artist */
+.artist{background:var(--cream);color:#15110e;padding:110px 0}
+.artist-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;align-items:center}
+.artist-photo{height:680px;overflow:hidden}
+.artist-photo img{height:100%;object-fit:cover;object-position:center 18%}
+.artist h2{font:400 clamp(48px,5vw,76px)/.98 Georgia,serif;letter-spacing:-2px;margin:15px 0 24px}
+.artist p{color:#6c6259;line-height:1.8;font-size:17px}
+.artist .facts{margin-top:30px;border-top:1px solid #cfc4b8}
+.fact{padding:16px 0;border-bottom:1px solid #cfc4b8;display:flex;justify-content:space-between;gap:20px;font-size:14px}
+.fact span{color:#786d63}
+
+/* booking */
+.booking{padding:110px 0}
+.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.booking h2{font:400 clamp(50px,5vw,76px)/.98 Georgia,serif;letter-spacing:-2px;margin:15px 0 24px}
+.booking p{color:#948a80;line-height:1.8}
+.hours{border-top:1px solid #39332e}
+.hour{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #2b2723;font-size:14px}.hour span{color:#8e857c}
+.booking .primary{display:inline-block;margin-top:24px}
+footer{border-top:1px solid #28231f;padding:40px 0 90px}
+.foot{display:flex;justify-content:space-between;gap:30px}.foot p{color:#766d65;font-size:12px;line-height:1.7;margin:5px 0}
+.mobile-book{display:none}
+
+@media(max-width:800px){
+ .stock-treatment-detail{grid-template-columns:1fr!important}.stock-treatment-detail>div:first-child{height:440px}
+ .wrap{width:min(100% - 28px,1220px)}header{height:66px}nav a:not(.book){display:none}
+ .hero{padding-top:66px;min-height:850px}
+ .hero-bg{inset:66px 0 0 0}.hero-bg:after{background:linear-gradient(180deg,rgba(8,7,6,.1) 20%,rgba(8,7,6,.5) 48%,#080706 78%)}
+ .hero-bg img{object-position:center top}
+ .hero-copy{padding:500px 0 65px}.hero-copy p{font-size:16px}h1{font-size:55px;letter-spacing:-2px}
+ .hero-note{margin-top:40px;gap:20px;flex-wrap:wrap}
+ .intro,.treatments,.signature,.artist,.booking{padding:70px 0}
+ .intro-grid,.signature-grid,.artist-grid,.booking-grid{grid-template-columns:1fr;gap:40px}
+ .intro-right{grid-template-columns:1fr}
+ .section-head{display:block}.row{grid-template-columns:38px 1fr}.row span{grid-column:2}
+ .experience{grid-template-columns:1fr}.experience-img{height:470px}.experience-copy{padding:48px 24px}
+ .signature-images figure:first-child{height:430px}.signature-images figure:last-child{height:350px;margin-top:40px}
+ .artist-photo{height:520px}
+ .mobile-book{display:block;position:fixed;z-index:80;left:10px;right:10px;bottom:10px;transform:translateY(100px);transition:.3s}
+ .mobile-book.show{transform:none}.mobile-book a{display:block;background:var(--cream);color:#111;text-align:center;padding:15px;font-weight:900;box-shadow:0 8px 30px #0009}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">LashedBy<i>KayyP</i></a><nav><a href="#treatments">Treatments</a><a href="#artist">Artist</a><a href="#booking">Visit</a><a class="book" href="https://lashedbykayyp.bookinbeautiful.com">Book now</a></nav></div></header>
+
+<section class="hero">
+ <div class="hero-bg"><img src="https://images.pexels.com/photos/34930118/pexels-photo-34930118.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Luxury eyelash extensions"></div>
+ <div class="wrap"><div class="hero-copy">
+   <div class="eyebrow">Private lash appointments • East London</div>
+   <h1>Elevated lashes.<br><em>Made for you.</em></h1>
+   <p>A polished lash experience in Newham, focused on flattering styling, precision and a finish that feels effortlessly put together.</p>
+   <div class="actions"><a class="primary" href="https://lashedbykayyp.bookinbeautiful.com">Book your appointment</a><a class="secondary" href="#treatments">Explore treatments</a></div>
+   <div class="hero-note"><div><b>Newham</b>East London</div><div><b>Late appointments</b>Monday–Friday</div><div><b>Online booking</b>Simple & direct</div></div>
+ </div></div>
+</section>
+
+<section class="intro"><div class="wrap intro-grid">
+ <h2>Beauty with a <em>refined edge.</em></h2>
+ <div class="intro-right"><p>Every appointment is about enhancing the eyes with a lash style that feels considered, balanced and right for the individual client.</p><p>From softer definition to a fuller finish, the emphasis is on detail and a polished result rather than a one-look-fits-all approach.</p></div>
+</div></section>
+
+<section class="treatments" id="treatments"><div class="wrap">
+ <div class="section-head"><div><div class="eyebrow">Treatments</div><h2>Your look, your way.</h2></div><p>Choose your preferred appointment through the booking page, with styling tailored to the finish you want.</p></div>
+ <div class="menu">
+  <div class="row"><div class="num">01</div><strong>Classic definition</strong><span>Elegant, clean and understated.</span></div>
+  <div class="row"><div class="num">02</div><strong>Hybrid styling</strong><span>Texture and fullness with a softer finish.</span></div>
+  <div class="row"><div class="num">03</div><strong>Volume sets</strong><span>For a fuller, more statement look.</span></div>
+  <div class="row"><div class="num">04</div><strong>Infills</strong><span>Maintain the shape and fullness of your set.</span></div>
+ </div>
+</div></section>
+
+<section class="experience">
+ <div class="experience-img"><img src="https://images.pexels.com/photos/33637444/pexels-photo-33637444.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Luxury lash treatment studio"></div>
+ <div class="experience-copy"><div class="eyebrow">The experience</div><h2>Time set aside for you.</h2><div class="rule"></div><p>A lash appointment should feel as considered as the finished result. The website now uses premium imagery where the supplied photography cannot carry that luxury positioning on its own.</p><a class="primary" href="https://lashedbykayyp.bookinbeautiful.com">Reserve your appointment</a></div>
+</section>
+
+<section class="signature"><div class="wrap signature-grid">
+ <div class="signature-copy"><div class="eyebrow">Real work</div><h2>Signature detail.</h2><p>The strongest original lash photographs are kept where they matter — showing the actual work — while weaker screenshots and unsuitable imagery are no longer used as major design features.</p></div>
+ <div class="signature-images"><figure><img src="assets/lash-fan.jpg" alt="LashedByKayyP lash work"></figure><figure><img src="assets/lash-closeup.jpg" alt="LashedByKayyP lash detail"></figure></div>
+</div></section>
+
+
+<section class="stock-treatment-detail" style="display:grid;grid-template-columns:1fr 1fr;min-height:620px;background:#f5f0e8;color:#17130f">
+  <div style="overflow:hidden"><img src="https://images.pexels.com/photos/5128225/pexels-photo-5128225.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Professional eyelash treatment" style="width:100%;height:100%;object-fit:cover"></div>
+  <div style="padding:clamp(42px,7vw,90px);display:flex;flex-direction:column;justify-content:center">
+    <div class="eyebrow">Precision & care</div>
+    <h2 style="font:400 clamp(46px,5vw,72px)/1 Georgia,serif;letter-spacing:-2px;margin:16px 0 24px">A considered lash experience.</h2>
+    <p style="color:#6c6259;line-height:1.8;font-size:17px">A calm appointment, careful application and a finished set designed around the eyes. Premium treatment photography supports the brand while the genuine LashedByKayyP images remain focused on her own work.</p>
+  </div>
+</section>
+
+<section class="artist" id="artist"><div class="wrap artist-grid">
+ <div class="artist-photo"><img src="assets/portrait.jpg" alt="LashedByKayyP"></div>
+ <div><div class="eyebrow">LashedByKayyP</div><h2>Your lash artist.</h2><p>Based in Newham, East London, LashedByKayyP offers appointments throughout the week, including late evening availability on selected days.</p><div class="facts"><div class="fact"><span>Location</span><b>Newham, East London</b></div><div class="fact"><span>Booking</span><b>Online</b></div><div class="fact"><span>Appointments</span><b>Monday–Saturday</b></div></div></div>
+</div></section>
+
+<section class="booking" id="booking"><div class="wrap booking-grid">
+ <div><div class="eyebrow">Book your visit</div><h2>Ready for your next set?</h2><p>Choose an available appointment directly through the LashedByKayyP booking page.</p><a class="primary" href="https://lashedbykayyp.bookinbeautiful.com">Book now</a></div>
+ <div class="hours"><div class="hour"><span>Monday</span><b>11:00 – 22:00</b></div><div class="hour"><span>Tuesday</span><b>11:00 – 22:00</b></div><div class="hour"><span>Wednesday</span><b>11:00 – 21:00</b></div><div class="hour"><span>Thursday</span><b>11:00 – 21:00</b></div><div class="hour"><span>Friday</span><b>10:00 – 21:00</b></div><div class="hour"><span>Saturday</span><b>11:00 – 19:00</b></div><div class="hour"><span>Sunday</span><b>Closed</b></div></div>
+</div></section>
+
+<footer><div class="wrap foot"><div><div class="brand">LashedBy<i>KayyP</i></div><p>Luxury lash appointments in East London.</p></div><p>Newham, London<br>Appointments booked online</p></div></footer>
+<div class="mobile-book" id="mb"><a href="https://lashedbykayyp.bookinbeautiful.com">Book appointment</a></div>
+<script>const mb=document.getElementById('mb');addEventListener('scroll',()=>mb.classList.toggle('show',scrollY>innerHeight*.72),{passive:true});</script>
+</body></html>
