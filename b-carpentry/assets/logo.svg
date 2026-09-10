@@ -1,0 +1,15 @@
+<svg width="520" height="150" viewBox="0 0 520 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="150" rx="16" fill="transparent"/>
+  <g transform="translate(10 15)">
+    <path d="M10 83L69 23L106 59L106 29L136 29L136 89H107L69 52L31 90H10V83Z" fill="#4E6B31"/>
+    <path d="M107 59L148 59L178 90H111L107 86V59Z" fill="#1F2937"/>
+    <rect x="135" y="66" width="11" height="11" fill="white"/>
+    <rect x="150" y="66" width="11" height="11" fill="white"/>
+    <rect x="135" y="81" width="11" height="11" fill="white"/>
+    <rect x="150" y="81" width="11" height="11" fill="white"/>
+    <path d="M34 73L62 45L88 69L82 75L61 56L40 78L34 73Z" fill="white"/>
+  </g>
+  <text x="205" y="66" fill="#4E6B31" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800">B-CARPENTRY</text>
+  <text x="206" y="104" fill="#1F2937" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="2">ALL-TRADES</text>
+  <text x="206" y="132" fill="#4E6B31" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Precision kitchens & interior carpentry</text>
+</svg>
