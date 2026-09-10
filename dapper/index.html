@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dapper Dogs Dundee | Professional Dog Grooming</title>
+<meta name="description" content="Professional dog grooming in Dundee from a qualified Level 3 iPET groomer with 17 years' experience.">
+<style>
+:root{--ink:#25112f;--purple:#35104c;--pink:#ef4ca2;--aqua:#63d7da;--cream:#fff9fc;--muted:#725f78}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(37,17,47,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;color:white}.brand img{width:72px;height:72px;object-fit:contain}.brand b{font-size:22px}.brand span{display:block;color:var(--aqua);font-size:12px;letter-spacing:2px;margin-top:3px}
+nav{display:flex;align-items:center;gap:25px;color:white;font-weight:700;font-size:14px}.book{background:var(--pink);padding:14px 20px;border-radius:999px;color:white}
+.hero{background:linear-gradient(115deg,#2b0b40 0 52%,#150b20 52%);color:white;overflow:hidden}.hero-grid{min-height:690px;display:grid;grid-template-columns:.92fr 1.08fr;align-items:center;gap:55px}
+.kicker{color:var(--aqua);font-weight:900;letter-spacing:2.5px;font-size:13px}.hero h1{font-size:clamp(50px,6vw,88px);line-height:.93;margin:18px 0 24px;letter-spacing:-4px}.hero h1 em{font-style:normal;color:var(--pink)}.hero p{font-size:19px;line-height:1.65;color:#eee;max-width:580px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:16px 22px;border-radius:999px;font-weight:900}.btn.pink{background:var(--pink)}.btn.ghost{border:1px solid #aa8db6}
+.trust{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px;font-weight:700;font-size:14px}.trust strong{color:var(--aqua)}
+.hero-photo{height:590px;position:relative}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 27%;border-radius:90px 0 0 18px}.stamp{position:absolute;left:-32px;bottom:36px;background:var(--aqua);color:var(--ink);padding:18px 22px;font-weight:900;transform:rotate(-3deg);box-shadow:0 12px 35px #0005}
+.ribbon{background:var(--aqua);padding:17px 0;font-weight:900;overflow:hidden}.ribbon div{display:flex;justify-content:space-around;gap:30px;white-space:nowrap}
+.intro{padding:100px 0 80px}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.intro h2,.gallery h2,.visit h2{font-size:clamp(38px,5vw,66px);line-height:1;margin:0;letter-spacing:-2px}.intro h2 span{color:var(--pink)}.lead{font-size:22px;line-height:1.55}.small{color:var(--muted);line-height:1.7}
+.services{margin-top:55px;border-top:2px solid var(--ink)}.service{display:grid;grid-template-columns:60px 1fr 1fr;gap:20px;padding:25px 0;border-bottom:1px solid #d8cadc;align-items:center}.num{font-size:13px;color:var(--pink);font-weight:900}.service b{font-size:23px}.service span{color:var(--muted)}
+.gallery{background:#f4e8f1;padding:90px 0}.gallery-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.gallery-head p{max-width:440px;color:var(--muted);line-height:1.6}
+.photo-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:310px 310px;gap:14px}.photo-grid figure{margin:0;position:relative;overflow:hidden;border-radius:20px}.photo-grid figure:first-child{grid-row:1/3}.photo-grid img{width:100%;height:100%;object-fit:cover}.photo-grid figcaption{position:absolute;left:14px;bottom:14px;background:white;padding:9px 13px;border-radius:999px;font-weight:900;font-size:13px}
+.experience{padding:90px 0;background:var(--purple);color:white}.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.experience img{width:100%;border-radius:28px;transform:rotate(-2deg);box-shadow:20px 20px 0 var(--pink)}.experience h2{font-size:clamp(40px,5vw,68px);line-height:1;margin:0 0 22px}.experience p{color:#e9dfea;line-height:1.7;font-size:18px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.fact{border-top:1px solid #806d89;padding-top:16px}.fact strong{font-size:28px;color:var(--aqua);display:block}
+.visit{padding:95px 0}.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px}.address{margin-top:30px;padding:28px;border-left:6px solid var(--aqua);background:white;box-shadow:0 18px 55px #35104c12}.address b{font-size:22px}.address p{color:var(--muted);line-height:1.6}.contact-panel{background:var(--ink);color:white;padding:42px;border-radius:28px}.contact-panel h3{font-size:32px;margin:0 0 12px}.contact-panel p{color:#d7c9dc;line-height:1.6}.contact-panel .btn{display:block;text-align:center;margin-top:12px}
+footer{background:#160a1e;color:white;padding:45px 0 90px}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:40px}.footbrand{display:flex;gap:14px;align-items:center}.footbrand img{width:78px;height:78px}.footbrand b{font-size:22px}.footer-grid h4{color:var(--aqua);margin:0 0 12px}.footer-grid p,.footer-grid a{color:#d4c8d8;line-height:1.8;font-size:14px}
+.mobile-contact{display:none}
+@media(max-width:800px){
+.wrap{width:min(100% - 28px,1180px)}header{position:fixed;left:0;right:0}.nav{height:74px}.brand img{width:54px;height:54px}.brand b{font-size:16px}.brand span{font-size:9px}.nav nav a:not(.book){display:none}.book{padding:11px 14px;font-size:12px}
+.hero{padding-top:74px;background:#2b0b40}.hero-grid{min-height:auto;display:flex;flex-direction:column;gap:28px;padding-top:48px}.hero-copy{order:1}.hero-photo{order:2;width:calc(100% + 28px);height:420px;margin-right:-28px}.hero-photo img{border-radius:60px 0 0 0}.stamp{left:15px;bottom:18px}.hero h1{font-size:55px;letter-spacing:-3px}.hero p{font-size:17px}.trust{gap:12px 18px}.ribbon div{justify-content:flex-start;padding-left:18px}
+.intro,.gallery,.experience,.visit{padding:65px 0}.intro-grid,.experience-grid,.visit-grid{grid-template-columns:1fr;gap:38px}.service{grid-template-columns:35px 1fr}.service span{grid-column:2}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:330px 250px 250px}.photo-grid figure:first-child{grid-column:1/3;grid-row:auto}.experience img{box-shadow:10px 10px 0 var(--pink)}.footer-grid{grid-template-columns:1fr}.mobile-contact{position:fixed;z-index:70;left:10px;right:10px;bottom:10px;display:flex;gap:8px;transform:translateY(120px);transition:.3s}.mobile-contact.show{transform:translateY(0)}.mobile-contact a{flex:1;text-align:center;padding:15px 8px;border-radius:999px;font-weight:900;box-shadow:0 8px 30px #0005}.mobile-contact .call{background:var(--aqua);color:var(--ink)}.mobile-contact .wa{background:var(--pink);color:white}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#"><img src="assets/logo.png" alt="Dapper Dogs Dundee logo"><div><b>Dapper Dogs Dundee</b><span>PROFESSIONAL DOG GROOMING</span></div></a>
+  <nav><a href="#services">Services</a><a href="#dogs">Our Dogs</a><a href="#about">About</a><a href="#visit">Find Us</a><a class="book" href="https://wa.me/447732388559">Book a Groom</a></nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div class="hero-copy">
+   <div class="kicker">DUNDEE • QUALIFIED • EXPERIENCED</div>
+   <h1>Every dog deserves to look <em>dapper.</em></h1>
+   <p>Professional grooming with your dog's comfort at the heart of every appointment. Qualified Level 3 iPET groomer with 17 years' experience working with dogs.</p>
+   <div class="actions"><a class="btn pink" href="https://wa.me/447732388559">Message to book</a><a class="btn ghost" href="tel:07732388559">Call 07732 388559</a></div>
+   <div class="trust"><span><strong>✓</strong> 17 years' experience</span><span><strong>✓</strong> Level 3 iPET qualified</span><span><strong>✓</strong> Dundee salon</span></div>
+  </div>
+  <div class="hero-photo"><img src="assets/hero-dog.jpg" alt="A freshly groomed dog at Dapper Dogs Dundee"><div class="stamp">FRESH • HAPPY • DAPPER ✦</div></div>
+ </div>
+</section>
+
+<div class="ribbon"><div><span>FULL GROOMS</span><span>•</span><span>BATH & DRY</span><span>•</span><span>DE-SHEDDING</span><span>•</span><span>NAILS & EARS</span><span>•</span><span>STYLING</span></div></div>
+
+<section class="intro" id="services">
+ <div class="wrap intro-grid">
+  <div><div class="kicker" style="color:var(--pink)">WHAT WE DO</div><h2>Care first.<br><span>Style second.</span><br>Both always.</h2></div>
+  <div>
+   <p class="lead">From bath time to the finishing touches, Dapper Dogs offers professional grooming tailored to your dog's coat, comfort and personality.</p>
+   <p class="small">Using quality products and years of hands-on experience, the aim is simple: a comfortable groom and a dog that leaves looking and feeling their best.</p>
+   <div class="services">
+    <div class="service"><div class="num">01</div><b>Full Groom & Styling</b><span>Clipping, scissoring and finishing tailored to your dog.</span></div>
+    <div class="service"><div class="num">02</div><b>Bath, Dry & Brush</b><span>A thorough clean, dry and coat refresh.</span></div>
+    <div class="service"><div class="num">03</div><b>De-shedding & De-matting</b><span>Coat care to remove loose hair and manageable tangles.</span></div>
+    <div class="service"><div class="num">04</div><b>Nails, Ears & Finishing</b><span>The details that complete the groom.</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="gallery" id="dogs">
+ <div class="wrap">
+  <div class="gallery-head"><h2>Meet some of our<br>dapper dogs.</h2><p>Real dogs, real grooms and plenty of personality. Your dog's welfare always comes first.</p></div>
+  <div class="photo-grid">
+   <figure><img src="assets/dog-2.jpg" alt="Dapper Dogs client"><figcaption>Salon regular ✦</figcaption></figure>
+   <figure><img src="assets/herbie.jpg" alt="Herbie"><figcaption>Herbie</figcaption></figure>
+   <figure><img src="assets/skara.jpg" alt="Skara"><figcaption>Skara</figcaption></figure>
+   <figure><img src="assets/kylo.jpg" alt="Kylo"><figcaption>Kylo</figcaption></figure>
+   <figure><img src="assets/hero-dog.jpg" alt="Dapper Dogs client"><figcaption>Freshly groomed</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="experience" id="about">
+ <div class="wrap experience-grid">
+  <img src="assets/booking.jpg" alt="Dapper Dogs Dundee appointment reminder">
+  <div>
+   <div class="kicker">EXPERIENCE YOU CAN TRUST</div>
+   <h2>Professional grooming, with a personal touch.</h2>
+   <p>Dapper Dogs Dundee is led by a qualified Level 3 iPET professional dog groomer with 17 years' experience working with dogs. The salon uses high-quality products and puts pet welfare at the centre of the grooming experience.</p>
+   <div class="facts"><div class="fact"><strong>17</strong>years' experience</div><div class="fact"><strong>Level 3</strong>iPET qualified</div><div class="fact"><strong>4.8★</strong>Google rating</div><div class="fact"><strong>Dundee</strong>city location</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <div class="wrap visit-grid">
+  <div><div class="kicker" style="color:var(--pink)">COME & SEE US</div><h2>Your local Dundee dog grooming salon.</h2><div class="address"><b>20 Stirling Street</b><p>Dundee, DD3 6PH<br>Conveniently located close to Dundee city centre.</p></div></div>
+  <div class="contact-panel"><h3>Ready for their next groom?</h3><p>Appointments can fill quickly, so message or call Dapper Dogs to discuss your dog and arrange their next visit.</p><a class="btn pink" href="https://wa.me/447732388559">WhatsApp 07732 388559</a><a class="btn ghost" href="tel:07732388559">Call the salon</a></div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap footer-grid">
+  <div><div class="footbrand"><img src="assets/logo.png" alt=""><div><b>Dapper Dogs Dundee</b><p>Professional Dog Grooming Services</p></div></div></div>
+  <div><h4>Visit</h4><p>20 Stirling Street<br>Dundee<br>DD3 6PH</p></div>
+  <div><h4>Contact</h4><p><a href="tel:07732388559">07732 388559</a><br>Instagram: @dapperdogsdundee1<br>TikTok: @dappdogsdundee</p></div>
+ </div>
+</footer>
+<div class="mobile-contact" id="mobileContact"><a class="call" href="tel:07732388559">Call</a><a class="wa" href="https://wa.me/447732388559">WhatsApp</a></div>
+<script>
+const bar=document.getElementById('mobileContact');
+function toggleBar(){bar.classList.toggle('show',window.scrollY>window.innerHeight*.62)}
+addEventListener('scroll',toggleBar,{passive:true});toggleBar();
+</script>
+</body></html>
