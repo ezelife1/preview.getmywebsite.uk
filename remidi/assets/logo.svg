@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130">
+<g transform="translate(2 5)">
+<path fill="#8a5a2b" d="M62 112c8-22 8-48 4-70 10 12 13 19 15 29 5-10 10-17 19-24-7 22-13 42-10 65z"/>
+<g fill="#bfd52a">
+<path d="M70 43C43 38 24 22 25 5c19 2 36 12 45 27 2-18 11-29 26-32 4 18-2 35-18 47z"/>
+<path d="M58 62C36 69 16 63 5 49c15-11 34-13 51-6-9-16-8-31 2-43 15 11 21 30 15 48z"/>
+<path d="M90 67c18-12 39-12 54-2-9 16-26 26-45 25 9 13 9 27 2 40-16-7-24-23-22-40z"/>
+<path d="M48 77c-14 16-34 21-51 15 4-18 18-31 36-36-13-9-19-22-15-36 18 2 31 15 36 32z"/>
+</g></g>
+<text x="155" y="61" font-family="Georgia,serif" font-size="51" font-weight="700" fill="#20251d">Garden Remedi</text>
+<text x="158" y="95" font-family="Arial,sans-serif" font-size="19" letter-spacing="5" fill="#718027">GARDENING SERVICES</text>
+</svg>
