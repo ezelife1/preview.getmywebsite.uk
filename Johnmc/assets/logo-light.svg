@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-labelledby="t d">
+<title id="t">John Anderson-McGuinness Gardens and Landscapes</title>
+<desc id="d">Three stylised trees with light company lettering</desc>
+<g transform="translate(8 8)">
+  <ellipse cx="48" cy="49" rx="37" ry="43" fill="#8CB35B"/>
+  <ellipse cx="101" cy="45" rx="34" ry="40" fill="#F08A24"/>
+  <ellipse cx="151" cy="51" rx="37" ry="43" fill="#6F9148"/>
+  <g fill="none" stroke="#F6F1E7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 111V35M48 58L29 43M48 72L72 48M48 49L60 36" stroke-width="6"/>
+    <path d="M101 109V31M101 55L83 41M101 70L123 46M101 47L113 35" stroke-width="6"/>
+    <path d="M151 113V38M151 62L132 47M151 75L174 51M151 53L163 40" stroke-width="6"/>
+  </g>
+</g>
+<g fill="#FFFFFF">
+  <text x="205" y="61" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" letter-spacing="-.8">John Anderson-McGuinness</text>
+  <text x="205" y="101" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">Gardens &amp; Landscapes</text>
+</g>
+</svg>
