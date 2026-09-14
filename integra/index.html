@@ -59,4 +59,18 @@
 </main>
 <footer><img src="assets/integra-logo.png" alt="Integra Property Services"><span>Isle of Wight</span><span>Build • Improve • Maintain</span></footer>
 <div class="mobile-contact"><a href="tel:07983282836">CALL</a><a href="https://wa.me/447983282836">WHATSAPP</a></div>
+<script>
+const hero = document.querySelector('.hero');
+const updateMobileBar = () => {
+  if (window.innerWidth <= 800 && hero) {
+    document.body.classList.toggle('show-mobile-contact',
+      window.scrollY > hero.offsetTop + hero.offsetHeight - 90);
+  } else {
+    document.body.classList.remove('show-mobile-contact');
+  }
+};
+window.addEventListener('scroll', updateMobileBar, {passive:true});
+window.addEventListener('resize', updateMobileBar);
+updateMobileBar();
+</script>
 </body></html>
