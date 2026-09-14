@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-label="Northwest Autogates">
+  <defs>
+    <style>
+      .w{fill:#ffffff}
+      .r{fill:#c92323}
+      .s{stroke:#ffffff;stroke-width:18;stroke-linecap:square;stroke-linejoin:miter;fill:none}
+      .thin{stroke:#ffffff;stroke-width:9;fill:none}
+      .txt{font-family:Arial,Helvetica,sans-serif;font-weight:800}
+    </style>
+  </defs>
+
+  <!-- stylised N -->
+  <path class="w" d="M55 55h36l154 154V55h34v214h-34L91 115v154H55z"/>
+
+  <!-- left pillar -->
+  <rect class="w" x="282" y="92" width="48" height="177" rx="1"/>
+  <rect class="w" x="276" y="77" width="60" height="10" rx="2"/>
+  <path class="w" d="M286 74c3-18 37-18 40 0z"/>
+  <rect x="297" y="135" width="18" height="38" fill="#111"/>
+
+  <!-- double gate outline -->
+  <path class="s" d="M330 126 Q410 125 500 72"/>
+  <path class="s" d="M500 72 Q590 125 670 126"/>
+  <path class="s" d="M330 126v143h170V72"/>
+  <path class="s" d="M500 72v197h170V126"/>
+
+  <!-- gate bars -->
+  <g class="thin">
+    <path d="M350 131v120"/>
+    <path d="M374 130v121"/>
+    <path d="M398 127v124"/>
+    <path d="M422 122v129"/>
+    <path d="M446 112v139"/>
+    <path d="M470 96v155"/>
+    <path d="M530 96v155"/>
+    <path d="M554 112v139"/>
+    <path d="M578 122v129"/>
+    <path d="M602 127v124"/>
+    <path d="M626 130v121"/>
+    <path d="M650 131v120"/>
+  </g>
+
+  <!-- right pillar -->
+  <rect class="w" x="670" y="92" width="48" height="177" rx="1"/>
+  <rect class="w" x="664" y="77" width="60" height="10" rx="2"/>
+  <path class="w" d="M674 74c3-18 37-18 40 0z"/>
+  <rect x="685" y="135" width="18" height="38" fill="#111"/>
+
+  <!-- stylised W -->
+  <path class="w" d="M718 55h38l58 149 62-126 62 126 58-149h38l-83 214h-33L876 145l-42 124h-33z"/>
+
+  <!-- brand text -->
+  <text x="112" y="326" class="txt w" font-size="58" letter-spacing="1">NORTHWEST</text>
+  <text x="545" y="326" class="txt r" font-size="58" letter-spacing="1">AUTOGATES</text>
+</svg>
