@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230">
+<g transform="translate(12 12)">
+<circle cx="104" cy="102" r="86" fill="none" stroke="#168bd1" stroke-width="7"/>
+<path d="M35 129 Q100 98 172 128 Q135 125 109 151 Q79 127 35 129Z" fill="none" stroke="#245b91" stroke-width="7" stroke-linecap="round"/>
+<path d="M47 124 L103 92 L164 124" fill="none" stroke="#168bd1" stroke-width="8" stroke-linejoin="round"/>
+<path d="M104 92 L146 53" stroke="#245b91" stroke-width="7" stroke-linecap="round"/>
+<path d="M145 53 L170 28" stroke="#245b91" stroke-width="9" stroke-linecap="round"/>
+<path d="M170 28 l25 14 -14 20 -25-15Z" fill="#245b91"/>
+<path d="M149 61 Q122 69 94 88" stroke="#4eb8ec" stroke-width="4"/>
+<path d="M151 67 Q125 78 101 91" stroke="#4eb8ec" stroke-width="3"/>
+</g>
+<text x="225" y="100" font-family="Arial,sans-serif" font-size="48" font-weight="800" fill="#245b91" letter-spacing="2">IMMACULATE</text>
+<text x="225" y="150" font-family="Arial,sans-serif" font-size="43" font-weight="800" fill="#245b91" letter-spacing="1">PRESSURE WASHING</text>
+<text x="228" y="190" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#36a9e1" letter-spacing="9">PROFESSIONAL CLEANING SERVICE</text>
+</svg>
