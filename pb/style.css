@@ -62,3 +62,36 @@ body{padding-top:var(--pb-header-height, 92px);}
 .site-header-fixed{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:999999!important;background:rgba(7,17,10,.5)!important;border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px) saturate(130%);-webkit-backdrop-filter:blur(18px) saturate(130%);box-shadow:0 10px 30px rgba(0,0,0,.14)}
 body{padding-top:0!important}
 @media(max-width:760px){.hero{min-height:88svh}.hero-content{width:calc(100% - 32px);padding:130px 0 55px}.hero h1{font-size:clamp(2.8rem,14vw,4.5rem)}.hero-copy{font-size:1rem}.hero-trust span{width:100%;padding:7px 12px}}
+
+/* KEEP OVERLAPPING LOGO ATTACHED TO FIXED GLASS HEADER */
+.site-header-fixed{
+  overflow:visible !important;
+}
+.site-header-fixed .nav,
+.site-header-fixed .wrap,
+.site-header-fixed .inner{
+  overflow:visible !important;
+}
+.site-header-fixed .brand{
+  position:absolute !important;
+  left:0 !important;
+  top:14px !important;
+  z-index:1000001 !important;
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  transform:none !important;
+}
+.site-header-fixed .brand img{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+@media(max-width:760px){
+  .site-header-fixed .brand{
+    top:8px !important;
+    left:0 !important;
+    width:112px !important;
+    height:112px !important;
+  }
+}
