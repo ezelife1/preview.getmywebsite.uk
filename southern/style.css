@@ -13,3 +13,16 @@
 .whygrid article{border-top-color:#78c82f}
 @media(max-width:900px){.hero-copy{padding-top:125px}.proof{bottom:18px;left:20px;right:20px}.hero{height:680px}}
 @media(max-width:520px){.hero{height:650px}.hero-copy{padding-top:130px}.proof{bottom:14px}.proof span{padding:11px 14px}}
+
+/* Mobile viewport lock: prevent horizontal page drift */
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none}
+body{position:relative}
+main,header,footer,section{max-width:100%}
+img,video{max-width:100%}
+@media(max-width:900px){
+  html,body{overflow-x:hidden!important;touch-action:pan-y}
+  header,.hero,.intro,.showcase,.case,.detail,.why,.contact,footer{width:100%;max-width:100vw;overflow-x:hidden}
+  .logo{max-width:calc(100vw - 28px)}
+  .proof{max-width:calc(100vw - 40px);overflow-x:auto;overscroll-behavior-x:contain}
+  .mosaic,.beforeafter,.services,.whygrid,.detail{max-width:100%}
+}
