@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header-fixed" class="site-header">
+<header class="site-header site-header-fixed" id="siteHeader">
   <div class="wrap nav">
     <a class="brand" href="#top"><img src="assets/logo.jpg" alt="PB Garden & Property Services"></a>
     <nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">Why PB</a><a href="#contact">Contact</a></nav>
@@ -27,7 +27,7 @@
 
 <main id="top">
 <section class="hero">
-  <img class="hero-img" src="assets/hedge-after.jpg" alt="Garden maintenance work">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hedge-after.jpg"><source src="assets/hero-video.mp4" type="video/mp4"></video>
   <div class="shade"></div>
   <div class="wrap hero-copy">
     <p class="eyebrow">FAMILY-RUN • BASED IN NORFOLK</p>
@@ -78,8 +78,12 @@
 <div class="mobile-contact" id="mobileContact"><a href="tel:07305682438">CALL</a><a href="https://wa.me/447305682438" target="_blank" rel="noopener">WHATSAPP</a></div>
 <footer><div class="wrap foot"><span>PB Garden & Property Services</span><span>Norfolk • Free Quotes</span></div></footer>
 <script>
-const bar=document.getElementById('mobileContact'), hero=document.querySelector('.hero');
-function toggleBar(){bar.classList.toggle('show',hero.getBoundingClientRect().bottom<=0)}
-addEventListener('scroll',toggleBar,{passive:true}); toggleBar();
+const bar=document.getElementById('mobileContact'), hero=document.querySelector('.hero'), header=document.getElementById('siteHeader');
+function updateScrollState(){
+  const pastHero=hero.getBoundingClientRect().bottom<=0;
+  bar.classList.toggle('show',pastHero);
+  header.classList.toggle('scrolled',window.scrollY>40);
+}
+addEventListener('scroll',updateScrollState,{passive:true}); updateScrollState();
 </script>
 </body></html>
