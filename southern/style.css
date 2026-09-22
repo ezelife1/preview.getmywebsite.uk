@@ -36,3 +36,18 @@ header{position:sticky!important;top:0!important;overflow:visible!important}
   main{overflow:visible!important}
   .hero,.intro,.showcase,.case,.detail,.why,.contact,footer{overflow-x:hidden}
 }
+
+/* Definitive mobile sticky header + overlapping logo fix */
+@media (max-width:900px){
+  html,body{overflow-x:clip!important;width:100%!important;max-width:100%!important}
+  header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;height:78px!important;z-index:9999!important;overflow:visible!important;transform:none!important}
+  .logo{position:absolute!important;left:14px!important;top:8px!important;width:145px!important;height:145px!important;overflow:visible!important;z-index:10000!important;border-radius:50%!important}
+  .logo img{width:100%!important;height:100%!important;border-radius:50%!important;object-fit:cover!important}
+  main{padding-top:78px!important;overflow:visible!important}
+  .hero{overflow:hidden!important}
+}
+@media (max-width:520px){
+  header{height:72px!important}
+  main{padding-top:72px!important}
+  .logo{left:12px!important;top:7px!important;width:126px!important;height:126px!important}
+}
