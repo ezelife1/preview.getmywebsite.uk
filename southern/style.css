@@ -26,3 +26,13 @@ img,video{max-width:100%}
   .proof{max-width:calc(100vw - 40px);overflow-x:auto;overscroll-behavior-x:contain}
   .mosaic,.beforeafter,.services,.whygrid,.detail{max-width:100%}
 }
+
+/* Mobile header/logo fix */
+header{position:sticky!important;top:0!important;overflow:visible!important}
+@media(max-width:900px){
+  header{position:sticky!important;top:0!important;z-index:1000!important;overflow:visible!important}
+  .logo{position:absolute!important;top:8px!important;left:14px!important;z-index:1001!important;overflow:visible!important}
+  .logo img{clip-path:none!important}
+  main{overflow:visible!important}
+  .hero,.intro,.showcase,.case,.detail,.why,.contact,footer{overflow-x:hidden}
+}
