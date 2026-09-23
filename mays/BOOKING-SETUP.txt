@@ -1,0 +1,9 @@
+WHATSAPP BOOKING REQUEST FORM
+
+No Calendly account or paid integration is required.
+Customers complete the form and tap Send booking request on WhatsApp.
+Their WhatsApp opens with a pre-filled message addressed to May at +44 7512 121595.
+Customers MUST tap Send in WhatsApp; no message is delivered by the website automatically.
+May replies on WhatsApp to confirm or propose a different slot.
+Requests are limited to Wednesday–Sunday, 08:00–20:00.
+No live calendar availability is checked and this form does not prevent overlapping requests.
