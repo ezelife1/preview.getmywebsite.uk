@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="Clean spaces. Fresh places. Peace of mind.">
 <meta name="twitter:image" content="https://preview.getmywebsite.uk/maid-on-the-move/assets/social-share.jpg">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="stylesheet" href="style-v5.css?v=5">
+<link rel="stylesheet" href="style-v6.css?v=6">
 </head>
 <body>
 <header class="site-header" id="site-header">
@@ -31,7 +31,7 @@
       <a href="#work">Our Work</a>
       <a href="#about">About</a>
       <a href="#areas">Areas</a>
-      <a href="#contact">Contact</a>
+      <a href="#quote">Quote</a><a href="#contact">Contact</a>
     </nav>
     <a class="head-quote" href="#contact">Free Quote</a>
     <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -152,6 +152,82 @@
   </div>
 </section>
 
+
+<section class="quote-request" id="quote">
+  <div class="quote-request-inner">
+    <div class="quote-request-copy">
+      <p class="kicker">QUICK QUOTE REQUEST</p>
+      <h2>Tell us what needs <em>cleaning.</em></h2>
+      <p>Fill in the details below and the form will prepare a WhatsApp message with everything Maid on the Move needs to quote the job.</p>
+      <div class="quote-points">
+        <span>Regular cleaning</span>
+        <span>Deep cleans</span>
+        <span>End of tenancy</span>
+        <span>Office &amp; commercial</span>
+        <span>One-off cleans</span>
+      </div>
+    </div>
+
+    <form class="wa-form" id="wa-form">
+      <div class="wa-grid">
+        <label>
+          Your name
+          <input type="text" id="wa-name" autocomplete="name" required placeholder="Your name">
+        </label>
+
+        <label>
+          Phone number
+          <input type="tel" id="wa-phone" autocomplete="tel" required placeholder="Your phone number">
+        </label>
+
+        <label>
+          Cleaning service
+          <select id="wa-service" required>
+            <option value="">Choose a service</option>
+            <option>Regular cleaning</option>
+            <option>Monthly cleaning</option>
+            <option>Deep clean</option>
+            <option>End of tenancy clean</option>
+            <option>Office / commercial clean</option>
+            <option>One-off clean</option>
+          </select>
+        </label>
+
+        <label>
+          Property type
+          <select id="wa-property" required>
+            <option value="">Choose property type</option>
+            <option>House</option>
+            <option>Flat / apartment</option>
+            <option>Office</option>
+            <option>Commercial premises</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="wa-full">
+          Area / postcode
+          <input type="text" id="wa-area" required placeholder="Area or postcode">
+        </label>
+
+        <label class="wa-full">
+          What needs cleaning?
+          <textarea id="wa-details" rows="5" required placeholder="Tell us about the rooms, condition and anything you want included"></textarea>
+        </label>
+
+        <label class="wa-full">
+          Preferred date
+          <input type="text" id="wa-date" placeholder="e.g. Friday afternoon or 12 October">
+        </label>
+      </div>
+
+      <button type="submit" class="wa-submit">Send quote request on WhatsApp →</button>
+      <p class="wa-note">This sends a quote request only. It does not confirm a booking.</p>
+      <p class="wa-error" id="wa-error" hidden>The Maid on the Move WhatsApp number still needs to be connected before this button can send.</p>
+    </form>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="contact-copy">
     <p class="kicker">FREE QUOTE</p>
@@ -189,6 +265,41 @@ menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
 const hero=document.getElementById('hero'),floating=document.getElementById('floating');
 new IntersectionObserver(([entry])=>floating.classList.toggle('show',!entry.isIntersecting),{threshold:.08}).observe(hero);
+
+const WHATSAPP_NUMBER = "";
+const waForm = document.getElementById('wa-form');
+const waError = document.getElementById('wa-error');
+
+waForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (!WHATSAPP_NUMBER) {
+    waError.hidden = false;
+    waError.scrollIntoView({behavior:'smooth', block:'nearest'});
+    return;
+  }
+
+  waError.hidden = true;
+
+  const message = [
+    'Hi Maid on the Move, I would like a cleaning quote.',
+    '',
+    'Name: ' + document.getElementById('wa-name').value.trim(),
+    'Phone: ' + document.getElementById('wa-phone').value.trim(),
+    'Service: ' + document.getElementById('wa-service').value,
+    'Property type: ' + document.getElementById('wa-property').value,
+    'Area / postcode: ' + document.getElementById('wa-area').value.trim(),
+    'Preferred date: ' + (document.getElementById('wa-date').value.trim() || 'Flexible'),
+    '',
+    'Job details:',
+    document.getElementById('wa-details').value.trim(),
+    '',
+    'This is a quote request, not a confirmed booking.'
+  ].join('\n');
+
+  window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
+});
+
 document.querySelectorAll('.contact-placeholder').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
 </script>
 </body>
