@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="JP Property Services logo">
+<circle cx="512" cy="512" r="502" fill="#0b0b0d"/><circle cx="512" cy="512" r="476" fill="none" stroke="#ff7900" stroke-width="22"/>
+<path d="M205 452 512 210 819 452 M258 437v266h225v-128h83v128h201V437 M332 329v-96h83v32" fill="none" stroke="#ff7900" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="648" y="595" font-family="DejaVu Sans,Arial,sans-serif" font-size="162" font-weight="800" fill="#ff7900" letter-spacing="-12">JP</text>
+<path d="M185 772h654" stroke="#ff7900" stroke-width="7"/>
+<text x="512" y="827" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="48" font-weight="700" fill="#fff" letter-spacing="3">PROPERTY SERVICES</text>
+</svg>
