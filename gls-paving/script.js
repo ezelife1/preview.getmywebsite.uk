@@ -1,0 +1,12 @@
+const header=document.querySelector('.site-header');
+const floating=document.getElementById('floating-contact');
+const hero=document.getElementById('hero');
+const menu=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+document.getElementById('year').textContent=new Date().getFullYear();
+new IntersectionObserver(([entry])=>{floating.classList.toggle('visible',!entry.isIntersecting);},{threshold:0}).observe(hero);
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>20),{passive:true});
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close menu':'Open menu');});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');}));
+const video=document.querySelector('.hero-video');
+video.play().catch(()=>{});
