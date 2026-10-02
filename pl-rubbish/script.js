@@ -1,1 +1,0 @@
-const hero=document.querySelector('.hero');const bar=document.querySelector('.float');const io=new IntersectionObserver(([e])=>bar.classList.toggle('show',!e.isIntersecting),{threshold:.05});io.observe(hero);

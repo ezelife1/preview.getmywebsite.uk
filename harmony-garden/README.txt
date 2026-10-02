@@ -1,1 +1,0 @@
-Upload the contents of this folder to your GitHub Pages client folder. Main file: index.html

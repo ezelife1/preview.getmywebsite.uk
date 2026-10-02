@@ -1,1 +1,0 @@
-const floater=document.querySelector('.floating-contact');const hero=document.querySelector('.hero');new IntersectionObserver(([entry])=>{floater.classList.toggle('show',!entry.isIntersecting)},{threshold:.06}).observe(hero);
