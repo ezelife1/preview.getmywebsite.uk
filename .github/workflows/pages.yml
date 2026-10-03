@@ -21,7 +21,6 @@ jobs:
       - name: Trim heavy files from artifact
         run: |
           rm -rf .git
-          find . -type f \( -iname '*.mp4' -o -iname '*.mov' \) -delete
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
