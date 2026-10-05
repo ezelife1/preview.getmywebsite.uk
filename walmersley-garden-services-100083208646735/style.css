@@ -1,14 +1,14 @@
 
 :root{
-  --black:#0b3d1e;
-  --black2:#125a2c;
-  --charcoal:#1c6b38;
-  --gold:#3fae3f;
-  --gold2:#6fce5a;
-  --soft:#f1f8f1;
-  --line:#d3e6d5;
+  --black:#012a10;
+  --black2:#013a16;
+  --charcoal:#014d1c;
+  --gold:#0a7a2e;
+  --gold2:#12a144;
+  --soft:#f2f9f3;
+  --line:#cfe4d4;
   --white:#fff;
-  --ink:#123422;
+  --ink:#0c2a16;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
