@@ -1,0 +1,12 @@
+M.A.C website pre-delivery checks
+PASS All telephone links: 07459574369
+PASS All WhatsApp links and form recipient: 447459574369
+PASS Actual form script evaluated with valid/special-character input and invalid input
+PASS Header fixed in source, logo anchored to header and overlapping hero at desktop/mobile sizes
+PASS Actual floating-contact script: hidden while hero visible, shown at hero bottom=0, hidden when returning; focus/ARIA state updated
+PASS Unique 1200x630 social card with actual logo and wavy divider; visually inspected; OG and Twitter target same absolute image path
+PASS All referenced local assets and anchor targets exist; eight gallery images form four complete rows
+PASS Supplied collage shown intact; no falsely labelled before/after photos; no previous company copy or contact details
+LIMIT Browser rendering was not tested in this environment.
+LIMIT Site has not been deployed; live video/crawler/network checks were not performed.
+Hero uses the supplied completed garden photo; no video was supplied for this build.
