@@ -1,0 +1,11 @@
+Wynyard Landscape Ltd — Checklist
+1 Call: PASS — all links use 07512201584.
+2 WhatsApp: PASS — links and tested form use 447512201584. Special-character encoding and invalid-form handling tested.
+3 Fixed scrolling header: PASS in CSS source.
+4 Attached overlapping logo: PASS in source — 164px logo/90px header desktop, 100px logo/76px header mobile.
+5 Floating Call and WhatsApp: PASS actual script tests — hidden throughout hero, visible only once hero bottom reaches viewport top, hidden on return.
+6 Unique social card: PASS — 1200x630 JPEG, actual lion logo, green wavy divider, identical absolute Open Graph and Twitter image URLs.
+
+All 12 distinct supplied portfolio images included; intact collage; gallery has six full pairs; no orphan tiles. All assets and section anchors checked.
+
+No live deployment, browser-rendering or social-crawler test performed; public image retrieval requires deployment to the expected preview URL.
