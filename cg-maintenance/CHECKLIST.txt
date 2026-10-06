@@ -1,0 +1,12 @@
+CG MAINTENANCE — DELIVERY CHECKLIST
+
+1. Call: PASS — all telephone links use 07936454107.
+2. WhatsApp: PASS — all direct links and the enquiry form use 447936454107. Actual form script tested with special characters and invalid fields.
+3. Scrolling header: PASS in source — fixed-position header at all screen sizes.
+4. Overlapping logo: PASS in source — logo anchored inside fixed header, 164px logo against 90px desktop header; 100px against 76px mobile header.
+5. Floating contacts: PASS — actual script tested above hero, at hero boundary, below hero and on return. Buttons only show once hero bottom is at or above viewport top.
+6. Social image: PASS in package — unique 1200 x 630 JPEG, CG logo and wavy cyan divider, identical absolute Open Graph and Twitter image URLs.
+
+Additional: all supplied service names included; nine work photos used; eight gallery tiles form complete pairs; full before/after photos retained; local assets and anchors checked; old-business names removed.
+
+Verification limit: no browser rendering or live deployment/crawler test performed. Live preview and social retrieval require upload to the expected preview address.
