@@ -1,14 +1,14 @@
 
 :root{
-  --black:#0b1613;
-  --black2:#11261f;
-  --charcoal:#1c382e;
-  --gold:#0c7f59;
-  --gold2:#61d8b1;
-  --soft:#d9f7ed;
-  --line:#bce5d7;
+  --black:#0b1611;
+  --black2:#11261b;
+  --charcoal:#1c382a;
+  --gold:#0c7f46;
+  --gold2:#61d89d;
+  --soft:#d9f7e8;
+  --line:#bce5d1;
   --white:#fff;
-  --ink:#143328;
+  --ink:#143323;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -43,9 +43,9 @@ main{padding-top:90px}
 .primary{background:var(--gold);color:#080808}
 .whatsapp{background:#25d366;color:#062b12}
 .trust-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-.trust-row span{border:1px solid rgba(12,127,89,.65);color:#f6f0e4;background:rgba(17,17,17,.4);border-radius:999px;padding:8px 12px;font-size:12px}
+.trust-row span{border:1px solid rgba(12,127,70,.65);color:#f6f0e4;background:rgba(17,17,17,.4);border-radius:999px;padding:8px 12px;font-size:12px}
 
-.hero-card{position:absolute;right:5%;bottom:48px;z-index:3;width:365px;background:rgba(14,14,14,.95);color:#fff;padding:26px;border:1px solid #0c7f59;border-radius:24px;box-shadow:0 25px 70px rgba(0,0,0,.42)}
+.hero-card{position:absolute;right:5%;bottom:48px;z-index:3;width:365px;background:rgba(14,14,14,.95);color:#fff;padding:26px;border:1px solid #0c7f46;border-radius:24px;box-shadow:0 25px 70px rgba(0,0,0,.42)}
 .hero-card span{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--gold)}
 .hero-card strong{display:block;font-size:26px;line-height:1.1;margin:10px 0}
 .hero-card p{color:#d7d0c3;line-height:1.5;margin:0}
@@ -75,7 +75,7 @@ main{padding-top:90px}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .gallery figure{margin:0;position:relative;overflow:hidden;border-radius:22px;background:#f1eee8}
 .gallery img{width:100%;height:360px;object-fit:cover;object-position:center}
-.gallery figcaption{position:absolute;left:16px;bottom:16px;background:rgba(10,10,10,.91);color:#fff;padding:9px 12px;border:1px solid #0c7f59;border-radius:999px;font-size:12px;font-weight:800}
+.gallery figcaption{position:absolute;left:16px;bottom:16px;background:rgba(10,10,10,.91);color:#fff;padding:9px 12px;border:1px solid #0c7f46;border-radius:999px;font-size:12px;font-weight:800}
 
 .before-after{padding:100px max(24px,calc((100vw - 1260px)/2));background:#eff7fb;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
 .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
