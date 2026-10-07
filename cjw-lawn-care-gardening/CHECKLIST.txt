@@ -1,0 +1,13 @@
+CJW Lawn Care & Gardening — pre-delivery checks
+PASS Telephone links: 07951734167
+PASS WhatsApp links and form recipient: 447951734167
+PASS Email: cjwlawncaregardening@gmail.com
+PASS Actual form script tested with special characters and invalid fields
+PASS Fixed header and attached overlapping logo rules retained for desktop/mobile
+PASS Floating contacts hidden during hero, revealed at hero bottom=0, hidden on return; keyboard/ARIA state verified
+PASS Unique 1200x630 social card, visually inspected, actual new logo and wavy divider
+PASS OG/Twitter absolute image URLs match expected preview address
+PASS All local assets and anchor targets; ten gallery photos in five complete rows; eleven supplied garden photos used overall
+PASS No old-business copy, invented location/accreditation/testimonials or false before/after labels
+LIMIT Browser rendering not tested in this environment.
+LIMIT Not deployed. Public image response and live social crawler verification require uploading.
