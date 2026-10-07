@@ -1,0 +1,9 @@
+WD Landscapes Ltd — six pre-delivery checks
+1 PASS Call links: correct tel:07528206373 at hero, contact, footer and floating bar.
+2 PASS WhatsApp: correct wa.me/447528206373 links; actual form script tested for correct recipient, encoded details and invalid-input prevention.
+3 PASS Fixed scrolling header: source position:fixed and mobile sizes preserved from Elm.
+4 PASS Logo overlap: 164px logo in 90px fixed desktop header; 100px logo in 76px mobile header, attached to header.
+5 PASS Floating contacts: actual script tested hidden while hero bottom >0, visible at <=0, hidden again on return; keyboard focus matches visibility.
+6 PASS Unique 1200x630 social card: WD logo, own garden photo, wavy divider; OG and Twitter absolute URLs correctly wired.
+Asset paths, anchors, complete gallery rows and old-company copy also checked.
+Browser rendering and live social crawler checks unverified. Not deployed.
