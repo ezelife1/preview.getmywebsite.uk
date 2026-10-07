@@ -1,0 +1,13 @@
+AT South West — Elm delivery checks
+PASS Phone links: 07825158190
+PASS WhatsApp links and enquiry form: 447825158190
+PASS Email: atswclean@hotmail.com
+PASS Form JavaScript evaluated with special characters; invalid form does not open WhatsApp
+PASS Fixed header and attached overlapping round logo rules retained for desktop and mobile
+PASS Floating buttons hidden until hero bottom reaches viewport top; return-to-hero hides them; keyboard/ARIA states update
+PASS Unique 1200x630 social card, visually inspected, actual logo and wavy divider
+PASS OG/Twitter metadata points to same absolute expected public social image address
+PASS All local asset paths and anchor targets; 13 supplied cleaning photos used; 12 gallery images in six complete rows
+PASS Six services from leaflet; no old-company text or contact details; no falsely labelled before/after images
+LIMIT Browser rendering was not tested in this environment.
+LIMIT Website not deployed; social image live HTTP/crawler response cannot be verified until uploading.
