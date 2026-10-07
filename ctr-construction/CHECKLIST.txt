@@ -1,0 +1,9 @@
+CTR Construction — six pre-delivery checks
+1 PASS Call: correct tel:07449860692 at hero, contact, footer and floating bar.
+2 PASS WhatsApp: wa.me/447449860692; actual enquiry form script tested for recipient, encoded details and invalid-input prevention.
+3 PASS Fixed scrolling header: position:fixed preserved from Elm, desktop and mobile.
+4 PASS Overlapping logo: 164px logo in 90px fixed desktop header, 100px logo in 76px mobile header; remains attached to header.
+5 PASS Floating contacts: actual script tested hidden above boundary, visible only when hero bottom <=0, hidden on return; keyboard focus follows visibility.
+6 PASS Unique 1200x630 social image with original CTR logo, driveway photo and wavy divider; OG and Twitter image URLs verified.
+Assets, internal anchors, 12-image gallery and business copy checked.
+Browser rendering and live social preview remain unverified. Not deployed.
