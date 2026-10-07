@@ -1,0 +1,13 @@
+LMH Garden Maintenance — pre-delivery checks
+PASS Telephone links: 07398755291
+PASS WhatsApp links and form destination: 447398755291
+PASS Email: lmhgardener@gmail.com
+PASS Form JavaScript tested with special characters and invalid fields
+PASS Fixed header and overlapping header-attached logo rules retained for desktop/mobile
+PASS Floating contacts hidden in hero, revealed at hero bottom=0, hidden on return; ARIA and keyboard state verified
+PASS Unique 1200x630 social card, visually inspected, supplied logo and wavy divider
+PASS Absolute OG/Twitter image addresses match expected preview URL
+PASS Local assets and anchors exist; four complete two-column gallery rows; unrelated brickwork close-up omitted
+PASS No previous business details or invented location/accreditation/testimonials
+LIMIT Browser rendering not tested in this environment.
+LIMIT No deployment performed; public URL/image response and live social-crawler previews require verification after upload.
