@@ -1,0 +1,9 @@
+The Troweller Boys — six pre-delivery checks
+1 PASS Call: CJ tel:07355008580 at hero, contact, footer and floating bar; alternative tel:07950985875 in contact section.
+2 PASS WhatsApp: wa.me/447355008580; actual form script tested for correct recipient, encoded details and invalid-input prevention.
+3 PASS Fixed header: position:fixed preserved from Elm on desktop and mobile.
+4 PASS Overlapping transparent logo: 164px in 90px desktop header; 110/112px in 76px mobile header; attached to fixed header. Logo artwork retained without a circular crop.
+5 PASS Floating contacts: actual script tests hidden while hero bottom >0, visible at <=0 and hidden again on return; focus states follow visibility.
+6 PASS Unique 1200x630 social image: own project photo and transparent logo, wavy divider, correct OG and Twitter URLs.
+Additional checks: asset/font paths, internal anchors, complete 8-image gallery, no prior company details, no hero video.
+Browser rendering and live social crawler checks remain unverified. No deployment performed.
