@@ -1,0 +1,5 @@
+const hero=document.getElementById('hero'),floating=document.getElementById('floating');function updateFloating(){const show=hero.getBoundingClientRect().bottom<=0;floating.hidden=!show;floating.setAttribute('aria-hidden',String(!show));floating.querySelectorAll('a').forEach(a=>a.tabIndex=show?0:-1)}addEventListener('scroll',updateFloating,{passive:true});addEventListener('resize',updateFloating);updateFloating();const form=document.getElementById('quote-form');if(form)form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);window.open('https://wa.me/447572488028?text='+encodeURIComponent(`Hi LA Fen Scapes, I'd like a quote.
+Name: ${d.get('name')}
+Service: ${d.get('service')}
+Postcode: ${d.get('area')}
+Details: ${d.get('details')}`),'_blank','noopener')});

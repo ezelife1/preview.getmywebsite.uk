@@ -1,0 +1,7 @@
+LA Fen Scapes demo
+Repo folder: la-fen-scapes
+Preview: https://preview.getmywebsite.uk/la-fen-scapes/
+Open index.html locally after extracting the entire folder. Service files open directly.
+Phone 07572 488028 transcribed from supplied flyer. Confirm before live publication. No business address, location, operating hours, reviews or credentials supplied, so none invented.
+Preview noindex is included. Before live launch: replace preview base in canonical/schema/OG/Twitter/sitemap/robots with verified live domain, change noindex,follow to index,follow; then verify Search Console, submit sitemap and check live mobile performance. Google Business Profile/account actions require owner access.
+SEO included: three service pages, unique metadata, internal links, supplied project descriptions, FAQs, Organization/Service schema, sitemap/robots, responsive WebP, dimensions, lazy loading, dedicated social sharing card. No hero video requested. Browser appearance not verified.
