@@ -1,0 +1,5 @@
+Original Elm source design retained: overlapping logo, hero/card, four service strip, stacked introduction images, paired feature, two-column gallery, project-detail pair, about/reasons, FAQ, WhatsApp form and contact/footer.
+Call: 07505 231056; WhatsApp: 447505231056. Fixed header and attached overlapping logo retain original desktop/mobile Elm dimensions. Floating controls hidden until entire hero has passed; hidden focus removed.
+Business-specific social-share-wave.jpg is 1200x630, wavy centre divider and round logo integrated; OG/Twitter references validated.
+All packaged images decoded, responsive srcset files checked, local links and fragments validated, schema parsed. Service pages, metadata, responsive images, dimensions, FAQs, internal links, robots and sitemap included.
+Preview noindex remains until confirmed live domain is supplied. Follow LIVE-LAUNCH.txt. Browser visual QA and live performance/Search Console remain unverified.
