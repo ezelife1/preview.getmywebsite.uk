@@ -1,0 +1,5 @@
+Open index.html locally after extracting the ZIP. All CSS, script, images and service pages use relative links.
+Phone +44 7505 231056 and Dundee location taken from supplied social profile screenshot; verify before publishing.
+No business domain, full service coverage, postal address, email, reviews, insurance or credentials were supplied. No such claims added.
+This preview is deliberately noindex. At launch replace preview.getmywebsite.uk/john-anderson-mcguinness/ in all HTML canonical, social and structured data tags plus robots.txt and sitemap.xml with the actual domain and path, then switch noindex,follow to index,follow. Connect Search Console and submit sitemap after publication.
+Social image: assets/social-share.jpg 1200x630. Photos are the client supplied originals plus responsive WebP variants.
