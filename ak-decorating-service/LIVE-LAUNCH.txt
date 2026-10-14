@@ -1,0 +1,4 @@
+AK Decorating Service website. Extract the ZIP and open index.html. All assets and page links are relative for local opening.
+Phone 07510 338331, Burnley, email akpainterdecorater@gmail.com, Facebook facebook.com/akhliskha and Instagram @akdecoratingservice are taken from the supplied page screenshot and matching business page. Confirm the exact published contact details with the client before live publication.
+No street address or insurance credentials were supplied. Preview pages are noindex. Once the final live domain is known, replace the preview URL in canonical, social metadata, JSON-LD, sitemap.xml and robots.txt. Change noindex,follow to index,follow, connect Search Console and submit the sitemap.
+Unique 1200x630 social image is assets/social-share.jpg. All ten supplied project photos are included as originals plus responsive WebP sizes.
