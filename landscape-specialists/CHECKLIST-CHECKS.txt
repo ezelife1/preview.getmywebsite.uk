@@ -1,0 +1,13 @@
+ELM DESIGN: original elmbespokegardendesigns.zip stylesheet retained verbatim as CSS base. Original section order and design structure retained, with client colours, logos, imagery and factual copy.
+
+Six required checks:
+1. Correct tel links in all pages.
+2. Correct wa.me links plus WhatsApp form message routing.
+3. Fixed header retained from Elm on desktop and mobile.
+4. Original overlapping logo wrapper remains inside fixed header: 164px desktop and 100px mobile.
+5. Floating Call/WhatsApp hidden until hero bottom <= 0; hidden controls removed from keyboard focus.
+6. Unique business 1200x630 social sharing image exists; all pages reference it in OG and Twitter metadata.
+
+SEO: unique page titles/descriptions, canonical tags, service pages, FAQs, internal links, Organization/Service schema using supplied details, image alt/dimensions/responsive WebP, sitemap and robots. Preview noindex remains enabled. Follow LIVE-LAUNCH.txt before live publication.
+
+Verification: file, template structure, link/fragment and JavaScript behaviour checks. Browser visual QA unavailable in this environment; live mobile performance and Search Console require the final live deployment. No live ranking claims made.

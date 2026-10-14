@@ -1,0 +1,4 @@
+Landscape Specialists site. Extract ZIP, open index.html locally. All internal files use relative URLs.
+Phone 07769 509542, email karlgilbert25@icloud.com and Essex location transcribed from supplied Facebook page screenshot. Confirm with client before publication. No street address, insurance credentials or review quotes supplied.
+This preview is noindex. At launch replace the preview URL in each page canonical, JSON-LD, OG/Twitter metadata and sitemap/robots with the confirmed live domain; switch noindex,follow to index,follow; connect Search Console and submit sitemap.
+Includes 12 distinct project photos, a dedicated 1200x630 social card, responsive WebP files and a transparent round header logo.
