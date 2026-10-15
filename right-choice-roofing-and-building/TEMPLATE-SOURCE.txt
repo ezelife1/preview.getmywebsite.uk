@@ -1,0 +1,1 @@
+Adapted from the actual Elm Bespoke Garden Designs source files. The original style.css and section composition are retained.
