@@ -1,0 +1,15 @@
+DELIVERY CHECKS
+1. All Call links use 07881239360, matching the supplied business profile.
+2. All WhatsApp links and the enquiry form use 447881239360. Runtime harness confirms a message containing name, selected service, area/postcode and details. Email links use rvirg91@gmail.com.
+3. Original Elm fixed header rules retained at desktop and mobile breakpoints.
+4. The corrected round teal business logo overlaps the header/hero, remains attached to the fixed header and is clipped cleanly at the edge.
+5. Floating contact buttons remain hidden until the entire hero passes the top of the viewport. Runtime tests cover hero bottom positions 500, 1, 0 and -10. Hidden links have tabindex -1.
+6. Unique 1200x630 social image includes the wavy divider and round logo. Every page references it in both Open Graph and Twitter metadata.
+
+Actual Elm source stylesheet and section composition retained. Five local HTML pages, every local asset link and internal fragment checked. All thirteen project photographs included. The same slate roof before and after replacement is displayed uncropped. All original and responsive images decode successfully inside the final ZIP.
+
+Preview SEO: distinct service content and FAQs, unique titles and descriptions, one H1 per page, factual Torquay/Paignton targeting, internal service links, service breadcrumbs, Organization/WebPage/Service schema, accurate contact data, consistent canonical URLs, XML sitemap, crawlable robots file and noindex,follow preview directives. Images have accurate alt text, dimensions, srcset widths and loading hints.
+
+No postal address, review quote, insurance, guarantee or price has been invented. Experience and services come from the supplied profile screenshot. The preview domain is used consistently because no intended live domain was supplied.
+
+Browser visual testing was unavailable. Header/logo rules and script behaviour were checked in the files and a local runtime harness. Live redirects, HTTPS, mobile performance, Search Console and indexing remain deployment/account checks.

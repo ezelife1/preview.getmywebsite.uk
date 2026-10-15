@@ -1,0 +1,3 @@
+Extract the full ZIP and open index.html. All four service pages open directly too.
+Business name, phone 07881 239360, email rvirg91@gmail.com, Torquay location, over 13 years experience and service list come from the supplied screenshot. A posted project confirms work in Paignton. No wider location claim, postal address, review quote, guarantee or price has been invented.
+The preview is noindex,follow. Canonical, schema, social and sitemap URLs consistently use the preview address because no intended live domain was supplied. At launch, update them to the confirmed domain, remove noindex, verify HTTPS and redirects, check live performance and submit the sitemap through Search Console.
