@@ -1,0 +1,14 @@
+CHECKS COMPLETED IN THE FILES / LOCAL SCRIPT HARNESS
+
+1. Call: every tel link uses 07985366784.
+2. WhatsApp: key links and enquiry form use 447985366784. Runtime harness confirms the composed message contains customer name, selected service, area/postcode and details, preserving special characters.
+3. Header: original Elm fixed header rules retained at desktop and mobile breakpoints.
+4. Logo: round business logo positioned within and attached to the fixed header, 164px desktop / 100px mobile. Round clipping masks outer image fringes.
+5. Floating contacts: runtime checks confirm hidden while hero bottom is positive, shown at/beyond zero. Hidden links have tabindex -1.
+6. Social sharing: unique business image is exactly 1200x630 and referenced by both OG and Twitter metadata on all five pages.
+
+Actual Elm source stylesheet and section composition retained. All five local HTML pages, internal links and fragments validated. All fourteen project photos included. Genuine conservatory before/after pair kept uncropped; porch photo collage shown in full. All source and responsive image files decode successfully.
+
+SEO: distinct service copy and FAQs, descriptive titles and meta descriptions, one H1 per page, local area targeting, service links, breadcrumbs on service pages, factual Organization/WebPage/Service schema, canonicals, XML sitemap, crawlable robots.txt and preview noindex,follow. No invented review, postal address, insurance, guarantee, price or turnaround claims.
+
+Browser visual QA was unavailable; source rules and script behaviour were checked without claiming browser verification. Live performance, production redirects, Search Console and indexing remain live-only checks.

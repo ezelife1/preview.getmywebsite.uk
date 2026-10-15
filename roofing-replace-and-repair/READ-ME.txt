@@ -1,0 +1,4 @@
+Extract the full folder and open index.html. All service pages use relative links and open directly on your computer.
+The preview is noindex,follow. Canonical, schema, social image and sitemap URLs use the established preview URL because no intended live domain was supplied. Once the live domain is confirmed, update those URLs together and remove noindex at publication.
+Live-only checks: HTTPS and redirects, production mobile performance, Search Console ownership and sitemap submission, crawl/indexing inspection. These require the final deployment or owner account.
+No address, credentials, review text, price or guarantee has been invented.
