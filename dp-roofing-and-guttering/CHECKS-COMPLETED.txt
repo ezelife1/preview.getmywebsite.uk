@@ -1,0 +1,15 @@
+DELIVERY CHECKS
+1. Every Call link points to 07585013379, matching the supplied profile screenshot.
+2. WhatsApp links and enquiry form use 447585013379. Runtime harness verifies the destination and message containing name, selected service, area/postcode and details.
+3. Actual Elm fixed header rules retained at desktop and mobile breakpoints.
+4. Round DP logo overlaps the header/hero and remains attached to the fixed header. Outer logo edges are clipped cleanly.
+5. Floating contact controls remain hidden until the entire hero has passed the top of the viewport; harness tests hero bottom positions 500, 1, 0 and -10. Hidden links have tabindex -1.
+6. Unique 1200x630 wavy social card with round DP logo, correctly referenced in OG and Twitter metadata on every page.
+
+All five local HTML pages, assets and fragment links checked. Fifteen project photographs included. The preparation and finished extension photos match. The roofers' image is shown in full. No repeated footer logo. Every original and responsive image in the ZIP decodes successfully.
+
+Preview SEO: substantive distinct service pages, relevant FAQs, unique titles/descriptions, one H1 per page, descriptive alt text, dimensions, responsive images and loading hints, internal service links, breadcrumbs, factual Organization/WebPage/Service schema, consistent canonicals, XML sitemap and crawlable robots file. Preview noindex,follow remains in place.
+
+Service area and live domain were not supplied, so location claims and a future domain have not been invented. Supply the genuine coverage area to add local targeting.
+
+Verification limits: browser visual testing was unavailable. Header/logo rules and script behaviour were checked in the actual files and local test harness. Production HTTPS/redirects, mobile performance, Search Console and indexing require the live deployment.

@@ -1,0 +1,3 @@
+Extract the whole ZIP and open index.html. The four service pages open directly too.
+Business name, 07585 013379, free quotes/advice and free roof inspections come from the supplied business screenshot. No service area, email, postal address or intended live domain was supplied. No area or address is invented. Confirm the genuine service area to add location targeting.
+All file-based preview SEO is included. The review build remains noindex,follow. Canonical, sitemap, schema and social URLs consistently use the established preview domain. On launch update them to the confirmed live domain, remove noindex, check HTTPS/redirects, test live mobile performance and submit the sitemap in Search Console.
