@@ -1,0 +1,5 @@
+Derbyshire Resin Driveways. Extract the entire ZIP and open index.html locally. Four root HTML pages use relative assets and links.
+Phone 07565 401839, email petertempleman@live.co.uk and domain derbyshireresindriveways.co.uk taken from the supplied business profile. No address, insurance, guarantees or review quotations invented.
+Canonical, schema, social metadata and sitemap use the supplied live domain. The review build remains noindex,follow to prevent an unfinished preview being indexed. Before replacing the live website, change noindex,follow to index,follow in all four pages. Verify HTTPS redirects and canonical domain, connect Search Console, submit sitemap and run live mobile performance checks. Do not overwrite unrelated hosting files.
+The wave social card is assets/social-share-wave.jpg, 1200x630. All twelve project photos and responsive WebP sizes are included.
+Browser visual QA unavailable in this environment.

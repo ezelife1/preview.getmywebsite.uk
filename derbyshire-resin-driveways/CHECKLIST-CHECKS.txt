@@ -1,0 +1,5 @@
+ELM: actual original Elm stylesheet and full section composition retained, adapted to charcoal/silver branding. Four local HTML pages; all twelve supplied project photos. Genuine matching before/after pairs displayed uncropped.
+Call and WhatsApp use 07565 401839 / 447565401839. Header fixed; original overlapping logo stays attached at desktop/mobile sizes. Floating contact links hidden over the full hero and removed from keyboard focus while hidden.
+Unique 1200x630 wavy social card with centred round logo referenced in OG and Twitter metadata. All asset files decoded and responsive image candidates checked.
+Unique metadata, titles, headings, canonical URLs, sitemap, robots, service pages, FAQs, internal links and factual Organization/Service schema included. Preview noindex remains enabled. Follow LIVE-LAUNCH.txt before publication.
+Browser visual QA, live performance and Search Console checks remain unverified.
