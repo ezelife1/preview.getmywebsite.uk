@@ -1,0 +1,13 @@
+TS Construction & Landscaping — delivery checks
+
+PASS: Original Elm CSS and section composition retained; service strip, gallery and FAQ layout classes checked on all five pages.
+PASS: Correct Call number 07787 121157 and WhatsApp target 447787121157.
+PASS: WhatsApp form has correct service choices and includes name, service, postcode and details; runtime tested.
+PASS: Fixed header and prominent centred overlapping logo with original desktop/mobile sizing.
+PASS: Floating buttons hidden until the entire hero exits; hidden links leave keyboard focus.
+PASS: Unique 1200x630 social card with central wave and round business logo; OG/Twitter wired.
+PASS: Distinct service copy and FAQs, one H1, unique metadata, canonical URLs, truthful schema, breadcrumbs, robots and sitemap.
+PASS: Local links and fragments, image alt/dimensions, srcset widths and all packaged JPEG/PNG/WebP decodes.
+PASS: Genuine matched patio before/after with complete images visible.
+
+Preview is noindex,follow. Confirm the live domain before switching URLs and removing noindex. Live performance, HTTPS redirects, Search Console and indexing checks remain launch work. Browser visual QA was unavailable.
