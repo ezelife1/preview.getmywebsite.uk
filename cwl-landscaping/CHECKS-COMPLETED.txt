@@ -1,0 +1,12 @@
+CWL Landscaping Ltd — delivery checks
+
+PASS: Original Elm template stylesheet and layout classes retained on all five pages, including service strip, gallery and FAQs.
+PASS: Call links use 07841 428468 and WhatsApp uses 447841428468.
+PASS: WhatsApp form message includes name, service, area/postcode and details; runtime behaviour verified.
+PASS: Fixed header and prominent overlapping round logo, including mobile size rules.
+PASS: Floating contact controls hidden until the complete hero leaves the viewport; hidden links leave keyboard focus.
+PASS: Dedicated 1200x630 wave-and-round-logo social image, referenced in OG and Twitter metadata.
+PASS: Distinct service content, FAQs, titles/descriptions, one H1 per page, canonicals, factual schema, breadcrumbs, robots and sitemap.
+PASS: All page links and fragments, alt text, dimensions and responsive srcset widths checked. All JPEG, PNG and WebP assets decoded.
+
+Preview pages use noindex,follow. Live domain, redirects, live mobile performance, Search Console and indexing checks remain launch work. Browser visual QA was unavailable in this environment.
