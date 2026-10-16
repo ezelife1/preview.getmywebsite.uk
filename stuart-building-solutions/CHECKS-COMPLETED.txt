@@ -1,0 +1,10 @@
+PASS: Original Elm layout and stylesheet retained.
+PASS: Correct Call and WhatsApp links on all five pages.
+PASS: WhatsApp enquiry contains name, service, postcode and details.
+PASS: Fixed header with overlapping logo; desktop/mobile rules inspected.
+PASS: Floating contact buttons hidden until the complete hero exits; hidden controls leave keyboard focus.
+PASS: Unique 1200x630 social sharing image with wavy central divider and round logo, wired to OG/Twitter.
+PASS: Titles/descriptions, one H1, service content and FAQs, canonical links, factual structured data, breadcrumbs, robots and sitemap.
+PASS: All local assets and page/fragment links validated. Every packaged image and responsive candidate decoded; srcset widths verified.
+Preview remains noindex,follow. Live domain/redirect/performance checks, Search Console and indexing must be completed at launch.
+Browser visual testing was not available in this environment.
