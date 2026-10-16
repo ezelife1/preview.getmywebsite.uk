@@ -9,3 +9,7 @@ Unique page titles/descriptions, substantive service copy, FAQs, internal links,
 Preview noindex,follow; robots allows crawl.
 Before live domain launch: update canonical/schema/social/sitemap domain, remove noindex, check live redirects/performance, register Search Console and submit sitemap.
 Browser visual testing unavailable and remains unverified.
+
+Job video update: 3 wide thumbnail cards using Coast to Coast interface. Full portrait video opens in native modal dialog with controls, close button, Escape/backdrop dismissal, pause on close and focus restored to card. Video preload disabled until opened; H264/AAC MP4s optimized with faststart. Browser interaction testing remains unavailable.
+
+Video layout correction: explicit display:grid restored. Three compact cards side by side on desktop and mobile; 16:9 thumbnail previews, max 180px height desktop/100px mobile. Full video opens only on selection.
