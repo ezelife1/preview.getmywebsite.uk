@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preview.getmywebsite.uk/rr-building-groundworks/sitemap.xml

@@ -1,0 +1,14 @@
+R&R Building & Groundworks — delivery checks
+
+PASS: Original Elm CSS and section composition retained; service-strip, gallery and FAQ classes checked on all five pages.
+PASS: Call links use 07546 045071 and WhatsApp links use 447546045071.
+PASS: WhatsApp form prepares name, service, postcode and details; runtime tested.
+PASS: Fixed header and prominently integrated round client logo, with mobile sizing.
+PASS: Floating Call/WhatsApp remain hidden until the full hero exits, including removal from keyboard focus.
+PASS: Business-specific 1200x630 social image with central wave and round logo; wired to OG and Twitter.
+PASS: Distinct service content, relevant FAQs, page titles/descriptions, one H1, canonicals, factual schema, breadcrumbs, robots and sitemap.
+PASS: Local page/fragment links, image alt/dimensions, srcset widths and every JPEG/PNG/WebP decoded.
+
+Preview is noindex,follow. Browser visual QA was unavailable. Confirm the live domain and complete live redirects/performance, Search Console and indexing checks at launch.
+
+Logo centring corrected from measured artwork bounds; geometry verified for desktop and mobile header sizes.
