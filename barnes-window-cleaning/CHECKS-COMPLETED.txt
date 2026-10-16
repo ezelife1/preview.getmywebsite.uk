@@ -1,0 +1,14 @@
+Barnes Window Cleaning Ltd — website build checks
+
+PASS: Elm layout retained from original template.
+PASS: 6 self-contained pages with relative links and working local assets.
+PASS: Click-to-call and WhatsApp number checked on every page.
+PASS: WhatsApp form includes name, service, area/postcode and job details; runtime test decoded each submitted field.
+PASS: Fixed header; round logo integrated at desktop/mobile; floating contact bar remains hidden until the complete hero has left the viewport. Hidden links are removed from keyboard focus.
+PASS: Unique 1200 x 630 social card, wavy middle divider and round logo centred on the wave; OG and Twitter metadata reference it.
+PASS: Unique titles/descriptions, one H1 per page, preview noindex,follow, canonicals, internal service links, service breadcrumbs, factual schema, robots and sitemap.
+PASS: Every packaged JPEG, PNG and WebP decoded; responsive srcset width descriptors checked.
+NOT RUN: Browser visual QA was not available in this environment.
+LIVE SEO STILL PENDING: Switch to the confirmed live domain, remove preview noindex, test production redirects/performance and submit the sitemap in Search Console. GBP, genuine reviews and local links are ongoing work.
+
+Layout correction: restored Elm service-strip, gallery and FAQ classes on every page; retained original four-column services and original fixed header/logo dimensions. Checked exact layout selectors on all six pages.
