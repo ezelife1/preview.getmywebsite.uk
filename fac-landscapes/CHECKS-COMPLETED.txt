@@ -1,0 +1,11 @@
+FAC Landscapes — Elm website checks
+5 pages; original Elm layout classes and 4-column service strip retained.
+Verified supplied phone 07749 418348; WhatsApp 447749418348.
+WhatsApp form: name, service, postcode, project details. Runtime test passed.
+Fixed header, overlapping centred circular logo, floating controls only after full hero exits.
+Unique 1200x630 wavy social card with centred round logo; OG and Twitter wired.
+All 11 project photos included; all packaged raster and responsive files decoded.
+Unique page titles/descriptions, substantive service copy, FAQs, internal links, one H1, alt/dimensions, canonical, social, LocalBusiness/address, Service, breadcrumbs, sitemap.
+Preview noindex,follow; robots allows crawl.
+Before live domain launch: update canonical/schema/social/sitemap domain, remove noindex, check live redirects/performance, register Search Console and submit sitemap.
+Browser visual testing unavailable and remains unverified.
