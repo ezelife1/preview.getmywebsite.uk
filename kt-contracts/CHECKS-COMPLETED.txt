@@ -1,0 +1,12 @@
+KT Contracts — delivery checks
+
+PASS: Original Elm stylesheet and section structure retained; service-strip, gallery and FAQ layout classes checked on all five pages.
+PASS: Click-to-call links use 07702 277216 and WhatsApp links use 447702277216.
+PASS: WhatsApp form has the correct service choices and prepares name, service, postcode and project details; runtime tested.
+PASS: Fixed header with prominently integrated round logo; desktop/mobile rules retained.
+PASS: Floating controls hidden until the entire hero exits, with hidden links removed from keyboard focus.
+PASS: Business-specific 1200x630 social image with central wave and round logo; OG and Twitter references checked.
+PASS: Unique service content, FAQs, titles/descriptions, one H1, confirmed domain canonicals, factual schema, breadcrumbs, robots and XML sitemap.
+PASS: Local links/fragments, image alt/dimensions, accurate srcset widths and every JPEG/PNG/WebP decoded.
+
+The supplied live domain is ktcontracts.com. This preview is noindex,follow; remove noindex only when deploying the final live site. Live redirects, production mobile performance, Search Console and indexing checks remain launch work. Browser visual QA was unavailable.
