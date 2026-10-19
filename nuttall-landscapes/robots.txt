@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nuttall-landscapes.flowy-candy-9700.chatgpt.site/sitemap.xml

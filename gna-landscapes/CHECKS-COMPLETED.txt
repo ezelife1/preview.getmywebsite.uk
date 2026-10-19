@@ -1,0 +1,12 @@
+GNA Landscapes — original Elm website
+5 static pages with relative links; original Elm structure and 4-column services retained.
+Verified Call number: 01454 775214 (01454775214). WhatsApp: 07444 608303 (447444608303).
+WhatsApp enquiry includes name, chosen service, postcode/area and project details.
+Fixed header, prominent attached overlapping round logo; floating Call/WhatsApp appear only after entire hero exits and hidden links leave keyboard focus.
+Unique 1200x630 wave social image with round logo centered on divider; Open Graph and Twitter metadata verified.
+10 project originals included plus WebP variants. Every packaged JPEG/PNG/WebP decoded, srcset widths checked.
+Unique titles/descriptions, one H1, substantial service content, useful FAQs, internal links, LocalBusiness/contact details, Service and breadcrumbs.
+Known live domain gnalandscapes.co.uk used consistently in ZIP canonicals, schema, social URLs, robots and sitemap. Preview remains noindex,follow.
+Versioned CSS filename prevents reuse of an older cached stylesheet.
+Browser visual testing unavailable and remains unverified.
+Live launch still needs confirmed domain routing, removal of noindex, HTTPS/redirect and performance checks, Search Console and indexing verification.

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gnalandscapes.co.uk/sitemap.xml

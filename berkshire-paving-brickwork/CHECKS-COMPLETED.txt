@@ -1,0 +1,13 @@
+Berkshire Paving & Brickwork — original Elm website checks
+5 static pages with relative links; original Elm composition and four-column service strip retained.
+Call 07751 146472 (07751146472) and WhatsApp 447751146472 verified.
+WhatsApp form includes name, selected service, postcode/area and project details.
+Fixed header and prominent attached overlapping round logo; artwork centred and perimeter clipped.
+Floating Call/WhatsApp hidden until entire hero exits; hidden links removed from keyboard focus.
+Unique 1200x630 wave social image with round logo centred over divider; OG/Twitter metadata verified.
+14 project originals plus responsive WebP assets included and decoded; accurate srcset widths and image dimensions.
+Balanced galleries: 12 homepage photos and 4 per service page; other photos in feature sections.
+Unique titles/descriptions, one H1, substantial service content, FAQs, internal links, truthful LocalBusiness/location/Service/breadcrumb schema, robots and sitemap.
+Preview noindex,follow with consistent preview URLs. Versioned CSS avoids stale stylesheet caching.
+Browser visual testing unavailable and remains unverified.
+At live launch: confirm domain, update canonical/schema/social/sitemap URLs, remove noindex, check HTTPS/redirects and mobile performance, then complete Search Console and indexing verification.
