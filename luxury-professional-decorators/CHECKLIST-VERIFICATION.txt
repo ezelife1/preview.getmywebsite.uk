@@ -1,0 +1,23 @@
+FULL CHECKLIST RECORD — ORIGINAL ELM DESIGN
+
+DESIGN SOURCE
+PASS: style.css begins with the complete original Elm stylesheet. No replacement serif/editorial stylesheet, split hero or framed hero photo panels. Original image-led hero/mask/feature card, fixed round overlapping badge, pill CTAs, service strip, overlapping intro image stack, dark feature section, projects, project-process section, about, quote and contact composition retained. Client branding and own photographs used. No user-facing preview screenshots supplied. All navigation and assets use local relative paths for extraction/opening.
+
+SIX REQUIRED CHECKS
+1. CALL: correct verified number in every Call link, including hero, contact and floating controls.
+2. WHATSAPP: correct wa.me number in buttons and form; entered name, chosen service, area/postcode and details included; required field validation and encoding tested.
+3. HEADER: original Elm fixed desktop/mobile header retained.
+4. LOGO: original Elm absolute circular logo in fixed header, overlapping hero; adjacent readable mobile business wordmark retained.
+5. FLOATING CONTACTS: hidden until hero bottom <=0; hide again on return; hidden links removed from keyboard focus. Script interaction tests passed.
+6. SOCIAL: dedicated new 1200x630 v3 JPEG with wave divider, centred business logo and real project photography; Open Graph, secure image and Twitter point to its exact packaged public preview path on every page.
+
+IMAGES AND CONTENT
+PASS: all supplied job photographs represented on homepage; gallery thumbnails use the original Elm two-column layout, cover sizing, rounded corners and inset pill captions. No beige padding, four-column gallery or black caption bars. All original gallery photographs open at full size. Original Elm intro/feature/about photo sizing and cover rules are retained. Visible H2 headings and photo captions are limited to four words; longer descriptive alt text remains for accessibility. The supplied before/after wording is not present on these source images; no fabricated pairs were created. No invented before/after pairs, review quotes, credentials, insurance, address, price or coverage added. Project progress is described as work in progress. Captions and FAQs use supplied details.
+
+SEO AND FILES
+PASS: four unique page titles/descriptions; one H1 each; service pages and internal links; correct public preview canonicals, schema URLs, robots.txt and four-page sitemap. Preview pages remain noindex. Responsive WebP widths and intrinsic dimensions checked. Below-hero images lazy load; hero loads eagerly. Every packaged raster image decoded. No missing local asset or section anchor found. WhatsApp, invalid form guard, navigation and floating-contact logic tested.
+
+DEPLOYMENT-DEPENDENT ITEMS — NOT CLAIMED COMPLETE
+Public image response/content type, redirects, crawler cache, live mobile performance, Search Console, sitemap submission, indexing and GBP/account work require the uploaded site and/or authorised account access. Browser viewport rendering was unavailable; layout structure and CSS were checked, but no visual browser pass is claimed. See UPLOAD-INSTRUCTIONS.txt for the exact upload path and public social-image URL. Switch noindex and absolute URLs only when the final business domain is confirmed.
+
+SCREENSHOT CORRECTION: removed the four-column portrait grid and separate landscape grid that produced the orphaned fourth card. Removed contain/padding rules from gallery, intro stack, feature pair and about image. Restored original Elm edge-filling photo presentation and short overlaid captions. Full photographs remain available through the photo links.

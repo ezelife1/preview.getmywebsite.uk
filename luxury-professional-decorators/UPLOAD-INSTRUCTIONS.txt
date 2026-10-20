@@ -1,0 +1,4 @@
+Upload ALL files and assets into the folder /luxury-professional-decorators/ on preview.getmywebsite.uk. Homepage: https://preview.getmywebsite.uk/luxury-professional-decorators/
+The ZIP metadata, social image, canonical links, schema and sitemap use this public preview location. The unique social image is https://preview.getmywebsite.uk/luxury-professional-decorators/assets/luxury-decorators-social-v3.jpg
+Keep the exact folder name. Open that image URL after upload to confirm it is public, then test sharing the homepage. A social preview cannot be verified live before the files are uploaded.
+Preview pages remain noindex. Before launch on the confirmed business domain, update all absolute URLs and switch robots metadata to index. No service area has been invented; customers send a postcode so Catalin can confirm coverage.
