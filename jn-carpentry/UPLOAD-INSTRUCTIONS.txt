@@ -1,0 +1,14 @@
+JN CARPENTRY & CONSTRUCTION
+
+Extract this ZIP and upload every file and the assets folder into /jn-carpentry/ on preview.getmywebsite.uk. No build step is needed.
+Homepage: https://preview.getmywebsite.uk/jn-carpentry/
+Social image: https://preview.getmywebsite.uk/jn-carpentry/assets/jn-carpentry-social-v1.jpg
+
+The metadata, schema and sitemap use this exact public preview folder. If you change the folder/domain, replace the base URL in all four HTML pages, sitemap.xml and robots.txt. Open the public social-image URL after upload and check it returns the JPEG without login or an error. Live accessibility and crawler rendering cannot be verified before upload.
+
+Preview pages are noindex. Before final business-domain launch, update every absolute URL and switch robots metadata to index,follow.
+
+Call: 07903 885100
+WhatsApp: +44 7903 885100
+Instagram: @jn_candc_sw
+No email address was supplied, so none has been invented. The enquiry form opens WhatsApp with the selected service and customer details; the customer reviews and sends the message.

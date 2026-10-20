@@ -1,0 +1,36 @@
+JN CARPENTRY & CONSTRUCTION — FULL CHECKLIST RECORD
+
+DESIGN SOURCE
+Original Elm stylesheet and section composition retained: full-width photo hero and dark mask, fixed overlapping circular badge, pill Call/WhatsApp CTAs, four-part service strip, overlapping intro photo stack, dark feature/photo pair, single two-column rounded gallery with short inset labels, transformation section, about, WhatsApp form and dark contact/footer. Silver/charcoal client palette. No replacement split hero, beige photo padding, four-column gallery, sentence-length headings or caption bars. Local relative navigation works after extraction. No website preview images supplied.
+
+CONTACT AND HEADER CHECKS
+1. Call links checked throughout every page: 07903 885100.
+2. WhatsApp links and form checked: 447903885100. Tested name, service, area/postcode, details, whitespace trimming, message encoding and required-field validation.
+3. Original fixed Elm header retained for desktop and mobile.
+4. Client circle logo remains attached to the fixed header and overlaps the hero. Readable adjacent mobile business wordmark retained.
+5. Floating Call/WhatsApp start hidden with tabindex=-1, appear only when the entire hero bottom is <=0, and hide on return. Scroll/resize/focus interaction tests passed.
+6. Dedicated business-specific 1200x630 social JPEG inspected. Wave divider, centred round logo, business/service/area/phone. All Open Graph, secure image and Twitter paths map to the exact file packaged for https://preview.getmywebsite.uk/jn-carpentry/. Public access remains an upload-dependent check.
+
+PHOTOS AND FACTS
+All 18 supplied project photographs represented across the four pages. Original full photos open from galleries and transformation cards. Regular gallery thumbnails retain Elm cover sizing. Before/after photos use their natural full proportions; the supplied After wording remains uncropped. No invented review quotes, years of experience, prices, address details or credentials. Insurance, free quotes, Torbay/South Devon coverage, postcode, number and review summary come from the supplied profile. No email address was supplied or invented. No star rating or aggregateRating schema has been inferred from Facebook recommendations.
+
+SEO AND FILE CHECKS
+Four unique page titles/descriptions; one short H1 per page; short H2 headings and photo labels; service pages with relevant projects and FAQs; correct canonical, schema, robots.txt and sitemap preview URLs; noindex preview metadata. Every raster file decoded and intrinsic/actual responsive widths checked. Internal files and section anchors resolve. Hero loads eagerly, project photos lazy load. Original Elm gallery/intro/feature/about photo rules verified against the source stylesheet. JavaScript menu, Escape, floating controls and WhatsApp form tested with a DOM fixture.
+
+CHECKS REQUIRING DEPLOYMENT OR BROWSER ACCESS
+Browser viewport rendering was unavailable; no visual browser pass is claimed. Public image status/content type, redirect behaviour, crawler rendering/cache, live mobile performance, Search Console submission/indexing, GBP consistency and account actions require the public upload and/or authorised account access. See UPLOAD-INSTRUCTIONS.txt. Before final domain launch, update absolute URLs and switch noindex to index.
+
+
+BEFORE & AFTER UPDATE
+Homepage now has six matched projects, placed before the general gallery:
+- Understairs Storage: IMG_4896 before / IMG_4897 after.
+- Understairs Panelling: IMG_4884 before / IMG_4885 after; IMG_4883 linked as the fitting stage.
+- Garden Decking: IMG_4888 before / IMG_4889 after.
+- Fence & Gate: IMG_4890 before / IMG_4891 after.
+- Courtyard Decking: IMG_4892 before / IMG_4893 after.
+- Garage Doors: IMG_4894 before / IMG_4895 after.
+Relevant groups also appear on their service pages. Decking additionally shows IMG_4898 framework / IMG_4899 finished view, labelled During / Finished rather than Before / After.
+
+All comparison photos use their natural dimensions, height:auto and no crop, padding, fixed aspect ratio or height cap. The After text embedded in IMG_4893 remains visible. Labels are outside the photographs. Each full original remains clickable. The ordinary gallery retains Elm styling and now concentrates on other finished-work views.
+
+Verification: group count and two-photo structure checked on all four pages; every local link/anchor, image decode, image dimension/srcset width, metadata and social-card path rechecked. All 18 supplied job photos are still represented. Hash comparison confirms the accepted header, hero, intro, feature, about, quote form and footer remain unchanged. JavaScript is unchanged from the tested version. Browser viewport and live hosting checks remain unavailable, as recorded above.
