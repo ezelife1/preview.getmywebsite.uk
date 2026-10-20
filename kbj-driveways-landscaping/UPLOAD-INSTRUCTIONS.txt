@@ -1,0 +1,13 @@
+KBJ DRIVEWAYS & LANDSCAPING
+
+Upload ALL extracted files and the assets folder into /kbj-driveways-landscaping/ on preview.getmywebsite.uk.
+Homepage: https://preview.getmywebsite.uk/kbj-driveways-landscaping/
+Social image: https://preview.getmywebsite.uk/kbj-driveways-landscaping/assets/kbj-social-v1.jpg
+
+All canonicals, schema, social-image URLs and sitemap paths use that public preview folder. After upload, open the social-image URL to confirm it returns the JPEG without login or an error, then check link sharing. Live public/crawler access cannot be verified before upload.
+
+Preview pages remain noindex. Before launch on a confirmed business domain, update all absolute URLs and switch robots meta to index,follow.
+
+Contact number: 07923 812393 (from the latest flyer supplied for information). No email, address, service area, insurance, reviews or years of experience were supplied, so none have been invented.
+
+The flyer itself is excluded. The clean supplied patio photo is featured. Other unbranded photographs are reused with your instruction and labelled as illustrative service examples; they are not presented as KBJ completed projects. No before/after pair has been invented.

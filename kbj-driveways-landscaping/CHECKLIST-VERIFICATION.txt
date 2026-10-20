@@ -1,0 +1,21 @@
+KBJ DRIVEWAYS & LANDSCAPING — FULL CHECKLIST RECORD
+
+DESIGN SOURCE
+Complete original Elm stylesheet retained, followed only by functional, accessibility and client-colour refinements. Original full-width image hero, mask and feature card; overlapping round logo; pill CTAs; service strip; overlapping intro photos; dark feature pair; two-column rounded gallery and short inset labels; about, enquiry form and contact/footer. Short H1/H2/photo labels. No four-column galleries, beige image padding, sentence captions or replacement split hero. Local relative links work after extraction. No website preview screenshots supplied.
+
+USER CONTENT INSTRUCTIONS
+The flyer is information-only: its bytes are not present in the website assets and it is not displayed. Services and 07923 812393 come from that latest flyer. The clean supplied patio photograph is featured. Seven selected unbranded garden/decking/fencing photographs from previous builds are used as instructed, and labelled as illustrative service examples. They are not presented as KBJ completed projects or before/after pairs. No before/after transformation has been invented. See IMAGE-SOURCES.txt.
+
+SIX REQUIRED CHECKS
+1. CALL: every tel link checked against 07923 812393, including header, hero, quote, contact, footer and floating access.
+2. WHATSAPP: every key link and form uses 447923812393. Tested name, chosen service, area/postcode and details, whitespace trimming, encoding and required-field validation.
+3. HEADER: original Elm fixed scrolling header retained at desktop and mobile sizes.
+4. LOGO: the new client badge is circular, prominently overlaps the header/hero and stays attached to the fixed header. Readable mobile wordmark retained.
+5. FLOATING CONTACTS: initially hidden with tabindex=-1, shown only when hero bottom <=0, hidden again on return. Scroll/resize/focus tests passed.
+6. SOCIAL IMAGE: unique business-specific 1200x630 JPEG internally inspected. Client green/charcoal panel, wave, centred round KBJ badge, service and phone, supplied patio photo. All four pages use matching absolute public preview Open Graph, secure image and Twitter URLs. No private Site URL included. Location omitted because none was supplied. Public image reachability remains dependent on upload.
+
+CONTENT, SEO AND ASSET CHECKS
+Four useful pages covering all listed services. Four unique titles/descriptions, one short H1 per page, internal links and factual FAQs, correct canonical/schema/sitemap/robots preview paths. No address, service area, email, insurance, reviews, experience or prices invented. Coverage is confirmed by customer postcode. Preview pages noindex. All eight photographic assets and responsive variants decoded; intrinsic sizes and actual srcset widths checked; original photos accessible from gallery links; hero eager and lower photos lazy loaded. All local links and anchors resolve. Menu, Escape, WhatsApp form and floating interactions tested with a DOM fixture. ZIP archive integrity and packaged image decoding checked.
+
+DEPLOYMENT-DEPENDENT CHECKS
+No browser viewport rendering was available; no visual browser pass is claimed. After upload, check the public social JPEG status/content type, redirects, crawler rendering/cache and live mobile performance. Search Console, sitemap submission/indexing and GBP consistency require the final domain and authorised account access. Before launch on the final business domain, update every absolute URL and change noindex to index. See UPLOAD-INSTRUCTIONS.txt.
