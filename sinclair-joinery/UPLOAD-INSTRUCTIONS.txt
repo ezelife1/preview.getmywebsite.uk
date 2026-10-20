@@ -1,0 +1,11 @@
+SINCLAIR JOINERY SERVICES
+
+Extract the ZIP and upload ALL contents to /sinclair-joinery/ on preview.getmywebsite.uk. Keep index.html and assets in that folder.
+Homepage: https://preview.getmywebsite.uk/sinclair-joinery/
+Social image: https://preview.getmywebsite.uk/sinclair-joinery/assets/sinclair-joinery-social-v3.jpg
+
+Open the social image URL after upload to confirm it is public and returns the image. Then check sharing the homepage. Local metadata-to-file checks are complete; public accessibility and crawler caching cannot be verified before your upload.
+
+All pages use the public preview address above. If you change the folder or domain, replace that base throughout the HTML files and sitemap.xml/robots.txt. Preview pages are noindex. For the final business domain, update absolute URLs and switch the robots meta to index,follow.
+
+Open index.html after extraction for the local site. The quote form opens WhatsApp, where customers review and send their message. No server setup or compilation is needed.
