@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preview.getmywebsite.uk/apex-demolition/sitemap.xml

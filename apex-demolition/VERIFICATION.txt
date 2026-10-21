@@ -1,0 +1,12 @@
+APEX website delivery checks
+PASS: Original Elm section composition adapted to APEX branding.
+PASS: Verified supplied phone 07873 503833 in every Call link; WhatsApp 447873503833.
+PASS: Quote form message tested with service, name, postcode and job details.
+PASS: Fixed header and overlapping logo remain visible while scrolling.
+PASS: Floating contacts hidden at hero and shown after its bottom passes viewport top. Hidden attribute removes controls from keyboard focus.
+PASS: Unique wave-layout 1200x630 social card, packaged and referenced by Open Graph and Twitter on all five pages at the correct public preview path.
+PASS: Every image decoded including responsive WebP variants.
+PASS: Five pages, local relative links, one H1 per page, unique titles and descriptions, schema based on supplied details, sitemap and preview noindex.
+PASS: Browser desktop, mobile and tablet layout measurements show no horizontal overflow. Full-image gallery dialog tested.
+Photos: All 13 job photos included. Conservatory before/after in feature; shed, kitchen, decking and lean-to sequences in paired grid. Decking first image labelled During.
+LIMITS: No live crawler/image availability check before user upload; no Search Console or GBP access; external WhatsApp sending not performed. Visual screenshot review not performed.
