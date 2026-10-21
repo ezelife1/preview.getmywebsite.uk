@@ -1,0 +1,3 @@
+Verified: 5 HTML pages; local links and image paths; all packaged images decoded; one H1 per page; correct Call and WhatsApp targets; unique 1200x630 social image with matching public preview URLs on all pages; JavaScript syntax.
+Browser verified at desktop width: no horizontal overflow; fixed header and overlapping logo remain attached during scrolling; floating contacts hidden at hero, shown after hero.
+Not verified: mobile browser visual review, external WhatsApp application delivery, live social crawler access before user upload.
