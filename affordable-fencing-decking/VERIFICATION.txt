@@ -1,0 +1,15 @@
+AFFORDABLE FENCING AND DECKING — CHECKS — 21 October 2026
+
+Elm design retained: full project-image hero with compact message panel, service strip, layered intro photos, dark pergola feature, two-column gallery, genuine before/during/after section, about, quote, FAQs and contact. Own round logo, forest green/cream/timber gold branding. Short headings, local relative links.
+
+Phone/WhatsApp 07936 400745 confirmed by user. Email, Inverness location and 15 years of experience from supplied profile. All Call and wa.me URLs checked. Executed enquiry-message script with sample values and verified correct business, recipient, service and all entered details. No test message sent.
+
+Browser QA: desktop header/hero/gallery inspected; original-photo lightbox opened/closed and complete-photo contain fit verified. Three-stage transformation visually inspected with correct Before/In progress/After labels. Mobile/tablet hero inspected in 390/768px frames: document widths 375/753px equal scroll widths. Mobile menu opened and Quote followed; fields filled and inspected. Fencing service page inspected. Header logo remains attached while scrolling; floating controls hidden over hero, shown afterward and keyboard-inaccessible when hidden.
+
+Images: all 14 supplied project photos represented: ten gallery images, pergola feature and three-image decking sequence. All complete source proportions preserved in assets and accessible through viewer. Valid sequence established from matching garden, fence/gate and supplied post describing old patio replacement with decking/four steps. No unrelated pairs claimed. All 31 JPEG/PNG/WebP assets decoded; responsive candidate widths and explicit image dimensions checked. Balanced service/gallery rows.
+
+SEO: six unique page titles/descriptions, one H1 each, four useful service pages, factual FAQs, known-detail structured data, canonical URLs, sitemap and robots checked. No invented reviews, address, insurance, prices or wider service areas. Preview noindex,follow retained; launch domain/indexing steps recorded in README.
+
+Social: unique 1200x630 card visually inspected, wavy divider, central round logo and readable business/service/Inverness/phone. Every OG/Twitter image tag maps exactly to packaged assets/affordable-social-v1.jpg at https://preview.getmywebsite.uk/affordable-fencing-decking/. No private URLs. Public HTTP/content-type/redirect/crawler verification PENDING USER UPLOAD; requirement 6 not marked publicly verified.
+
+Limits: no publishing to user hosting, Search Console, sitemap submission, live performance/indexing or actual WhatsApp delivery tested.
