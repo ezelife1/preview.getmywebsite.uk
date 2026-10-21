@@ -1,0 +1,15 @@
+ABL DECKING FENCING RESIN LTD — 21 October 2026
+
+Elm design: retained full-photo hero/message panel, service strip, layered intro images, dark feature, two-column project gallery, detail project feature, about, enquiry, FAQs and contact. Navy/gold client branding, prominent circular logo attached to fixed header. Short headings, relative page and asset links.
+
+Contacts: 07826 578725, WhatsApp 447826578725, ablanthony@outlook.com and Instagram abldeckingfencing taken from supplied profile. All Call/WhatsApp destinations checked across seven pages. Executed quote-message script with sample data; business, number, service and all entered details are included. No message sent.
+
+Browser: desktop hero/header and gallery visually inspected. Full photo viewer opened/closed and uses contain for complete originals. Mobile and tablet hero inspected, widths 375/753px matched scroll widths. Mobile menu opened, Quote followed, menu closed; all four fields filled. Resin service page inspected; hero crop adjusted. Hidden floating controls confirmed over hero, visible after scrolling and removed from keyboard focus while hidden.
+
+Assets: all nine supplied job photographs represented, eight in balanced main gallery and the outdoor kitchen in its own feature. All open full-size; source aspect ratios preserved in assets. No invented before/after pairs. Logo supplied; profile screenshot used for information. All 21 JPEG/PNG/WebP assets decoded; responsive descriptors and image dimensions checked.
+
+SEO: one H1 each, seven unique titles/descriptions, five service pages, FAQs, canonical, schema with known details only, sitemap and robots. No service area or address supplied; none invented. Preview noindex,follow retained; live-domain/indexing changes documented in README. No old client branding or private hosting URLs.
+
+Social: unique 1200x630 branded card inspected, wave and round logo, readable business/services/phone. No location invented. Exact metadata-to-ZIP mapping checked on every page: https://preview.getmywebsite.uk/abl-decking-fencing-resin/assets/abl-social-v1.jpg. Public fetch/content-type/redirect and social crawler checks PENDING USER UPLOAD. Requirement 6 not marked publicly verified.
+
+Limitations: no deployment to user hosting, live performance checks, Search Console, sitemap submission, indexing, public social-card verification or WhatsApp delivery test performed.
