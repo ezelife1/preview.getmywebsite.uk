@@ -1,0 +1,9 @@
+PASS: Original Elm layout, prominent attached round logo and fixed scrolling header.
+PASS: Call 07584 349597 and WhatsApp 447584349597 links in actual files.
+PASS: Form message tested including name, service, postcode and details.
+PASS: Floating contact controls hidden (including keyboard focus) over hero and shown only after hero. Browser verified.
+PASS: Unique business-specific 1200x630 wave social card with central logo; correct absolute preview URLs wired into OG and Twitter on all five pages.
+PASS: Image files and responsive variants decoded; local links, one H1 per page, metadata and sitemap checked.
+PASS: Desktop browser shows no horizontal overflow.
+No invented before/after pairs; duplicate oven photo omitted.
+LIMIT: Live public crawler/image checks need user upload. No Search Console or GBP access. External WhatsApp sending not performed. No screenshot visual review.

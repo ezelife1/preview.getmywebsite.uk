@@ -1,0 +1,7 @@
+
+const floating=document.getElementById('floating');
+const hero=document.querySelector('.hero')||document.querySelector('.service-page');
+function updateContact(){if(!floating||!hero)return;const visible=hero.getBoundingClientRect().bottom<=0;floating.hidden=!visible;floating.classList.toggle('show',visible);}
+window.addEventListener('scroll',updateContact,{passive:true});window.addEventListener('resize',updateContact);updateContact();
+document.getElementById('wa-form')?.addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const message=`Hi Oracle House Cleaning, I'd like a cleaning quote.\n\nName: ${v('q-name')}\nService: ${v('q-service')}\nArea/Postcode: ${v('q-area')}\nCleaning details: ${v('q-details')}\n\nI can send cleaning photos to help with the quote.`;window.open('https://wa.me/447584349597?text='+encodeURIComponent(message),'_blank','noopener');});
+const dialog=document.getElementById('lightbox');document.querySelectorAll('.open-photo').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('large-photo').src=btn.dataset.photo;document.getElementById('large-photo').alt=btn.dataset.caption;document.getElementById('photo-caption').textContent=btn.dataset.caption;dialog.showModal();}));document.getElementById('close-photo')?.addEventListener('click',()=>dialog.close());dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
