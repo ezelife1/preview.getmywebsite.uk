@@ -1,0 +1,15 @@
+AD FENCING AND DECKING — CHECKS — 21 October 2026
+
+Design: original Elm source section composition retained: full image hero, compact message panel, service strip, layered intro photographs, dark feature, two-column gallery, project-detail section, about, quote, FAQ and contact. Client round logo, forest green and timber-gold branding. Short headings. No unsolicited preview supplied.
+
+Contact: business number 07568 906003 and email verified on official adfencinganddecking.co.uk; all telephone links and wa.me destinations checked. Quote-message code executed with sample values and checked for correct business, number, selected service, name, postcode and details. Fields filled in browser; no test message sent.
+
+Browser QA: desktop hero/header and gallery visually inspected, lightbox opened/closed with full image fit, preserved project collages visually inspected, service page inspected. Mobile/tablet hero inspected in 390/768px frames; measured document widths 375/753px with matching scroll widths, no horizontal overflow. Mobile navigation opened and Projects link followed; mobile gallery inspected. Quote form visually inspected and filled. Sticky round logo confirmed; floating controls hidden over hero and shown after hero. Hidden attribute removes controls from keyboard focus.
+
+Images: 14 individual project photos plus 3 intact source collages on homepage, all 17 available full-frame in lightbox. Profile screenshot used only for factual information. No fabricated before/after pairs. WebP responsive versions and exact declared widths/image dimensions checked. Every packaged JPEG, PNG and WebP decoded.
+
+Social: unique 1200x630 JPEG inspected; wave divider, central round logo, business/service/location/phone. Every page OG/Twitter URL matches assets/ad-social-v1.jpg in ZIP, with absolute preview.getmywebsite.uk/ad-fencing-decking/ base. Public HTTP/content-type/redirect and crawler verification PENDING USER UPLOAD; requirement 6 is not marked publicly verified.
+
+SEO: seven unique page titles/descriptions, one H1 per page, five service pages, factual content, FAQs, canonical URLs, known-detail schema, sitemap and robots checked. Preview noindex,follow as requested in checklist; switch after live-domain confirmation. No old branding or private Sites URLs.
+
+Limitations: no publishing to user hosting, public social crawler checks, live performance test, Search Console, sitemap submission or indexing verification. WhatsApp recipient registration/delivery not tested.

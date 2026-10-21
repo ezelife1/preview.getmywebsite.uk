@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preview.getmywebsite.uk/ad-fencing-decking/sitemap.xml
