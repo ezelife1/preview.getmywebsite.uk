@@ -1,0 +1,17 @@
+MANX EXTERIOR CLEANING — DELIVERY CHECKS
+
+Verified against WEBSITE-BUILD-CHECKLIST.md version 2.
+Elm section composition retained; client navy/blue branding, round logo and supplied project photos.
+1. Correct clickable Call number: +44 7624 489080.
+2. WhatsApp recipient 447624489080; quote logic includes name, service, location and job details. Form filled in mobile browser; no test message sent.
+3. Fixed header verified while scrolling.
+4. Round logo overlaps header/hero and remains attached on desktop/mobile.
+5. Floating contacts verified hidden over hero and visible below. Hidden attribute removes keyboard focus.
+6. Unique 1200x630 wavy social card inspected and all page OG/Twitter URLs map to the exact packaged asset at the intended public preview base. PUBLIC HTTP/CRAWLER VERIFICATION PENDING OWNER UPLOAD.
+
+8 HTML pages checked: unique titles/descriptions, one H1 per page, local links/fragments, schema, canonical and noindex preview policy.
+All 13 project images included across homepage/service pages; genuine matching comparisons grouped and supplied comparison collages intact. Flyer/profile used as information only.
+All packaged image variants decoded. Video reused from earlier Immaculate package, compressed to an 18-second silent loop with poster and pause/play. Browser confirms playback, mute and pause control.
+Desktop hero, project layout and full-photo viewer inspected. Mobile/tablet widths checked with no horizontal overflow; mobile navigation and quote fields checked.
+
+After upload: public social-image fetch/content-type/redirect/crawler checks. Live performance, Search Console, sitemap submission, indexing and GBP checks need live deployment/account access. Launch domain updates described in README.
