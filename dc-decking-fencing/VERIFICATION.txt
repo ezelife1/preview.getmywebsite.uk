@@ -1,0 +1,15 @@
+DC DECKING AND FENCING — CHECKS — 21 October 2026
+
+Elm section composition retained: image-led hero/message panel, service strip, layered intro, dark feature, compact two-column gallery, two-view project detail section, about, quote form, FAQs and contact. Client round logo, charcoal/silver/green colours, short headings, local relative links.
+
+Phone/WhatsApp 07734 812289 confirmed by user. All Call links and wa.me destinations verified. Quote message script executed with sample values: correct business, number, selected service, name, postcode and details. No enquiry sent. No email, address, specific service areas, reviews or credentials invented.
+
+Browser checks: desktop hero/header/gallery visually inspected; full photo lightbox opened and closed with complete-image contain fit. Mobile/tablet hero inspected in 390/768px frames; document client/scroll widths matched at 375/753px. Mobile menu opened, Quote link followed, all four fields filled and inspected. Decking service page visually inspected. Fixed round logo stays attached. Floating contact buttons hidden over hero, visible below hero, hidden attribute excludes keyboard focus.
+
+All 14 supplied job photographs represented: 12 gallery photographs and 2 views of the same deck. Full originals available on click; no before/after sequence invented. Source image proportions retained in WebP. All 31 JPEG/PNG/WebP files decoded, all declared dimensions and responsive candidate widths checked.
+
+SEO: seven unique titles/descriptions, one H1 per page, five useful service pages, factual FAQs, known-detail schema, exact canonical URLs, sitemap and robots verified. Preview noindex,follow; confirmed-live-domain launch steps in README.
+
+Social: unique branded card inspected, exact 1200x630, wavy divider and central round logo; business/services/phone readable. No location invented. OG/Twitter metadata on every page map exactly to packaged assets/dc-social-v1.jpg at https://preview.getmywebsite.uk/dc-decking-fencing/. No private hosting addresses. Public HTTP/content-type/redirect and crawler checks remain PENDING USER UPLOAD; requirement 6 not marked publicly verified.
+
+Limits: no upload to user hosting, Search Console, live performance/indexing/sitemap submission or WhatsApp delivery test performed.

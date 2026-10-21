@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preview.getmywebsite.uk/dc-decking-fencing/sitemap.xml
