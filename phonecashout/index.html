@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth dark" style="background-color: #060A14; color: #F8FAFC;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PhoneCashOut — Instant UK Phone Buyback & Cash Payouts</title>
+  <meta name="description" content="Sell your used or broken phone for instant cash or same-day Faster Payments bank transfer. Real guaranteed valuations, free doorstep collection, and no tire-kickers.">
+  <meta name="theme-color" content="#060A14">
+
+  <!-- Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pitch: '#060A14',
+              dark: '#0B132B',
+              navy: '#111C3D',
+              card: '#16234D',
+              border: 'rgba(255, 255, 255, 0.12)',
+              neon: '#00F076',
+              emerald: '#10B981',
+              mint: '#34D399',
+              slate: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'glow-neon': '0 0 24px rgba(0, 240, 118, 0.4)',
+            'glow-emerald': '0 0 28px rgba(16, 185, 129, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Bulletproof Fallback CSS: Guarantees deep dark midnight styling & eliminates overflow -->
+  <style>
+    :root {
+      --bg-pitch: #060A14;
+      --bg-dark: #0B132B;
+      --bg-navy: #111C3D;
+      --bg-card: rgba(17, 28, 61, 0.85);
+      --border-color: rgba(255, 255, 255, 0.12);
+      --neon-mint: #00F076;
+      --emerald: #10B981;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+
+    html, body {
+      background-color: var(--bg-pitch) !important;
+      color: var(--text-main) !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden !important;
+      box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: var(--bg-pitch); }
+    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--neon-mint); }
+
+    .glass-nav {
+      background: rgba(6, 10, 20, 0.94) !important;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .glass-card {
+      background-color: var(--bg-card) !important;
+      border: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .neon-text-glow {
+      text-shadow: 0 0 16px rgba(0, 240, 118, 0.45);
+    }
+
+    .badge-shimmer {
+      background: linear-gradient(90deg, rgba(0,240,118,0.06) 0%, rgba(0,240,118,0.2) 50%, rgba(0,240,118,0.06) 100%);
+      background-size: 200% 100%;
+      animation: shimmerEffect 4s infinite;
+    }
+
+    @keyframes shimmerEffect {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    input, select, textarea {
+      color-scheme: dark;
+    }
+  </style>
+</head>
+<body class="bg-[#060A14] text-slate-100 antialiased selection:bg-[#00F076] selection:text-[#060A14] w-full max-w-[100vw] overflow-x-hidden">
+
+  <!-- Interactive Floating Toast Alert -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-28 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-[#111C3D] border border-[#00F076] text-white px-5 py-3.5 rounded-2xl shadow-glow-emerald max-w-[92vw]">
+    <i class="ph-fill ph-check-circle text-[#00F076] text-xl flex-shrink-0"></i>
+    <span id="toastMsg" class="text-xs sm:text-sm font-semibold tracking-wide text-white">Action Completed</span>
+  </div>
+
+  <!-- UK Instant Cash Header Announcement -->
+  <aside aria-label="Dealer Cash Payout Notice" class="bg-[#0B132B] border-b border-white/10 py-2 px-3 text-center text-[11px] sm:text-xs text-slate-300 font-medium w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 truncate">
+      <span class="inline-flex items-center gap-1.5 font-bold text-[#00F076] flex-shrink-0">
+        <span class="w-2 h-2 rounded-full bg-[#00F076] animate-pulse"></span>
+        INSTANT CASH:
+      </span>
+      <span class="truncate">Doorstep Collection or Prepaid Post • Cash in Hand or Faster Payments</span>
+      <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1 text-[#34D399] font-bold hover:underline ml-2 flex-shrink-0">
+        <i class="ph-fill ph-whatsapp-logo text-xs"></i> WhatsApp Direct
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Navigation Header (Protected Against Mobile Overflow) -->
+  <header class="sticky top-0 z-40 w-full glass-nav px-3 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto h-16 sm:h-20 flex items-center justify-between gap-2">
+      
+      <!-- Concept 2 'Fold & Flip' SVG Logo -->
+      <a href="#" class="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0" aria-label="PhoneCashOut Homepage">
+        <div class="relative w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0">
+          <svg viewBox="0 0 100 100" fill="none" class="w-full h-full drop-shadow-[0_0_10px_rgba(0,240,118,0.45)]">
+            <circle cx="50" cy="50" r="48" fill="#0A0F1D" stroke="#1F2E52" stroke-width="2.5"/>
+            <!-- Recycling Arrow Loop -->
+            <path d="M 50 14 A 36 36 0 0 1 84 44" stroke="#F8FAFC" stroke-width="7" stroke-linecap="round"/>
+            <polygon points="84,33 93,46 76,49" fill="#F8FAFC"/>
+            
+            <path d="M 50 86 A 36 36 0 0 1 16 56" stroke="#F8FAFC" stroke-width="7" stroke-linecap="round"/>
+            <polygon points="16,67 7,54 24,51" fill="#F8FAFC"/>
+            
+            <path d="M 84 56 A 36 36 0 0 1 54 86" stroke="#00F076" stroke-width="7" stroke-linecap="round"/>
+            <polygon points="56,95 43,84 59,75" fill="#00F076"/>
+
+            <path d="M 16 44 A 36 36 0 0 1 46 14" stroke="#00F076" stroke-width="7" stroke-linecap="round"/>
+            <polygon points="44,5 57,16 41,25" fill="#00F076"/>
+
+            <!-- Center Phone Silhouette -->
+            <rect x="36" y="27" width="28" height="46" rx="6" fill="#10B981" fill-opacity="0.3" stroke="#00F076" stroke-width="2.5"/>
+            <rect x="40" y="31" width="20" height="34" rx="2" fill="#00F076" fill-opacity="0.35"/>
+            <circle cx="50" cy="69" r="2" fill="#FFFFFF"/>
+            <line x1="46" y1="29.5" x2="54" y2="29.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="flex flex-col min-w-0">
+          <div class="flex items-center text-lg sm:text-2xl font-display font-extrabold italic tracking-tight leading-tight truncate">
+            <span class="text-white">Phone</span>
+            <span class="text-[#00F076] ml-0.5 neon-text-glow">CashOut</span>
+          </div>
+          <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-semibold text-slate-400 hidden sm:block">Instant Quotes • Same-Day Cash</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#estimator-section" class="hover:text-[#00F076] transition-colors">Instant Quote</a>
+        <a href="#pricing-matrix" class="hover:text-[#00F076] transition-colors">Cash Rates Matrix</a>
+        <a href="#how-it-works" class="hover:text-[#00F076] transition-colors">How It Works</a>
+        <a href="#broken-phones" class="hover:text-[#00F076] transition-colors">Cracked & Broken</a>
+        <a href="#faqs" class="hover:text-[#00F076] transition-colors">FAQs</a>
+      </nav>
+
+      <!-- Right Header Actions (Tight & responsive) -->
+      <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
+        <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#111C3D] hover:bg-[#16234D] border border-white/10 text-white text-xs font-semibold transition-all">
+          <i class="ph-fill ph-whatsapp-logo text-[#00F076] text-sm"></i>
+          <span>WhatsApp</span>
+        </a>
+        
+        <!-- Get Quote CTA -->
+        <a href="#estimator-section" class="px-3.5 sm:px-4 py-2 rounded-xl font-display font-extrabold text-xs bg-gradient-to-r from-[#10B981] to-[#00F076] text-[#060A14] hover:shadow-glow-neon transition-all transform active:scale-95 flex items-center gap-1 flex-shrink-0 shadow-lg">
+          <i class="ph-bold ph-lightning text-sm"></i>
+          <span>Get Quote</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button type="button" onclick="toggleMobileNav()" aria-label="Toggle Menu" class="lg:hidden p-2 rounded-xl bg-[#111C3D] border border-white/15 text-slate-200 hover:text-[#00F076] focus:outline-none flex-shrink-0">
+          <i id="menuIcon" class="ph-bold ph-list text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden border-t border-white/10 py-4 px-2 space-y-2 bg-[#060A14]">
+      <nav class="flex flex-col space-y-1.5 text-sm font-semibold text-slate-200">
+        <a href="#estimator-section" onclick="toggleMobileNav()" class="px-3.5 py-2.5 rounded-xl hover:bg-[#111C3D] flex items-center justify-between">
+          <span>Get Instant Quote</span> <i class="ph-bold ph-caret-right text-[#00F076]"></i>
+        </a>
+        <a href="#pricing-matrix" onclick="toggleMobileNav()" class="px-3.5 py-2.5 rounded-xl hover:bg-[#111C3D] flex items-center justify-between">
+          <span>Live Dealer Cash Rates</span> <i class="ph-bold ph-caret-right text-[#00F076]"></i>
+        </a>
+        <a href="#how-it-works" onclick="toggleMobileNav()" class="px-3.5 py-2.5 rounded-xl hover:bg-[#111C3D] flex items-center justify-between">
+          <span>How It Works</span> <i class="ph-bold ph-caret-right text-[#00F076]"></i>
+        </a>
+        <a href="#broken-phones" onclick="toggleMobileNav()" class="px-3.5 py-2.5 rounded-xl hover:bg-[#111C3D] flex items-center justify-between">
+          <span>Cracked & Damaged Phones</span> <i class="ph-bold ph-caret-right text-[#00F076]"></i>
+        </a>
+        <a href="#faqs" onclick="toggleMobileNav()" class="px-3.5 py-2.5 rounded-xl hover:bg-[#111C3D] flex items-center justify-between">
+          <span>FAQs</span> <i class="ph-bold ph-caret-right text-[#00F076]"></i>
+        </a>
+      </nav>
+      <div class="pt-2 border-t border-white/10">
+        <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-[#111C3D] text-[#34D399] font-bold text-xs flex items-center justify-center gap-2 border border-white/10">
+          <i class="ph-fill ph-whatsapp-logo text-base"></i> WhatsApp Valuation Support
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Embedded Valuation Widget -->
+  <main>
+    <section id="estimator-section" class="relative pt-6 sm:pt-12 pb-16 sm:pb-20 overflow-hidden bg-[#060A14]">
+      <!-- Lighting Blurs -->
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-full max-w-5xl h-96 bg-[#10B981]/15 blur-[130px] pointer-events-none rounded-full"></div>
+      <div class="absolute top-1/2 -right-10 w-72 h-72 bg-[#00F076]/10 blur-[100px] pointer-events-none rounded-full"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-8 sm:gap-12 items-center">
+          
+          <!-- Left Hero Copy -->
+          <div class="lg:col-span-5 space-y-5 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass-card border-[#00F076]/30 text-white text-[11px] sm:text-xs font-semibold badge-shimmer">
+              <span class="w-2 h-2 rounded-full bg-[#00F076] flex-shrink-0 animate-ping"></span>
+              <span>⚡ Genuine UK Cash In Hand or Faster Payments</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.12]">
+              Turn Your Old Phone Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] via-[#00F076] to-[#34D399]">Instant Cash</span> Today.
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-300 max-w-lg mx-auto lg:mx-0 font-normal leading-relaxed">
+              No tire-kickers. No lowball counter-offers. Get a guaranteed cash price in 60 seconds with same-day doorstep collection or prepaid tracked post.
+            </p>
+
+            <!-- Guarantees List -->
+            <div class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-200 text-left max-w-md mx-auto lg:mx-0">
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-[#00F076]/20 text-[#00F076] flex items-center justify-center text-xs flex-shrink-0">
+                  <i class="ph-bold ph-check"></i>
+                </div>
+                <span><strong>Free Doorstep Collection</strong> or prepaid Royal Mail parcel</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-[#00F076]/20 text-[#00F076] flex items-center justify-center text-xs flex-shrink-0">
+                  <i class="ph-bold ph-check"></i>
+                </div>
+                <span><strong>14-Day Guaranteed Price Lock:</strong> No post-drop deductions</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-[#00F076]/20 text-[#00F076] flex items-center justify-center text-xs flex-shrink-0">
+                  <i class="ph-bold ph-check"></i>
+                </div>
+                <span><strong>100% Certified Data Sanitisation</strong> for total peace of mind</span>
+              </div>
+            </div>
+
+            <!-- Trust Avatar Pill -->
+            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 text-xs text-slate-400">
+              <div class="flex -space-x-2">
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-600 border-2 border-[#060A14] flex items-center justify-center font-bold text-white text-[9px] sm:text-[10px]">JM</div>
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-blue-600 border-2 border-[#060A14] flex items-center justify-center font-bold text-white text-[9px] sm:text-[10px]">TH</div>
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-600 border-2 border-[#060A14] flex items-center justify-center font-bold text-white text-[9px] sm:text-[10px]">LD</div>
+              </div>
+              <div class="flex items-center gap-0.5 text-amber-400 text-xs sm:text-sm">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+              </div>
+              <span class="text-slate-300 font-semibold text-[11px] sm:text-xs">4.9/5 from 850+ UK sellers</span>
+            </div>
+
+          </div>
+
+          <!-- Right Hero: Real-World Dealer Buy-In Calculator -->
+          <div class="lg:col-span-7 w-full">
+            <div class="glass-card p-5 sm:p-7 rounded-3xl border border-[#00F076]/40 shadow-2xl relative overflow-hidden bg-[#0B132B]">
+              
+              <!-- Header -->
+              <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                <div>
+                  <span class="text-[10px] sm:text-xs font-bold text-[#00F076] uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="ph-fill ph-sparkle"></i> Live Guaranteed Valuation
+                  </span>
+                  <h2 class="text-lg sm:text-2xl font-display font-extrabold text-white">Value Your Handset</h2>
+                </div>
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#10B981]/20 border border-[#10B981]/40 flex items-center justify-center text-[#00F076] text-xl sm:text-2xl flex-shrink-0">
+                  <i class="ph-bold ph-calculator"></i>
+                </div>
+              </div>
+
+              <!-- Live Badge -->
+              <div class="mt-3 py-1.5 px-3 rounded-xl bg-[#111C3D] border border-white/10 flex items-center justify-between text-[11px] text-slate-300">
+                <span class="flex items-center gap-1.5 font-medium">
+                  <span class="w-2 h-2 rounded-full bg-[#00F076]"></span>
+                  <span>Instant UK Trade-In Floor Rates</span>
+                </span>
+                <span class="text-[10px] text-[#00F076] font-mono font-bold bg-[#060A14] px-2 py-0.5 rounded border border-white/10">Live Benchmark</span>
+              </div>
+
+              <div class="space-y-4 sm:space-y-5 pt-4">
+                
+                <!-- 1. Brand Selector -->
+                <div>
+                  <label class="block text-[11px] sm:text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+                    1. Select Brand
+                  </label>
+                  <div class="grid grid-cols-3 gap-2" id="brandButtonGroup">
+                    <button type="button" onclick="handleBrandSelect('apple', this)" class="brand-tab active py-3 px-2 rounded-2xl border border-[#00F076] bg-[#10B981]/20 text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all">
+                      <i class="ph-fill ph-apple-logo text-base sm:text-lg"></i>
+                      <span>Apple</span>
+                    </button>
+                    <button type="button" onclick="handleBrandSelect('samsung', this)" class="brand-tab py-3 px-2 rounded-2xl border border-white/10 bg-[#111C3D] hover:border-[#00F076]/40 text-slate-300 font-semibold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all">
+                      <i class="ph-bold ph-android-logo text-base sm:text-lg"></i>
+                      <span>Samsung</span>
+                    </button>
+                    <button type="button" onclick="handleBrandSelect('google', this)" class="brand-tab py-3 px-2 rounded-2xl border border-white/10 bg-[#111C3D] hover:border-[#00F076]/40 text-slate-300 font-semibold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all">
+                      <i class="ph-bold ph-device-mobile text-base sm:text-lg"></i>
+                      <span>Google</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- 2. Model Dropdown -->
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <label for="deviceModelSelect" class="text-[11px] sm:text-xs font-bold text-slate-300 uppercase tracking-wider">
+                      2. Choose Handset Model
+                    </label>
+                    <span id="modelCountLabel" class="text-[10px] sm:text-[11px] text-[#00F076] font-mono">10 Models Loaded</span>
+                  </div>
+                  <div class="relative">
+                    <select id="deviceModelSelect" onchange="runQuoteCalculation()" class="w-full bg-[#111C3D] border border-white/15 rounded-2xl px-4 py-3 sm:py-3.5 text-white font-medium text-xs sm:text-sm appearance-none focus:outline-none focus:border-[#00F076] cursor-pointer pr-10 transition-colors">
+                      <!-- Populated via JS -->
+                    </select>
+                    <i class="ph-bold ph-caret-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-base"></i>
+                  </div>
+                </div>
+
+                <!-- 3. Storage Capacity (Realistic Dealer Increments) -->
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <label class="block text-[11px] sm:text-xs font-bold text-slate-300 uppercase tracking-wider">
+                      3. Storage Capacity
+                    </label>
+                    <span class="text-[10px] text-slate-400">+£10 / +£20 / +£30 tiers</span>
+                  </div>
+                  <div class="grid grid-cols-4 gap-1.5 sm:gap-2 text-[11px] sm:text-xs" id="storagePillsGroup">
+                    <button type="button" onclick="handleStorageSelect(128, this)" class="storage-pill py-2.5 rounded-xl border border-white/10 bg-[#111C3D] text-slate-300 font-semibold hover:border-[#00F076]/40 transition-all">128 GB</button>
+                    <button type="button" onclick="handleStorageSelect(256, this)" class="storage-pill active py-2.5 rounded-xl border border-[#00F076] bg-[#10B981]/25 text-white font-bold transition-all">256 GB</button>
+                    <button type="button" onclick="handleStorageSelect(512, this)" class="storage-pill py-2.5 rounded-xl border border-white/10 bg-[#111C3D] text-slate-300 font-semibold hover:border-[#00F076]/40 transition-all">512 GB</button>
+                    <button type="button" onclick="handleStorageSelect(1024, this)" class="storage-pill py-2.5 rounded-xl border border-white/10 bg-[#111C3D] text-slate-300 font-semibold hover:border-[#00F076]/40 transition-all">1 TB</button>
+                  </div>
+                </div>
+
+                <!-- 4. Physical Condition Tiers -->
+                <div>
+                  <label class="block text-[11px] sm:text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+                    4. Cosmetic Condition
+                  </label>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left" id="conditionPillsGroup">
+                    
+                    <button type="button" onclick="handleConditionSelect('flawless', this)" class="condition-btn p-2.5 sm:p-3 rounded-2xl border border-white/10 bg-[#111C3D] text-left hover:border-[#00F076]/40 transition-all">
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Flawless</span>
+                        <i class="ph-fill ph-sparkle text-[#00F076] text-xs"></i>
+                      </div>
+                      <p class="text-[9px] sm:text-[10px] text-slate-400 mt-1">Zero marks, 100% mint</p>
+                    </button>
+
+                    <button type="button" onclick="handleConditionSelect('good', this)" class="condition-btn active p-2.5 sm:p-3 rounded-2xl border border-[#00F076] bg-[#10B981]/25 text-left transition-all">
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Good</span>
+                        <i class="ph-bold ph-thumbs-up text-[#00F076] text-xs"></i>
+                      </div>
+                      <p class="text-[9px] sm:text-[10px] text-slate-400 mt-1">Light signs of use</p>
+                    </button>
+
+                    <button type="button" onclick="handleConditionSelect('cracked', this)" class="condition-btn p-2.5 sm:p-3 rounded-2xl border border-white/10 bg-[#111C3D] text-left hover:border-[#00F076]/40 transition-all">
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Cracked</span>
+                        <i class="ph-bold ph-lightning-slash text-amber-400 text-xs"></i>
+                      </div>
+                      <p class="text-[9px] sm:text-[10px] text-slate-400 mt-1">Smashed screen/glass</p>
+                    </button>
+
+                    <button type="button" onclick="handleConditionSelect('faulty', this)" class="condition-btn p-2.5 sm:p-3 rounded-2xl border border-white/10 bg-[#111C3D] text-left hover:border-[#00F076]/40 transition-all">
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Faulty</span>
+                        <i class="ph-bold ph-warning-circle text-rose-400 text-xs"></i>
+                      </div>
+                      <p class="text-[9px] sm:text-[10px] text-slate-400 mt-1">Dead battery/parts</p>
+                    </button>
+
+                  </div>
+                </div>
+
+                <!-- Instant Outcome Box -->
+                <div class="p-4 sm:p-5 rounded-2xl bg-[#060A14] border border-[#00F076]/60 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-inner">
+                  <div class="w-full sm:w-auto text-center sm:text-left">
+                    <div class="flex items-center justify-center sm:justify-start gap-1.5 mb-1">
+                      <span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Guaranteed Cash In Hand:</span>
+                      <span class="text-[9px] bg-emerald-950 text-[#00F076] px-2 py-0.5 rounded border border-emerald-800 font-bold">14-Day Lock</span>
+                    </div>
+                    <div class="flex items-baseline justify-center sm:justify-start gap-1.5">
+                      <span id="animatedQuoteValue" class="text-4xl sm:text-5xl font-display font-extrabold text-[#00F076] neon-text-glow">£320</span>
+                      <span class="text-xs text-slate-400 font-medium">GBP</span>
+                    </div>
+                    <p class="text-[10px] sm:text-[11px] text-slate-400 mt-0.5">Instant Faster Payments or Cash on Drop-Off / Pickup</p>
+                  </div>
+
+                  <button type="button" onclick="triggerLockModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl font-display font-extrabold text-xs sm:text-sm bg-gradient-to-r from-[#10B981] via-[#00F076] to-[#34D399] text-[#060A14] hover:shadow-glow-neon transition-all duration-300 flex items-center justify-center gap-2 transform active:scale-95 flex-shrink-0 font-bold">
+                    <span>Lock In Cash Price</span>
+                    <i class="ph-bold ph-arrow-right text-base"></i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent Live Dealer Cash Rates Table -->
+    <section id="pricing-matrix" class="py-16 sm:py-20 bg-[#0B132B] border-y border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#00F076] uppercase tracking-wider mb-1">
+              <span class="w-2 h-2 rounded-full bg-[#00F076]"></span>
+              <span>Direct Trade-In Pricing</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white">Live Dealer Cash Rates</h2>
+            <p class="text-slate-300 text-xs sm:text-sm mt-1 max-w-2xl">
+              Transparent baseline dealer payouts. No surprise deductions when your device matches the condition described. Click 'Select' on any handset to load into the calculator.
+            </p>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
+            <button type="button" onclick="filterPricingTable('all', this)" class="matrix-filter active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-[#00F076] text-[#060A14]">All Devices</button>
+            <button type="button" onclick="filterPricingTable('apple', this)" class="matrix-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-[#111C3D] text-slate-300 border border-white/10 hover:border-[#00F076]">Apple</button>
+            <button type="button" onclick="filterPricingTable('samsung', this)" class="matrix-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-[#111C3D] text-slate-300 border border-white/10 hover:border-[#00F076]">Samsung</button>
+            <button type="button" onclick="filterPricingTable('google', this)" class="matrix-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-[#111C3D] text-slate-300 border border-white/10 hover:border-[#00F076]">Google</button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-xl bg-[#060A14]">
+          <div class="overflow-x-auto w-full">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="bg-[#0B132B] text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-white/10">
+                <tr>
+                  <th class="py-3 px-3 sm:px-4">Model & Standard Base</th>
+                  <th class="py-3 px-2 sm:px-4 text-emerald-400">Flawless (£)</th>
+                  <th class="py-3 px-2 sm:px-4 text-white">Good (£)</th>
+                  <th class="py-3 px-2 sm:px-4 text-amber-400">Cracked (£)</th>
+                  <th class="py-3 px-2 sm:px-4 text-rose-400">Faulty (£)</th>
+                  <th class="py-3 px-3 sm:px-4 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="pricingTableBody" class="divide-y divide-white/10 text-slate-300">
+                <!-- Populated via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-slate-400 mt-3 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1.5">
+          <i class="ph-bold ph-info text-[#00F076]"></i>
+          <span>Selling 3 or more devices from a business or family clearout? <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" class="text-[#00F076] underline font-medium">Message us for custom bulk rates</a>.</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Why Sell To Us / 3-Step Process -->
+    <section id="how-it-works" class="py-20 sm:py-24 relative bg-[#060A14]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-bold text-[#00F076] uppercase tracking-wider">Fast & Direct</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">Why Sell To PhoneCashOut</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-2">No listing fees, no postage scams, and no waiting weeks for payment.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative hover:border-[#00F076]/40 transition-all bg-[#0B132B]">
+            <div class="w-12 h-12 rounded-2xl bg-[#111C3D] border border-[#00F076] text-[#00F076] flex items-center justify-center text-xl font-display font-extrabold mb-5">
+              1
+            </div>
+            <h3 class="text-lg sm:text-xl font-display font-bold text-white mb-2">Instant Cash Value</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Get a guaranteed valuation based on actual dealer cash prices. What we quote online is the cash in hand you receive.
+            </p>
+            <div class="p-3 rounded-xl bg-[#060A14] border border-white/10 text-xs text-slate-400 space-y-1">
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> 14-day price lock guarantee</div>
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> Zero listing or processing fees</div>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative hover:border-[#00F076]/40 transition-all bg-[#0B132B]">
+            <div class="w-12 h-12 rounded-2xl bg-[#111C3D] border border-[#00F076] text-[#00F076] flex items-center justify-center text-xl font-display font-extrabold mb-5">
+              2
+            </div>
+            <h3 class="text-lg sm:text-xl font-display font-bold text-white mb-2">Collection or Post</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Choose free local collection from your home/workplace, physical drop-off, or use our prepaid tracked Royal Mail postal pack.
+            </p>
+            <div class="p-3 rounded-xl bg-[#060A14] border border-white/10 text-xs text-slate-400 space-y-1">
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> Fully tracked & insured delivery</div>
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> Flexible evening collection slots</div>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 relative hover:border-[#00F076]/40 transition-all bg-[#0B132B]">
+            <div class="w-12 h-12 rounded-2xl bg-[#111C3D] border border-[#00F076] text-[#00F076] flex items-center justify-center text-xl font-display font-extrabold mb-5">
+              3
+            </div>
+            <h3 class="text-lg sm:text-xl font-display font-bold text-white mb-2">Same-Day Payout</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              After a quick 5-minute technical inspection, get paid immediately in cash or via Faster Payments directly to your bank account.
+            </p>
+            <div class="p-3 rounded-xl bg-[#060A14] border border-white/10 text-xs text-slate-400 space-y-1">
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> Cleared funds in minutes</div>
+              <div class="flex items-center gap-2"><i class="ph-bold ph-check text-[#00F076]"></i> Full data wipe certificate</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cracked & Damaged Phone Focus Section -->
+    <section id="broken-phones" class="py-16 sm:py-20 bg-[#0B132B] border-y border-white/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 sm:gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[11px] font-bold uppercase tracking-wider">
+              <i class="ph-fill ph-warning-circle"></i> Don't Throw Broken Phones Away!
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white">
+              We Pay Real Cash For Smashed, Cracked & Faulty Phones
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
+              Most high-street chains will reject damaged handsets or offer next to nothing. Because we salvage genuine components and repair in-house, <strong class="text-white">your broken phone still has genuine trade cash value.</strong>
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3.5 rounded-2xl bg-[#111C3D] border border-white/10">
+                <div class="flex items-center gap-2 text-[#00F076] font-bold text-xs sm:text-sm mb-1">
+                  <i class="ph-bold ph-shield-check text-base"></i> Smashed Front Screens
+                </div>
+                <p class="text-[11px] text-slate-400">Lines down display, black bleed spots, or unresponsive digitizer.</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-[#111C3D] border border-white/10">
+                <div class="flex items-center gap-2 text-[#00F076] font-bold text-xs sm:text-sm mb-1">
+                  <i class="ph-bold ph-shield-check text-base"></i> Cracked Back Glass
+                </div>
+                <p class="text-[11px] text-slate-400">Spiderweb rear glass cracks and chipped housing frames.</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-[#111C3D] border border-white/10">
+                <div class="flex items-center gap-2 text-[#00F076] font-bold text-xs sm:text-sm mb-1">
+                  <i class="ph-bold ph-shield-check text-base"></i> Degraded Batteries & Ports
+                </div>
+                <p class="text-[11px] text-slate-400">Phones that overheat, die quickly, or fail to take charge.</p>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-[#111C3D] border border-white/10">
+                <div class="flex items-center gap-2 text-[#00F076] font-bold text-xs sm:text-sm mb-1">
+                  <i class="ph-bold ph-shield-check text-base"></i> Faulty Cameras & Audio
+                </div>
+                <p class="text-[11px] text-slate-400">Cracked camera lenses, blurry autofocus, or broken earpieces.</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="#estimator-section" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-display font-bold text-xs sm:text-sm bg-gradient-to-r from-[#10B981] to-[#00F076] text-[#060A14] transition-all shadow-glow-neon">
+                <i class="ph-bold ph-calculator"></i> Value My Broken Phone Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Case Study Card -->
+          <div class="lg:col-span-5 w-full">
+            <div class="glass-card p-6 sm:p-7 rounded-3xl border border-[#00F076]/30 relative bg-[#060A14]">
+              <div class="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
+                <span class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase">Real Payout Example</span>
+                <span class="text-[10px] sm:text-xs font-bold text-[#00F076] px-2 py-0.5 rounded bg-[#10B981]/15 border border-[#10B981]/30">Cash In Hand</span>
+              </div>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-sm sm:text-base font-bold text-white">Apple iPhone 15 Pro</h3>
+                    <p class="text-[11px] text-amber-400 flex items-center gap-1 mt-0.5">
+                      <i class="ph-bold ph-lightning-slash"></i> Smashed Screen & Back Glass
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-[10px] text-slate-400">Dealer Paid:</span>
+                    <p class="text-xl sm:text-2xl font-display font-extrabold text-[#00F076]">£90.00</p>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-xl bg-[#111C3D] border border-white/10 text-xs text-slate-300">
+                  <span class="text-slate-400 block font-semibold mb-0.5">Seller Experience:</span>
+                  "High street shop offered me £15 for it. PhoneCashOut picked it up the same evening and handed me £90 cash. Simple and honest."
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Verification Section -->
+    <section class="py-14 bg-[#060A14] border-y border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
+          
+          <div class="flex items-center gap-3 p-3.5 rounded-2xl glass-card bg-[#0B132B]">
+            <div class="w-10 h-10 rounded-xl bg-[#10B981]/20 border border-[#10B981]/30 text-[#00F076] flex items-center justify-center text-xl flex-shrink-0">
+              <i class="ph-fill ph-shield-check"></i>
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-white">CheckMEND Vetted</h4>
+              <p class="text-[10px] sm:text-xs text-slate-400">UK Police anti-theft check</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3.5 rounded-2xl glass-card bg-[#0B132B]">
+            <div class="w-10 h-10 rounded-xl bg-[#10B981]/20 border border-[#10B981]/30 text-[#00F076] flex items-center justify-center text-xl flex-shrink-0">
+              <i class="ph-fill ph-lock-key"></i>
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-white">ADISA Data Wipe</h4>
+              <p class="text-[10px] sm:text-xs text-slate-400">Complete forensic wipe</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3.5 rounded-2xl glass-card bg-[#0B132B]">
+            <div class="w-10 h-10 rounded-xl bg-[#10B981]/20 border border-[#10B981]/30 text-[#00F076] flex items-center justify-center text-xl flex-shrink-0">
+              <i class="ph-fill ph-calendar-blank"></i>
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-white">14-Day Price Lock</h4>
+              <p class="text-[10px] sm:text-xs text-slate-400">Protected quote guarantee</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3.5 rounded-2xl glass-card bg-[#0B132B]">
+            <div class="w-10 h-10 rounded-xl bg-[#10B981]/20 border border-[#10B981]/30 text-[#00F076] flex items-center justify-center text-xl flex-shrink-0">
+              <i class="ph-fill ph-bank"></i>
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-white">Faster Payments</h4>
+              <p class="text-[10px] sm:text-xs text-slate-400">Immediate bank transfer</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faqs" class="py-16 sm:py-20 bg-[#0B132B] border-t border-white/10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-10 sm:mb-14">
+          <span class="text-xs font-bold text-[#00F076] uppercase tracking-wider">Clear & Honest</span>
+          <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">Frequently Asked Questions</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1">Everything you need to know about getting paid for your handset.</p>
+        </div>
+
+        <div class="space-y-3 sm:space-y-4">
+          
+          <div class="glass-card rounded-2xl border border-white/10 overflow-hidden bg-[#060A14]">
+            <button onclick="toggleFaqAccordion(1)" class="w-full px-5 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between gap-3 text-white">
+              <span class="font-bold text-xs sm:text-base">How does condition grading work?</span>
+              <i id="faq-caret-1" class="ph-bold ph-plus text-[#00F076] text-base sm:text-lg transition-transform duration-200"></i>
+            </button>
+            <div id="faq-content-1" class="hidden px-5 pb-4 sm:px-6 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/10 pt-3">
+              We keep it straightforward: <strong>Flawless</strong> means no scratches or scuffs with battery health above 85%. <strong>Good</strong> means normal minor everyday wear with full functional working order. <strong>Cracked</strong> means cracked front screen or back glass, but phone still powers on. <strong>Faulty</strong> means no power, boot-looping, or severe motherboard damage.
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl border border-white/10 overflow-hidden bg-[#060A14]">
+            <button onclick="toggleFaqAccordion(2)" class="w-full px-5 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between gap-3 text-white">
+              <span class="font-bold text-xs sm:text-base">When and how do I get paid?</span>
+              <i id="faq-caret-2" class="ph-bold ph-plus text-[#00F076] text-base sm:text-lg transition-transform duration-200"></i>
+            </button>
+            <div id="faq-content-2" class="hidden px-5 pb-4 sm:px-6 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/10 pt-3">
+              On doorstep collections and drop-offs, we inspect the phone in under 5 minutes and immediately provide cash in hand or release an instant UK Faster Payments transfer before leaving. For postal packs, we transfer funds the day your phone arrives.
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl border border-white/10 overflow-hidden bg-[#060A14]">
+            <button onclick="toggleFaqAccordion(3)" class="w-full px-5 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between gap-3 text-white">
+              <span class="font-bold text-xs sm:text-base">Do you buy blacklisted or financed phones?</span>
+              <i id="faq-caret-3" class="ph-bold ph-plus text-[#00F076] text-base sm:text-lg transition-transform duration-200"></i>
+            </button>
+            <div id="faq-content-3" class="hidden px-5 pb-4 sm:px-6 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/10 pt-3">
+              No. Every handset IMEI is checked against CheckMEND and the UK National Police Database. We cannot buy phones reported lost, stolen, or under active hire-purchase contract restrictions.
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl border border-white/10 overflow-hidden bg-[#060A14]">
+            <button onclick="toggleFaqAccordion(4)" class="w-full px-5 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between gap-3 text-white">
+              <span class="font-bold text-xs sm:text-base">What should I do with my personal data?</span>
+              <i id="faq-caret-4" class="ph-bold ph-plus text-[#00F076] text-base sm:text-lg transition-transform duration-200"></i>
+            </button>
+            <div id="faq-content-4" class="hidden px-5 pb-4 sm:px-6 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/10 pt-3">
+              Please sign out of iCloud or Google Accounts and perform a factory reset before handover. In addition, our team performs certified data erasure following ADISA standards to ensure total privacy.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Lead Capture / Price Lock Modal -->
+  <div id="lockModal" class="fixed inset-0 z-50 bg-[#060A14]/90 backdrop-blur-md hidden items-center justify-center p-3 sm:p-4">
+    <div class="glass-card bg-[#0B132B] max-w-lg w-full rounded-3xl p-5 sm:p-8 border border-[#00F076] shadow-2xl relative max-h-[94vh] overflow-y-auto">
+      
+      <button onclick="closeLockModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl p-1">
+        <i class="ph-bold ph-x"></i>
+      </button>
+
+      <div class="text-left mb-5">
+        <span class="text-[10px] sm:text-xs font-bold text-[#00F076] uppercase tracking-wider">Step 2: Guarantee Price</span>
+        <h3 class="text-xl sm:text-2xl font-display font-extrabold text-white mt-0.5">Lock In Your Cash Payout</h3>
+        <p class="text-slate-300 text-xs mt-1">We guarantee this exact amount for 14 days with zero obligation.</p>
+      </div>
+
+      <!-- Recap Box -->
+      <div class="p-3.5 sm:p-4 rounded-2xl bg-[#060A14] border border-white/10 mb-5 flex items-center justify-between">
+        <div>
+          <p id="modalDeviceTitle" class="text-xs sm:text-sm font-bold text-white">Apple iPhone 16 Pro Max</p>
+          <p id="modalDeviceSpecs" class="text-[11px] text-slate-400">256GB • Good Working Order</p>
+        </div>
+        <div class="text-right">
+          <span class="text-[10px] text-slate-400 block">Cash Payout:</span>
+          <p id="modalDeviceAmount" class="text-xl sm:text-2xl font-display font-extrabold text-[#00F076]">£320.00</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form onsubmit="handleLeadSubmit(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+          <input type="text" required placeholder="e.g. Jordan Smith" class="w-full bg-[#111C3D] border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-xs sm:text-sm focus:outline-none focus:border-[#00F076]">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">WhatsApp / Phone</label>
+            <input type="tel" required placeholder="07123 456789" class="w-full bg-[#111C3D] border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-xs sm:text-sm focus:outline-none focus:border-[#00F076]">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">UK Postcode</label>
+            <input type="text" required placeholder="e.g. DE1 1AA" class="w-full bg-[#111C3D] border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-xs sm:text-sm focus:outline-none focus:border-[#00F076]">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Preferred Handover & Payment</label>
+          <select class="w-full bg-[#111C3D] border border-white/15 rounded-xl px-3.5 py-2.5 text-white text-xs sm:text-sm focus:outline-none focus:border-[#00F076] cursor-pointer">
+            <option>Free Doorstep Collection — Cash in Hand</option>
+            <option>Free Doorstep Collection — Instant Faster Payments</option>
+            <option>Prepaid Tracked Royal Mail Postal Pack</option>
+            <option>Local Drop-off</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl font-display font-extrabold text-xs sm:text-sm bg-gradient-to-r from-[#10B981] via-[#00F076] to-[#34D399] text-[#060A14] hover:shadow-glow-neon transition-all flex items-center justify-center gap-2 mt-2 transform active:scale-95 font-bold">
+          <i class="ph-bold ph-lock-key"></i>
+          <span>Lock In This Cash Quote</span>
+        </button>
+
+        <p class="text-[10px] text-center text-slate-400">
+          🔒 No spam. We only contact you to coordinate pickup or post.
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Footer with Concept 2 Logo -->
+  <footer class="bg-[#060A14] border-t border-white/10 pt-12 sm:pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8">
+              <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+                <circle cx="50" cy="50" r="48" fill="#0A0F1D" stroke="#1F2E52" stroke-width="2"/>
+                <path d="M 50 14 A 36 36 0 0 1 84 44" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 84 56 A 36 36 0 0 1 54 86" stroke="#00F076" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 50 86 A 36 36 0 0 1 16 56" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 16 44 A 36 36 0 0 1 46 14" stroke="#00F076" stroke-width="8" stroke-linecap="round"/>
+                <rect x="36" y="27" width="28" height="46" rx="6" fill="#10B981" fill-opacity="0.3" stroke="#00F076" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <span class="text-xl font-display font-extrabold italic text-white">Phone<span class="text-[#00F076]">CashOut</span></span>
+          </div>
+
+          <p class="text-slate-400 text-xs sm:text-sm max-w-sm leading-relaxed">
+            The UK's direct mobile phone buyback specialist. Fast, guaranteed dealer cash payouts with same-day Faster Payments and doorstep collection.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-[#111C3D] border border-white/10 text-white text-xs font-semibold flex items-center gap-1.5 hover:border-[#00F076] transition-colors">
+              <i class="ph-fill ph-whatsapp-logo text-[#00F076] text-sm"></i> WhatsApp Support
+            </a>
+            <a href="tel:0800000000" class="px-3 py-1.5 rounded-xl bg-[#111C3D] border border-white/10 text-white text-xs font-semibold flex items-center gap-1.5 hover:border-[#00F076] transition-colors">
+              <i class="ph-bold ph-phone-call text-[#00F076] text-sm"></i> 0800 000 000
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Popular Cash Trades</h4>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="#estimator-section" onclick="quickSelectPhone('apple', 'iPhone 16 Pro Max')" class="hover:text-[#00F076] transition-colors">Sell iPhone 16 Pro Max</a></li>
+            <li><a href="#estimator-section" onclick="quickSelectPhone('apple', 'iPhone 15 Pro')" class="hover:text-[#00F076] transition-colors">Sell iPhone 15 Pro</a></li>
+            <li><a href="#estimator-section" onclick="quickSelectPhone('samsung', 'Galaxy S24 Ultra')" class="hover:text-[#00F076] transition-colors">Sell Galaxy S24 Ultra</a></li>
+            <li><a href="#estimator-section" onclick="quickSelectPhone('google', 'Pixel 8 Pro')" class="hover:text-[#00F076] transition-colors">Sell Google Pixel 8 Pro</a></li>
+            <li><a href="#broken-phones" class="hover:text-[#00F076] transition-colors">Sell Cracked & Broken Phones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Compliance & Security</h4>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li class="flex items-center gap-1.5"><i class="ph-bold ph-shield-check text-[#00F076]"></i> CheckMEND Database Vetted</li>
+            <li class="flex items-center gap-1.5"><i class="ph-bold ph-lock text-[#00F076]"></i> ADISA Certified Data Erasure</li>
+            <li class="flex items-center gap-1.5"><i class="ph-bold ph-bank text-[#00F076]"></i> UK Faster Payments Network</li>
+            <li class="flex items-center gap-1.5"><i class="ph-bold ph-calendar-blank text-[#00F076]"></i> 14-Day Price Guarantee</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] sm:text-xs text-slate-500 gap-3">
+        <p>© 2026 PhoneCashOut Ltd. Registered in England & Wales. Company No. 12948291.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">IMEI Verification Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Real-World Dealer Buyback Logic & Data Matrix -->
+  <script>
+    /**
+     * REAL-WORLD DEALER CASH BUY-IN MATRIX (GBP)
+     * Built to protect £50 - £120+ margins per flip against UK secondary resale prices.
+     */
+    const ukBuybackPricingMatrix = {
+      apple: [
+        { model: "iPhone 16 Pro Max", baseStorage: "256GB", flawless: 380, good: 310, cracked: 130, faulty: 65 },
+        { model: "iPhone 16",         baseStorage: "128GB", flawless: 250, good: 205, cracked: 85,  faulty: 40 },
+        { model: "iPhone 15 Pro Max", baseStorage: "256GB", flawless: 310, good: 250, cracked: 105, faulty: 50 },
+        { model: "iPhone 15 Pro",     baseStorage: "128GB", flawless: 260, good: 210, cracked: 90,  faulty: 45 },
+        { model: "iPhone 15",         baseStorage: "128GB", flawless: 185, good: 150, cracked: 60,  faulty: 30 },
+        { model: "iPhone 14 Pro",     baseStorage: "128GB", flawless: 190, good: 155, cracked: 65,  faulty: 30 },
+        { model: "iPhone 14",         baseStorage: "128GB", flawless: 135, good: 110, cracked: 45,  faulty: 20 },
+        { model: "iPhone 13",         baseStorage: "128GB", flawless: 95,  good: 75,  cracked: 30,  faulty: 15 },
+        { model: "iPhone 12",         baseStorage: "64GB",  flawless: 65,  good: 50,  cracked: 20,  faulty: 10 },
+        { model: "iPhone 11",         baseStorage: "64GB",  flawless: 40,  good: 30,  cracked: 12,  faulty: 5  }
+      ],
+      samsung: [
+        { model: "Galaxy S24 Ultra",  baseStorage: "256GB", flawless: 280, good: 225, cracked: 95,  faulty: 45 },
+        { model: "Galaxy S24",        baseStorage: "128GB", flawless: 170, good: 135, cracked: 55,  faulty: 25 },
+        { model: "Galaxy S23",        baseStorage: "128GB", flawless: 110, good: 85,  cracked: 35,  faulty: 15 },
+        { model: "Galaxy S22",        baseStorage: "128GB", flawless: 70,  good: 55,  cracked: 20,  faulty: 10 }
+      ],
+      google: [
+        { model: "Pixel 8 Pro",       baseStorage: "128GB", flawless: 120, good: 95,  cracked: 40,  faulty: 18 },
+        { model: "Pixel 7",           baseStorage: "128GB", flawless: 55,  good: 42,  cracked: 18,  faulty: 8  }
+      ]
+    };
+
+    let selectedBrand = 'apple';
+    let selectedStorage = 256;
+    let selectedCondition = 'good';
+
+    // Toggle Mobile Navigation Drawer
+    function toggleMobileNav() {
+      const drawer = document.getElementById('mobileDrawer');
+      const icon = document.getElementById('menuIcon');
+      const isHidden = drawer.classList.contains('hidden');
+
+      if (isHidden) {
+        drawer.classList.remove('hidden');
+        icon.classList.remove('ph-list');
+        icon.classList.add('ph-x');
+      } else {
+        drawer.classList.add('hidden');
+        icon.classList.remove('ph-x');
+        icon.classList.add('ph-list');
+      }
+    }
+
+    // Populate Handset Dropdown
+    function populateModelOptions() {
+      const select = document.getElementById('deviceModelSelect');
+      const list = ukBuybackPricingMatrix[selectedBrand];
+      select.innerHTML = '';
+
+      list.forEach((item, index) => {
+        const opt = document.createElement('option');
+        opt.value = index;
+        opt.textContent = `${item.model} (Standard ${item.baseStorage})`;
+        select.appendChild(opt);
+      });
+
+      document.getElementById('modelCountLabel').textContent = `${list.length} Models Loaded`;
+      runQuoteCalculation();
+    }
+
+    // Brand Tab Click Handler
+    function handleBrandSelect(brand, el) {
+      selectedBrand = brand;
+      document.querySelectorAll('.brand-tab').forEach(btn => {
+        btn.classList.remove('active', 'border-[#00F076]', 'bg-[#10B981]/20', 'text-white');
+        btn.classList.add('border-white/10', 'bg-[#111C3D]', 'text-slate-300');
+      });
+
+      el.classList.add('active', 'border-[#00F076]', 'bg-[#10B981]/20', 'text-white');
+      el.classList.remove('border-white/10', 'bg-[#111C3D]', 'text-slate-300');
+      populateModelOptions();
+    }
+
+    // Storage Pill Click Handler (Realistic Dealer increments: +£10 / +£20 / +£30)
+    function handleStorageSelect(gb, el) {
+      selectedStorage = gb;
+      document.querySelectorAll('.storage-pill').forEach(pill => {
+        pill.classList.remove('active', 'border-[#00F076]', 'bg-[#10B981]/25', 'text-white', 'font-bold');
+        pill.classList.add('border-white/10', 'bg-[#111C3D]', 'text-slate-300', 'font-semibold');
+      });
+      el.classList.add('active', 'border-[#00F076]', 'bg-[#10B981]/25', 'text-white', 'font-bold');
+      el.classList.remove('border-white/10', 'bg-[#111C3D]', 'text-slate-300', 'font-semibold');
+      runQuoteCalculation();
+    }
+
+    // Condition Pill Click Handler
+    function handleConditionSelect(cond, el) {
+      selectedCondition = cond;
+      document.querySelectorAll('.condition-btn').forEach(b => {
+        b.classList.remove('active', 'border-[#00F076]', 'bg-[#10B981]/25');
+        b.classList.add('border-white/10', 'bg-[#111C3D]');
+      });
+      el.classList.add('active', 'border-[#00F076]', 'bg-[#10B981]/25');
+      el.classList.remove('border-white/10', 'bg-[#111C3D]');
+      runQuoteCalculation();
+    }
+
+    // Calculate Real Dealer Quote
+    function runQuoteCalculation() {
+      const select = document.getElementById('deviceModelSelect');
+      const index = parseInt(select.value, 10) || 0;
+      const device = ukBuybackPricingMatrix[selectedBrand][index];
+
+      if (!device) return;
+
+      let basePrice = device[selectedCondition];
+
+      // Realistic modest storage bumps
+      let storageBump = 0;
+      if (selectedStorage === 256) {
+        storageBump = (device.baseStorage === '256GB') ? 0 : 10;
+      } else if (selectedStorage === 512) {
+        storageBump = 20;
+      } else if (selectedStorage === 1024) {
+        storageBump = 30;
+      }
+
+      // Do not add storage bumps to dead faulty phones
+      if (selectedCondition === 'faulty') {
+        storageBump = 0;
+      }
+
+      const total = basePrice + storageBump;
+      document.getElementById('animatedQuoteValue').textContent = `£${total}`;
+    }
+
+    // Render Dealer Rates Table
+    function renderPricingTable(filter = 'all') {
+      const tbody = document.getElementById('pricingTableBody');
+      tbody.innerHTML = '';
+
+      let rows = [];
+      if (filter === 'all' || filter === 'apple') {
+        rows = rows.concat(ukBuybackPricingMatrix.apple.map(item => ({ ...item, brand: 'apple' })));
+      }
+      if (filter === 'all' || filter === 'samsung') {
+        rows = rows.concat(ukBuybackPricingMatrix.samsung.map(item => ({ ...item, brand: 'samsung' })));
+      }
+      if (filter === 'all' || filter === 'google') {
+        rows = rows.concat(ukBuybackPricingMatrix.google.map(item => ({ ...item, brand: 'google' })));
+      }
+
+      rows.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-[#111C3D]/60 transition-colors';
+        tr.innerHTML = `
+          <td class="py-3 px-3 sm:px-4 font-semibold text-white">
+            <span class="block text-slate-100">${item.model}</span>
+            <span class="text-[10px] text-slate-400 font-mono uppercase">${item.brand} • ${item.baseStorage}</span>
+          </td>
+          <td class="py-3 px-2 sm:px-4 text-emerald-400 font-bold font-mono">£${item.flawless}</td>
+          <td class="py-3 px-2 sm:px-4 text-white font-bold font-mono">£${item.good}</td>
+          <td class="py-3 px-2 sm:px-4 text-amber-400 font-bold font-mono">£${item.cracked}</td>
+          <td class="py-3 px-2 sm:px-4 text-rose-400 font-bold font-mono">£${item.faulty}</td>
+          <td class="py-3 px-3 sm:px-4 text-right">
+            <button onclick="quickSelectPhone('${item.brand}', '${item.model}')" class="px-2.5 py-1 rounded-lg bg-[#10B981]/20 border border-[#10B981] text-[#00F076] hover:bg-[#00F076] hover:text-[#060A14] text-[11px] font-bold transition-all">
+              Select
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterPricingTable(filter, btn) {
+      document.querySelectorAll('.matrix-filter').forEach(b => {
+        b.classList.remove('active', 'bg-[#00F076]', 'text-[#060A14]');
+        b.classList.add('bg-[#111C3D]', 'text-slate-300');
+      });
+      btn.classList.add('active', 'bg-[#00F076]', 'text-[#060A14]');
+      btn.classList.remove('bg-[#111C3D]', 'text-slate-300');
+      renderPricingTable(filter);
+    }
+
+    // Quick select phone into calculator
+    function quickSelectPhone(brand, modelName) {
+      selectedBrand = brand;
+      
+      const buttons = document.querySelectorAll('.brand-tab');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'border-[#00F076]', 'bg-[#10B981]/20', 'text-white');
+        btn.classList.add('border-white/10', 'bg-[#111C3D]', 'text-slate-300');
+      });
+      const brandIndex = brand === 'apple' ? 0 : brand === 'samsung' ? 1 : 2;
+      buttons[brandIndex].classList.add('active', 'border-[#00F076]', 'bg-[#10B981]/20', 'text-white');
+      buttons[brandIndex].classList.remove('border-white/10', 'bg-[#111C3D]', 'text-slate-300');
+
+      populateModelOptions();
+
+      const select = document.getElementById('deviceModelSelect');
+      const list = ukBuybackPricingMatrix[brand];
+      const foundIdx = list.findIndex(d => d.model.toLowerCase() === modelName.toLowerCase());
+      if (foundIdx !== -1) {
+        select.selectedIndex = foundIdx;
+      }
+      
+      document.getElementById('estimator-section').scrollIntoView({ behavior: 'smooth' });
+      runQuoteCalculation();
+    }
+
+    // FAQ Accordion
+    function toggleFaqAccordion(num) {
+      const content = document.getElementById(`faq-content-${num}`);
+      const caret = document.getElementById(`faq-caret-${num}`);
+      const isHidden = content.classList.contains('hidden');
+
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`faq-content-${i}`).classList.add('hidden');
+        document.getElementById(`faq-caret-${i}`).classList.remove('rotate-45');
+      }
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        caret.classList.add('rotate-45');
+      }
+    }
+
+    // Modal Handlers
+    function triggerLockModal() {
+      const select = document.getElementById('deviceModelSelect');
+      const modelText = select.options[select.selectedIndex].text;
+      const quoteVal = document.getElementById('animatedQuoteValue').textContent;
+
+      document.getElementById('modalDeviceTitle').textContent = `${modelText}`;
+      document.getElementById('modalDeviceSpecs').textContent = `${selectedStorage}GB • ${selectedCondition.toUpperCase()} condition`;
+      document.getElementById('modalDeviceAmount').textContent = `${quoteVal}.00`;
+
+      const modal = document.getElementById('lockModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLockModal() {
+      const modal = document.getElementById('lockModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Toast Alert
+    function triggerToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = message;
+      toast.classList.remove('translate-y-28', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-28', 'opacity-0');
+      }, 3200);
+    }
+
+    function handleLeadSubmit(e) {
+      e.preventDefault();
+      closeLockModal();
+      triggerToast('🎉 Cash Quote Locked! Our team will WhatsApp you within 15 mins.');
+    }
+
+    window.onload = function () {
+      populateModelOptions();
+      renderPricingTable('all');
+    };
+  </script>
+</body>
+</html>
