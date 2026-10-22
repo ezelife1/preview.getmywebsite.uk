@@ -1,0 +1,12 @@
+DONALD DUMPS — VERIFIED BUILD
+
+1 PASS: Call links throughout use tel:+447869159255.
+2 PASS: WhatsApp links and quote form use 447869159255. Form includes name, service, area and job details. Logic checked without sending a message.
+3 PASS: Fixed scrolling header; desktop/mobile browser checks.
+4 PASS: Prominent overlapping round logo attached to fixed header, visible after scrolling.
+5 PASS: Floating Call and WhatsApp hidden until entire hero leaves viewport. Initial hidden and scrolled visible states checked.
+6 PASS LOCALLY: Unique 1200x630 business social image included and correctly referenced in Open Graph, secure_url and Twitter tags on all six pages. Public HTTP/redirect/content-type/social crawler checks await upload.
+
+OTHER CHECKS: Desktop/mobile/tablet layout and overflow; menu open/close; quote inputs; full-image lightbox open/close. Local links/fragments; responsive image dimensions; one H1 per page; unique titles/descriptions; schema JSON; metadata and social mapping. All packaged images decoded. ZIP integrity checked.
+
+Known limits: Not deployed. No test call or external enquiry sent. Registration and review snapshot taken from supplied profile. Launch domain/indexing changes and public performance/sharing checks remain in README.
