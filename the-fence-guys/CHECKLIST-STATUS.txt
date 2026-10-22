@@ -1,0 +1,12 @@
+THE FENCE GUYS — BUILD VERIFICATION
+
+1 PASS: Call links use tel:+447927914118 throughout.
+2 PASS: WhatsApp links and form use 447927914118; quote includes name, service, postcode and project details. Tested without sending.
+3 PASS: Fixed scrolling header, desktop/mobile browser checks.
+4 PASS: Original client logo prominently overlaps the header/hero and stays attached and visible while scrolling.
+5 PASS: Floating Call/WhatsApp hidden until entire hero is passed; initial hidden and scrolled visible states checked.
+6 PASS LOCALLY: Unique 1200x630 business-specific social image exists and is wired to Open Graph/secure_url and Twitter on all six pages. Public HTTP/content-type/redirect/crawler checks await upload.
+
+OTHER CHECKS: Desktop, mobile and tablet visual layouts; no horizontal overflow; mobile menu and quote inputs; full-photo viewer opens/closes with loaded image. All 12 project photos included. Local links/fragments, one H1/page, unique titles/descriptions, schema JSON, srcset widths and image dimensions checked. Every packaged image and embedded SVG image decoded. ZIP integrity checked.
+
+PENDING AFTER UPLOAD: Public social crawler/performance checks. Confirm live domain and apply launch indexing changes in README. No test call or external enquiry sent. Facebook recommendation snapshot comes from supplied profile.
