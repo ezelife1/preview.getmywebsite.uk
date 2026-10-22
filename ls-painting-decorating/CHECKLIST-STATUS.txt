@@ -1,0 +1,22 @@
+VISUAL REVIEW CORRECTION
+The previous visual pass was incomplete: it did not inspect the poster and portrait sections. It must not be treated as a complete visual approval.
+
+Fixed and directly inspected these sections at desktop (~1333 CSS px), tablet (753 CSS px) and mobile (375 CSS px):
+- Services poster now 360x360 desktop and 300x300 tablet/mobile. Natural aspect ratio preserved; no vertical stretching.
+- Blue-room portrait now 240x426.66 desktop/mobile and 220x391.11 tablet. Image and figure widths match; no grey side gutters. Natural aspect ratio error below 0.002 including subpixel rounding.
+- Section layouts visually inspected at each width.
+
+These layout checks are separate from the technical checklist below. No blanket claim is made about every visual detail.
+
+LS PAINTING & DECORATING — VERIFIED BUILD
+
+1 PASS: All Call links use tel:+447745533160.
+2 PASS: All WhatsApp links and quote form use 447745533160. Message includes business, name, service, postcode and project details; tested without sending.
+3 PASS: Fixed header remains visible while scrolling; desktop/mobile checked.
+4 PASS: Prominent overlapping round client logo remains attached and visible with fixed header.
+5 PASS: Floating Call/WhatsApp hidden over hero, visible only when entire hero leaves viewport; initial/scrolled browser states checked.
+6 PASS LOCALLY: Unique 1200x630 LS social image exists, decoded and correctly wired to OG, secure_url and Twitter on all seven pages. Public HTTP/content-type/redirect/crawler checks await owner upload.
+
+OTHER CHECKS: Desktop, mobile and tablet visuals and no horizontal overflow; mobile menu; quote fields; loaded full-photo viewer and close action. Local links/fragments; srcset widths and dimensions; one H1/page; unique titles/descriptions; schema JSON; all five supplied photos plus four reused inspiration photos. Every packaged image and embedded SVG image decoded; ZIP integrity checked.
+
+No area/address/email/review claims invented. Earlier painting photos reused as room inspiration, not represented as LS completed jobs. Confirm service area and launch domain for location SEO. Public performance/social checks and launch indexing changes require deployment. No calls or messages sent.
