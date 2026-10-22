@@ -1,0 +1,14 @@
+ASHTON EXTERIOR — BUILD VERIFICATION
+
+PASS: Correct Ashton phone, WhatsApp, email and supplied coverage.
+PASS: Fixed header, attached round logo, video hero with pause/play.
+PASS: Floating Call/WhatsApp hidden until entire hero leaves viewport.
+PASS: All 10 project photographs; matching comparisons and driveway progress grouped; full-photo lightbox.
+PASS: Four service pages, quote form, FAQs, contact and privacy pages.
+PASS: Quote message includes name, service, area and details. Tested without sending an enquiry.
+PASS: Local links/fragments, image dimensions/srcsets, unique page titles/descriptions, known-fact schema, canonical and social metadata mapping.
+PASS: Desktop visual check; mobile/tablet visual and overflow checks; mobile menu and form; gallery open/close; muted video playback.
+PASS: Packaged raster image decoding and ZIP integrity.
+
+PENDING AFTER UPLOAD: Checklist social preview requirement is only locally verified. Public HTTP status, content type, redirects, social crawler fetch and preview rendering need the uploaded URL.
+PENDING AT LAUNCH: Confirm live domain and replace preview URLs; enable indexing. Live performance and search-account checks require deployment.
