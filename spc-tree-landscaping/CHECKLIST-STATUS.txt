@@ -1,0 +1,19 @@
+SPC TREE & LANDSCAPING SERVICES LTD — DELIVERY CHECKS
+
+Checked against WEBSITE-BUILD-CHECKLIST.md version 2.
+Elm section composition retained; own green branding, round logo and project photographs.
+1. Clickable Call number verified: +44 7719 507808.
+2. WhatsApp recipient 447719507808; quote message includes selected service and every entered field. Mobile form filled; no test enquiry sent.
+3. Fixed header verified while scrolling.
+4. Prominent round logo overlaps header/hero and remains attached on desktop/mobile.
+5. Floating contact controls verified hidden over hero and visible below it; hidden attribute removes keyboard focus.
+6. Unique 1200x630 social card inspected with central wave and round logo; all page OG/Twitter metadata maps to the exact packaged asset at the intended public preview base. PUBLIC HTTP/CONTENT-TYPE/REDIRECT/CRAWLER CHECKS PENDING OWNER UPLOAD.
+
+6 HTML pages checked: unique titles/descriptions, one H1 per page, local links/fragments, structured data, canonical and noindex preview policy.
+All 12 supplied project images used across homepage/service pages. Similar views grouped by project; progress photos not claimed as invented before/after comparisons. No borrowed imagery needed.
+27 packaged raster assets decoded, including responsive image sizes; SVGs parsed and embedded images decoded.
+Desktop hero/gallery, full-photo viewer and tree-work service page visually inspected. Mobile/tablet widths checked with no horizontal overflow. Mobile navigation and quote fields checked.
+
+Phone/email and Rochdale base from supplied profile. No invented reviews, rating, credentials, insurance or wider service areas.
+
+After upload: public social-image and live performance checks. Search Console, sitemap submission, indexing, GBP and local links require deployment/account access. Confirm final domain and follow README before enabling indexing.
