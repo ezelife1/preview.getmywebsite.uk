@@ -1,0 +1,19 @@
+PRO PRESSURE SERVICES — DELIVERY CHECKS
+
+Checked against WEBSITE-BUILD-CHECKLIST.md version 2.
+Elm section composition retained with original client branding and all 18 project photos. Original artwork retained byte-for-byte; round SVG clips its canvas only.
+1. Clickable Call number verified: +44 7515 827869.
+2. WhatsApp recipient 447515827869 verified. Quote logic includes selected service and all entered fields. Mobile form filled; no test enquiry sent.
+3. Fixed header verified while scrolling.
+4. Round logo overlaps header/hero and remains attached on desktop/mobile.
+5. Floating contacts verified hidden at hero and visible after it; hidden attribute removes keyboard focus.
+6. Business-specific 1200x630 social card inspected; wave and round logo included. All OG/Twitter metadata maps to the exact packaged asset at the public preview address. PUBLIC HTTP/CONTENT-TYPE/REDIRECT/CRAWLER VERIFICATION PENDING OWNER UPLOAD. No service location supplied; card asks for postcode rather than inventing a location.
+
+7 HTML pages: unique titles/descriptions, one H1, local links/fragments, schema, canonical and noindex preview policy checked.
+39 packaged raster assets decoded, including responsive image sizes. Original logo SVGs parsed and embedded source bytes verified.
+Desktop hero, grouped results, full-photo viewer and patio service page visually inspected. Mobile/tablet widths show no horizontal overflow. Mobile menu and quote fields checked.
+Hero video playback, muted state and pause control confirmed in browser. Reused demonstration video is not attributed as a client project. Reduced-motion support included.
+
+Contact facts and 100% recommendation from 104 reviews come from supplied Facebook profile. No address, service region, insurance or testimonial wording invented.
+
+After upload: public social checks and live mobile performance. Search Console, sitemap submission, indexing, GBP and local links require relevant deployment/account access. Confirm live domain and follow README before enabling indexing.
