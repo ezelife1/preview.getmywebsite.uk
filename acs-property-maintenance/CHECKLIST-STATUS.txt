@@ -1,0 +1,12 @@
+ACS PROPERTY MAINTENANCE — BUILD VERIFICATION
+
+1 PASS: Correct Call links tel:+447845526202 throughout.
+2 PASS: Correct WhatsApp 447845526202 throughout; form includes name, service, postcode and project details. Logic checked without sending.
+3 PASS: Fixed header verified on desktop and mobile.
+4 PASS: Prominent overlapping round logo remains attached and visible after scrolling.
+5 PASS: Floating Call/WhatsApp hidden while hero is visible, shown only when entire hero leaves viewport; browser states checked.
+6 PASS LOCALLY: Unique ACS 1200x630 social image exists and is referenced in Open Graph/secure_url and Twitter on all six pages. Public HTTP/content-type/redirect/crawler checks await upload.
+
+Other checks: Desktop/mobile/tablet visual layout and no horizontal overflow; mobile menu and quote form; full-photo viewer; static project-photo hero; video removed. All 12 project photos included. Local links/fragments, unique titles/descriptions, one H1 per page, schema JSON and responsive image dimensions checked. Every packaged raster and embedded logo image decoded; ZIP integrity checked.
+
+Pending: Owner upload, public sharing and performance checks, confirmed live domain and launch indexing changes. No test call or external message sent.
