@@ -1,0 +1,16 @@
+SOUTH COAST TREE & LANDSCAPES — SIX REQUIRED CHECKS
+
+1. CALL — PASS: every tel link targets +447535124066, the number supplied by the owner. Header, hero, contact, quote and floating access included.
+2. WHATSAPP — PASS: wa.me links and form target 447535124066. Message test verified business, name, selected service, postcode and project details. Mobile fields tested. No test enquiry sent.
+3. FIXED HEADER — PASS: browser computed position fixed; top remained 0 while scrolling.
+4. OVERLAPPING LOGO — PASS: round logo deliberately overlaps the header/hero and remains attached to the fixed header; reviewed desktop, mobile and tablet.
+5. FLOATING CONTACT — PASS: hidden on initial hero; visible after scrolling past hero. Script compares entire hero bottom <= 0; browser states verified.
+6. SOCIAL IMAGE — PASS locally: unique business-specific 1200 x 630 image decoded and viewed, mapped to OG, og:image:secure_url and Twitter across all six pages.
+
+ADDITIONAL VALIDATION
+Internal links/fragments, responsive image widths and dimensions, 16 raster assets, unique titles/descriptions, metadata and JSON schema passed checks. Desktop homepage sections and mobile/tablet hero, tree feature, gallery/about, quote/contact reviewed. No horizontal overflow at tested 375px and 753px content widths. Photo viewer opens a loaded image and closes. Mobile menu tested.
+
+PUBLIC CHECKS PENDING UPLOAD
+Public hosting responses, redirects, social crawler previews and live performance have not been verified. Follow README for preview path and launch-domain/indexing changes.
+
+Photos reused from earlier tree/landscaping sites as requested and presented as illustrative images. No invented project ownership, testimonials, qualifications or email.

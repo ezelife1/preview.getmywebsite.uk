@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preview.getmywebsite.uk/south-coast-tree-landscapes/sitemap.xml
