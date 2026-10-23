@@ -1,0 +1,16 @@
+TRUGRIT DRIVEWAYS — DELIVERY CHECKS
+
+SIX REQUIREMENTS VERIFIED LOCALLY
+1. CALL: every tel link points to +447833729238. Header, hero, quote, contact and floating access included.
+2. WHATSAPP: wa.me links and quote form target 447833729238. Message construction verified with business name, selected service, name, postcode and details. Mobile fields tested. No test enquiry sent.
+3. FIXED HEADER: browser position fixed and top 0 while scrolling.
+4. ATTACHED OVERLAPPING LOGO: round black/gold logo overlaps the header/hero and stays attached to the header; reviewed at desktop, mobile and tablet widths.
+5. FLOATING CONTACT: hidden over the hero; shown after the complete hero passes. Browser states checked; script boundary tests passed at hero bottom 400, 1, 0 and -1, including return to hero.
+6. SOCIAL IMAGE: unique business-specific 1200 x 630 JPEG decoded and visually reviewed; OG, secure_url and Twitter references verified on all six pages.
+
+OTHER CHECKS
+Six pages, internal links/fragments, responsive image widths/dimensions, all 22 raster assets, unique SEO titles/descriptions and schema JSON passed file checks. All ten supplied project photos included. Black screenshot bands/home bars cropped out; photo content retained. No fabricated before/after pairs or reviews.
+Desktop homepage sections inspected. Mobile/tablet hero, full portrait patio feature, quote/contact and tablet about reviewed; mobile menu and form fields tested. No horizontal overflow at tested 375px and 753px content widths. Full portrait viewer loads at original 1536 x 2048 dimensions and closes correctly.
+
+PUBLIC VERIFICATION PENDING OWNER UPLOAD
+Public HTTP responses, redirects, social-crawler previews and live performance not yet checked. README documents preview path and live-domain/indexing changes.
