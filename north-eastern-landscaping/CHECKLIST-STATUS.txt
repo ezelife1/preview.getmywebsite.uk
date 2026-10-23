@@ -1,0 +1,10 @@
+NORTH EASTERN LANDSCAPING — DELIVERY CHECKS
+
+1. Branding/layout: fixed header, attached round logo, photo hero, service strip, introduction, project sections, about, quote, FAQs and contact included.
+2. Contact: correct 07825 156811 Call and WhatsApp links; quote form includes service, name, postcode and details. Message construction tested; no test enquiry sent.
+3. Floating controls: hidden on initial hero; shown after hero leaves view. Mobile navigation and quote field entry checked in browser.
+4. Project imagery: all five supplied photos included. Matching patio before/after paired. Raised-bed portrait retains natural proportions and opens in full-photo viewer. Desktop homepage sections, mobile/tablet hero, portrait, about/contact and garden-projects portrait inspected in browser. No horizontal overflow at tested mobile/tablet widths.
+5. Page/asset checks: six HTML pages; internal links, responsive image dimensions, raster decoding, unique SEO, structured data and phone URLs passed local checks.
+6. Social/launch: unique 1200 x 630 social card included and referenced by OG, secure_url and Twitter metadata. Public response headers, redirects, crawler previews and live performance are PENDING OWNER UPLOAD. Preview noindex setting and live-domain changes documented in README.
+
+This package has not been published. Browser checks used a local preview.
