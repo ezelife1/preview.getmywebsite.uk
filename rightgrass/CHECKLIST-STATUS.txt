@@ -1,0 +1,23 @@
+RIGHTGRASS — CONTACT & VIDEO UPDATE — 24 OCTOBER 2026
+
+PASS 1. CALL: tel:+447932728003 throughout all six pages. Matches supplied Facebook screenshot, 07932 728003.
+PASS 2. WHATSAPP: https://wa.me/447932728003 throughout all pages. Enquiry form builds the message with name, postcode, service and details; recipient and encoding tested. No message sent and recipient's WhatsApp account registration not independently confirmed.
+PASS 3. FIXED HEADER: position fixed; remains at top while scrolling, browser verified.
+PASS 4. OVERLAPPING LOGO: attached to fixed header; 106px logo extends below 76px mobile header; desktop 164px logo below 90px header. Browser verified.
+PASS 5. PERSISTENT CONTACT: hidden initially, appears only when hero bottom passes above viewport; hides again on return. Browser verified hidden on hero across six pages and visible past hero. Privacy uses its title as the scroll sentinel.
+PASS 6. SOCIAL IMAGE: existing unique Rightgrass JPEG is 1200x630, visually checked, linked by OG and Twitter metadata on all six pages.
+
+Email: mailto:rightgrass@hotmail.co.uk throughout all six pages, matching screenshot.
+Watch us work: two full portrait videos; no cropping, native mobile controls, playsinline, poster images, click to play, no autoplay, preload none. One video pauses when the other starts. Both played in browser with readyState 4 and advancing time.
+Responsive: all six pages checked at 320px content width without horizontal overflow. Homepage additionally checked at 305px, 375px, tablet and desktop; video cards stack on phone. Mobile menu opens. Form fields use 16px text.
+Files: local href/src/poster/gallery paths and page fragments checked; one H1 per page; JavaScript syntax passed. Full uploaded video durations retained, H.264/AAC MP4, fast-start enabled.
+
+The original preview canonical domain and noindex directives remain as supplied. Before production launch, replace https://preview.getmywebsite.uk/rightgrass/ with the final domain in page metadata, JSON-LD, sitemap and robots.txt, and set the desired indexing policy. No unconfirmed production domain was invented.
+
+VISUAL CORRECTION — 24 OCTOBER 2026
+Removed near-duplicate patio photograph from homepage gallery.
+Gallery thumbnails now use consistent 4:3 frames; complete originals remain in the lightbox.
+Before/after thumbnails use equal 4:5 frames; complete originals remain in the lightbox.
+Browser measured desktop patio cards at 522.875px each and before/after at 532.25px each. Mobile at 320px: patio cards 269px each and before/after 411px each, no horizontal overflow.
+Logo reduces to 112px desktop / 92px mobile after the hero, remains attached to the fixed header and overlaps its lower edge. Header is opaque.
+Mobile lightbox opened the complete stone patio image successfully. Floating contacts hidden over hero, visible after hero. Six contact and social requirements retained.
