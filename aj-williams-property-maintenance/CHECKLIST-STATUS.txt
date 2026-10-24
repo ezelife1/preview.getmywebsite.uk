@@ -1,0 +1,17 @@
+A.J. WILLIAMS PROPERTY MAINTENANCE — DELIVERY CHECKS
+
+1. CALL — PASS: all tel links target +447875125621, from the supplied business branding.
+2. WHATSAPP — PASS: direct links and quote form target 447875125621. Message construction includes business, name, service, postcode and details. Mobile form fields tested. No enquiry sent.
+3. FIXED HEADER — PASS: computed browser position fixed, top remains 0 while scrolling.
+4. ATTACHED OVERLAPPING LOGO — PASS: original house branding adapted to a round logo, prominently overlapping the header/hero and attached to fixed header. Desktop/mobile/tablet reviewed.
+5. FLOATING CONTACT — PASS: hidden while on hero, shown after entire hero passes. Browser states and script boundary tests at hero bottom 400, 1, 0, -1 and return passed.
+6. SOCIAL IMAGE — PASS locally: unique business-specific 1200 x 630 JPEG decoded and visually inspected. OG, secure_url and Twitter references verified on six pages.
+7. GALLERY POP-UPS — PASS: all nine project photographs have enlargement controls. Mobile viewer loaded the complete 1440 x 1920 door image without distortion; close button works. Native dialog provides Escape close. Original image labels retained; before/after pairs preserve natural proportions and stack on mobile.
+
+ADDITIONAL CHECKS
+Six pages; internal links/fragments; responsive image dimensions/widths; 20 decoded raster assets; unique titles/descriptions; schema JSON and all nine supplied project photographs verified. Email links use ajwilliams.propertymaintenance@gmail.com.
+Desktop homepage sections, all four project comparisons and image ratios reviewed. Mobile/tablet hero, comparison, quote/contact and tablet about reviewed. Mobile menu and form fields tested. No horizontal overflow at tested 375px and 753px content widths. Mobile header text sizing issue found and corrected during QA.
+
+LIMITS
+Updated from supplied profile: East Sussex and surrounding areas; free quotations. Added to page copy, metadata, schema and social image.
+Public hosting HTTP responses, redirects, social-crawler previews and live performance await owner upload. README documents preview path and launch-domain/indexing changes.
