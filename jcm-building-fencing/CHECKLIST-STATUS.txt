@@ -1,0 +1,35 @@
+JCM — DELIVERY CHECKS — 24 OCTOBER 2026
+
+1. PASS — CALL
+All six pages link to tel:+447982860979. Header, hero, quote area, footer and floating contacts use the supplied number. No call placed.
+
+2. PASS — WHATSAPP
+Key links use https://wa.me/447982860979. Form recipient and URL encoding tested with name, selected service, area/postcode and multiline details including special characters. No message sent; account registration not independently tested.
+
+3. PASS — FIXED HEADER
+Actual browser check: header remains at viewport top after navigating past hero.
+
+4. PASS — OVERLAPPING LOGO
+164px desktop / 106px mobile initially. Attached to fixed header; compacts to 112px desktop / 92px mobile past hero, retaining overlap and readability. Browser checked.
+
+5. PASS — FLOATING CALL & WHATSAPP
+HTML hidden attribute and CSS remove the buttons from rendering/focus over hero. They show only when the hero bottom passes above viewport. Browser checked hidden initially and visible after hero. Privacy uses its page heading as the scroll sentinel.
+
+6. PASS — SOCIAL IMAGE FILE AND METADATA
+Unique JCM image, 1200x630, visually inspected. OG, secure image and Twitter image metadata on all six pages match the exact included filename and intended public preview base:
+https://preview.getmywebsite.uk/jcm-building-fencing/assets/jcm-social-v1.jpg
+Public fetch/crawler response awaits user upload. No claim of public availability or social-platform rendering is made.
+
+DESIGN AND RESPONSIVENESS
+Original elmbespokegardendesigns.zip HTML/CSS used as source. Elm header, hero, services strip, image stack, dark feature, two-column project gallery, editorial image section, about, quote form and contact/footer composition retained. JCM orange, black and white identity applied. No website preview images delivered.
+Desktop gallery cards measured equal at approximately 525px. Mobile gallery frames are consistent 4:3. Featured photo pairs have equal 4:5 frames; full uncropped original images remain available in lightbox.
+All six pages checked in browser at 320px content width: no horizontal overflow. Homepage additionally checked at tablet 768px and desktop 1348px. Mobile menu, gallery lightbox and vertically stacked videos checked.
+
+VIDEOS
+Both full uploads retained: H.264/AAC MP4, fast-start enabled; approximately 88.77s and 34.69s. Original audio retained. Plays inline on request with controls, poster images, preload none and no autoplay. Both reached readyState 4 with advancing playback in browser; starting second paused first.
+
+FILE CHECKS
+Every JPEG, PNG and WebP decoded. Responsive srcset width descriptors match actual files. Local href/src/poster/gallery links and all internal fragments verified. One H1 per page, unique title and description on six pages, parseable schema. JavaScript syntax and WhatsApp form composition checked.
+
+PUBLIC/SEO LIMITS
+Preview noindex and Disallow retained intentionally. A production domain and business location have not been provided; none invented. Live hosting, crawler access, real-device performance, indexing, Search Console and GBP checks await hosting/account access.
