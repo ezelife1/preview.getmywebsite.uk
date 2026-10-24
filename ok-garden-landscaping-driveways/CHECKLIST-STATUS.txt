@@ -1,0 +1,21 @@
+O.K GARDEN — DELIVERY CHECKS
+
+1 CALL: PASS — all call links use +447449126106.
+2 WHATSAPP: PASS — direct links and enquiry form use 447449126106; generated message includes business, name, service, postcode and details. Mobile form fields tested. No enquiry sent.
+3 FIXED HEADER: PASS — browser computed fixed positioning; top remains 0 while scrolling.
+4 ATTACHED OVERLAPPING ROUND LOGO: PASS — logo overlaps header and hero; desktop, phone and tablet layouts reviewed.
+5 FLOATING CONTACT: PASS — hidden on initial hero; appears after whole hero has passed. Script boundaries tested at hero bottom 1, 0, -1 and returning to 400.
+6 SOCIAL IMAGE: PASS locally — unique 1200x630 business image visually reviewed; OG/secure_url/Twitter mapping checked on all six pages. Public crawler response awaits upload.
+7 GALLERY ENLARGEMENT: PASS — all 12 supplied project photos have enlargement controls. Mobile driveway viewer opened full image, fitted without horizontal overflow and closed successfully. Escape close supported by native dialog. Before/after photos preserve natural proportions and stack on phones.
+
+Additional checks: six pages, unique page titles/descriptions, JSON schema, internal links and fragments, phone and WhatsApp destinations, responsive image dimensions and all 26 raster assets decoded. Desktop homepage layout and service hero reviewed. Mobile/tablet hero, mobile form and menu checked. Desktop and tested 375px phone content had no horizontal overflow. Mobile photo viewer overflow found and corrected.
+
+Launch limitation: this is the completed static ZIP, not a live deployment. README explains domain/indexing changes and upload. No invented reviews, qualifications, email or wider service area.
+
+VISUAL LAYOUT REPAIR — 24 OCTOBER 2026
+Gallery thumbnails now use consistent 4:3 frames and equal caption areas. Before/after thumbnails use consistent 4:5 frames. Full uncropped original photographs remain available in the lightbox.
+Desktop browser checks: driveway before/after 532px each; main gallery 364px each; patio before/after 589px each; garden gallery 285px each.
+Mobile browser checks: all six pages at 320px content width have no horizontal overflow; gallery cards 269px each and before/after 411px each. Mobile menu and full-photo lightbox checked.
+Logo compacts after hero to 112px desktop / 92px mobile; stays attached to fixed header, overlapping its lower edge. Header made opaque. Floating contacts hidden over hero and shown after hero; browser verified.
+Preserved and checked Call +447449126106 and WhatsApp 447449126106. No outbound call or message placed.
+Existing unique business-specific 1200x630 social image visually inspected and verified in OG and Twitter metadata on all six pages. Local file references and internal fragments checked. JavaScript syntax passed.
