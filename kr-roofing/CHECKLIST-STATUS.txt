@@ -1,0 +1,29 @@
+KR ROOFING — VERIFIED 25 OCTOBER 2026
+
+1. CALL — PASS
+All six pages contain tel:+447423584041. Number supplied directly by the user: 07423 584041. Header, hero, footer, contact areas and floating links checked. No outbound call placed.
+
+2. WHATSAPP — PASS
+Key links and quote form use https://wa.me/447423584041. Form generation tested with name, selected service, area/postcode, multiline details and special characters. Correct business salutation. No message sent; recipient account registration not independently tested.
+
+3. FIXED HEADER — PASS
+Fixed header stays at viewport top while scrolled; actual browser verified.
+
+4. PROMINENT OVERLAPPING LOGO — PASS
+Original silver KR Roofing artwork in round black branded header treatment, attached to fixed header. 164px desktop / 106px mobile over hero; compacts to 112px / 92px after hero while retaining overlap. Browser checked.
+
+5. FLOATING CONTACT CONTROLS — PASS
+Hidden attribute removes controls from view and keyboard focus over hero. They show only after hero bottom passes above viewport. Browser verified hidden at top and visible after scrolling. Privacy uses page heading as sentinel.
+
+6. SOCIAL IMAGE FILE/MAPPING — PASS
+Unique business-specific 1200x630 image visually inspected and decoded. Wave divider, centred circular logo, black/silver brand, location and phone. Open Graph, secure image and Twitter metadata on all six pages point to the exact included file at the intended public preview base. Public fetching/crawler response and social platform rendering await user upload; public availability is not claimed.
+
+LAYOUT / CONTENT
+Elm layout retained: overlapping logo/header, image-led hero, service strip, image stack, dark photo feature, two-column gallery, editorial details section, about, quote form and strong contact/footer.
+All eleven uploaded project photographs used. No invented before/after claims. 100% recommendation from 5 Facebook reviews is taken from supplied screenshot; no review quotes invented.
+Consistent image frame heights: desktop gallery approximately 525px per card; mobile gallery 275px per card. Featured image pair has matching heights. Full uncropped photographs open in native dialog.
+Actual browser verified all six pages at 320px content width: no horizontal overflow. Homepage tablet 768px and desktop 1348px checked. Mobile menu, full-photo viewer, header and scroll-triggered contact links checked.
+
+FILES / SEO
+One H1 per page, unique titles/descriptions, parseable RoofingContractor schema. Every PNG/JPEG/WebP decoded, including every responsive size. Srcset widths match actual images. All local links, assets and internal fragments checked. JavaScript syntax and form-message tests pass.
+No email or full street address supplied; none invented. Preview noindex and robots disallow intentional. Live crawler/performance, indexing/Search Console and GBP checks require hosting/account access.

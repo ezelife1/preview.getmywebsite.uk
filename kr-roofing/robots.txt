@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://preview.getmywebsite.uk/kr-roofing/sitemap.xml
