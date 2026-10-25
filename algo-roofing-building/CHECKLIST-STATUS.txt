@@ -1,0 +1,8 @@
+1 PASS: all Call links +447361230123, verified against supplied van/flyer.
+2 PASS: WhatsApp links 447361230123; quote form tested with all fields and selected service.
+3 PASS: fixed header remains visible while scrolling, browser verified.
+4 PASS: round client logo overlaps header and hero, 164px desktop / 106px mobile, 92px mobile after hero.
+5 PASS: floating Call and WhatsApp hidden initially with hidden attribute; shown only when whole hero has scrolled above viewport. Browser verified.
+6 LOCAL PASS / PUBLIC PENDING: unique 1200x630 wavy social card at assets/algo-social-v1.jpg. All six pages reference the exact image at https://preview.getmywebsite.uk/algo-roofing-building/assets/algo-social-v1.jpg in Open Graph and Twitter tags. Public fetch not yet verified; requires upload.
+All six pages checked at mobile width320 without overflow; desktop home inspected at1348. Mobile menu, gallery modal, scroll behaviour tested. All local links, fragments, image decodes, responsive width descriptors, metadata, schema and JS syntax checked.
+SEO launch, live performance, Search Console and indexing remain post-upload tasks.
