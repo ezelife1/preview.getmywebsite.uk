@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://preview.getmywebsite.uk/jla-landscapes/sitemap.xml

@@ -1,0 +1,31 @@
+JLA LANDSCAPES — VERIFIED 25 OCTOBER 2026
+
+1. CALL — PASS
+All six pages use tel:+447763814118. Supplied screenshot number: 07763 814118. Header, hero, contact, footer and floating links checked. No call placed.
+
+2. WHATSAPP — PASS
+Links and enquiry form use https://wa.me/447763814118. Form recipient, business greeting, selected service, name, location and project details tested, including special characters and line breaks. No message sent; WhatsApp account registration not independently tested.
+
+3. FIXED HEADER — PASS
+Actual browser check confirms header stays at viewport top after scrolling.
+
+4. OVERLAPPING LOGO — PASS
+Original JLA wheelbarrow artwork retained within round branded treatment attached to fixed header. 164px desktop / 106px mobile initially, compacting to 112px / 92px after hero while retaining overlap. Browser checked.
+
+5. FLOATING CALL/WHATSAPP — PASS
+Hidden attribute removes controls from rendering and keyboard focus over hero. Controls become visible only after hero bottom passes above viewport. Browser verified initial hidden state on six pages and visible after scrolling. Privacy uses its heading as scroll sentinel.
+
+6. SOCIAL IMAGE FILE/METADATA — PASS
+Unique business-specific 1200x630 JPEG visually inspected and decoded. Middle blue wave, central round client logo, project photo, location, services and phone. OG, secure image and Twitter mappings verified on all six pages against the exact included filename and intended public upload base. Public image fetching/crawler response awaits upload; no public availability claim made.
+
+DESIGN / IMAGES
+Original Elm design composition retained. JLA blue/black/white branding. Thirteen project photos integrated. Desktop gallery cards equal at approximately 525px; mobile cards 271px each. Before/after path originals remain uncropped, side by side on desktop and stacked on mobile. Full-photo viewer tested on mobile.
+
+BROWSER
+All six pages at 320px content width: no horizontal overflow. Homepage tablet 768px and desktop 1348px checked. Mobile menu opened; photo lightbox opened correct original. Header, logo and contact scroll state tested.
+
+FILES / SEO
+All PNG/JPEG/WebP assets decoded including responsive versions. Srcset widths match actual files. Local references and page fragments checked. Six unique titles and descriptions; one H1 per page; parseable business schema using supplied town and contact. JavaScript syntax and enquiry message tests passed. No other client's names or phone numbers remain in HTML or JS.
+
+LIMITS
+No email or full street address supplied. No extra service towns, reviews or credentials invented. Public social image fetching, live performance, indexing, Search Console and GBP checks require upload/account access. Preview noindex/disallow is intentional until confirmed production launch.
