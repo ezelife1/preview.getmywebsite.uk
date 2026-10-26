@@ -1,0 +1,15 @@
+SIX REQUIRED CHECKS
+1. Call: all tel links checked against supplied number +447395112598.
+2. WhatsApp: all wa.me buttons and form use 447395112598. Form encoding tested with name, chosen service, postcode and multiline details. No message sent.
+3. Fixed scrolling header: desktop and mobile browser checked.
+4. Round overlapping logo: 164px desktop / 106px narrow mobile initially, 112px / 92px after hero; stays attached to header.
+5. Floating contact controls: hidden attribute initially removes focus; shown only after full hero scroll. Desktop/mobile checked.
+6. Unique social image: decoded, visually inspected, exactly 1200x630; OG and Twitter tags on all pages map to the included JPEG at the intended public preview address. PUBLIC ACCESS/CRAWLER CHECK PENDING USER UPLOAD.
+
+OTHER VALIDATION
+All six pages fit 320px without horizontal overflow. Mobile menu opens/closes. Gallery enlargements open on desktop/mobile and retain full before-and-after images. Hero video plays muted, looping and full width; pause works. Full video decode passed. Every image including responsive sizes decoded. Unique title/description and one H1 per page, local links/fragments, schema JSON, actual srcset dimensions and exact contact values checked. JavaScript syntax and form payload checked.
+
+No fabricated reviews, ratings, insurance claims, prices or street address. Service/location details based on supplied material. Shared hero clip is illustrative pressure-washing footage reused as requested.
+Live performance, indexing, Search Console and public social verification remain pending hosting/deployment access.
+
+GALLERY REVISION: consistent-height uncropped image frames, compact three-column desktop grid, two-column tablet and single-column mobile. Equal card sizing browser checked.
