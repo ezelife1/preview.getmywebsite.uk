@@ -1,0 +1,10 @@
+CHECKLIST
+1. Call links checked: +447983533963, matching supplied business profile.
+2. WhatsApp buttons/form use 447983533963. Form recipient and encoded name, service, postcode and multiline details tested without sending.
+3. Fixed header browser checked.
+4. Prominent overlapping round logo stays attached to fixed header. Desktop/mobile checked.
+5. Floating contacts hidden with hidden attribute over hero and shown after full hero scroll. Desktop/mobile checked.
+6. Unique social image visually checked and decoded at 1200x630. All pages reference correct public preview path in OG and Twitter. Public fetch/crawler check PENDING UPLOAD.
+
+All six pages fit 320px without horizontal overflow. Compact gallery cards have consistent dimensions and full images with object-fit contain. Both videos play; starting the second pauses the first. Both complete video files decoded. HTML local links/fragments, unique metadata, image dimensions/srcsets, schema JSON, images and JS syntax checked.
+Live performance, indexing and Search Console checks pending deployment/access.
