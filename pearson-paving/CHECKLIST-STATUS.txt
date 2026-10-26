@@ -1,0 +1,10 @@
+BUILD CHECKLIST
+1. Call links: published number 07938 554077 consistently used.
+2. WhatsApp buttons and form: same recipient; encoded service and entered details tested. Registration unconfirmed.
+3. Fixed header: browser checked.
+4. Round overlapping logo: desktop and mobile checked.
+5. Floating contacts: hidden initially, shown after hero, browser checked. Hidden attribute removes focus.
+6. Social image: unique 1200x630 image decoded and visually checked. OG and Twitter metadata match packaged file on all six pages. PUBLIC CHECK PENDING UPLOAD; not fully complete.
+
+All six pages fit 320px viewport without horizontal overflow. Mobile menu, gallery enlargement and both video playback checked. Video files fully decoded. HTML/schema/local links, images, srcsets and JS checked. No autoplay.
+Live hosting, mobile performance, Search Console and indexing checks remain pending deployment/access.
