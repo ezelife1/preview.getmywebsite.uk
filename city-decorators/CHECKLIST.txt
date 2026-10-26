@@ -1,0 +1,12 @@
+CITY DECORATORS CHECKLIST — 26 October 2026
+
+1 PASS: All Call links use +447471930170.
+2 PASS: WhatsApp buttons and form use 447471930170; form tested with service, name, postcode and multiline project details. No message sent.
+3 PASS: Fixed header checked in desktop/mobile browser.
+4 PASS: Round logo overlaps header/hero; desktop 164px, scrolled 112px; mobile 106px, scrolled 92px.
+5 PASS: Floating contacts hidden and out of focus over hero; shown after full hero passes. Desktop/mobile verified.
+6 LOCAL CHECKS PASS / PUBLIC CHECK PENDING UPLOAD: Unique 1200x630 JPEG decoded, correct public path referenced by Open Graph and Twitter metadata on every page. Public image availability has not been verified before upload.
+
+All six pages checked at 320px with no horizontal overflow. Desktop gallery frames equal-sized, photos contained, full-image dialog tested. All packaged images decoded. One H1 per page, distinct page metadata, schema and local paths checked. JS syntax checked.
+
+Video section and navigation link removed as requested. No invented reviews, ratings or credentials.
