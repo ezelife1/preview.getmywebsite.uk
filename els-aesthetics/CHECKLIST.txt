@@ -1,0 +1,13 @@
+ELS AESTHETICS — VERIFICATION
+
+1 PASS — all clickable Call links use +447411805274.
+2 PASS — WhatsApp buttons and form use 447411805274. Form tested for name, selected treatment, preferred time and question, including special characters and line breaks.
+3 PASS — fixed header remains visible on desktop/mobile.
+4 PASS — round ivory/gold logo overlaps hero and remains attached to header: 156px desktop, 104px scrolled; 102px at narrow mobile, 88px scrolled.
+5 PASS — floating Call/WhatsApp hidden via hidden attribute over the entire hero and shown after its bottom passes the viewport top. Hidden controls are out of keyboard focus. Desktop/mobile browser checked.
+6 LOCAL PASS / PUBLIC CHECK PENDING UPLOAD — unique 1200x630 social JPEG with wavy divider and round brand logo; all six pages use matching public Open Graph and Twitter URLs. Packaged image decoded. No claim of live social verification before upload.
+
+Bespoke boutique design authorised by user; Elm composition requirement overridden for this build.
+All six pages fit 320px without horizontal overflow. Photo gallery frames compact and equal-sized; contain fit preserves all embedded wording. Lightbox opens full photos. All three videos played in browser and fully decoded with ffmpeg. All packaged images decoded. Responsive source widths, local links, one H1 per page, structured data and unique metadata checked. JavaScript syntax and form logic checked.
+
+Luxury design revision: flowing ivory and gold texture throughout, olive contrast, self-hosted editorial typography and a balanced four-by-two desktop results gallery. All comparison photographs remain uncropped. Mobile layouts verified at 320px.
