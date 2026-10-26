@@ -1,0 +1,8 @@
+1 PASS: verified Call number +447710588900.
+2 PASS: WhatsApp 447710588900; selected service and all entered fields tested.
+3 PASS: fixed header checked in browser.
+4 PASS: round logo overlaps header/hero, 164px desktop /106px mobile /92px mobile after hero.
+5 PASS: hidden attribute hides floating controls initially and removes focus; appear only when hero bottom <=0. Browser verified.
+6 LOCAL PASS / PUBLIC PENDING: unique wavy 1200x630 social card; OG/Twitter in all six pages match https://preview.getmywebsite.uk/gregos-property-landscaping/assets/gregos-social-v1.jpg. Public image fetch requires upload.
+All six pages tested at mobile width320 without overflow. Desktop home inspected. Menu, gallery dialog, scrolling controls tested. All images decoded; links, fragments, srcset widths, schema, metadata, JS syntax and form payload checked.
+Both videos integrated and fully decoded. Browser playback verified for each; mobile videos 282x501 at320px viewport without overflow. No autoplay; preload none; pause the other video on play. Live performance, Search Console and indexing are post-upload tasks.
