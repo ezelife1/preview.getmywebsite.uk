@@ -1,0 +1,10 @@
+1 PASS: every Call link uses +447835227213, matching supplied logo/profile.
+2 PASS: WhatsApp links 447835227213; form tested with selected service and all entered fields.
+3 PASS: fixed header visible while scrolling, browser verified.
+4 PASS: round navy/pink logo overlaps header and hero; 164px desktop, 106px mobile, 92px mobile after hero.
+5 PASS: floating controls hidden initially via hidden attribute and shown only after hero bottom <=0. Browser verified.
+6 LOCAL PASS / PUBLIC PENDING: unique 1200x630 wavy card at assets/mels-social-v1.jpg; all six pages map OG and Twitter to https://preview.getmywebsite.uk/mels-cleaning-services/assets/mels-social-v1.jpg. Public fetch not yet verified; requires upload.
+Six pages checked at mobile width320 with no horizontal overflow. Desktop home inspected at1348px. Mobile menu, gallery dialog, floating contacts and owner portrait loading/proportions verified.
+Every packaged image decoded; responsive image width descriptors, local links/fragments, schema, social metadata and JS syntax checked.
+Supplied sideways images rotated upright. No invented before/after pairs, addresses, prices, credentials or reviews. DBS and insurance statements come from supplied business profile.
+Live performance, Search Console, sitemap submission and indexing remain post-upload work.
