@@ -1,0 +1,12 @@
+BUILD CHECKLIST — 26 October 2026
+
+1 PASS: Every tel link uses +447506246560.
+2 PASS: WhatsApp buttons and enquiry form use 447506246560; selected service, name, postcode and multiline details verified.
+3 PASS: Fixed header stays at viewport top, desktop and mobile.
+4 PASS: Prominent round logo attached to header, overlaps hero; desktop 164px/112px scrolled; mobile 106px/92px scrolled.
+5 PASS: Floating contacts use hidden attribute over entire hero, removing keyboard focus; shown only once hero bottom passes viewport top. Browser checked desktop/mobile.
+6 LOCAL PASS / PUBLIC CHECK PENDING UPLOAD: Unique copper/black business social card with wave and logo, exactly 1200x630, referenced in Open Graph and Twitter across six pages. Packaged JPEG decoded. Public access cannot be verified before upload.
+
+All six pages fit 320px without horizontal overflow. Desktop gallery frames equal-sized with contain fit. Full-photo dialog tested. Mobile menu closes after selection. Both videos played in browser and fully decoded with ffmpeg. All image assets decoded; srcset widths, local links, one H1 per page, unique metadata, schema and JavaScript checked.
+
+Facebook 100% recommendation score and 34 reviews come from supplied screenshot. No individual reviews, insurance or credentials invented.
