@@ -1,0 +1,9 @@
+1 PASS: all Call links +447563179192.
+2 PASS: WhatsApp links 447563179192; form tested with selected service and all entered fields.
+3 PASS: fixed header verified in browser.
+4 PASS: round logo overlaps header; mobile 106px, scrolling 92px.
+5 PASS: floating contacts hidden initially; visible only after hero bottom <=0; hidden attribute removes keyboard focus. Browser verified.
+6 LOCAL PASS / PUBLIC PENDING: unique 1200x630 wavy social card included at assets/pj-social-v1.jpg. All six pages map OG and Twitter metadata to https://preview.getmywebsite.uk/pj-fencing-groundcare/assets/pj-social-v1.jpg. Public fetch requires upload; not yet verified.
+Six HTML pages checked at mobile width320 without horizontal overflow. Desktop home checked at1348px. Gallery modal and mobile menu tested.
+Every image decoded; responsive width descriptors checked. All links, fragments, structured data and JS syntax checked.
+No fabricated reviews, addresses, credentials or service areas. Duplicate JLA image excluded.
