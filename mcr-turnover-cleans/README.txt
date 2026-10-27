@@ -1,0 +1,1 @@
+Call and WhatsApp numbers were not supplied. WhatsApp buttons show a notice; email is active. Add confirmed contact numbers when available. Add absolute canonical and social-image URLs and sitemap after the public domain is known.
