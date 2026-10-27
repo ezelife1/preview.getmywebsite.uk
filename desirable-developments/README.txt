@@ -1,0 +1,1 @@
+Before publishing: set each page canonical URL and Open Graph/Twitter image URL to its real public HTTPS address, then add a sitemap.xml with the final domain and add its URL to robots.txt. The domain was not supplied.
