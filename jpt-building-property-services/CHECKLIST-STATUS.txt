@@ -1,0 +1,11 @@
+VERIFIED
+1 Call links use +441483490438.
+2 Email contact replaces WhatsApp per instruction; no invented WhatsApp number.
+3 Fixed header and mobile menu browser checked.
+4 Round JPT logo overlaps header and stays attached while scrolling.
+5 Floating Call/Email hidden initially and visible after whole hero; browser checked.
+6 Designed RGB JPEG social image, 1200 x 630, wired with absolute OG/Twitter URLs on all 11 pages.
+7 Separate service pages, unique titles/descriptions, domain-specific canonical tags, JSON schema, internal links and sitemap.
+8 Email draft contains name, email, optional phone, chosen service, postcode and project details; correct recipient/subject verified without sending.
+9 All local page/assets/fragment links checked. JS syntax checked. Desktop and phone layouts inspected. Archive integrity checked.
+10 Robots allows all crawlers, explicitly includes Facebook; live fetch remains a post-deployment check.
