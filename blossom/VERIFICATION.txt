@@ -1,0 +1,15 @@
+BUILD CHECKS PASSED
+1. Call links: tel:+447470130114 throughout.
+2. WhatsApp links: https://wa.me/447470130114. Enquiry tested with all six fields and selected treatment; email route also tested.
+3. Fixed scrolling header checked in desktop and mobile browser.
+4. Round client logo overlaps header and remains attached while scrolling: desktop 164px, mobile 106px.
+5. Floating controls hidden/unfocusable while hero is visible, shown only at hero bottom <= 0. Boundary logic tested; mobile browser checked after hero.
+6. Unique Blossom sharing image verified at 1200x630, linked in OG and Twitter metadata on every page.
+
+Additional: mobile navigation and gallery dialog checked; no horizontal overflow on phone-sized viewport. Both videos load with duration and native controls. All internal file links and fragments checked. Eleven unique page titles and descriptions. Structured data parses. Domain/path configuration helper tested for repeatability.
+
+Public deployment and social-platform scrape verification: PENDING.
+
+Desktop gallery correction: homepage four photos in two rows; gallery ten photos in five rows; about two photos in one row. Browser computed layout confirms paired rows. All ten supplied photos remain in the full gallery.
+
+Compact desktop gallery correction: homepage four 275x290 image frames in one row; full gallery ten 233x270 image frames in two rows of five at the checked desktop viewport. Images remain uncropped with contain; tablet/mobile use two columns.
