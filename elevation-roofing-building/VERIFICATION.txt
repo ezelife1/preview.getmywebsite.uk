@@ -1,0 +1,11 @@
+CORE CHECKLIST PASSED
+1. Call links use tel:+447805659157 throughout.
+2. WhatsApp links use https://wa.me/447805659157; form tested with all six fields including selected service. Email route also tested.
+3. Fixed header checked on desktop and mobile.
+4. Supplied round logo overlaps header/hero and remains attached while scrolling; desktop 164px, mobile 106px at checked viewports.
+5. Floating Call/WhatsApp hidden and unfocusable over entire hero; shown only at hero.bottom <= 0. Boundary logic and rendered post-hero state checked.
+6. Unique Elevation 1200x630 image verified and wired into OG and Twitter metadata on every page with absolute HTTPS paths.
+
+13 pages: eight services, homepage, gallery, about, contact and privacy. Desktop homepage gallery six compact 373x270 frames in two rows of three. Full gallery nine photos in three rows of three; two service graphics separately. No orphaned desktop image rows. All images have full-image viewer access. Mobile menu and viewer tested; no horizontal overflow. Internal references/fragments, unique titles/descriptions, structured data and image integrity passed. Domain helper tested for path changes and repeatability.
+
+Live public page/image fetch and social-platform scrape verification remain PENDING until deployment.
