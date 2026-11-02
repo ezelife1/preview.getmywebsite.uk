@@ -1,0 +1,3 @@
+PASSED LOCAL CHECKS
+Call and WhatsApp verified number; all six form fields and selected service preserved; fixed desktop/mobile header; overlapping logo attached during scrolling; floating links hidden with hidden attribute throughout hero and shown at bottom<=0; unique 1200x630 image in OG and Twitter; image integrity; internal links; JSON-LD; mobile menu; photo lightbox; no mobile horizontal overflow; compact balanced eight-photo gallery.
+PENDING: actual public URL (user selected Set later), absolute production metadata configuration and live fetch/platform social verification. Run configure-domain.py with the actual URL before launch.
