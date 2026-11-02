@@ -1,0 +1,11 @@
+CORE CHECKLIST PASSED
+Call: salon tel:+441614740736.
+WhatsApp: Sylvia beauty line https://wa.me/447901795352 from supplied posters. Clearly labelled beauty enquiries; salon email separate. All six enquiry fields including treatment tested in both channels.
+Fixed header with attached overlapping round client logo verified in desktop/mobile browser.
+Floating contacts hidden and unfocusable over entire hero, shown at hero.bottom <= 0; boundary logic and rendered post-hero state verified.
+Unique 1200x630 Blossom Stockport social image checked and wired into OG/Twitter on all 11 pages.
+
+Compact image sizing: homepage four 275x290 frames; gallery first row four 275x270 frames and second row three 373x270 frames at checked desktop viewport. All full photos preserved; viewer tested. Mobile has no horizontal overflow. Both videos load with native controls and durations.
+Page references, fragments, unique titles/descriptions, JSON-LD, image integrity and repeatable domain/path helper passed.
+
+Live public page/image and social-platform scrape verification: PENDING until deployment.
