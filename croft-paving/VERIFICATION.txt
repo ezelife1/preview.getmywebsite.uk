@@ -1,0 +1,3 @@
+LOCAL CHECKS PASSED
+11 unique pages; internal references and anchors; telephone/WhatsApp numbers; all six enquiry fields in WhatsApp/email; hero contact visibility boundary; fixed header and overlapping logo; mobile menu and photo lightbox; no mobile horizontal overflow; balanced compact desktop gallery rows; 13 project photos; 2 videos loaded at 128 and 23.3 seconds, controls enabled, no autoplay; all image files decode; 1200x630 social image; absolute metadata and idempotent domain/path helper.
+LIVE CHECKS PENDING: deployment, public page/image fetch and social platform scrape verification.
