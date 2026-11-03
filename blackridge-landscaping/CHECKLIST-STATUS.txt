@@ -1,0 +1,3 @@
+LOCAL CHECKS PASSED
+Call and WhatsApp links verified using supplied number. Enquiry routes preserve all six fields and chosen service. Fixed header and prominently overlapping logo verified at desktop/mobile widths. Floating controls hidden/unfocusable while hero remains in view; visibility boundary tested at bottom 1,0,-1,500. Unique 1200x630 social JPG referenced by OG/Twitter. All page references, image integrity and schema checked. URL configuration helper verified with domain/path. Homepage hero uses supplied landscaped garden photograph. Mobile menu/lightbox work; no mobile horizontal overflow. Ten supplied project photographs included.
+PENDING: public URL configuration (user chose Set later), deployment and live social-card public fetch/platform verification.
