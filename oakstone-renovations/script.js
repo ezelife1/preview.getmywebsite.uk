@@ -1,0 +1,13 @@
+const floating=document.getElementById('floating');
+const hero=document.querySelector('.hero')||document.querySelector('[data-contact-sentinel]');
+function updateContact(){if(!floating||!hero)return;const visible=hero.getBoundingClientRect().bottom<=0;floating.hidden=!visible;floating.classList.toggle('show',visible);document.querySelector('.site-header')?.classList.toggle('past-hero',visible);}
+window.addEventListener('scroll',updateContact,{passive:true});window.addEventListener('resize',updateContact);updateContact();
+const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#main-nav');
+menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}));
+const dialog=document.getElementById('lightbox');document.querySelectorAll('.open-photo').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('large-photo').src=btn.dataset.photo;document.getElementById('large-photo').alt=btn.dataset.caption;document.getElementById('photo-caption').textContent=btn.dataset.caption;dialog.showModal();}));document.getElementById('close-photo')?.addEventListener('click',()=>dialog.close());dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+const videos=[...document.querySelectorAll('video')];videos.forEach(v=>v.addEventListener('play',()=>videos.filter(x=>x!==v).forEach(x=>x.pause())));
+const form=document.getElementById('enquiry'),message=document.getElementById('message'),status=document.getElementById('status');
+function buildDraft(fields){return ['Hello Oakstone, I’d like to enquire about a renovation.','',...Object.entries({Name:fields.name,Phone:fields.phone,Service:fields.service,Postcode:fields.postcode,'Project details':fields.details}).map(([k,v])=>k+': '+(v.trim()||'Not supplied'))].join('\n');}
+form?.addEventListener('submit',e=>{e.preventDefault();message.value=buildDraft(Object.fromEntries(new FormData(form)));document.getElementById('draft').hidden=false;status.textContent='Copy your draft, then paste it into an Instagram message.';message.focus();});
+document.getElementById('copy')?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(message.value);status.textContent='Copied. Open Instagram and paste your message.';}catch{message.focus();message.select();status.textContent='Your message is selected. Copy it and paste it into Instagram.';}});
