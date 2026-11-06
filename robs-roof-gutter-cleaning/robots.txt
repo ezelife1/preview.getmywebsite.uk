@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://preview.getmywebsite.uk/robs-roof-gutter-cleaning/sitemap.xml

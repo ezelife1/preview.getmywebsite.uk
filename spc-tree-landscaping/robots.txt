@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://preview.getmywebsite.uk/spc-tree-landscaping/sitemap.xml

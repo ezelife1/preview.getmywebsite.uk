@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://preview.getmywebsite.uk/acs-property-maintenance/sitemap.xml

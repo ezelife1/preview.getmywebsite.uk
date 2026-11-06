@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://preview.getmywebsite.uk/abl-decking-fencing-resin/sitemap.xml

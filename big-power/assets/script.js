@@ -1,1 +1,0 @@
-const bar=document.getElementById('mobileContact');const hero=document.querySelector('.hero');function showContact(){bar.classList.toggle('show',window.scrollY>hero.offsetHeight-80)}addEventListener('scroll',showContact,{passive:true});showContact();

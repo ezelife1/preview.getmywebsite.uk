@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://rok-fencing.flowy-candy-9700.chatgpt.site/sitemap.xml
