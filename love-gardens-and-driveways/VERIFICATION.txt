@@ -1,0 +1,24 @@
+LOCAL BUILD CHECKS — 7 NOVEMBER 2026
+
+PASS Call links use tel:+447399293621, matching the supplied business screenshot.
+PASS WhatsApp links use https://wa.me/447399293621.
+PASS Quote handler includes name, phone, email, service, area/postcode and details.
+     URL encoding checked with ampersands and multiline text. No message sent.
+PASS Fixed header remains at viewport top after scrolling.
+PASS Round client logo overlaps the header and remains attached while scrolling.
+PASS Floating controls hidden and unfocusable while hero remains visible;
+     shown after hero bottom passes the viewport top, confirmed in browser.
+PASS Unique 1200x630 social sharing card exists and is referenced in static
+     Open Graph and Twitter metadata on all nine pages.
+PASS Mobile menu opens and navigation closes it. Mobile hero spacing inspected
+     at a 390px iframe (375px content width with scrollbar).
+PASS Nine distinct page titles, one H1 per page, local links and fragment targets,
+     all fourteen photos and image variants, JSON-LD and sitemap syntax.
+PASS Local filesystem checks confirm HTML and all assets can be resolved
+     together without a build step.
+PASS Corrected logo inspected: no white patches or transparency holes.
+
+PENDING: Final domain configuration, deployment and public social card fetch/
+platform scrape. Preview metadata is a staging convention, not a tested live URL.
+PENDING: Actual telephone call/WhatsApp message delivery; no calls or messages
+were placed to the business.
