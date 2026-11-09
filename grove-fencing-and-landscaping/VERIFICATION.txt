@@ -1,0 +1,20 @@
+LOCAL BUILD VERIFICATION — 9 NOVEMBER 2026
+
+PASS Call links: tel:+447745452898, matching supplied business details.
+PASS WhatsApp links and quote draft use +44 7745 452898.
+PASS Quote draft includes name, phone, email, selected service, area/postcode,
+     and project details; tested with special characters and multiline text.
+PASS Fixed scrolling header remains at viewport top.
+PASS Round logo overlaps header and remains attached while scrolling.
+PASS Floating contact controls hidden and unfocusable over hero; shown after
+     hero has fully scrolled past. Verified in mobile browser layout.
+PASS Business-specific 1200x630 sharing image, wired into static Open Graph
+     and Twitter metadata on all nine pages.
+PASS Mobile menu opens and closes after navigation.
+PASS Mobile hero text, CTAs, trust row and feature card do not overlap.
+PASS Nine unique page titles and descriptions, one H1 per page, valid JSON-LD
+     and sitemap XML, local link/anchor targets and responsive image widths.
+PASS All six project photos and both service guides decode correctly.
+
+PENDING: Final public URL, deployment, public card fetch and social scrape.
+PENDING: Actual call/message delivery. No test calls or messages were sent.
