@@ -1,0 +1,12 @@
+Active Roofcare Ltd — local verification
+
+1 PASS: Call destinations use tel:+447983652530.
+2 PASS: WhatsApp destinations use wa.me/447983652530. Executed form test checks all six fields, selected service and special-character encoding. No messages sent.
+3 PASS: Fixed header inspected after scrolling.
+4 PASS: Original overlapping logo remains visible with header.
+5 PASS: Floating contacts hidden and unfocusable throughout hero; threshold tested and scrolling inspected.
+6 PASS: Unique 1200x630 business social card and static absolute Open Graph/Twitter metadata on every page.
+
+Nine pages checked for unique titles, one H1, local links, anchors, image dimensions, responsive sources and valid JSON-LD. All seven project/team photos and original logo included. Desktop and mobile menu inspected.
+
+Public URL configuration and live social-platform scraping remain pending. See README before launch.
