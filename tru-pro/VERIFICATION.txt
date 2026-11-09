@@ -1,0 +1,12 @@
+Tru-Pro local verification
+
+1. PASS: All Call links use tel:+447534115257, matching supplied business screenshot.
+2. PASS: WhatsApp links use https://wa.me/447534115257. Script test confirms all six enquiry fields, selected service and special characters are encoded in draft. No message was sent.
+3. PASS: Fixed header visually verified on desktop after scrolling and mobile.
+4. PASS: Prominent overlapping client logo remains attached and visible with scrolling header.
+5. PASS: Floating Call and WhatsApp hidden over hero, revealed after hero bottom passes viewport top; boundary behaviour tested in script and observed in browser.
+6. PASS: Unique Tru-Pro social card exists at 1200x630 and is referenced by static Open Graph and Twitter metadata on every page.
+
+9 unique pages checked; all internal files and anchors resolve; JSON-LD parses; all image files decode. Ten project photos included. Responsive hero, menu and enquiry layout inspected at 390px.
+
+Public URL and live social platform checks remain pending. Metadata currently uses an explicit staging convention and noindex. Configure final URL before launch using README instructions.
