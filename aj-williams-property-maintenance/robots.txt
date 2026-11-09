@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://preview.getmywebsite.uk/aj-williams-property-maintenance/sitemap.xml
