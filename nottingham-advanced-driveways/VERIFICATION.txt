@@ -1,0 +1,12 @@
+Nottingham Advanced Driveways Ltd verification
+
+1 PASS: Call URLs use tel:+447535180686, matching the supplied Facebook screenshot.
+2 PASS: WhatsApp links use wa.me/447535180686. Executed enquiry test verifies all six form values, selected service and encoded special characters. No messages sent.
+3 PASS: Fixed header observed on desktop after scrolling and at mobile width.
+4 PASS: Overlapping client logo remains attached and visible with the header.
+5 PASS: Floating contacts hidden and unfocusable throughout hero, then shown after hero passes. Threshold tested programmatically and visually checked.
+6 PASS: Unique business-specific sharing image is 1200x630; static Open Graph and Twitter references verified on all nine pages.
+
+All local links, anchors, image sources, image dimensions, responsive source widths and JSON-LD checked. Eleven supplied images included, including the matched before and after pair. Both supplied H.264 videos played in browser. Desktop hero and scrolling layouts, mobile hero and menu inspected.
+
+Public domain and live social scraping/platform verification remain pending. Configure final domain before public launch, as described in README.
