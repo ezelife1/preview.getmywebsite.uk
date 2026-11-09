@@ -1,0 +1,8 @@
+Local verification
+9 pages; all referenced local files exist; structured data parses; image files decode.
+Unique J.McK sharing card verified 1200x630; Open Graph and Twitter references verified.
+Desktop and 390px mobile layouts inspected. Fixed header and attached overlapping logo remain visible when scrolling. Floating WhatsApp hidden during hero and shown after hero. Mobile menu opens.
+
+User-authorized contact exception: WhatsApp buttons and enquiry form intentionally do nothing. No Call number has been invented. Working contact checks are therefore not claimed.
+
+Public hosting, final canonical domain and live social card retrieval are pending.
