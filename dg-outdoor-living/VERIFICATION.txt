@@ -1,0 +1,12 @@
+DG Outdoor Living / DIG Landscapes & Garden Design — verification
+
+PASS — Call links use tel:+447496608609.
+PASS — WhatsApp links and draft use wa.me/447496608609; actual script executed to confirm all six fields and selected service. No message sent.
+PASS — fixed header remains visible while scrolling.
+PASS — prominently overlapping DG logo stays attached and visible with the header.
+PASS — floating Call/WhatsApp hidden and unfocusable throughout hero; shown only after hero clears viewport. Threshold checked in both directions and verified in browser.
+PASS — unique 1200 x 630 DG social card exists; absolute Open Graph and Twitter metadata referenced on all pages.
+
+Eleven pages validated: unique titles, one H1, local links/anchors, image dimensions/srcsets and valid structured data. All ten supplied project photographs used. Both supplied videos included with controls, inline mobile playback and no autoplay. Browser verified both videos playing: readyState 4, time advanced, no media error. Desktop and 390px mobile layout/menu reviewed.
+
+Metadata uses the domain shown in supplied screenshot. Build is noindex until launch. Live crawler/image access and Facebook/WhatsApp sharing checks remain pending deployment.
