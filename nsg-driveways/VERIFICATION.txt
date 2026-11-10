@@ -1,0 +1,14 @@
+NSG Driveways Ltd — verification and outstanding setup
+
+1 PASS: All Call links use tel:+447872532224, matching the latest supplied NSG advert.
+2 PASS: WhatsApp links use wa.me/447872532224. Form encoding checked for all six fields, selected service and special characters. No messages sent.
+3 PASS: Fixed header inspected on desktop after scrolling and at mobile width.
+4 PASS: Round logo prominently overlaps the hero and remains attached to the scrolling header.
+5 PASS: Floating controls hidden and unfocusable throughout the hero, appearing only once hero bottom passes zero. 
+6 PASS: Unique NSG 1200x630 sharing image and absolute static Open Graph/Twitter metadata on all nine pages.
+
+Nine pages checked for unique titles, one H1, valid local links and anchors, image dimensions, responsive sources and valid JSON-LD. All twelve supplied project photos included, with matched garden before/after section. Desktop and mobile layouts/menu inspected.
+
+Contact setup complete using the supplied business number. Email omitted because none was supplied.
+
+Live social verification PENDING: public domain not confirmed or deployed. Configure final URL and verify public page/image fetching and social-platform scrape before claiming sharing readiness. See README.
