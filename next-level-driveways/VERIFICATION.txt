@@ -1,0 +1,12 @@
+Next Level Driveways — local verification
+
+1 PASS: All Call links use tel:+447884613467, matching the supplied contact screenshot.
+2 PASS: All WhatsApp links use wa.me/447884613467. Executed enquiry test verifies all six fields, selected service and special-character encoding. No messages sent.
+3 PASS: Fixed header remains visible while scrolling; desktop and mobile layouts inspected.
+4 PASS: Round client logo overlaps the hero and remains attached to the scrolling header.
+5 PASS: Floating contacts hidden and unfocusable throughout the hero, shown only after hero bottom passes zero. Threshold tested and browser behaviour inspected.
+6 PASS: Unique 1200x630 sharing image, with static absolute Open Graph and Twitter image metadata on every page.
+
+Nine pages checked for unique titles, one H1, valid local links and anchors, image dimensions, responsive sources and JSON-LD. Ten project photos and both full-length videos included. Both videos played in browser; delivery copies optimised to H.264/AAC with matching durations. Mobile hero and menu inspected.
+
+Live social-card verification PENDING: public domain not confirmed or deployed. Configure final URL and verify public page/image fetching and platform scrape before claiming social-sharing readiness. See README.
