@@ -1,0 +1,12 @@
+Bennett All Trades — verification
+
+PASS — correct Call destination: +44 151 808 4225.
+PASS — WhatsApp destination +44 7827 276422; all six enquiry fields and selected service included.
+PASS — fixed header.
+PASS — prominent overlapping round logo remains attached while scrolling.
+PASS — floating Call and WhatsApp hidden and unfocusable throughout the hero; displayed after hero clears.
+PASS — unique 1200 x 630 social card with absolute Open Graph and Twitter metadata on all nine pages.
+
+Desktop and mobile layouts reviewed. Local links, anchors, image dimensions, structured data and contact destinations validated. Thirteen unique project photographs included; duplicate uploads displayed once.
+
+Live public URL, crawler access, social image response and Facebook/WhatsApp share rendering remain pending deployment. Staging metadata is deliberately noindex; run configure-launch.py with the final public base URL before publishing.
