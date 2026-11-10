@@ -1,0 +1,16 @@
+AWC Window Cleaning — verification
+
+PASS — Call links: tel:+447304086568.
+PASS — WhatsApp links and draft: wa.me/447304086568. Actual script execution confirms all six fields and selected service. No message sent.
+PASS — fixed scrolling header.
+PASS — prominent overlapping round client logo remains attached and visible while scrolling.
+PASS — floating Call/WhatsApp controls hidden and unfocusable throughout hero; appear after hero bottom reaches viewport top. Script boundary checked in both directions; browser behaviour verified.
+PASS — unique 1200 x 630 AWC social card exists and is referenced by absolute Open Graph/Twitter metadata on all pages.
+
+Eleven pages: unique titles, single H1 per page, valid local links and anchors, image dimensions/srcsets, valid JSON-LD. Ten supplied cleaning project photographs used. Five before-and-after pairs; full comparison images retained and expandable. Desktop and 390px mobile layouts reviewed; mobile menu and photo viewer verified.
+
+Public domain not provided. Live URL, crawler access, social image fetch and Facebook/WhatsApp rendering remain pending deployment. Launch configuration script and instructions included.
+
+Revision: van image removed from every page, gallery and asset folder. Replaced feature and header imagery with supplied cleaning project photographs.
+
+Gallery row check: all photo galleries have an even number of images; no single leftover image in the two-column desktop layout. Home and uPVC galleries corrected to four photos each.
