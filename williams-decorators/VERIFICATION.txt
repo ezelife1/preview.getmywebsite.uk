@@ -1,0 +1,12 @@
+Williams Decorators (Derby) Ltd. — verification
+
+PASS: Call links use tel:+447812604628.
+PASS: WhatsApp links and enquiry draft use wa.me/447812604628. Actual script executed with test values: all six fields and selected service preserved. No messages sent.
+PASS: fixed scrolling header.
+PASS: overlapping round logo remains attached and visible while scrolling.
+PASS: floating Call and WhatsApp are hidden and unfocusable throughout hero; shown only when hero bottom is at or above viewport top. Script threshold checked both directions and browser reviewed.
+PASS: unique 1200 x 630 Williams social image exists and absolute Open Graph/Twitter image metadata is present on every page.
+
+Nine pages validated: unique titles, one H1 each, links, anchors, image dimensions, srcsets and valid structured data. All eighteen project photos included. Five real paired comparisons on projects page; four also featured on home, with garage pair on exterior page. Comparisons retain full photos without cropping and support enlargement. Desktop/mobile layouts, mobile navigation and photo viewer reviewed.
+
+Public URL not supplied: live crawler fetch, public image response and Facebook/WhatsApp rendering remain pending deployment. Launch URL configuration instructions included.
