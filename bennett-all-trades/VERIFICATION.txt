@@ -10,3 +10,6 @@ PASS — unique 1200 x 630 social card with absolute Open Graph and Twitter meta
 Desktop and mobile layouts reviewed. Local links, anchors, image dimensions, structured data and contact destinations validated. Thirteen unique project photographs included; duplicate uploads displayed once.
 
 Live public URL, crawler access, social image response and Facebook/WhatsApp share rendering remain pending deployment. Staging metadata is deliberately noindex; run configure-launch.py with the final public base URL before publishing.
+
+Video update: two H.264/AAC MP4 files added to home and projects pages with controls, playsinline, preload=none and supplied-footage poster images. Header Videos link added site-wide. Both files remuxed with fast-start metadata for progressive playback.
+Browser playback verification: both videos reached readyState 4, currentTime advanced, neither reported a media error. Existing six local requirements rechecked in the build; Call/WhatsApp script and header behaviour are preserved.
