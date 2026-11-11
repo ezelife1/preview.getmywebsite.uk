@@ -1,0 +1,9 @@
+LG Joinery checklist
+1 Call: DISPLAY ONLY — user requested inactive buttons; pending number.
+2 WhatsApp: DISPLAY ONLY — user requested inactive buttons; pending number. Form produces local draft only, never transmits.
+3 Fixed header: PASS — inspected on desktop and 390px mobile.
+4 Prominent overlapping logo: PASS — inspected on desktop and 390px mobile.
+5 Floating contacts: PASS — hidden/unfocusable over hero, shown after hero. Verified in browser.
+6 Unique sharing image: 1200x630, Open Graph and Twitter metadata. Live verification pending domain setup.
+
+PASS: All local links/anchors, image dimensions, JSON-LD and social metadata. All 11 supplied photos included; every gallery has complete rows. Both supplied videos played in browser. Mobile menu checked; no horizontal overflow on desktop or 390px mobile. Local enquiry draft tested with all six fields and selected service; nothing sent.
