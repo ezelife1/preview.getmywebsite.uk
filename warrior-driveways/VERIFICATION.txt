@@ -1,0 +1,12 @@
+Warrior Driveways & Patios — delivery verification
+
+1 PASS — Every Call link uses tel:+447940416770, matching supplied business details.
+2 PASS — WhatsApp links use wa.me/447940416770. Executed JavaScript check confirms all six form fields, selected service and special characters appear in the draft. No message sent.
+3 PASS — Header uses fixed positioning and remains visible after scrolling. Desktop and 390px mobile layout inspected.
+4 PASS — Corrected black/gold client logo prominently overlaps the header and stays attached while scrolling. Desktop and mobile inspected.
+5 PASS — Floating Call/WhatsApp controls are hidden using the hidden attribute while the hero remains on screen. Executed threshold tests cover above/below the hero. Browser inspection confirms controls appear after the hero and stay hidden at the top.
+6 PASS — Unique Warrior social card is 1200x630; correct absolute Open Graph and Twitter image references checked on all 11 pages.
+
+Additional checks: all local links and anchors resolve; one unique H1/title per page; all image dimensions and responsive source widths checked; nine supplied project photos included; every gallery has complete two-column rows; no orphan gallery pictures. Both supplied H.264 videos loaded and played in the browser. Mobile navigation opens/closes. No horizontal overflow on desktop or 390px mobile. Quote draft logic tested without contacting the business.
+
+Launch limitation: final public domain not supplied. Staging metadata remains noindex. Run configure-launch.py with the final HTTPS URL before public launch. Live social-platform scraping remains unverified until hosted on that domain.
