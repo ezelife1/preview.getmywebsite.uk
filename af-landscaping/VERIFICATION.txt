@@ -1,0 +1,11 @@
+A & F Landscaping — verified build
+
+PASS: Call links use tel:+447970458061.
+PASS: WhatsApp links and form use https://wa.me/447970458061. All six fields and selected service verified by executing script; no message sent.
+PASS: fixed header visible while scrolling, desktop and mobile.
+PASS: round overlapping logo attached to header; desktop top 8px, mobile top 7px after scrolling.
+PASS: floating Call and WhatsApp hidden over hero, visible after hero clears viewport. Browser verified desktop and mobile; script tested in both directions.
+PASS: unique business-specific 1200x630 social image exists and is wired into Open Graph and Twitter on every page.
+
+11 pages, all ten supplied photographs, valid structured data, local links and anchors, even gallery rows, mobile menu and working photo lightbox checked. No DIG Landscapes assets included.
+Final public domain is not yet supplied; metadata remains noindex until configured. No deployment performed.
