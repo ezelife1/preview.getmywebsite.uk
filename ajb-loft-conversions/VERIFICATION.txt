@@ -1,0 +1,12 @@
+AJB Loft Conversions — verified build
+
+PASS: Call links use tel:+447889200177.
+PASS: WhatsApp links and quote draft use https://wa.me/447889200177. Script executed to confirm all six fields and chosen service. No message sent.
+PASS: fixed scrolling header verified on desktop and 390px mobile.
+PASS: overlapping round logo attached to header, remaining at top 8px desktop and 7px mobile after scrolling.
+PASS: floating Call and WhatsApp hidden over hero; visible after hero clears viewport. Desktop and mobile browser checks plus script tests in both directions.
+PASS: dedicated AJB 1200x630 social image with red wavy divider, correctly wired into Open Graph and Twitter metadata on all pages.
+
+11 unique pages; all 13 supplied project images included. 12 individual photographs in complete gallery rows and the supplied construction collage featured separately. Valid structured data; local links/anchors; image dimensions; mobile menu and photo lightbox checked.
+No unrelated client photos or fabricated testimonials included. Phone matched to AJB Yell listing and local advertisements.
+Final domain not supplied. Staging metadata remains noindex until configured. No deployment performed.
