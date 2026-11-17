@@ -1,0 +1,12 @@
+APEX Construction & Landscaping — verified build
+
+PASS: Call links use tel:+447803476553.
+PASS: WhatsApp links and quote draft use https://wa.me/447803476553. Script executed to verify all six enquiry fields and selected service. No message sent.
+PASS: fixed header remains visible while scrolling, desktop and 390px mobile.
+PASS: prominently overlapping round logo attached to header, at top 8px desktop and 7px mobile after scrolling.
+PASS: floating Call and WhatsApp hidden over hero, shown after hero clears viewport. Desktop and mobile browser checks; script tested in both directions.
+PASS: unique APEX 1200x630 social image with red wave, correctly referenced in Open Graph and Twitter metadata on every page.
+
+11 pages, all 11 supplied photographs, complete two-column gallery rows, valid structured data, local links/anchors and image dimensions checked. Mobile menu, email link and photo lightbox verified. No unrelated client images or invented review text.
+Phone and email from supplied profile: 07803 476553 / apex.con.land@gmail.com.
+Final domain and service area not supplied. Staging metadata remains noindex until configured. No deployment performed.
