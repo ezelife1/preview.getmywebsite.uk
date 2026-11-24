@@ -1,0 +1,8 @@
+- Call: verified all page links use tel:+447872164341.
+- WhatsApp: verified all links and executed the quote script to confirm the recipient, all fields, encoding and validation.
+- Scrolling header: verified fixed position and top offset in the site CSS.
+- Overlapping logo: verified it is attached to the fixed header and extends below it at desktop and mobile sizes in the CSS.
+- Floating contacts: executed the site script and verified they start hidden, appear only after the hero exits the viewport, and hide on return.
+- Sharing: verified the unique SRP image is 1200×630 and wired into Open Graph and Twitter metadata on all pages. Verified the launch script rewrites both to the supplied domain.
+- Also checked local files and links, and decoded the original TrueClean MP4 without errors.
+- Browser rendering could not be checked because Chromium could not start. No calls or WhatsApp messages were sent.
