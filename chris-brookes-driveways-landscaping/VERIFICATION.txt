@@ -1,0 +1,7 @@
+DIG Landscapes & Garden Design — update verification
+Business name corrected throughout all 11 pages, metadata, structured data and WhatsApp drafts.
+Business email address and mailto links removed.
+Canonical, social and sitemap URLs use https://diglandscapes.com/. CNAME included.
+Call and WhatsApp contact number retained: 07496 608609.
+Fixed header, overlapping logo and hero-aware floating controls retained.
+Existing project assets and videos retained unchanged. No deployment performed.
