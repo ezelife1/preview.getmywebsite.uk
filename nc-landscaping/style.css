@@ -280,3 +280,10 @@ footer,.contact{background:#061109}
 /* Fit the full business name beside the overlapping logo. */
 .brand-copy strong{font-size:16px;line-height:1.25;max-width:250px}
 @media(min-width:901px) and (max-width:1150px){.brand-copy strong{font-size:14px}}
+
+/* Before/after pair: equal 4:3 cards, labelled */
+.feature-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.feature-pair figure{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#1c1c1c}
+.feature-pair img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:22px;display:block}
+.feature-pair figcaption{position:absolute;left:14px;bottom:14px;z-index:2;background:rgba(10,10,10,.85);color:#fff;padding:7px 15px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:900px){.feature-pair{gap:10px}.feature-pair img{aspect-ratio:4/3}}
