@@ -50,7 +50,7 @@ main{padding-top:90px}
 .hero-card strong{display:block;font-size:26px;line-height:1.1;margin:10px 0}
 .hero-card p{color:#d7d0c3;line-height:1.5;margin:0}
 
-.service-strip{background:#0f0f0f;color:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:0 max(24px,calc((100vw - 1260px)/2));border-top:1px solid #2d2d2d;border-bottom:1px solid #2d2d2d}
+.service-strip{background:#0f0f0f;color:#fff;display:grid;grid-template-columns:repeat(3,1fr);padding:0 max(24px,calc((100vw - 1260px)/2));border-top:1px solid #2d2d2d;border-bottom:1px solid #2d2d2d}
 .service-strip article{display:flex;gap:14px;padding:25px 18px;border-right:1px solid #2c2c2c}
 .service-strip b{color:var(--gold)}
 .service-strip strong{display:block}
